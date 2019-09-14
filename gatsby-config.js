@@ -14,27 +14,15 @@ module.exports = {
 	plugins: [
 		'gatsby-plugin-react-helmet',
 		'gatsby-plugin-styled-components',
-		/* {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'assets',
-        path: '${__dirname}/src/assets',
-      },
-    }, */
-		'gatsby-transformer-sharp',
-		'gatsby-plugin-sharp',
 		{
-			resolve: 'gatsby-source-graphql',
+			resolve: 'gatsby-source-filesystem',
 			options: {
-				typeName: 'GitHub',
-				fieldName: 'github',
-				url: 'https://api.github.com/graphql',
-				headers: {
-					Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
-				},
-				fetchOptions: {},
+				name: 'images',
+				path: 'images',
 			},
 		},
+		'gatsby-transformer-sharp',
+		'gatsby-plugin-sharp',
 		{
 			resolve: 'gatsby-plugin-nprogress',
 			options: {
@@ -47,24 +35,6 @@ module.exports = {
 			options: {
 				trackingId: config.googleAnalyticsID,
 				head: true,
-			},
-		},
-		{
-			resolve: 'gatsby-plugin-favicon',
-			options: {
-				logo: './static/favicon/favicon-512.png',
-				injectHTML: true,
-				icons: {
-					android: true,
-					appleIcon: true,
-					appleStartup: true,
-					coast: false,
-					favicons: true,
-					firefox: true,
-					twitter: false,
-					yandex: false,
-					windows: false,
-				},
 			},
 		},
 		{
