@@ -14,15 +14,16 @@ module.exports = {
 	plugins: [
 		'gatsby-plugin-react-helmet',
 		'gatsby-plugin-styled-components',
-		/* {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'assets',
-        path: '${__dirname}/src/assets',
-      },
-    }, */
 		'gatsby-transformer-sharp',
 		'gatsby-plugin-sharp',
+		{
+			resolve: 'gatsby-plugin-react-svg',
+			options: {
+				rule: {
+					include: /svgs/,
+				},
+			},
+		},
 		{
 			resolve: 'gatsby-plugin-nprogress',
 			options: {
