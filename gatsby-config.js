@@ -14,6 +14,7 @@ module.exports = {
 	plugins: [
 		'gatsby-plugin-react-helmet',
 		'gatsby-plugin-styled-components',
+<<<<<<< HEAD
 		{
 			resolve: 'gatsby-plugin-mdx',
 			options: {
@@ -45,8 +46,18 @@ module.exports = {
         path: '${__dirname}/src/assets',
       },
     }, */
+=======
+>>>>>>> ef18d8d19359a31f2dea2dd374c787e71bb281c0
 		'gatsby-transformer-sharp',
 		'gatsby-plugin-sharp',
+		{
+			resolve: 'gatsby-plugin-react-svg',
+			options: {
+				rule: {
+					include: /svgs/,
+				},
+			},
+		},
 		{
 			resolve: 'gatsby-plugin-nprogress',
 			options: {
