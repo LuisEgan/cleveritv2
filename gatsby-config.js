@@ -14,6 +14,30 @@ module.exports = {
 	plugins: [
 		'gatsby-plugin-react-helmet',
 		'gatsby-plugin-styled-components',
+		{
+			resolve: 'gatsby-plugin-mdx',
+			options: {
+				defaultLayouts: {
+					default: require.resolve('./src/components/common/Layout/index.jsx'),
+				},
+				gatsbyRemarkPlugins: [
+					{
+						resolve: `gatsby-remark-images`,
+						options: {
+							maxWidth: 590,
+							backgroundColor: `transparent`,
+						},
+					},
+				],
+			},
+		},
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'posts',
+				path: 'posts',
+			},
+		},
 		/* {
       resolve: 'gatsby-source-filesystem',
       options: {
