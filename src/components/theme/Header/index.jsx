@@ -1,17 +1,24 @@
 import React, { useState } from 'react'
+import styled from 'styled-components'
 import Navbar from './Navbar'
 import Hamburger from './Hamburger'
 import Sidebar from './Sidebar'
-import { Wrapper, Overlay } from './styles'
 
 export const Header = () => {
-	const [sidebar, toggle] = useState(false)
+	const [isSidebarVisible, setIsSideBarVisible] = useState(false)
 	return (
 		<Wrapper>
-			<Overlay sidebar={sidebar} onClick={() => toggle(!sidebar)} />
+			<Sidebar sidebar={isSidebarVisible} toggle={setIsSideBarVisible} />
+
 			<Navbar />
-			<Hamburger sidebar={sidebar} toggle={toggle} />
-			<Sidebar sidebar={sidebar} toggle={toggle} />
+
+			<Hamburger sidebar={isSidebarVisible} toggle={setIsSideBarVisible} />
 		</Wrapper>
 	)
 }
+
+const Wrapper = styled.div`
+	background: white;
+	width: 100%;
+	position: fixed;
+`

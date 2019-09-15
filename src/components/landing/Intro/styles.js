@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { desktopMaxWidth } from '../../../utils/constants'
 
 export const Wrapper = styled.div`
 	padding-bottom: 4rem;
@@ -14,7 +15,7 @@ export const IntroWrapper = styled.div`
 	align-items: center;
 	justify-content: space-between;
 
-	@media (max-width: 960px) {
+	@media (max-width: ${desktopMaxWidth}) {
 		flex-direction: column;
 	}
 `
@@ -22,7 +23,7 @@ export const IntroWrapper = styled.div`
 export const Details = styled.div`
 	flex: 1;
 
-	@media (max-width: 960px) {
+	@media (max-width: ${desktopMaxWidth}) {
 		width: 100%;
 		margin-bottom: 2rem;
 	}
@@ -52,7 +53,7 @@ export const Details = styled.div`
 export const Thumbnail = styled.div`
 	flex: 1;
 
-	@media (max-width: 960px) {
+	@media (max-width: ${desktopMaxWidth}) {
 		width: 100%;
 	}
 

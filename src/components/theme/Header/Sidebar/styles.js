@@ -1,5 +1,21 @@
 import styled from 'styled-components'
 
+export const SideMenuDimBg = styled.div`
+	position: fixed;
+	background: rgba(0, 0, 0, 0.7);
+	width: 100vw;
+	height: 100vh;
+	display: none;
+	transition: 0.4s;
+
+	${({ sidebar }) =>
+		sidebar &&
+		`
+			display: block;
+			z-index: 4;	
+	`}
+`
+
 export const Wrapper = styled.div`
 	position: fixed;
 	z-index: 4;
@@ -15,13 +31,9 @@ export const Wrapper = styled.div`
 	${({ active }) =>
 		active &&
 		`
-			width: 20%;
+			width: 40%;
 			right: 0px;
 			opacity: 1;
-
-			@media (max-width: 960px) {
-				width: 40%;
-			}
 
 			@media (max-width: 600px) {
 				width: 75%;

@@ -1,11 +1,14 @@
 import React from 'react'
 import NavbarLinks from '../NavbarLinks'
-import { Wrapper } from './styles'
+import { Wrapper, SideMenuDimBg } from './styles'
 
 const Sidebar = ({ sidebar, toggle }) => (
-	<Wrapper active={sidebar} onClick={toggle}>
-		<NavbarLinks />
-	</Wrapper>
+	<>
+		<SideMenuDimBg sidebar={sidebar} onClick={() => toggle(!sidebar)} />
+		<Wrapper active={sidebar} onClick={toggle}>
+			<NavbarLinks />
+		</Wrapper>
+	</>
 )
 
 export default Sidebar
