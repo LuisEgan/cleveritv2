@@ -3,11 +3,10 @@
   font-style: normal;
   font-display: fallback;
   font-weight: 400;
-  src: url('./cereal-airbnb-font/AirbnbCereal-Book.ttf');
+  src: url('./cereal/AirbnbCereal-Book.ttf');
   src: local('Cereal Airbnb'), local('Cereal-Book'),
-    url('./cereal-airbnb-font/AirbnbCereal-Book.ttf?#iefix')
-      format('embedded-opentype'),
-    url('./cereal-airbnb-font/AirbnbCereal-Book.ttf') format('truetype');
+    url('./cereal/AirbnbCereal-Book.ttf?#iefix') format('embedded-opentype'),
+    url('./cereal/AirbnbCereal-Book.ttf') format('truetype');
 }
 
 @font-face {
@@ -15,11 +14,10 @@
   font-style: bold;
   font-display: fallback;
   font-weight: 700;
-  src: url('./cereal-airbnb-font/AirbnbCereal-Bold.ttf');
+  src: url('./cereal/AirbnbCereal-Bold.ttf');
   src: local('Cereal Airbnb'), local('Cereal-Bold'),
-    url('./cereal-airbnb-font/AirbnbCereal-Bold.ttf?#iefix')
-      format('embedded-opentype'),
-    url('./cereal-airbnb-font/AirbnbCereal-Bold.ttf') format('truetype');
+    url('./cereal/AirbnbCereal-Bold.ttf?#iefix') format('embedded-opentype'),
+    url('./cereal/AirbnbCereal-Bold.ttf') format('truetype');
 }
 
 @font-face {
