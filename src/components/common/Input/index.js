@@ -1,9 +1,12 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+
 import styled from 'styled-components'
 
-export const Input = styled.input`
-	width: 100%;
+const StyledInput = styled.input`
+	flex: 1;
 	box-sizing: border-box;
-	border: 2px solid #6c63ff;
+	border: 1px solid #bfbfbf;
 	padding: 0.8rem 1rem;
 	border-radius: 7px;
 	margin-bottom: 0.5rem;
@@ -19,3 +22,32 @@ export const Input = styled.input`
 		color: #a7a7a7;
 	}
 `
+
+export const Input = props => {
+	const { value, type, placeholder, onChangeText } = props
+
+	return (
+		<StyledInput
+			value={value}
+			type={type}
+			onChange={str => onChangeText(str.target.value)}
+			placeholder={placeholder}
+		/>
+	)
+}
+
+Input.propTypes = {
+	value: PropTypes.string,
+	type: PropTypes.string,
+	placeholder: PropTypes.string,
+
+	onChangeText: PropTypes.func,
+}
+
+Input.defaultProps = {
+	value: '',
+	type: 'text',
+	placeholder: '',
+
+	onChangeText: () => {},
+}
