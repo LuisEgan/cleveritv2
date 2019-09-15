@@ -23,7 +23,12 @@ const StyledTextArea = styled.textarea`
 `
 
 export const TextArea = props => {
-	const { value, type, placeholder, onChangeText } = props
+	const { value: valueProp, type, placeholder, onChangeText } = props
+	const [value, setValue] = useState(valueProp)
+
+	useEffect(() => {
+		setValue(valueProp)
+	}, [valueProp])
 
 	return (
 		<StyledTextArea
