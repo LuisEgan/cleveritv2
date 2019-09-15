@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { desktopMaxWidth } from '../../../utils/constants'
 
 export const Wrapper = styled.div`
 	padding: 2rem 0;
@@ -11,7 +12,7 @@ export const Grid = styled.div`
 	grid-template-rows: 8fr;
 	gap: 1.2rem 1.2rem;
 
-	@media (max-width: 960px) {
+	@media (max-width: ${desktopMaxWidth}) {
 		grid-template-columns: repeat(2, 1fr);
 	}
 

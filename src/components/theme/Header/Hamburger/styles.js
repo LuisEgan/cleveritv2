@@ -1,15 +1,17 @@
 import styled from 'styled-components'
+import { desktopMaxWidth } from '../../../../utils/constants'
 
 export const Wrapper = styled.div`
 	z-index: 5;
-	top: 1.6rem;
+	top: 50%;
+	transform: translateY(-50%);
 	right: 1.8rem;
 	display: none;
 	cursor: pointer;
 	transition: left 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
 	position: absolute;
 
-	@media (max-width: 960px) {
+	@media (max-width: ${desktopMaxWidth}) {
 		display: block;
 	}
 
@@ -19,7 +21,7 @@ export const Wrapper = styled.div`
 			right: 18%;
 			top: 1.4rem;
 		
-			@media (max-width: 960px) {
+			@media (max-width: ${desktopMaxWidth}) {
 				right: 35%;
 			}
 		
