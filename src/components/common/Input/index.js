@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
 import styled from 'styled-components'
@@ -24,13 +24,18 @@ const StyledInput = styled.input`
 `
 
 export const Input = props => {
-	const { value, type, placeholder, onChangeText } = props
+	const { value: valueProp, type, placeholder, onChangeText } = props
+	const [value, setValue] = useState(valueProp)
+
+	useEffect(() => {
+		setValue(valueProp)
+	}, [valueProp])
 
 	return (
 		<StyledInput
 			value={value}
 			type={type}
-			onChange={str => onChangeText(str.target.value)}
+			onChange={e => onChangeText(e.target.value)}
 			placeholder={placeholder}
 		/>
 	)
