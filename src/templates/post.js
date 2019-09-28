@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { Layout } from '../components/common/Layout/index'
 import { Container } from '../components/common/Container'
-import { ReadLink } from '../components/blog/read-link'
+import { ReadLink } from '../components/blog'
 
 export const query = graphql`
 	query($slug: String!) {
