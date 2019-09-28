@@ -1,15 +1,14 @@
 import React from 'react'
 import { Layout, SEO } from 'Common'
-import { Intro, Skills, Contact, Blog } from 'Components/landing'
+import { Intro, Workflow, JoinUs, Contact, Blog } from 'Components/home'
 
-export default () => {
-	return (
-		<Layout>
-			<SEO />
-			<Intro />
-			<Skills />
-			<Contact />
-			<Blog />
-		</Layout>
-	)
-}
+export default () => (
+	<Layout>
+		<SEO />
+		<Intro />
+		<Workflow />
+		<Blog />
+		<JoinUs />
+		<Contact />
+	</Layout>
+)

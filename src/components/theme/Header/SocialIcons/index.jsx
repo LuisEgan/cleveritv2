@@ -9,8 +9,15 @@ import { desktopMaxWidth, colors } from '../../../../utils/constants'
 const SocialIcons = props => {
 	return (
 		<Wrapper>
-			<Instagram />
-			<LinkedIn />
+			<a href="https://www.instagram.com/cleverit_latam/" target="_blank">
+				<Instagram />
+			</a>
+			<a
+				href="https://www.linkedin.com/company/cleverit-latam/"
+				target="_blank"
+			>
+				<LinkedIn />
+			</a>
 		</Wrapper>
 	)
 }
