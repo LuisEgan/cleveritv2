@@ -1,22 +1,15 @@
 import React from 'react'
 import { Layout, SEO } from 'Common'
-import { Intro, Skills, Contact } from 'Components/landing'
-import usePosts from '../hooks/use-posts'
-import PostPreview from '../components/blog/post-preview'
+import { Intro, Skills, Contact, Blog } from 'Components/landing'
 
 export default () => {
-	const posts = usePosts()
-	console.log('TCL: posts', posts)
 	return (
 		<Layout>
 			<SEO />
 			<Intro />
 			<Skills />
-			<h2> Material para digerir</h2>
-			{posts.map(post => (
-				<PostPreview key={post.slug} post={post} />
-			))}
 			<Contact />
+			<Blog />
 		</Layout>
 	)
 }
