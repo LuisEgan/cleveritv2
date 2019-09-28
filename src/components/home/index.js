@@ -1,4 +1,6 @@
 export * from './Intro'
+export * from './Workflow'
+export * from './JoinUs'
 export * from './Skills'
 export * from './Contact'
 export * from './Projects'

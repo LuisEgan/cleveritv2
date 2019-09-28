@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { desktopMaxWidth } from '../../../utils/constants'
+import { desktopMaxWidth, colors } from '../../../utils/constants'
 
 export const Wrapper = styled.div`
 	padding-bottom: 4rem;
@@ -13,7 +13,7 @@ export const IntroWrapper = styled.div`
 	padding: 4rem 0;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-evenly;
 
 	@media (max-width: ${desktopMaxWidth}) {
 		flex-direction: column;
@@ -22,31 +22,27 @@ export const IntroWrapper = styled.div`
 
 export const Details = styled.div`
 	flex: 1;
+	padding-top: 5vh;
 
 	@media (max-width: ${desktopMaxWidth}) {
 		width: 100%;
 		margin-bottom: 2rem;
 	}
 
-	h1 {
+	h2 {
 		margin-bottom: 2rem;
-		font-size: 36pt;
-		color: #212121;
+		font-size: 33pt;
 
 		@media (max-width: 680px) {
 			font-size: 30pt;
 		}
 	}
 
-	h4 {
+	h5 {
 		margin-bottom: 2.5rem;
-		font-size: 32pt;
 		font-weight: normal;
-		color: #707070;
-
-		@media (max-width: 680px) {
-			font-size: 26pt;
-		}
+		color: ${colors.gray};
+		line-height: 20px;
 	}
 `
 

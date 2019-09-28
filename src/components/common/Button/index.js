@@ -1,9 +1,10 @@
 import styled from 'styled-components'
+import { colors } from '../../../utils/constants'
 
 export const Button = styled.button`
 	cursor: pointer;
-	border-radius: 3px;
-	padding: 0.7rem 2.5rem;
+	border-radius: 9px;
+	padding: 1.1rem 2.5rem;
 	border: none;
 	-webkit-appearance: none;
 	-webkit-touch-callout: none;
@@ -13,7 +14,7 @@ export const Button = styled.button`
 	-ms-user-select: none;
 	user-select: none;
 	color: #fff;
-	background: #0074d9;
+	background: ${colors.purple};
 
 	&:focus {
 		outline: none;

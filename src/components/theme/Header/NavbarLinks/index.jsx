@@ -36,6 +36,10 @@ const NavLink = styled.div`
 	height: 120%;
 	padding: 0 5px;
 
+	&:hover {
+		cursor: pointer;
+	}
+
 	@media (max-width: ${desktopMaxWidth}) {
 		height: 10%;
 	}
