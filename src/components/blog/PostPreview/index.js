@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 export const ArticlePreview = styled.article`
-	border-bottom: 1px solid #ddd;
+	/* border-bottom: 1px solid #ddd; */
 	display: flex;
 	margin-top: 0;
 	padding-bottom: 1rem;
@@ -42,7 +42,7 @@ export const PostPreview = ({ post }) => {
 			</LinkPreview>
 			<DivPreview>
 				<p>{post.excerpt}</p>
-				<ReadLink to={post.slug}>Read this post &rarr; </ReadLink>
+				<ReadLink to={post.slug}>Ver más &rarr; </ReadLink>
 			</DivPreview>
 		</ArticlePreview>
 	)
