@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { colors } from '../../../utils/constants'
+import { colors } from '../../../../utils/constants'
 
 const Container = styled.div`
 	padding: 1rem;

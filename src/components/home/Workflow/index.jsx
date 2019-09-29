@@ -4,7 +4,7 @@ import Idea from 'Static/svgs/idea.svg'
 import IdeaMeasure from 'Static/svgs/ideaMeasure.svg'
 import Design from 'Static/svgs/design.svg'
 import PieChart from 'Static/svgs/pieChart.svg'
-import CardImage from '../../common/CardImage'
+import CardImage from '../../common/Cards/CardImage'
 import SectionWrapper from '../../common/Layout/SectionWrapper'
 
 const flow = [
