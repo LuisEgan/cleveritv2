@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import { desktopMaxWidth, colors, routes } from '../../../../utils/constants'
@@ -12,15 +12,28 @@ const links = [
 	{ route: routes.CONTACT, label: 'Contacto' },
 ]
 
-const NavbarLinks = ({ desktop }) => {
-	const [currentPage, setCurrentPage] = useState(routes.HOME)
+const NavbarLinks = React.memo(({ desktop }) => {
+	const [currentPage, setCurrentPage] = useState()
+
+	useEffect(() => {
+		links.some(({ route }) => {
+			if (window.location.pathname === route) {
+				setCurrentPage(route)
+				return true
+			}
+			return false
+		})
+	}, [])
 
 	return (
 		<Wrapper desktop={desktop}>
 			{links.map(({ route, label }) => (
 				<NavLink
 					isActive={currentPage === route}
-					onClick={() => setCurrentPage(route)}
+					onClick={() => {
+						console.log('route: ', route)
+						setCurrentPage(route)
+					}}
 					key={label}
 				>
 					<Link to={route}>{label}</Link>
@@ -28,7 +41,7 @@ const NavbarLinks = ({ desktop }) => {
 			))}
 		</Wrapper>
 	)
-}
+})
 
 const NavLink = styled.div`
 	display: flex;
