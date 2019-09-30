@@ -9,13 +9,11 @@ const usePosts = () => {
 						title
 						slug
 						author
+						tag
+						creationDate
 						image {
 							sharp: childImageSharp {
-								fluid(
-									maxWidth: 100
-									maxHeight: 100
-									duotone: { shadow: "#663399", highlight: "#ddbbff" }
-								) {
+								fluid(maxWidth: 349, maxHeight: 302) {
 									...GatsbyImageSharpFluid_withWebp
 								}
 							}
@@ -27,13 +25,22 @@ const usePosts = () => {
 		}
 	`)
 
-	return data.allMdx.nodes.map(post => ({
-		title: post.frontmatter.title,
-		author: post.frontmatter.author,
-		slug: post.frontmatter.slug,
-		image: post.frontmatter.image,
-		excerpt: post.excerpt,
-	}))
+	return data.allMdx.nodes.map(post => {
+		const {
+			frontmatter: { title, author, slug, image, tag, creationDate },
+			excerpt,
+		} = post
+
+		return {
+			title,
+			author,
+			slug,
+			image,
+			tag,
+			creationDate,
+			excerpt,
+		}
+	})
 }
 
 export default usePosts
