@@ -15,4 +15,5 @@ export const fontSizes = {
 
 export const routes = {
 	HOME: '/',
+	BLOG: '/blog',
 }

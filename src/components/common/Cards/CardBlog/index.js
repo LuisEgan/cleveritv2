@@ -52,7 +52,7 @@ export const CardBlog = ({ post }) => {
 			</StyledLink>
 			<Description>
 				<p>
-					{post.author} | {post.creationDate} | {post.tag}
+					{post.author} | {post.creationDate} | {post.tag0}
 				</p>
 			</Description>
 			<Container>

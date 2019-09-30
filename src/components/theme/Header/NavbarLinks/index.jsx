@@ -7,7 +7,7 @@ const links = [
 	{ route: routes.HOME, label: 'Inicio' },
 	{ route: 'routes.HOME', label: 'Equipo' },
 	{ route: 'routes.HOME', label: 'Proyectos' },
-	{ route: 'routes.HOME', label: 'Blog' },
+	{ route: routes.BLOG, label: 'Blog' },
 	{ route: 'routes.HOME', label: 'Reclutamiento' },
 	{ route: 'routes.HOME', label: 'Contacto' },
 ]
