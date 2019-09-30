@@ -16,16 +16,6 @@ export const Header = styled.div`
 	}
 `
 
-export const Body = styled.div`
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	img {
-		max-width: 349px;
-		max-height: 302px;
-	}
-`
-
 export const StyledLink = styled(Link)`
 	cursor: pointer;
 	border-radius: 9px;
@@ -55,6 +45,16 @@ export const StyledLink = styled(Link)`
 		`
 		background: #001F3F;
 	`}
+`
+
+export const Body = styled.div`
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	img {
+		max-width: 349px;
+		max-height: 302px;
+	}
 `
 
 export const Blog = () => {

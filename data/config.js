@@ -1,6 +1,6 @@
 module.exports = {
 	defaultTitle: 'Cleverit',
-	logo: 'https://www.cleverit.cl/wp-content/uploads/2018/10/favicon.png',
+	logo: '',
 	author: 'Cleverit',
 	url: 'https://www.cleverit.cl/',
 	legalName: 'Cleverit',

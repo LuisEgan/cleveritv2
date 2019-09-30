@@ -16,13 +16,17 @@ export const ArticleWrapper = styled.article`
 export const StyledLink = styled(Link)`
 	margin: 1rem 1rem 0 0;
 	width: 100%;
+	height: 100%;
+	margin-bottom: -2rem;
+
+	img {
+		border-radius: 5px;
+	}
 `
 
 export const StyledImage = styled(Image)`
-	* {
-		margin-top: 0;
-		border-radius: 2%;
-	}
+	margin-top: 0;
+	padding: 0;
 `
 
 export const Container = styled.div`
@@ -51,7 +55,7 @@ export const CardBlog = ({ post }) => {
 			</StyledLink>
 			<Description>
 				<p>
-					{post.author} | {post.creationDate} | {post.tag0}
+					{post.author} | {post.creationDate} | {post.tag}
 				</p>
 			</Description>
 			<Container>
