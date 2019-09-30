@@ -5,11 +5,11 @@ import { desktopMaxWidth, colors, routes } from '../../../../utils/constants'
 
 const links = [
 	{ route: routes.HOME, label: 'Inicio' },
-	{ route: 'routes.HOME', label: 'Equipo' },
-	{ route: 'routes.HOME', label: 'Proyectos' },
-	{ route: 'routes.HOME', label: 'Blog' },
-	{ route: 'routes.HOME', label: 'Reclutamiento' },
-	{ route: 'routes.HOME', label: 'Contacto' },
+	{ route: routes.TEAMS, label: 'Equipo' },
+	{ route: routes.PROJECTS, label: 'Proyectos' },
+	{ route: routes.BLOG, label: 'Blog' },
+	{ route: routes.JOBS, label: 'Reclutamiento' },
+	{ route: routes.CONTACT, label: 'Contacto' },
 ]
 
 const NavbarLinks = ({ desktop }) => {
@@ -21,6 +21,7 @@ const NavbarLinks = ({ desktop }) => {
 				<NavLink
 					isActive={currentPage === route}
 					onClick={() => setCurrentPage(route)}
+					key={label}
 				>
 					<Link to={route}>{label}</Link>
 				</NavLink>

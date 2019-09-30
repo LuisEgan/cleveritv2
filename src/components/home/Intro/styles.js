@@ -47,10 +47,14 @@ export const Details = styled.div`
 `
 
 export const Thumbnail = styled.div`
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 10vh;
 	flex: 1;
 
 	@media (max-width: ${desktopMaxWidth}) {
 		width: 100%;
+		display: none;
 	}
 
 	img {

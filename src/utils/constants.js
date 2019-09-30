@@ -15,4 +15,9 @@ export const fontSizes = {
 
 export const routes = {
 	HOME: '/',
+	TEAMS: '/teams',
+	PROJECTS: '/projects',
+	BLOG: '/blog',
+	JOBS: '/jobs',
+	CONTACT: '/contact',
 }
