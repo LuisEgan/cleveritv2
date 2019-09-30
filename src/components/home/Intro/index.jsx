@@ -2,8 +2,18 @@ import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Button } from 'Common'
 import dev from 'Static/illustrations/dev.svg'
-import { Details, Thumbnail } from './styles'
+
+import Wom from 'Static/svgs/wom.svg'
+import Saam from 'Static/svgs/saam.svg'
+import Metro from 'Static/svgs/metro_santiago.svg'
+import Falabella from 'Static/svgs/falabella.svg'
+import Dt from 'Static/svgs/dt_Logo.svg'
+import Forus from 'Static/svgs/forus.svg'
+import ChileCompra from 'Static/svgs/logo-chilecompra.svg'
+
+import { Revolver } from '../../common'
 import SectionWrapper from '../../common/Layout/SectionWrapper'
+import { Details, Thumbnail } from './styles'
 
 export const Intro = () => (
 	<SectionWrapper>
@@ -18,7 +28,19 @@ export const Intro = () => (
 			</Button>
 		</Details>
 		<Thumbnail>
-			<img src={dev} alt="Cleverit" />
+			{/* <img src={dev} alt="Cleverit" /> */}
+			<Revolver
+				// circletSize={10}
+				items={[
+					<Wom />,
+					<Saam />,
+					<Metro />,
+					<Falabella />,
+					<Dt />,
+					<ChileCompra />,
+					<Forus />,
+				]}
+			/>
 		</Thumbnail>
 	</SectionWrapper>
 )

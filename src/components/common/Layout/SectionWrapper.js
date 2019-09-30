@@ -8,6 +8,7 @@ const Wrapper = styled.div`
 	padding-bottom: 4rem;
 	background-position: right top;
 	background-repeat: no-repeat;
+	overflow: hidden;
 
 	${({ backgroundURL, backgroundSize }) => `
     background-image: url('${backgroundURL}');
@@ -35,7 +36,9 @@ const SectionWrapper = props => {
 
 	return (
 		<Wrapper {...bgProps}>
-			<InnerWrapper as={Container}>{children}</InnerWrapper>
+			<InnerWrapper as={Container} innerJustify={innerJustify}>
+				{children}
+			</InnerWrapper>
 		</Wrapper>
 	)
 }

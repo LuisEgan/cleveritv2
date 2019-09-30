@@ -56,7 +56,12 @@ export const Workflow = () => (
 		<Container>
 			{flow.map(({ image, title, description }) => {
 				return (
-					<CardImage image={image} title={title} description={description} />
+					<CardImage
+						key={title}
+						image={image}
+						title={title}
+						description={description}
+					/>
 				)
 			})}
 		</Container>
