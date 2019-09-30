@@ -19,5 +19,5 @@ export const routes = {
 	PROJECTS: '/projects',
 	BLOG: '/blog',
 	JOBS: '/jobs',
-	CONTACT: '/contact',
+	CONTACT: '/#contact',
 }
