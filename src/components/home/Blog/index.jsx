@@ -20,6 +20,10 @@ export const Body = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	img {
+		max-width: 349px;
+		max-height: 302px;
+	}
 `
 
 export const StyledLink = styled(Link)`

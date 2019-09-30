@@ -15,8 +15,7 @@ export const ArticleWrapper = styled.article`
 
 export const StyledLink = styled(Link)`
 	margin: 1rem 1rem 0 0;
-	width: 349px;
-	height: 302px;
+	width: 100%;
 `
 
 export const StyledImage = styled(Image)`
