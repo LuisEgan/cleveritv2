@@ -1,0 +1,66 @@
+import React from 'react'
+import Image from 'gatsby-image'
+import { Link } from 'gatsby'
+import styled from 'styled-components'
+import { ReadLink } from '../../../../components/blog'
+
+export const ArticleWrapper = styled.article`
+	display: flex;
+	margin-top: 0;
+	padding-bottom: 1rem;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin: 1rem;
+`
+
+export const StyledLink = styled(Link)`
+	margin: 1rem 1rem 0 0;
+	width: 349px;
+	height: 302px;
+`
+
+export const StyledImage = styled(Image)`
+	* {
+		margin-top: 0;
+		border-radius: 2%;
+	}
+`
+
+export const Container = styled.div`
+	margin-top: 1rem;
+	text-align: left;
+	letter-spacing: 0;
+	color: #000000;
+	opacity: 1;
+`
+
+export const Description = styled.div`
+	display: flex;
+	margin-top: 1rem;
+	margin-bottom: -1rem;
+	text-align: left;
+	letter-spacing: 0;
+	color: #545454;
+	opacity: 1;
+`
+
+export const CardBlog = ({ post }) => {
+	return (
+		<ArticleWrapper>
+			<StyledLink to={post.slug}>
+				<StyledImage fluid={post.image.sharp.fluid} alt={post.title} />
+			</StyledLink>
+			<Description>
+				<p>
+					{post.author} | {post.creationDate} | {post.tag0}
+				</p>
+			</Description>
+			<Container>
+				<p>{post.excerpt}</p>
+				<ReadLink to={post.slug}>Ver más &rarr; </ReadLink>
+			</Container>
+		</ArticleWrapper>
+	)
+}
+
+export default CardBlog

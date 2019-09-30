@@ -32,6 +32,12 @@ module.exports = {
 			},
 		},
 		{
+			resolve: `gatsby-plugin-disqus`,
+			options: {
+				shortname: `www-cleverit-cl`,
+			},
+		},
+		{
 			resolve: `gatsby-transformer-remark`,
 			options: {
 				plugins: [`gatsby-remark-images`],
