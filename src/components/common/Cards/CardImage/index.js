@@ -8,9 +8,7 @@ const Container = styled.div`
 	background: #fff;
 	display: flex;
 	flex-direction: column;
-	width: 10vw;
 	min-width: 200px;
-	align-items: center;
 	background-color: transparent;
 
 	svg {
@@ -20,6 +18,20 @@ const Container = styled.div`
 	span {
 		padding: 2% 0;
 	}
+
+	img {
+		border-radius: 10px;
+	}
+
+	${props => {
+		const { width, height, titleAlign } = props
+
+		return `
+			align-items: ${titleAlign};		
+			width: ${width};
+			${height ? `height: ${height};` : ``}
+		`
+	}}
 `
 
 const Title = styled.span`
@@ -31,19 +43,26 @@ const Title = styled.span`
 const Description = styled.span`
 	font-size: 10pt;
 	color: ${colors.gray};
-	text-align: center;
+
+	${props => {
+		const { descAlign } = props
+
+		return `
+			text-align: ${descAlign};		
+		`
+	}}
 `
 
 const CardImage = props => {
-	const { image, title, description } = props
+	const { image, title, description, descAlign } = props
 
 	return (
-		<Container>
+		<Container {...props}>
 			{image}
 
 			<Title>{title}</Title>
 
-			<Description>{description}</Description>
+			<Description descAlign={descAlign}>{description}</Description>
 		</Container>
 	)
 }
@@ -51,6 +70,16 @@ const CardImage = props => {
 CardImage.propTypes = {
 	title: PropTypes.string,
 	description: PropTypes.string,
+	width: PropTypes.string,
+	height: PropTypes.string,
+	titleAlign: PropTypes.string,
+	descAlign: PropTypes.string,
+}
+
+CardImage.defaultProps = {
+	width: '10vw',
+	titleAlign: 'center',
+	descAlign: 'center',
 }
 
 export default CardImage

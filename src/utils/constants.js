@@ -1,4 +1,5 @@
 export const desktopMaxWidth = '960px'
+export const mobileMaxWidth = '480px'
 
 export const colors = {
 	purple: '#371A9F',

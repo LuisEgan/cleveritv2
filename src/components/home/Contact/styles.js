@@ -4,6 +4,8 @@ import { desktopMaxWidth } from '../../../utils/constants'
 export const Wrapper = styled.div`
 	padding: 4rem 0;
 	display: flex;
+	flex-direction: column;
+	width: 100%;
 	align-items: flex-start;
 	justify-content: space-between;
 
@@ -15,6 +17,7 @@ export const Wrapper = styled.div`
 export const Details = styled.div`
 	flex: 1;
 	padding-right: 2rem;
+	width: 100%;
 
 	@media (max-width: ${desktopMaxWidth}) {
 		padding-right: unset;
@@ -48,4 +51,9 @@ export const Thumbnail = styled.div`
 	img {
 		width: 100%;
 	}
+`
+
+export const Anchor = styled.div`
+	position: absolute;
+	margin-top: -20vh;
 `

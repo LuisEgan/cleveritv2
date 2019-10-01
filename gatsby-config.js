@@ -14,6 +14,9 @@ module.exports = {
 	plugins: [
 		'gatsby-plugin-react-helmet',
 		'gatsby-plugin-styled-components',
+		'gatsby-transformer-sharp',
+		'gatsby-plugin-sharp',
+		'gatsby-plugin-offline',
 		{
 			resolve: 'gatsby-plugin-mdx',
 			options: {
@@ -53,12 +56,25 @@ module.exports = {
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
+				name: 'falabella',
+				path: './projects/falabella',
+			},
+		},
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'wom',
+				path: './projects/wom',
+			},
+		},
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
 				name: 'images',
 				path: './static/jpgs',
 			},
 		},
-		'gatsby-transformer-sharp',
-		'gatsby-plugin-sharp',
+
 		{
 			resolve: 'gatsby-plugin-react-svg',
 			options: {
@@ -93,7 +109,6 @@ module.exports = {
 				icon: './static/favicon/IT.ico',
 			},
 		},
-		'gatsby-plugin-offline',
 		{
 			resolve: `gatsby-plugin-alias-imports`,
 			options: {

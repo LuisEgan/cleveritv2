@@ -31,7 +31,6 @@ const NavbarLinks = React.memo(({ desktop }) => {
 				<NavLink
 					isActive={currentPage === route}
 					onClick={() => {
-						console.log('route: ', route)
 						setCurrentPage(route)
 					}}
 					key={label}
@@ -52,6 +51,12 @@ const NavLink = styled.div`
 
 	&:hover {
 		cursor: pointer;
+	}
+
+	a {
+		height: 100%;
+		display: flex;
+		align-items: center;
 	}
 
 	@media (max-width: ${desktopMaxWidth}) {

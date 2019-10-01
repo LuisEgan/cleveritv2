@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { colors } from '../../../utils/constants'
 
 export const Global = createGlobalStyle`
   html {
@@ -296,6 +297,9 @@ export const Global = createGlobalStyle`
       text-rendering: optimizeLegibility;
       font-size: 0.78405rem;
       line-height: 1.1;
+    }
+    h1,h2,h3,h4,h5,h6 {
+      color: ${colors.purple}
     }
     hgroup {
       margin-left: 0;
