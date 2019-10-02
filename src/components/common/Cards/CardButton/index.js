@@ -13,6 +13,7 @@ const Container = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-self: self-end;
+	min-width: 150px;
 
 	${props => {
 		const { width } = props

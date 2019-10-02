@@ -25,6 +25,7 @@ export const ContentContainer = styled.div`
 	flex-wrap: wrap;
 	overflow: auto;
 	height: 100%;
+	padding: 0 2.5%;
 `
 
 export const Card = styled.div`
