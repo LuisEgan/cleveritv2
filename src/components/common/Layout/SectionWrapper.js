@@ -26,17 +26,22 @@ const InnerWrapper = styled.div`
 		flex-direction: column;
 	}
 
-	${({ innerJustify }) => `
-	  justify-content: ${innerJustify};
+	${({ innerJustify, innerHeight }) => `
+		justify-content: ${innerJustify};
+		${innerHeight ? `height: ${innerHeight}` : ``}
   `}
 `
 
 const SectionWrapper = props => {
-	const { children, innerJustify, ...bgProps } = props
+	const { children, innerJustify, innerHeight, ...bgProps } = props
 
 	return (
 		<Wrapper {...bgProps}>
-			<InnerWrapper as={Container} innerJustify={innerJustify}>
+			<InnerWrapper
+				as={Container}
+				innerJustify={innerJustify}
+				innerHeight={innerHeight}
+			>
 				{children}
 			</InnerWrapper>
 		</Wrapper>
@@ -47,6 +52,7 @@ SectionWrapper.propTypes = {
 	backgroundURL: PropTypes.string,
 	backgroundSize: PropTypes.string,
 	innerJustify: PropTypes.string,
+	innerHeight: PropTypes.string,
 }
 
 SectionWrapper.defaultProps = {

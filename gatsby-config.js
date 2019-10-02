@@ -47,35 +47,6 @@ module.exports = {
 			},
 		},
 		{
-			resolve: 'gatsby-source-filesystem',
-			options: {
-				name: 'posts',
-				path: 'posts',
-			},
-		},
-		{
-			resolve: 'gatsby-source-filesystem',
-			options: {
-				name: 'falabella',
-				path: './projects/falabella',
-			},
-		},
-		{
-			resolve: 'gatsby-source-filesystem',
-			options: {
-				name: 'wom',
-				path: './projects/wom',
-			},
-		},
-		{
-			resolve: 'gatsby-source-filesystem',
-			options: {
-				name: 'images',
-				path: './static/jpgs',
-			},
-		},
-
-		{
 			resolve: 'gatsby-plugin-react-svg',
 			options: {
 				rule: {
@@ -119,6 +90,86 @@ module.exports = {
 					Theme: path.resolve(__dirname, 'src/components/theme'),
 					Data: path.resolve(__dirname, 'data/config'),
 				},
+			},
+		},
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'images',
+				path: './static/jpgs',
+			},
+		},
+
+		// **********************
+		// * GraphQL MD readings
+		// **********************
+
+		// **** posts
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'posts',
+				path: './posts',
+			},
+		},
+
+		// **** projects
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'falabella',
+				path: './projects/falabella',
+			},
+		},
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'wom',
+				path: './projects/wom',
+			},
+		},
+
+		// **** jobs
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'jobs',
+				path: './jobs',
+			},
+		},
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'c#',
+				path: './jobs/c#',
+			},
+		},
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'devops',
+				path: './jobs/devops',
+			},
+		},
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'javascript',
+				path: './jobs/javascript',
+			},
+		},
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'qa',
+				path: './jobs/qa',
+			},
+		},
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'unity',
+				path: './jobs/unity',
 			},
 		},
 	],

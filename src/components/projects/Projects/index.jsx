@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 import SectionWrapper from '../../common/Layout/SectionWrapper'
 import { colors } from '../../../utils/constants'
-import { useProjectFalabella } from '../../../hooks/projects/useProjects'
+import { useProjectFalabella } from '../../../hooks/useProjects'
 
 export const Header = styled.div`
 	display: flex;
@@ -47,7 +47,6 @@ export const StyledLink = styled(Link)`
 
 export const Projects = () => {
 	const projects = useProjectFalabella()
-	console.log('projects: ', projects)
 	return <SectionWrapper backgroundURL="">:p</SectionWrapper>
 }
 

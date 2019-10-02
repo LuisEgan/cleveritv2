@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby'
 
-const proccessData = data => {
+const processData = data => {
 	data = data.allFile.nodes.map(project => {
 		const { childMdx } = project
 		if (!childMdx) return
@@ -39,7 +39,7 @@ export const useProjectFalabella = () => {
 		}
 	`)
 
-	return proccessData(data)
+	return processData(data)
 }
 
 export const useProjectWom = () => {
@@ -57,7 +57,7 @@ export const useProjectWom = () => {
 		}
 	`)
 
-	return proccessData(data)
+	return processData(data)
 }
 
 export const useProjectWhyx = () => {
@@ -75,7 +75,7 @@ export const useProjectWhyx = () => {
 		}
 	`)
 
-	return proccessData(data)
+	return processData(data)
 }
 
 export const useProjectCencosud = () => {
@@ -93,5 +93,5 @@ export const useProjectCencosud = () => {
 		}
 	`)
 
-	return proccessData(data)
+	return processData(data)
 }
