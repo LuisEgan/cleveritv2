@@ -1,5 +1,6 @@
 import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { Link } from 'gatsby'
 import { Button } from 'Common'
 import dev from 'Static/illustrations/dev.svg'
 
@@ -14,33 +15,36 @@ import ChileCompra from 'Static/svgs/logo-chilecompra.svg'
 import { Revolver } from '../../common'
 import SectionWrapper from '../../common/Layout/SectionWrapper'
 import { Details, Thumbnail } from './styles'
+import { routes } from '../../../utils/constants'
 
-export const Intro = () => (
-	<SectionWrapper>
-		<Details>
-			<h2>Ideas de negocio acompañadas de un gran equipo</h2>
-			<h5>
-				Somos un equipo multidisciplinario, capaz de acompañar tu proyecto desde
-				etapas tempranas a su etapa de madurez y garantizar éxito.
-			</h5>
-			<Button as={AnchorLink} href="#contact">
-				Ver casos de éxito
-			</Button>
-		</Details>
-		<Thumbnail>
-			{/* <img src={dev} alt="Cleverit" /> */}
-			<Revolver
-				// circletSize={10}
-				items={[
-					<Wom />,
-					<Saam />,
-					<Metro />,
-					<Falabella />,
-					<Dt />,
-					<ChileCompra />,
-					<Forus />,
-				]}
-			/>
-		</Thumbnail>
-	</SectionWrapper>
-)
+export const Intro = () => {
+	return (
+		<SectionWrapper>
+			<Details>
+				<h2>Ideas de negocio acompañadas de un gran equipo</h2>
+				<h5>
+					Somos un equipo multidisciplinario, capaz de acompañar tu proyecto
+					desde etapas tempranas a su etapa de madurez y garantizar éxito.
+				</h5>
+				<Button as={Link} to={routes.PROJECTS} offset={100}>
+					Ver casos de éxito
+				</Button>
+			</Details>
+			<Thumbnail>
+				{/* <img src={dev} alt="Cleverit" /> */}
+				<Revolver
+					// circletSize={10}
+					items={[
+						<Wom />,
+						<Saam />,
+						<Metro />,
+						<Falabella />,
+						<Dt />,
+						<ChileCompra />,
+						<Forus />,
+					]}
+				/>
+			</Thumbnail>
+		</SectionWrapper>
+	)
+}

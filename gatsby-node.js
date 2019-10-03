@@ -1,10 +1,13 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
 	const result = await graphql(`
 		query {
-			allMdx {
+			allFile(filter: { sourceInstanceName: { eq: "posts" } }) {
 				nodes {
-					frontmatter {
-						slug
+					childMdx {
+						frontmatter {
+							slug
+						}
+						excerpt
 					}
 				}
 			}
@@ -15,15 +18,32 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 		reporter.panic('failed to create posts', result.errors)
 	}
 
-	const posts = result.data.allMdx.nodes
+	const posts = result.data.allFile.nodes
 
 	posts.forEach(post => {
+		const { childMdx } = post
+		if (!childMdx) return
+
+		const {
+			frontmatter: { slug },
+		} = childMdx
+
 		actions.createPage({
-			path: post.frontmatter.slug,
+			path: slug,
 			component: require.resolve('./src/templates/post.js'),
 			context: {
-				slug: post.frontmatter.slug,
+				slug,
 			},
 		})
 	})
+}
+
+exports.onCreateWebpackConfig = ({ getConfig, stage }) => {
+	const config = getConfig()
+	if (stage.startsWith('develop') && config.resolve) {
+		config.resolve.alias = {
+			...config.resolve.alias,
+			'react-dom': '@hot-loader/react-dom',
+		}
+	}
 }

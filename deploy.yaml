@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: __name__
+  labels:
+    key1: __EnvironmentName__
+spec:
+  replicas: __replicas__
+  selector:
+    matchLabels:
+      app: __name__
+  template:
+    metadata:
+      labels:
+        app: __name__
+    spec:
+      containers:
+        - name: __name__
+          image: __acr__:__buildid__
+          resources:
+            requests:
+              cpu: __cpu__
+              memory: __memory__
+          ports:
+            - containerPort: 8000
+          env:
+            - name: PODNAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+      imagePullSecrets:
+        - name: __secret__
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: __name__
+spec:
+  type: LoadBalancer
+  ports:
+    - port: __port__
+      targetPort: 9000
+  selector:
+    app: __name__

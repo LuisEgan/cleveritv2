@@ -14,6 +14,9 @@ module.exports = {
 	plugins: [
 		'gatsby-plugin-react-helmet',
 		'gatsby-plugin-styled-components',
+		'gatsby-transformer-sharp',
+		'gatsby-plugin-sharp',
+		'gatsby-plugin-offline',
 		{
 			resolve: 'gatsby-plugin-mdx',
 			options: {
@@ -43,22 +46,6 @@ module.exports = {
 				plugins: [`gatsby-remark-images`],
 			},
 		},
-		{
-			resolve: 'gatsby-source-filesystem',
-			options: {
-				name: 'posts',
-				path: 'posts',
-			},
-		},
-		{
-			resolve: 'gatsby-source-filesystem',
-			options: {
-				name: 'images',
-				path: './static/jpgs',
-			},
-		},
-		'gatsby-transformer-sharp',
-		'gatsby-plugin-sharp',
 		{
 			resolve: 'gatsby-plugin-react-svg',
 			options: {
@@ -90,9 +77,12 @@ module.exports = {
 				background_color: config.backgroundColor,
 				theme_color: config.themeColor,
 				display: 'minimal-ui',
+<<<<<<< HEAD
+=======
+				icon: './static/favicon/IT.ico',
+>>>>>>> 54a203130c0fc8d2b8413325592379e582d8181a
 			},
 		},
-		'gatsby-plugin-offline',
 		{
 			resolve: `gatsby-plugin-alias-imports`,
 			options: {
@@ -103,6 +93,86 @@ module.exports = {
 					Theme: path.resolve(__dirname, 'src/components/theme'),
 					Data: path.resolve(__dirname, 'data/config'),
 				},
+			},
+		},
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'images',
+				path: './static/jpgs',
+			},
+		},
+
+		// **********************
+		// * GraphQL MD readings
+		// **********************
+
+		// **** posts
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'posts',
+				path: './posts',
+			},
+		},
+
+		// **** projects
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'falabella',
+				path: './projects/falabella',
+			},
+		},
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'wom',
+				path: './projects/wom',
+			},
+		},
+
+		// **** jobs
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'jobs',
+				path: './jobs',
+			},
+		},
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'c#',
+				path: './jobs/c#',
+			},
+		},
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'devops',
+				path: './jobs/devops',
+			},
+		},
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'javascript',
+				path: './jobs/javascript',
+			},
+		},
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'qa',
+				path: './jobs/qa',
+			},
+		},
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'unity',
+				path: './jobs/unity',
 			},
 		},
 	],
