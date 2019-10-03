@@ -6,7 +6,7 @@ import { colors } from '../../../utils/constants'
 const Container = styled.div`
 	display: flex;
 	width: 100%;
-	padding: 2.5% 0;
+	padding-bottom: 2%;
 	align-items: center;
 
 	span {

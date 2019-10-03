@@ -6,7 +6,7 @@ const processData = (data, tech) => {
 		const { childMdx } = project
 		if (!childMdx) return
 
-		const { frontmatter } = childMdx
+		const { frontmatter, rawBody } = childMdx
 
 		if (
 			tech !== 'all' &&
@@ -15,8 +15,11 @@ const processData = (data, tech) => {
 			return
 		}
 
+		const descriptionFull = rawBody.split('Description')[1]
+
 		return {
 			...frontmatter,
+			descriptionFull,
 		}
 	})
 
@@ -38,12 +41,12 @@ export const useJobs = tech => {
 				allFile(filter: { sourceInstanceName: { eq: "jobs" } }) {
 					nodes {
 						childMdx {
+							rawBody
 							frontmatter {
 								title
 								tech
 								creationDate
 								tag
-								description
 							}
 						}
 					}

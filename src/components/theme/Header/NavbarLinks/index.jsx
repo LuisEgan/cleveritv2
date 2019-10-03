@@ -47,7 +47,6 @@ const NavLink = styled.div`
 	justify-content: center;
 	align-items: center;
 	height: 120%;
-	padding: 0 5px;
 
 	&:hover {
 		cursor: pointer;
@@ -57,6 +56,7 @@ const NavLink = styled.div`
 		height: 100%;
 		display: flex;
 		align-items: center;
+		padding: 0 5px;
 	}
 
 	@media (max-width: ${desktopMaxWidth}) {

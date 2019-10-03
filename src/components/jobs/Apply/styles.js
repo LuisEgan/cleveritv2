@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { FadeOutLeft } from 'animate-css-styled-components'
 import { fontSizes, colors } from '../../../utils/constants'
 
 export const Container = styled.div`
@@ -23,12 +24,13 @@ export const ContentContainer = styled.div`
 	display: flex;
 	flex: 1;
 	flex-wrap: wrap;
-	overflow: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
 	height: 100%;
 	padding: 0 2.5%;
 `
 
-export const Card = styled.div`
+export const Card = styled(FadeOutLeft)`
 	margin-bottom: 3vh;
 	margin-right: 15px;
 `

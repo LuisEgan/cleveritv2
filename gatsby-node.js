@@ -1,27 +1,6 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
-	const result = await graphql(`
-		query {
-			allFile(filter: { sourceInstanceName: { eq: "posts" } }) {
-				nodes {
-					childMdx {
-						frontmatter {
-							slug
-						}
-						excerpt
-					}
-				}
-			}
-		}
-	`)
-
-	if (result.errors) {
-		reporter.panic('failed to create posts', result.errors)
-	}
-
-	const posts = result.data.allFile.nodes
-
-	posts.forEach(post => {
-		const { childMdx } = post
+	const _genPage = (model, templateUrl) => {
+		const { childMdx } = model
 		if (!childMdx) return
 
 		const {
@@ -30,12 +9,57 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
 		actions.createPage({
 			path: slug,
-			component: require.resolve('./src/templates/post.js'),
+			component: require.resolve(templateUrl),
 			context: {
 				slug,
 			},
 		})
-	})
+	}
+
+	try {
+		let posts = await graphql(`
+			query {
+				allFile(filter: { sourceInstanceName: { eq: "posts" } }) {
+					nodes {
+						childMdx {
+							frontmatter {
+								slug
+							}
+							excerpt
+						}
+					}
+				}
+			}
+		`)
+
+		let projects = await graphql(`
+			query {
+				allFile(filter: { sourceInstanceName: { eq: "projects" } }) {
+					nodes {
+						childMdx {
+							frontmatter {
+								slug
+								title
+							}
+							excerpt
+							rawBody
+						}
+					}
+				}
+			}
+		`)
+
+		const errors = posts.errors || projects.errors
+		if (errors) throw new Error(errors)
+
+		posts = posts.data.allFile.nodes
+		projects = projects.data.allFile.nodes
+
+		posts.forEach(post => _genPage(post, './src/templates/post.js'))
+		projects.forEach(project => _genPage(project, './src/templates/project.js'))
+	} catch (error) {
+		reporter.panic('failed to create posts', error)
+	}
 }
 
 exports.onCreateWebpackConfig = ({ getConfig, stage }) => {
