@@ -77,10 +77,7 @@ module.exports = {
 				background_color: config.backgroundColor,
 				theme_color: config.themeColor,
 				display: 'minimal-ui',
-<<<<<<< HEAD
-=======
 				icon: './static/favicon/IT.ico',
->>>>>>> 54a203130c0fc8d2b8413325592379e582d8181a
 			},
 		},
 		{
