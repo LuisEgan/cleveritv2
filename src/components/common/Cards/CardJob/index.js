@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { FadeOut } from 'animate-css-styled-components'
 import axios from 'axios'
 import { HiddenInput } from 'Common'
 import ArrowRight from 'Static/svgs/arrow_right.svg'
@@ -64,7 +63,10 @@ const CardJob = props => {
 					grant_type: 'client_credentials',
 				},
 			})
-			console.log('res 1: ', res)
+
+			const {
+				data: { access_token },
+			} = res
 
 			res = await axios({
 				method: 'post',
@@ -87,15 +89,24 @@ const CardJob = props => {
 						to: [
 							{
 								name: 'RRHH',
-								email: 'eganluis@gmail.com',
+								email: 'personas@cleverit.cl',
+							},
+						],
+						attachments: [
+							{
+								name: 'CV',
+								value: file,
 							},
 						],
 					},
 				},
 			})
-			console.log('res: ', res)
 
-			setFeedback(!false)
+			const {
+				data: { error_code },
+			} = res
+
+			setFeedback(!error_code)
 		} catch (error) {
 			console.log('error: ', error)
 		} finally {
