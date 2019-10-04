@@ -5,6 +5,7 @@ import * as Yup from 'yup'
 import { Button, Input } from 'Common'
 import { recaptcha_key } from 'Data'
 import { Error, Center, InputField } from './styles'
+import { sendEmail } from '../../../../utils/email'
 
 const ContactForm = ({
 	setFieldValue,
@@ -27,7 +28,7 @@ const ContactForm = ({
 				name="name"
 				component="input"
 				aria-label="name"
-				placeholder="Full name*"
+				placeholder="¿Cómo te llamas?*"
 				error={touched.name && errors.name}
 			/>
 			<ErrorMessage component={Error} name="name" />
@@ -54,7 +55,7 @@ const ContactForm = ({
 				rows="8"
 				type="text"
 				name="message"
-				placeholder="Message*"
+				placeholder="Mensaje*"
 				error={touched.message && errors.message}
 			/>
 			<ErrorMessage component={Error} name="message" />
@@ -82,7 +83,7 @@ const ContactForm = ({
 		)}
 		<Center>
 			<Button secondary type="submit" disabled={isSubmitting}>
-				Submit
+				Enviar
 			</Button>
 		</Center>
 	</Form>
@@ -98,12 +99,12 @@ export default withFormik({
 	}),
 	validationSchema: () =>
 		Yup.object().shape({
-			name: Yup.string().required('Full name field is required'),
+			name: Yup.string().required('¡Necesitamos tu nombre!'),
 			email: Yup.string()
-				.email('Invalid email')
-				.required('Email field is required'),
-			message: Yup.string().required('Message field is required'),
-			recaptcha: Yup.string().required('Robots are not welcome yet!'),
+				.email('¡Email inválido!')
+				.required('¡Necesitamos tu email!'),
+			message: Yup.string().required('¿Qué nos quieres decir? 🤔'),
+			recaptcha: Yup.string().required('¡Abajo Skynet! 🤖🤖🤖🤖'),
 		}),
 	handleSubmit: async (
 		{ name, email, message, recaptcha },
@@ -117,6 +118,7 @@ export default withFormik({
 					)
 					.join('&')
 			}
+
 			await fetch('/?no-cache=1', {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -130,8 +132,21 @@ export default withFormik({
 			})
 			await setSubmitting(false)
 			await setFieldValue('success', true)
-			setTimeout(() => resetForm(), 2000)
+
+			const res = await sendEmail({
+				to: 'personas@cleverit.cl',
+				html: `La persona de nombre ${name} e email ${email} escribió el siguiente mensaje: <br/> ${message}`,
+				subject: 'Contacto',
+			})
+
+			const {
+				data: { error_code, error, message },
+			} = res
+
+			if (error_code) throw new Error(message || error || error_code)
+			// setTimeout(() => resetForm(), 2000)
 		} catch (err) {
+			console.log('err: ', err)
 			setSubmitting(false)
 			setFieldValue('success', false)
 			alert('Something went wrong, please try again!') // eslint-disable-line
