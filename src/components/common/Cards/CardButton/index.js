@@ -70,19 +70,17 @@ const CardButton = props => {
 
 	return (
 		<Container {...styles}>
-			<div>
-				<Title>{title}</Title>
-				<br />
-				<br />
-				<Description>{description}</Description>
+			<Title>{title}</Title>
+			<br />
+			<br />
+			<Description>{description}</Description>
 
-				<Separator />
+			<Separator />
 
-				<Button offset={100} {...btnProps}>
-					<ButtonText>{btnText}</ButtonText>
-					<ButtonIcon>{btnIcon}</ButtonIcon>
-				</Button>
-			</div>
+			<Button offset={100} {...btnProps}>
+				<ButtonText>{btnText}</ButtonText>
+				<ButtonIcon>{btnIcon}</ButtonIcon>
+			</Button>
 		</Container>
 	)
 }

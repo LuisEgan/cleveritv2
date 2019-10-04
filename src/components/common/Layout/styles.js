@@ -2,10 +2,31 @@ import { createGlobalStyle } from 'styled-components'
 import { colors } from '../../../utils/constants'
 
 export const Global = createGlobalStyle`
+
+  * {
+    &::-webkit-scrollbar {
+      width: 0.5em;
+    }
+
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: darkgrey;
+      outline: 1px solid slategrey;
+      border-radius: 5px;
+    }
+  }
+
   html {
     font-family: 'Cereal Airbnb', Helvetica, sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+
+    
 
     article,
     aside,

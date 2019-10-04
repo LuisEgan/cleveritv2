@@ -22,14 +22,15 @@ const InnerWrapper = styled.div`
 	align-items: center;
 	flex-wrap: wrap;
 
-	@media (max-width: ${desktopMaxWidth}) {
-		flex-direction: column;
-	}
-
 	${({ innerJustify, innerHeight }) => `
 		justify-content: ${innerJustify};
 		${innerHeight ? `height: ${innerHeight}` : ``}
   `}
+
+	@media (max-width: ${desktopMaxWidth}) {
+		flex-direction: column;
+		height: unset;
+	}	
 `
 
 const SectionWrapper = props => {

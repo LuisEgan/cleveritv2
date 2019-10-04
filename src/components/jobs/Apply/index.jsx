@@ -19,9 +19,8 @@ export const Apply = props => {
 	const [tech, setTech] = useState('all')
 	const [cards, setCards] = useState([])
 	const [selectedJob, setSelectedJob] = useState()
-	console.log('selectedJob: ', selectedJob)
+	const [close, setClose] = useState(false)
 	const jobs = useJobs(tech)
-	console.log('jobs: ', jobs)
 
 	useEffect(() => {
 		const newCards = jobs.map(({ title, tech }) => {
@@ -36,6 +35,15 @@ export const Apply = props => {
 		})
 		setCards(newCards)
 	}, [tech])
+
+	const onSelectJob = title => {
+		setClose(true)
+
+		setTimeout(() => {
+			setSelectedJob(jobs.find(j => j.title === title))
+			setClose(false)
+		}, 700)
+	}
 
 	return (
 		<Container as={SectionWrapper} backgroundURL="" innerHeight="70vh">
@@ -61,16 +69,16 @@ export const Apply = props => {
 								as={CardButton}
 								title={title}
 								description={description}
-								onClick={() =>
-									setSelectedJob(jobs.find(j => j.title === title))
-								}
+								onClick={() => onSelectJob(title)}
+								duration=".5s"
+								playState={close ? 'running' : 'paused'}
 							/>
 						)
 					})}
 				</ContentContainer>
 			) : (
 				<ContentContainer>
-					<CardJob {...selectedJob} />
+					<CardJob {...selectedJob} onClose={() => setSelectedJob(null)} />
 				</ContentContainer>
 			)}
 		</Container>

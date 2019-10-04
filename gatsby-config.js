@@ -120,6 +120,13 @@ module.exports = {
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
+				name: 'projects',
+				path: './projects',
+			},
+		},
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
 				name: 'falabella',
 				path: './projects/falabella',
 			},
