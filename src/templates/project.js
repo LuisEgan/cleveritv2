@@ -29,8 +29,6 @@ const Container = styled.div`
 `
 
 const ProjectTemplate = obj => {
-	console.log('obj: ', obj)
-
 	const {
 		data: {
 			mdx: {
