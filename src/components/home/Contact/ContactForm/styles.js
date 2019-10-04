@@ -13,6 +13,12 @@ export const Center = styled.div`
 `
 
 export const InputField = styled.div`
-	position: relative;
 	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+
+	input,
+	textarea {
+		width: 100%;
+	}
 `

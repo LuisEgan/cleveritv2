@@ -1,11 +1,11 @@
 import React, { useRef, useState } from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import axios from 'axios'
 import { HiddenInput } from 'Common'
 import ArrowRight from 'Static/svgs/arrow_right.svg'
 import Upload from 'Static/svgs/upload.svg'
 import X from 'Static/svgs/x.svg'
+import Clock from 'Static/svgs/clock.svg'
 import {
 	Container,
 	Title,
@@ -20,6 +20,7 @@ import {
 	ButtonIcon,
 } from './styles'
 import { colors, fontSizes } from '../../../../utils/constants'
+import { sendEmail } from '../../../../utils/email'
 
 const CardJob = props => {
 	const {
@@ -48,65 +49,21 @@ const CardJob = props => {
 	const onSend = async () => {
 		setLoading(true)
 		try {
-			let res = await axios({
-				method: 'post',
-				url: 'https://api.sendpulse.com/oauth/access_token',
-				headers: {
-					Accept: 'application/json',
-					'Content-Type': 'application/json',
-					'Access-Control-Allow-Credentials': true,
-					crossdomain: true,
-				},
-				data: {
-					client_id: '0595c90a7bced1b05d27ef324ad8f374',
-					client_secret: '4d49214bed83779ab69b32816e30c905',
-					grant_type: 'client_credentials',
-				},
-			})
-
-			const {
-				data: { access_token },
-			} = res
-			console.log('res: ', res)
-
-			res = await axios({
-				method: 'post',
-				url: 'https://api.sendpulse.com/smtp/emails',
-				headers: {
-					'Content-Type': 'application/json',
-					key: 'Authorization',
-					value: `Bearer ${access_token}`,
-					'Access-Control-Allow-Credentials': true,
-					crossdomain: true,
-				},
-				data: {
-					email: {
-						html: `Aplicación de empleo de ${userName} de correo ${userEmail}. CV anexado.`,
-						subject: 'Aplicación a trabajo en Cleverit',
-						from: {
-							name: 'Cleverit',
-							email: 'admin@cleverit.cl',
-						},
-						to: [
-							{
-								name: 'RRHH',
-								email: 'personas@cleverit.cl',
-							},
-						],
-						attachments: [
-							{
-								name: 'CV',
-								value: file,
-							},
-						],
+			const res = await sendEmail({
+				to: 'personas@cleverit.cl',
+				html: `Aplicación de empleo de ${userName} de correo ${userEmail}. CV anexado.`,
+				subject: 'Aplicación a trabajo en Cleverit',
+				attachments: [
+					{
+						name: 'CV',
+						value: file,
 					},
-				},
+				],
 			})
 
 			const {
 				data: { error_code },
 			} = res
-			console.log('res: ', res)
 
 			setFeedback(!error_code)
 		} catch (error) {
@@ -172,9 +129,7 @@ const CardJob = props => {
 				<ButtonSend>
 					<Button onClick={onSend}>
 						<ButtonText>{loading ? 'Cargando... ' : 'Solicitar'}</ButtonText>
-						<ButtonIcon>
-							<ArrowRight />
-						</ButtonIcon>
+						<ButtonIcon>{loading ? <Clock /> : <ArrowRight />}</ButtonIcon>
 					</Button>
 				</ButtonSend>
 			)}

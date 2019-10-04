@@ -79,6 +79,7 @@ export const Button = styled(ButtonCommon)`
 	display: flex;
 	align-items: center;
 	width: 25%;
+	height: 2vh;
 `
 
 export const ButtonText = styled.div`

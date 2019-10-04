@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { desktopMaxWidth } from '../../../utils/constants'
+import { desktopMaxWidth, colors } from '../../../utils/constants'
 
 export const Wrapper = styled.div`
 	padding: 4rem 0;
@@ -28,7 +28,7 @@ export const Details = styled.div`
 	h1 {
 		margin-bottom: 2rem;
 		font-size: 26pt;
-		color: #212121;
+		color: ${colors.purple};
 	}
 
 	p {
@@ -55,5 +55,5 @@ export const Thumbnail = styled.div`
 
 export const Anchor = styled.div`
 	position: absolute;
-	margin-top: -20vh;
+	margin-top: -60vh;
 `

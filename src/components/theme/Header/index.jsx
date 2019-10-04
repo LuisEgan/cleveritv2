@@ -22,4 +22,5 @@ const Wrapper = styled.div`
 	width: 100%;
 	position: fixed;
 	z-index: 999;
+	box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
 `
