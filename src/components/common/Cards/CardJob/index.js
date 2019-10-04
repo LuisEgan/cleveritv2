@@ -67,6 +67,7 @@ const CardJob = props => {
 			const {
 				data: { access_token },
 			} = res
+			console.log('res: ', res)
 
 			res = await axios({
 				method: 'post',
@@ -105,6 +106,7 @@ const CardJob = props => {
 			const {
 				data: { error_code },
 			} = res
+			console.log('res: ', res)
 
 			setFeedback(!error_code)
 		} catch (error) {
