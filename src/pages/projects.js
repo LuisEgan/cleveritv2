@@ -7,6 +7,5 @@ export default () => (
 		<SEO />
 		<Header />
 		<ProjectsGrid />
-		<Projects />
 	</Layout>
 )

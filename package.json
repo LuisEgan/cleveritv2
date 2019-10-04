@@ -8,6 +8,7 @@
     "@mdx-js/mdx": "^1.4.5",
     "@mdx-js/react": "^1.4.5",
     "animate-css-styled-components": "^1.0.2",
+    "axios": "^0.19.0",
     "babel-plugin-styled-components": "^1.10.0",
     "dotenv": "^6.2.0",
     "formik": "^1.4.1",
