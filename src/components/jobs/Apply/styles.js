@@ -28,6 +28,7 @@ export const ContentContainer = styled.div`
 	overflow-x: hidden;
 	height: 100%;
 	padding: 0 2.5%;
+	justify-content: space-between;
 `
 
 export const Card = styled(FadeOutLeft)`

@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby'
 
-const usePosts = () => {
+const usePosts = topic => {
 	let data = useStaticQuery(graphql`
 		query {
 			allFile(filter: { sourceInstanceName: { eq: "posts" } }) {

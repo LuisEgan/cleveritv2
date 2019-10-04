@@ -1,5 +1,5 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
-	const _genPage = (model, templateUrl) => {
+	const _genPostPage = model => {
 		const { childMdx } = model
 		if (!childMdx) return
 
@@ -9,9 +9,19 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
 		actions.createPage({
 			path: slug,
-			component: require.resolve(templateUrl),
+			component: require.resolve('./src/templates/post.js'),
 			context: {
 				slug,
+			},
+		})
+	}
+
+	const _genProjectPage = project => {
+		actions.createPage({
+			path: project,
+			component: require.resolve('./src/templates/project.js'),
+			context: {
+				project,
 			},
 		})
 	}
@@ -32,31 +42,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 			}
 		`)
 
-		let projects = await graphql(`
-			query {
-				allFile(filter: { sourceInstanceName: { eq: "projects" } }) {
-					nodes {
-						childMdx {
-							frontmatter {
-								slug
-								title
-							}
-							excerpt
-							rawBody
-						}
-					}
-				}
-			}
-		`)
-
-		const errors = posts.errors || projects.errors
+		const { errors } = posts
 		if (errors) throw new Error(errors)
 
 		posts = posts.data.allFile.nodes
-		projects = projects.data.allFile.nodes
+		posts.forEach(post => _genPostPage(post))
 
-		posts.forEach(post => _genPage(post, './src/templates/post.js'))
-		projects.forEach(project => _genPage(project, './src/templates/project.js'))
+		const projects = ['falabella', 'wom', 'dt', 'forus', 'cleverit-labs']
+		projects.forEach(project => _genProjectPage(project))
 	} catch (error) {
 		reporter.panic('failed to create posts', error)
 	}

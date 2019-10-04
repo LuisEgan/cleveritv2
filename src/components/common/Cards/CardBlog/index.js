@@ -11,6 +11,7 @@ export const ArticleWrapper = styled.article`
 	flex-direction: column;
 	justify-content: space-evenly;
 	margin: 1rem;
+	max-width: 30vw;
 `
 
 export const StyledLink = styled(Link)`
