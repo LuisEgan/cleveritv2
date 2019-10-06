@@ -2,11 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import CardImage from '../../common/Cards/CardImage'
-import {
-	mobileMaxWidth,
-	projects,
-	desktopMaxWidth,
-} from '../../../utils/constants'
+import { projects, mobileMaxWidth } from '../../../utils/constants'
 
 const descAlign = 'left'
 const titleAlign = 'flex-start'
@@ -16,15 +12,15 @@ const Container = styled.div`
 	margin: 0 5vw;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-evenly;
 
 	a {
 		width: 40%;
 		min-width: 200px;
 	}
 
-	@media (max-width: ${desktopMaxWidth}) {
-		justify-content: space-evenly;
+	@media (max-width: ${mobileMaxWidth}) {
+		justify-content: center;
 	}
 `
 
