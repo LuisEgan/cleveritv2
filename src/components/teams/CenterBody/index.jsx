@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Button } from 'Common'
+import { Link } from 'gatsby'
 import Idea from 'Static/svgs/idea.svg'
 import IdeaMeasure from 'Static/svgs/ideaMeasure.svg'
 import Design from 'Static/svgs/design.svg'
-import { colors, desktopMaxWidth } from '../../../utils/constants'
+import { colors, desktopMaxWidth, routes } from '../../../utils/constants'
 import CardImage from '../../common/Cards/CardImage'
 import SectionWrapper from '../../common/Layout/SectionWrapper'
 
@@ -49,6 +50,10 @@ const Proud = styled.div`
 	display: flex;
 	flex-direction: column;
 	flex: 1;
+
+	a {
+		text-align: center;
+	}
 `
 
 const ProudImage = styled.div`
@@ -72,12 +77,13 @@ export const CenterBody = () => (
 				Creamos los mejores <br /> productos digitales
 			</h1>
 			<p>
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus,
-				quod quidem? Rerum magnam aliquam est? At deleniti perspiciatis
-				voluptate, necessitatibus tempore quis, tempora impedit ducimus
-				quibusdam obcaecati, iusto omnis a.
+				En lugar de encerrar a nuestros clientes en contratos a largo plazo,
+				hemos innovado un nuevo modelo de servicio en la forma de una
+				suscripción de diseño de bajo compromiso y tarifa plana. Este enfoque
+				adaptable nos permite evitar proyectos de alcance relleno, órdenes de
+				cambio, facturación por hora, reuniones de alcance y otras distracciones
+				típicas de la agencia.
 			</p>
-
 			<Cards>
 				<CardImage
 					image={<Idea />}
@@ -117,7 +123,7 @@ export const CenterBody = () => (
 			</p>
 		</Center>
 
-		<SectionWrapper innerJustify="space-between">
+		<SectionWrapper innerJustify="space-between" backgroundURL="x">
 			<Proud>
 				<h1>Orgullosos de nuestros resultados</h1>
 
@@ -128,11 +134,13 @@ export const CenterBody = () => (
 					illum.
 				</p>
 
-				<Button as={Button}>NUESTROS PROYECTOS</Button>
+				<Button as={Link} to={routes.PROJECTS}>
+					NUESTROS PROYECTOS
+				</Button>
 			</Proud>
 
 			<ProudImage>
-				<img src="../jpgs/programmer-bg.jpg" alt="veryProud" />
+				<img src="../pngs/splash1.png" alt="veryProud" />
 			</ProudImage>
 		</SectionWrapper>
 	</>

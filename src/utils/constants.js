@@ -43,6 +43,14 @@ export const techs = {
 	unity: 'Unity',
 }
 
+export const blogTopics = {
+	qa: 'QA',
+	devops: 'DevOps',
+	development: 'Development',
+	bi: 'BI',
+	alm: 'ALM',
+}
+
 export const projects = [
 	{
 		image: <img src={falabella} />,
@@ -53,10 +61,10 @@ export const projects = [
 	},
 	{
 		image: <img src={wom} />,
-		path: '/wom',
 		title: 'WOM',
+		path: '/wom',
 		description:
-			'Creamos la primera integración de Latinoamérica de open shift (Red Hat) con Azure DevOps (microsoft) y un innovador proyecto de transformación cultural y digital.',
+			'Creamos la primera integración de Latinoamérica de open shift (Red Hat) con Azure DevOps (Microsoft) y un innovador proyecto de transformación cultural y digital.',
 	},
 	{
 		image: <img src={dt} />,
@@ -76,7 +84,13 @@ export const projects = [
 		image: <img src={cleveritlab} />,
 		path: '/cleverit-labs',
 		title: 'Cleverit Labs',
+		description: '',
+	},
+	{
+		image: <img src={cleveritlab} />,
+		path: '/metro',
+		title: 'Metro Santiago',
 		description:
-			'Estamos liderando la revolución y transformación de aplicaciones core del negocio, para mejorar la propuesta de valor para los usuarios y clientes del mundo del retail.',
+			'Acompañando a Metro desde hace tiempo con nuestra experiencia en construcción de aplicaciones empresariales y de alta calidad, al día de hoy todas se encuentra en producción, y además acompañandolos en la implementación de Azure DevOps.',
 	},
 ]

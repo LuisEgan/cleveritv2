@@ -1,7 +1,20 @@
 import React from 'react'
 import { Container } from 'Common'
-import { Wrapper, Flex, Links, Details } from './styles'
-import social from './social.json'
+import { Link } from 'gatsby'
+import styled from 'styled-components'
+import { Wrapper, Flex, Details } from './styles'
+// import social from './social.json'
+
+export const DetailsFooter = styled(Details)`
+	display: flex;
+	align-content: flex-end;
+	flex-direction: column;
+	padding-top: 2rem;
+
+	p {
+		margin-bottom: 0;
+	}
+`
 
 export const Footer = () => (
 	<Wrapper>
@@ -10,6 +23,14 @@ export const Footer = () => (
 				<h2>Cleverit</h2>
 				<span>© {new Date().getFullYear()}</span>
 			</Details>
+
+			<DetailsFooter>
+				<p>
+					✈️Av Los Militares 6191, OF. 21 Las Condes, Santiago -{' '}
+					<strong>Chile</strong>
+				</p>
+				<p>📞+56 227170386</p>
+			</DetailsFooter>
 			{/* <Links>
 				{social.map(({ id, name, link, icon }) => (
 					<a

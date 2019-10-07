@@ -1,59 +1,37 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
+import { Button } from '../../../components/common'
 import { Details } from './styles'
 import usePost from '../../../hooks/usePosts'
 import { CardBlog } from '../../../components/common/Cards/CardBlog'
 import SectionWrapper from '../../common/Layout/SectionWrapper'
-import { colors } from '../../../utils/constants'
+import { routes, mobileMaxWidth } from '../../../utils/constants'
 
 export const Header = styled.div`
 	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
 
 	h2 {
 		font-size: 33pt;
-		flex: 1;
 	}
-`
-
-export const StyledLink = styled(Link)`
-	cursor: pointer;
-	border-radius: 9px;
-	padding: 1.1rem 2.5rem;
-	border: none;
-	-webkit-appearance: none;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	color: #fff;
-	background: ${colors.purple};
-	height: 25px;
-
-	&:focus {
-		outline: none;
+	@media only screen and (max-width: 768px) {
+		flex-wrap: wrap;
 	}
-
-	&:disabled {
-		background: gray;
-	}
-
-	${({ secondary }) =>
-		secondary &&
-		`
-		background: #001F3F;
-	`}
 `
 
 export const Body = styled.div`
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-between;
+
 	img {
 		max-width: 349px;
-		max-height: 302px;
+	}
+
+	@media only screen and (max-width: 768px) {
+		flex-wrap: wrap;
 	}
 `
 
@@ -64,7 +42,9 @@ export const Blog = () => {
 			<Details>
 				<Header>
 					<h2> Materíal para digerir</h2>
-					<StyledLink to="/blog">Ir al blog </StyledLink>
+					<Button as={Link} to={routes.BLOG}>
+						Ir al blog{' '}
+					</Button>
 				</Header>
 				<Body>
 					{posts.map(post => (

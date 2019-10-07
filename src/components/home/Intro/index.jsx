@@ -1,8 +1,6 @@
 import React from 'react'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Link } from 'gatsby'
 import { Button } from 'Common'
-import dev from 'Static/illustrations/dev.svg'
 
 import Wom from 'Static/svgs/wom.svg'
 import Saam from 'Static/svgs/saam.svg'
@@ -31,9 +29,7 @@ export const Intro = () => {
 				</Button>
 			</Details>
 			<Thumbnail>
-				{/* <img src={dev} alt="Cleverit" /> */}
 				<Revolver
-					// circletSize={10}
 					items={[
 						<Wom />,
 						<Saam />,

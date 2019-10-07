@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import { mobileMaxWidth, techs } from '../../../utils/constants'
+import { mobileMaxWidth, blogTopics } from '../../../utils/constants'
 import usePosts from '../../../hooks/usePosts'
 import CardBlog from '../../common/Cards/CardBlog'
 import Filter from '../../common/Filter'
@@ -22,18 +22,27 @@ const Container = styled.div`
 	}
 `
 
-export const BlogsGrid = props => {
+export const BlogsGrid = () => {
 	const [topic, setTopic] = useState('all')
+	const [blogPost, setBlogPost] = useState([])
 	const posts = usePosts(topic)
+
+	useEffect(() => {
+		const filteredPost = posts.filter(post => {
+			if (topic === 'all') return post
+			return post.tag === topic
+		})
+		setBlogPost(filteredPost)
+	}, [topic])
 
 	return (
 		<Container backgroundURL="">
 			<Filter
-				options={['Todas', ...Object.keys(techs).map(t => techs[t])]}
+				options={['Todas', ...Object.keys(blogTopics).map(t => blogTopics[t])]}
 				onSelect={selected => setTopic(selected)}
 			/>
 
-			{posts.map(post => (
+			{blogPost.map(post => (
 				<CardBlog key={post.slug} post={post} />
 			))}
 		</Container>

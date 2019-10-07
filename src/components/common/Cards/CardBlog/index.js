@@ -7,7 +7,6 @@ import { ReadLink } from '../../../../components/blog'
 export const ArticleWrapper = styled.article`
 	display: flex;
 	margin-top: 0;
-	padding-bottom: 1rem;
 	flex-direction: column;
 	justify-content: space-evenly;
 	margin: 1rem;
@@ -15,10 +14,8 @@ export const ArticleWrapper = styled.article`
 `
 
 export const StyledLink = styled(Link)`
-	margin: 1rem 1rem 0 0;
 	width: 100%;
 	height: 100%;
-	margin-bottom: -2rem;
 
 	img {
 		border-radius: 5px;
@@ -41,7 +38,6 @@ export const Container = styled.div`
 export const Description = styled.div`
 	display: flex;
 	margin-top: 1rem;
-	margin-bottom: -1rem;
 	text-align: left;
 	letter-spacing: 0;
 	color: #545454;

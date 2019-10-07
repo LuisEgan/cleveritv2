@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Button as CommonButton } from 'Common'
+import { Button } from 'Common'
+import { Link } from 'gatsby'
 import SectionWrapper from '../../common/Layout/SectionWrapper'
-import { fontSizes } from '../../../utils/constants'
+import { fontSizes, routes } from '../../../utils/constants'
 
 const Container = styled.div`
 	display: flex;
@@ -15,10 +16,11 @@ const Title = styled.span`
 	color: white;
 `
 
-const Button = styled.button`
+const StyledButton = styled(Button)`
 	background-color: transparent;
 	border: 2px solid white;
 	margin-top: 3vh;
+	text-align: center;
 `
 
 export const JoinUs = () => (
@@ -33,7 +35,9 @@ export const JoinUs = () => (
 				Únete a nuestro equipo
 			</Title>
 
-			<Button as={CommonButton}>POSTULA AHORA</Button>
+			<StyledButton as={Link} to={routes.JOBS}>
+				POSTULA AHORA
+			</StyledButton>
 		</Container>
 
 		<div />
