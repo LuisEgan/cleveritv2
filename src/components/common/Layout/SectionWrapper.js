@@ -9,6 +9,7 @@ const Wrapper = styled.div`
 	background-position: right top;
 	background-repeat: no-repeat;
 	overflow: hidden;
+	background-color: transparent;
 
 	${({ backgroundURL, backgroundSize }) => `
     background-image: url('${backgroundURL}');
@@ -57,7 +58,7 @@ SectionWrapper.propTypes = {
 }
 
 SectionWrapper.defaultProps = {
-	backgroundURL: '../illustrations/overlay.svg',
+	backgroundURL: '',
 	backgroundSize: 'contain',
 	innerJustify: 'space-evenly',
 }

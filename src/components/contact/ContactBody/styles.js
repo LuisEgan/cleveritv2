@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { desktopMaxWidth, colors } from '../../../utils/constants'
+import { desktopMaxWidth, colors } from '../../utils/constants'
 
 export const Wrapper = styled.div`
 	padding: 4rem 0;

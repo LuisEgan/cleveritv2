@@ -5,7 +5,7 @@ import * as Yup from 'yup'
 import { Button, Input } from 'Common'
 import { recaptcha_key } from 'Data'
 import { Error, Center, InputField } from './styles'
-import { sendEmail } from '../../../../utils/email'
+import { sendEmail } from '../../../utils/email'
 
 const ContactForm = ({
 	setFieldValue,

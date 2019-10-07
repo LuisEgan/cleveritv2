@@ -123,7 +123,7 @@ export const CenterBody = () => (
 			</p>
 		</Center>
 
-		<SectionWrapper innerJustify="space-between" backgroundURL="x">
+		<SectionWrapper innerJustify="space-between" backgroundURL="">
 			<Proud>
 				<h1>Orgullosos de nuestros resultados</h1>
 

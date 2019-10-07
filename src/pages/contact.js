@@ -1,13 +1,10 @@
 import React from 'react'
 import { Layout, SEO } from 'Common'
-import { Intro, Workflow, JoinUs, Blog } from 'Components/home'
+import { ContactBody } from '../components/contact'
 
 export default () => (
 	<Layout>
 		<SEO />
-		<Intro />
-		<Workflow />
-		<Blog />
-		<JoinUs />
+		<ContactBody />
 	</Layout>
 )

@@ -17,7 +17,7 @@ import { routes } from '../../../utils/constants'
 
 export const Intro = () => {
 	return (
-		<SectionWrapper>
+		<SectionWrapper backgroundURL="">
 			<Details>
 				<h2>Ideas de negocio acompañadas de un gran equipo</h2>
 				<h5>

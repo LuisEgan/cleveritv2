@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1916" height="4492" viewBox="0 0 1916 4492">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.469" y1="0.076" x2="0.5" y2="1.282" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#f4f7f6"/>
+    </linearGradient>
+    <clipPath id="clip-bg_body_cleverit">
+      <rect width="1916" height="4492"/>
+    </clipPath>
+  </defs>
+  <g id="bg_body_cleverit" clip-path="url(#clip-bg_body_cleverit)">
+    <rect width="1916" height="4492" fill="#f4f7f6"/>
+    <g id="Grupo_2683" data-name="Grupo 2683">
+      <rect id="Rectángulo_1608" data-name="Rectángulo 1608" width="1916" height="4492" fill="#f4f7f6"/>
+      <path id="Trazado_1575" data-name="Trazado 1575" d="M3685.346,1673.5c-279.974,406.53-641.414,448.183-1070.769,391.154-367.379-48.8-757.73-191.953-1108.77-80.2-349.959,111.415-604.629,351.845-968.5,297.357C49.44,2208.755-130.316,1779.7-70.247,1383.907,13.031,835.143,493.245,602.651,945.983,681.4c374.648,65.162,770.653,142.849,1126.557-77.362C2400.345,401.213,2648.464-91.4,3079.948-61.325,3569.314-27.211,4203.18,921.612,3685.346,1673.5Z" transform="translate(-1198 2255.243)" fill="url(#linear-gradient)"/>
+      <path id="Trazado_49" data-name="Trazado 49" d="M2071.555,846.167c-160.024,212.8-366.612,234.609-612.018,204.756-209.982-25.545-433.1-100.481-633.738-41.981-200.026,58.322-345.587,184.179-553.565,155.656C-6.616,1126.358-109.359,901.76-75.025,694.578c47.6-287.26,322.074-408.961,580.845-367.74,214.137,34.11,440.481,74.777,643.905-40.5,187.363-106.171,329.18-364.037,575.8-348.294C2005.234-44.1,2367.533,452.581,2071.555,846.167Z" transform="translate(-145.6 752.182)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

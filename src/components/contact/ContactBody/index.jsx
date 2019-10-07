@@ -1,11 +1,10 @@
 import React from 'react'
-import { Container } from 'Common'
 import contact from 'Static/illustrations/contact.svg'
-import { Wrapper, Details, Thumbnail, Anchor } from './styles'
-import ContactForm from './ContactForm'
+import { Wrapper, Details, Thumbnail, Anchor } from '../ContactForm/styles'
+import ContactForm from '../ContactForm'
 import SectionWrapper from '../../common/Layout/SectionWrapper'
 
-export const Contact = () => (
+export const ContactBody = () => (
 	<Wrapper as={SectionWrapper}>
 		<Anchor id="contact" />
 		<Details>
@@ -17,3 +16,5 @@ export const Contact = () => (
 		</Thumbnail>
 	</Wrapper>
 )
+
+export default ContactBody
