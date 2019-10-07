@@ -6,7 +6,7 @@ const processData = (data, tech) => {
 		const { childMdx } = project
 		if (!childMdx) return
 
-		const { frontmatter, rawBody } = childMdx
+		const { frontmatter, rawBody, body } = childMdx
 
 		if (
 			tech !== 'all' &&
@@ -20,6 +20,7 @@ const processData = (data, tech) => {
 		return {
 			...frontmatter,
 			descriptionFull,
+			body,
 		}
 	})
 
@@ -48,6 +49,7 @@ export const useJobs = tech => {
 								creationDate
 								tag
 							}
+							body
 						}
 					}
 				}

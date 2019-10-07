@@ -172,12 +172,5 @@ module.exports = {
 				path: './jobs/qa',
 			},
 		},
-		{
-			resolve: 'gatsby-source-filesystem',
-			options: {
-				name: 'unity',
-				path: './jobs/unity',
-			},
-		},
 	],
 }

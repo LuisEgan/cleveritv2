@@ -6,6 +6,7 @@ import ArrowRight from 'Static/svgs/arrow_right.svg'
 import Upload from 'Static/svgs/upload.svg'
 import X from 'Static/svgs/x.svg'
 import Clock from 'Static/svgs/clock.svg'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 import {
 	Container,
 	Title,
@@ -26,6 +27,7 @@ const CardJob = props => {
 	const {
 		title,
 		descriptionFull,
+		body,
 		tech,
 		onSend: onSendProp,
 		onUpload: onUploadProp,
@@ -99,7 +101,9 @@ const CardJob = props => {
 
 				<Separator />
 
-				<Description>{descriptionFull}</Description>
+				<Description>
+					<MDXRenderer>{body}</MDXRenderer>
+				</Description>
 
 				<Inputs>
 					<Input
