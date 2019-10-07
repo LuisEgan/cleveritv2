@@ -47,7 +47,7 @@ export const Description = styled.div`
 export const CardBlog = ({ post }) => {
 	return (
 		<ArticleWrapper>
-			<StyledLink to={post.slug}>
+			<StyledLink to={`/${post.slug}`}>
 				<StyledImage fluid={post.image.sharp.fluid} alt={post.title} />
 			</StyledLink>
 			<Description>
@@ -57,7 +57,7 @@ export const CardBlog = ({ post }) => {
 			</Description>
 			<Container>
 				<p>{post.excerpt}</p>
-				<ReadLink to={post.slug}>Ver más &rarr; </ReadLink>
+				<ReadLink to={`/${post.slug}`}>Ver más &rarr; </ReadLink>
 			</Container>
 		</ArticleWrapper>
 	)

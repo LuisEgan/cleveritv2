@@ -26,7 +26,7 @@ export const Footer = () => (
 
 			<DetailsFooter>
 				<p>
-					✈️Av Los Militares 6191, OF. 21 Las Condes, Santiago -{' '}
+					❤️Av Los Militares 6191, OF. 21 Las Condes, Santiago -{' '}
 					<strong>Chile</strong>
 				</p>
 				<p>📞+56 227170386</p>

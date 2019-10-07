@@ -30,7 +30,7 @@ export const BlogContainer = styled(Container)`
 
 const PostTemplate = ({ data: { mdx: post } }) => {
 	const disqusConfig = {
-		url: `https://cleverit.cl/${location.pathname}`,
+		url: `https://cleverit.cl/${post.slug}`,
 		identifier: post.slug,
 		title: post.title,
 	}

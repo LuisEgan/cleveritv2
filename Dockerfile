@@ -1,16 +1,13 @@
-FROM node:10
+FROM node:11-alpine AS build
 
-# Create app directory
-WORKDIR /usr/src/app
+RUN apk add --no-cache --virtual .gyp python make g++ libpng-dev
 
-RUN npm install -g yarn
+WORKDIR /app
+ENV NODE_ENV=production
 
-# Bundle app source
+COPY package.json yarn.lock ./
+RUN yarn --frozen-lockfile --non-interactive
+
 COPY . .
-RUN yarn install --production && yarn cache clean
-RUN yarn global add node-gyp
-RUN yarn global add gatsby-cli
+RUN npm install
 RUN yarn build
-
-EXPOSE 9000
-CMD [ "yarn", "serve" ]

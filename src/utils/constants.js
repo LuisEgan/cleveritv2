@@ -84,7 +84,8 @@ export const projects = [
 		image: <img src={cleveritlab} />,
 		path: '/cleverit-labs',
 		title: 'Cleverit Labs',
-		description: '',
+		description:
+			'Nuestra área de Labs es el habilitador técnico para crear a través de una identidad y ecosistema de Company Builinging, las mejores soluciones y plataformas para revolucionar las industria.',
 	},
 	{
 		image: <img src={cleveritlab} />,

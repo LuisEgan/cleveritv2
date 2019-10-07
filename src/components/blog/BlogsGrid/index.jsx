@@ -28,6 +28,7 @@ export const BlogsGrid = () => {
 	const posts = usePosts(topic)
 
 	useEffect(() => {
+		console.log('TCL: BlogsGrid -> topic', topic)
 		const filteredPost = posts.filter(post => {
 			if (topic === 'all') return post
 			return post.tag === topic
