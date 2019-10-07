@@ -115,7 +115,7 @@ const CardJob = props => {
 					/>
 				</Inputs>
 
-				<ButtonUpload onClick={() => file.current.click()}>
+				<ButtonUpload onClick={() => fileRef.current.click()}>
 					<HiddenInput ref={fileRef} type="file" onChange={onUpload} />
 					<span>Compartir curriculum / CV</span>
 

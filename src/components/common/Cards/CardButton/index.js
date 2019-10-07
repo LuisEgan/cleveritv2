@@ -38,7 +38,7 @@ const Separator = styled.div`
 	width: 45%;
 	margin: 15px 0;
 `
-const Button = styled(ButtonCommon)`
+const Button = styled.button`
 	display: flex;
 	padding: 15px 0;
 	width: 100%;
@@ -77,7 +77,7 @@ const CardButton = props => {
 
 			<Separator />
 
-			<Button offset={100} {...btnProps}>
+			<Button offset={100} as={ButtonCommon} {...btnProps}>
 				<ButtonText>{btnText}</ButtonText>
 				<ButtonIcon>{btnIcon}</ButtonIcon>
 			</Button>
