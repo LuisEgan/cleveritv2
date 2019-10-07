@@ -53,15 +53,22 @@ const Description = styled.span`
 	}}
 `
 
+const StyledImage = styled.div`
+	width: 582px;
+	height: 452px;
+
+	img {
+		object-fit: cover;
+	}
+`
+
 const CardImage = props => {
-	const { image, title, description, descAlign } = props
+	const { image, title, description, descAlign, thumnails } = props
 
 	return (
 		<Container {...props}>
-			{image}
-
+			{!thumnails ? <StyledImage>{image}</StyledImage> : image}
 			<Title>{title}</Title>
-
 			<Description descAlign={descAlign}>{description}</Description>
 		</Container>
 	)
@@ -74,12 +81,14 @@ CardImage.propTypes = {
 	height: PropTypes.string,
 	titleAlign: PropTypes.string,
 	descAlign: PropTypes.string,
+	thumnails: PropTypes.bool,
 }
 
 CardImage.defaultProps = {
 	width: '10vw',
 	titleAlign: 'center',
 	descAlign: 'center',
+	thumnails: true,
 }
 
 export default CardImage

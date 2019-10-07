@@ -4,6 +4,7 @@ import wom from 'Static/pngs/wom-portada.png'
 import dt from 'Static/pngs/dt-portada.png'
 import forus from 'Static/pngs/forus-app.png'
 import cleveritlab from 'Static/pngs/cleveritlab.png'
+import metro from 'Static/pngs/metro - web directores.png'
 
 export const desktopMaxWidth = '960px'
 export const mobileMaxWidth = '480px'
@@ -88,7 +89,7 @@ export const projects = [
 			'Nuestra área de Labs es el habilitador técnico para crear a través de una identidad y ecosistema de Company Builinging, las mejores soluciones y plataformas para revolucionar las industria.',
 	},
 	{
-		image: <img src={cleveritlab} />,
+		image: <img src={metro} />,
 		path: '/metro',
 		title: 'Metro Santiago',
 		description:

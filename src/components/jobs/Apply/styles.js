@@ -34,4 +34,5 @@ export const ContentContainer = styled.div`
 export const Card = styled(FadeOutLeft)`
 	margin-bottom: 3vh;
 	margin-right: 15px;
+	padding: 5% 5%;
 `
