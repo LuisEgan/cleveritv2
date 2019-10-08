@@ -45,6 +45,20 @@ export const Apply = props => {
 		}, 700)
 	}
 
+	const alignJobs = () => {
+		if (cards.length % 2 !== 0 && cards.length > 3)
+			return (
+				<div
+					style={{
+						width: '10vw',
+						marginBottom: '3vh',
+						marginRight: '15px',
+						padding: '5% 5%',
+					}}
+				/>
+			)
+	}
+
 	return (
 		<Container as={SectionWrapper} backgroundURL="" innerHeight="70vh">
 			<Filter
@@ -75,6 +89,7 @@ export const Apply = props => {
 							/>
 						)
 					})}
+					{alignJobs()}
 				</ContentContainer>
 			) : (
 				<ContentContainer>

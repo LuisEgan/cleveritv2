@@ -1,5 +1,5 @@
 import React from 'react'
-// import contact from 'Static/svgs/illus-portada.svg'
+import Contact from 'Static/svgs/illus-portada.svg'
 import styled from 'styled-components'
 import { Wrapper, Details, Thumbnail, Anchor } from '../ContactForm/styles'
 import ContactForm from '../ContactForm'
@@ -12,7 +12,9 @@ export const ContactBody = () => (
 			<h1>Contacto</h1>
 			<ContactForm />
 		</Details>
-		<Thumbnail />
+		<Thumbnail>
+			<Contact />
+		</Thumbnail>
 	</Wrapper>
 )
 

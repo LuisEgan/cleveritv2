@@ -76,7 +76,7 @@ export const CenterBody = () => (
 			<h1>
 				Creamos los mejores <br /> productos digitales
 			</h1>
-			<p>
+			<p style={{ textAlign: 'justify' }}>
 				En lugar de encerrar a nuestros clientes en contratos a largo plazo,
 				hemos innovado un nuevo modelo de servicio en la forma de una
 				suscripción de diseño de bajo compromiso y tarifa plana. Este enfoque
@@ -106,20 +106,20 @@ export const CenterBody = () => (
 				Encofados en obtener <br />
 				los mejores resultados
 			</h1>
-			<p>
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus,
-				quod quidem? Rerum magnam aliquam est? At deleniti perspiciatis
-				voluptate, necessitatibus tempore quis, tempora impedit ducimus
-				quibusdam obcaecati, iusto omnis a.
+			<p style={{ textAlign: 'justify' }}>
+				Somos una organización en la que cada uno de nuestros{' '}
+				<strong>Cleverianos</strong> tienen el conocimiento, la habilidad, el
+				deseo y la oportunidad de tener éxito personal, de manera que llegamos
+				al éxito organizativo colectivo.
 			</p>
 
 			<Dev src="../illustrations/dev.svg" />
 
-			<p>
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus,
-				quod quidem? Rerum magnam aliquam est? At deleniti perspiciatis
-				voluptate, necessitatibus tempore quis, tempora impedit ducimus
-				quibusdam obcaecati, iusto omnis a.
+			<p style={{ textAlign: 'justify' }}>
+				En <strong>Cleverit</strong> tenemos un entorno de trabajo orientado a
+				resultados y una estrategia de gestión de personal en el trabajo, en la
+				cual cada uno de los <strong>Cleverianos</strong> son retribuidos en
+				función de los resultados en vez de las horas trabajadas.
 			</p>
 		</Center>
 
@@ -127,11 +127,10 @@ export const CenterBody = () => (
 			<Proud>
 				<h1>Orgullosos de nuestros resultados</h1>
 
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
-					labore sequi illo consequatur maiores cumque aliquam delectus rem.
-					Magni ab ratione aut at nihil hic, alias dolorem blanditiis sint
-					illum.
+				<p style={{ textAlign: 'justify' }}>
+					Hoy nos encontramos orgullos de nuestros logros y nuestro trabajo
+					ayudando a nuestro clientes, te invitamos a revisar algunos de
+					nuestros proyectos más emblemticos.
 				</p>
 
 				<Button as={Link} to={routes.PROJECTS}>

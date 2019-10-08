@@ -48,7 +48,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 		posts = posts.data.allFile.nodes
 		posts.forEach(post => _genPostPage(post))
 
-		const projects = ['falabella', 'wom', 'dt', 'forus', 'cleverit-labs']
+		const projects = [
+			'falabella',
+			'wom',
+			'dt',
+			'forus',
+			'cleverit-labs',
+			'metro',
+		]
 		projects.forEach(project => _genProjectPage(project))
 	} catch (error) {
 		reporter.panic('failed to create posts', error)
