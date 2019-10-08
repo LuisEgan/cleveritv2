@@ -63,11 +63,11 @@ const StyledImage = styled.div`
 `
 
 const CardImage = props => {
-	const { image, title, description, descAlign, thumnails } = props
+	const { image, title, description, descAlign, thumbnail } = props
 
 	return (
 		<Container {...props}>
-			{!thumnails ? <StyledImage>{image}</StyledImage> : image}
+			{!thumbnail ? <StyledImage>{image}</StyledImage> : image}
 			<Title>{title}</Title>
 			<Description descAlign={descAlign}>{description}</Description>
 		</Container>
@@ -81,14 +81,14 @@ CardImage.propTypes = {
 	height: PropTypes.string,
 	titleAlign: PropTypes.string,
 	descAlign: PropTypes.string,
-	thumnails: PropTypes.bool,
+	thumbnail: PropTypes.bool,
 }
 
 CardImage.defaultProps = {
 	width: '10vw',
 	titleAlign: 'center',
 	descAlign: 'center',
-	thumnails: true,
+	thumbnail: true,
 }
 
 export default CardImage

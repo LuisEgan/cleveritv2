@@ -14,7 +14,7 @@ import { techs } from '../../../utils/constants'
 import CardJob from '../../common/Cards/CardJob'
 
 export const Apply = props => {
-	const { title, description, btnText, btnIcon } = props
+	// const { title, description, btnText, btnIcon } = props
 
 	const [tech, setTech] = useState('all')
 	const [cards, setCards] = useState([])

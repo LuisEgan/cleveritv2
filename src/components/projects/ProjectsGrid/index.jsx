@@ -35,7 +35,7 @@ export const ProjectsGrid = props => {
 							width="100%"
 							descAlign={descAlign}
 							titleAlign={titleAlign}
-							thumnails={false}
+							thumbnail={false}
 						/>
 					</Link>
 				)

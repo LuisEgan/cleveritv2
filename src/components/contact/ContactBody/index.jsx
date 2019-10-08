@@ -1,5 +1,6 @@
 import React from 'react'
-import contact from 'Static/illustrations/contact.svg'
+// import contact from 'Static/svgs/illus-portada.svg'
+import styled from 'styled-components'
 import { Wrapper, Details, Thumbnail, Anchor } from '../ContactForm/styles'
 import ContactForm from '../ContactForm'
 import SectionWrapper from '../../common/Layout/SectionWrapper'
@@ -11,9 +12,7 @@ export const ContactBody = () => (
 			<h1>Contacto</h1>
 			<ContactForm />
 		</Details>
-		<Thumbnail>
-			<img src={contact} alt="Cleverit :)!" />
-		</Thumbnail>
+		<Thumbnail />
 	</Wrapper>
 )
 
