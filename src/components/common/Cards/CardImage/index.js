@@ -54,8 +54,8 @@ const Description = styled.span`
 `
 
 const StyledImage = styled.div`
-	width: 582px;
-	height: 452px;
+	max-width: 582px;
+	max-height: 452px;
 
 	img {
 		object-fit: cover;

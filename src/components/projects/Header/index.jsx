@@ -17,11 +17,11 @@ export const Header = props => {
 		<Container>
 			<h1>Las grandes relaciones producen grandes resultados</h1>
 
-			<p>
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-				adipisci et similique, reprehenderit nemo minus ab incidunt dolore quod
-				laboriosam dolor tenetur optio modi, dolorum aliquid excepturi beatae.
-				Iure, cum?
+			<p style={{ textAlign: 'center' }}>
+				Nos motiva enfrentar los desafíos de transformación digital. Somos
+				innovadores y aplicamos tecnología de punta para desarrollar software
+				que agiliza la dinámica digital y agrega ventajas competitivas a
+				nuestros clientes.
 			</p>
 		</Container>
 	)

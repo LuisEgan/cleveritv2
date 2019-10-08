@@ -41,7 +41,7 @@ export const techs = {
 	devops: 'DevOps',
 	javascript: 'Javascript',
 	qa: 'QA',
-	unity: 'Unity',
+	// unity: 'Unity',
 }
 
 export const blogTopics = {

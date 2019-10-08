@@ -8,6 +8,13 @@ const Container = styled.div`
 	width: 100%;
 	padding-bottom: 2%;
 	align-items: center;
+	-ms-overflow-style: none; // IE 10+
+	scrollbar-width: none; // Firefox
+	overflow-x: auto;
+
+	&::-webkit-scrollbar {
+		display: none; // Safari and Chrome
+	}
 
 	span {
 		padding-right: 50px;
