@@ -60,7 +60,7 @@ const ContactForm = ({
 			/>
 			<ErrorMessage component={Error} name="message" />
 		</InputField>
-		{values.name && values.email && values.message && (
+		{/* {values.name && values.email && values.message && (
 			<InputField>
 				<FastField
 					component={Recaptcha}
@@ -70,7 +70,7 @@ const ContactForm = ({
 				/>
 				<ErrorMessage component={Error} name="recaptcha" />
 			</InputField>
-		)}
+		)} */}
 		{values.success && (
 			<InputField>
 				<Center>
@@ -104,7 +104,7 @@ export default withFormik({
 				.email('¡Email inválido!')
 				.required('¡Necesitamos tu email!'),
 			message: Yup.string().required('¿Qué nos quieres decir? 🤔'),
-			recaptcha: Yup.string().required('¡Abajo Skynet! 🤖🤖🤖🤖'),
+			// recaptcha: Yup.string().required('¡Abajo Skynet! 🤖🤖🤖🤖'),
 		}),
 	handleSubmit: async (
 		{ name, email, message, recaptcha },
