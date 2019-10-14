@@ -1,16 +1,20 @@
 import axios from 'axios'
 
+const API_USER_ID = '0595c90a7bced1b05d27ef324ad8f374'
+const API_SECRET = '4d49214bed83779ab69b32816e30c905'
+
 export const sendEmail = async ({ to, html, subject, attachments, cb }) => {
 	try {
 		let res = await axios({
 			method: 'POST',
 			url: 'https://api.sendpulse.com/oauth/access_token',
 			headers: {
+				Accept: 'application/json',
 				'Content-Type': 'application/json',
 			},
 			data: {
-				client_id: '0595c90a7bced1b05d27ef324ad8f374',
-				client_secret: '4d49214bed83779ab69b32816e30c905',
+				client_id: API_USER_ID,
+				client_secret: API_SECRET,
 				grant_type: 'client_credentials',
 			},
 		})

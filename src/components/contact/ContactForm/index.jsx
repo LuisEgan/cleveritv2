@@ -134,7 +134,7 @@ export default withFormik({
 			await setFieldValue('success', true)
 
 			const res = await sendEmail({
-				to: 'personas@cleverit.cl',
+				to: 'l@cleverit.cl',
 				html: `La persona de nombre ${name} e email ${email} escribió el siguiente mensaje: <br/> ${message}`,
 				subject: 'Contacto',
 			})
