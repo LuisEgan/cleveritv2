@@ -3,13 +3,12 @@ import axios from 'axios'
 export const sendEmail = async ({ to, html, subject, attachments, cb }) => {
 	try {
 		let res = await axios({
-			method: 'post',
+			method: 'POST',
 			url: 'https://api.sendpulse.com/oauth/access_token',
 			headers: {
 				Accept: 'application/json',
 				'Content-Type': 'application/json',
-				'Access-Control-Allow-Credentials': true,
-				crossdomain: true,
+				'Access-Control-Allow-Origin': '*',
 			},
 			data: {
 				client_id: '0595c90a7bced1b05d27ef324ad8f374',
@@ -21,16 +20,16 @@ export const sendEmail = async ({ to, html, subject, attachments, cb }) => {
 		const {
 			data: { access_token },
 		} = res
+		console.log('TCL: sendEmail -> access_token', access_token)
 
 		res = await axios({
-			method: 'post',
+			method: 'POST',
 			url: 'https://api.sendpulse.com/smtp/emails',
 			headers: {
 				'Content-Type': 'application/json',
 				key: 'Authorization',
 				value: `Bearer ${access_token}`,
-				'Access-Control-Allow-Credentials': true,
-				crossdomain: true,
+				'Access-Control-Allow-Origin': '*',
 			},
 			data: {
 				email: {
