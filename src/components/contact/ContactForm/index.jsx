@@ -7,13 +7,35 @@ import { recaptcha_key } from 'Data'
 import { Error, Center, InputField } from './styles'
 import { sendEmail } from '../../../utils/email'
 
-const ContactForm = ({
-	setFieldValue,
-	isSubmitting,
-	values,
-	errors,
-	touched,
-}) => (
+const inputs = [
+	{
+		'aria-label': 'name',
+		id: 'name',
+		type: 'text',
+		name: 'name',
+		component: 'input',
+		placeholder: '¿Cómo te llamas?*',
+	},
+	{
+		'aria-label': 'email',
+		id: 'email',
+		type: 'email',
+		name: 'email',
+		component: 'input',
+		placeholder: 'Email*',
+	},
+	{
+		'aria-label': 'message',
+		id: 'message',
+		type: 'text',
+		name: 'message',
+		component: 'textarea',
+		placeholder: 'Mensaje*',
+		rows: '8',
+	},
+]
+
+const ContactForm = ({ isSubmitting, values, errors, touched }) => (
 	<Form
 		name="contact"
 		method="post"
@@ -21,46 +43,22 @@ const ContactForm = ({
 		data-netlify-recaptcha="true"
 		data-netlify-honeypot="bot-field"
 	>
-		<InputField>
-			<Input
-				as={FastField}
-				type="text"
-				name="name"
-				component="input"
-				aria-label="name"
-				placeholder="¿Cómo te llamas?*"
-				error={touched.name && errors.name}
-			/>
-			<ErrorMessage component={Error} name="name" />
-		</InputField>
-		<InputField>
-			<Input
-				id="email"
-				aria-label="email"
-				component="input"
-				as={FastField}
-				type="email"
-				name="email"
-				placeholder="Email*"
-				error={touched.email && errors.email}
-			/>
-			<ErrorMessage component={Error} name="email" />
-		</InputField>
-		<InputField>
-			<Input
-				as={FastField}
-				component="textarea"
-				aria-label="message"
-				id="message"
-				rows="8"
-				type="text"
-				name="message"
-				placeholder="Mensaje*"
-				error={touched.message && errors.message}
-			/>
-			<ErrorMessage component={Error} name="message" />
-		</InputField>
-		{values.name && values.email && values.message && (
+		{inputs.map(input => {
+			const { name } = input
+			return (
+				<InputField key={name}>
+					<Input
+						as={FastField}
+						error={touched[name] && errors[name]}
+						{...input}
+					/>
+					<ErrorMessage component={Error} name={name} />
+				</InputField>
+			)
+		})}
+
+		{/** ************CAPTCHA************** */}
+		{/* {values.name && values.email && values.message && (
 			<InputField>
 				<FastField
 					component={Recaptcha}
@@ -70,20 +68,21 @@ const ContactForm = ({
 				/>
 				<ErrorMessage component={Error} name="recaptcha" />
 			</InputField>
-		)}
+		)} */}
+
+		{/** ************FEEDBACK************** */}
 		{values.success && (
 			<InputField>
 				<Center>
-					<h4>
-						Your message has been successfully sent, I will get back to you
-						ASAP!
-					</h4>
+					<h4>¡Tu mensaje fue enviado!</h4>
 				</Center>
 			</InputField>
 		)}
+
+		{/** ************BUTTON************** */}
 		<Center>
 			<Button type="submit" disabled={isSubmitting}>
-				Enviar
+				Contactar
 			</Button>
 		</Center>
 	</Form>
@@ -104,7 +103,7 @@ export default withFormik({
 				.email('¡Email inválido!')
 				.required('¡Necesitamos tu email!'),
 			message: Yup.string().required('¿Qué nos quieres decir? 🤔'),
-			recaptcha: Yup.string().required('¡Abajo Skynet! 🤖🤖🤖🤖'),
+			// recaptcha: Yup.string().required('¡Abajo Skynet! 🤖🤖🤖🤖'),
 		}),
 	handleSubmit: async (
 		{ name, email, message, recaptcha },
@@ -119,17 +118,17 @@ export default withFormik({
 					.join('&')
 			}
 
-			await fetch('/?no-cache=1', {
-				method: 'POST',
-				headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-				body: encode({
-					'form-name': 'portfolio-dev',
-					name,
-					email,
-					message,
-					'g-recaptcha-response': recaptcha,
-				}),
-			})
+			// await fetch('/?no-cache=1', {
+			// 	method: 'POST',
+			// 	headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			// 	body: encode({
+			// 		'form-name': 'portfolio-dev',
+			// 		name,
+			// 		email,
+			// 		message,
+			// 		'g-recaptcha-response': recaptcha,
+			// 	}),
+			// })
 			await setSubmitting(false)
 			await setFieldValue('success', true)
 
