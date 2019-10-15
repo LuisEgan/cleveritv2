@@ -15,7 +15,7 @@ const ContactForm = ({
 	touched,
 }) => (
 	<Form
-		name="portfolio-dev"
+		name="contact"
 		method="post"
 		data-netlify="true"
 		data-netlify-recaptcha="true"
@@ -133,23 +133,22 @@ export default withFormik({
 			await setSubmitting(false)
 			await setFieldValue('success', true)
 
-			const res = await sendEmail({
-				to: 'personas@cleverit.cl',
-				html: `La persona de nombre ${name} e email ${email} escribió el siguiente mensaje: <br/> ${message}`,
-				subject: 'Contacto',
-			})
+			// const res = await sendEmail({
+			// 	to: 'personas@cleverit.cl',
+			// 	html: `La persona de nombre ${name} e email ${email} escribió el siguiente mensaje: <br/> ${message}`,
+			// 	subject: 'Contacto',
+			// })
 
-			const {
-				data: { error_code, error, message },
-			} = res
+			// const {
+			// 	data: { error_code, error, message },
+			// } = res
 
-			if (error_code) throw new Error(message || error || error_code)
+			// if (error_code) throw new Error(message || error || error_code)
 			// setTimeout(() => resetForm(), 2000)
 		} catch (err) {
-			console.log('err: ', err)
+			console.error('err: ', err)
 			setSubmitting(false)
 			setFieldValue('success', false)
-			alert('Something went wrong, please try again!') // eslint-disable-line
 		}
 	},
 })(ContactForm)
