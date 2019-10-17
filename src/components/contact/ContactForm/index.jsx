@@ -35,7 +35,7 @@ const inputs = [
 	},
 ]
 
-ContactForm = ({ isSubmitting, values, errors, touched }) => (
+let ContactForm = ({ isSubmitting, values, errors, touched }) => (
 	<Form
 		name="contact"
 		method="post"
