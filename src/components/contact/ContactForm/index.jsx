@@ -7,6 +7,33 @@ import { recaptcha_key } from 'Data'
 import { Error, Center, InputField } from './styles'
 import { sendEmail } from '../../../utils/email'
 
+const ContactForm = () => {
+	return (
+		<form name="contact" method="POST" data-netlify="true">
+			<p>
+				<label>
+					Your Name: <input type="text" name="name" />
+				</label>
+			</p>
+			<p>
+				<label>
+					Your Email: <input type="email" name="email" />
+				</label>
+			</p>
+			<p>
+				<label>
+					Message: <textarea name="message" />
+				</label>
+			</p>
+			<p>
+				<button type="submit">Send</button>
+			</p>
+		</form>
+	)
+}
+
+export default ContactForm
+
 const inputs = [
 	{
 		'aria-label': 'name',
@@ -35,7 +62,7 @@ const inputs = [
 	},
 ]
 
-const ContactForm = ({ isSubmitting, values, errors, touched }) => (
+ContactForm_FORMIK = ({ isSubmitting, values, errors, touched }) => (
 	<Form
 		name="contact"
 		method="post"
@@ -88,7 +115,7 @@ const ContactForm = ({ isSubmitting, values, errors, touched }) => (
 	</Form>
 )
 
-export default withFormik({
+ContactForm_FORMIK = withFormik({
 	mapPropsToValues: () => ({
 		name: '',
 		email: '',
@@ -150,4 +177,4 @@ export default withFormik({
 			setFieldValue('success', false)
 		}
 	},
-})(ContactForm)
+})(ContactForm_FORMIK)
