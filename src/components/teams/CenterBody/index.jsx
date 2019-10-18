@@ -53,6 +53,7 @@ const Proud = styled.div`
 
 	a {
 		text-align: center;
+		width: 40%;
 	}
 `
 

@@ -17,11 +17,11 @@ const Container = styled.div`
 	}
 
 	span {
-		padding-right: 50px;
+		padding-right: 20px;
 	}
 `
 const Option = styled.div`
-	border: 1px solid ${colors.purple};
+	border: 2px solid transparent;
 	border-radius: 15px;
 	padding: 5px 15px;
 	margin-right: 10px;
@@ -33,7 +33,7 @@ const Option = styled.div`
 
 const Selected = styled(Option)`
 	font-weight: bold;
-	border-width: 2px;
+	border: 2px solid ${colors.purple};
 `
 
 const Filter = props => {

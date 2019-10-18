@@ -25,9 +25,13 @@ const SocialIcons = props => {
 const Wrapper = styled.div`
 	display: flex;
 
+	a {
+		fill: unset;
+	}
+
 	svg {
-		width: 35px;
-		height: 35px;
+		width: 25px;
+		height: 25px;
 		padding: 0 5px;
 		stroke: ${colors.grayLight};
 		fill: transparent;

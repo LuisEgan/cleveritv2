@@ -4,21 +4,16 @@ import { mobileMaxWidth, blogTopics } from '../../../utils/constants'
 import usePosts from '../../../hooks/usePosts'
 import CardBlog from '../../common/Cards/CardBlog'
 import Filter from '../../common/Filter'
+import SectionWrapper from '../../common/Layout/SectionWrapper'
 
 const Container = styled.div`
-	padding-top: 20vh;
-	margin: 0 15vw;
+	padding-top: 10vh;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
 
 	a {
 		margin: 0;
 		min-width: 200px;
-	}
-
-	@media (min-width: ${mobileMaxWidth}) {
-		justify-content: space-between;
 	}
 `
 
@@ -36,7 +31,11 @@ export const BlogsGrid = () => {
 	}, [topic])
 
 	return (
-		<Container backgroundURL="">
+		<Container
+			as={SectionWrapper}
+			backgroundURL=""
+			innerJustify="space-between"
+		>
 			<Filter
 				options={['Todas', ...Object.keys(blogTopics).map(t => blogTopics[t])]}
 				onSelect={selected => setTopic(selected)}

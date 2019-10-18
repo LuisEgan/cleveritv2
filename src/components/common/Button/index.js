@@ -4,7 +4,7 @@ import { colors } from '../../../utils/constants'
 export const Button = styled.button`
 	cursor: pointer;
 	border-radius: 9px;
-	padding: 1.1rem 2.5rem;
+	padding: 1.3rem 3.3rem;
 	border: none;
 	-webkit-appearance: none;
 	-webkit-touch-callout: none;

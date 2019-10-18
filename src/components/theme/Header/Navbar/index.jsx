@@ -17,11 +17,10 @@ const Navbar = () => (
 )
 
 const Wrapper = styled.div`
-	padding: 1.5rem 0;
+	height: 12vh;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	height: 5vh;
 
 	a {
 		color: #212121;

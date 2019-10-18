@@ -12,7 +12,7 @@ import ChileCompra from 'Static/svgs/logo-chilecompra.svg'
 
 import { Revolver } from '../../common'
 import SectionWrapper from '../../common/Layout/SectionWrapper'
-import { Details, Thumbnail } from './styles'
+import { Details, Thumbnail, Clients } from './styles'
 import { routes } from '../../../utils/constants'
 
 export const Intro = () => {
@@ -27,6 +27,16 @@ export const Intro = () => {
 				<Button as={Link} to={routes.PROJECTS} offset={100}>
 					Ver casos de éxito
 				</Button>
+
+				<Clients>
+					<Wom />
+					<Saam />
+					<Metro />
+					<Falabella />
+					<Dt />
+					<ChileCompra />
+					<Forus />
+				</Clients>
 			</Details>
 			<Thumbnail>
 				<Revolver

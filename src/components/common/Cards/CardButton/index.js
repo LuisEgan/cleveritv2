@@ -9,7 +9,7 @@ import { colors, fontSizes, routes } from '../../../../utils/constants'
 const Container = styled.div`
 	border: 2px solid ${colors.grayLight};
 	border-radius: 10px;
-	padding: 6% 5%;
+	padding: 3% 2.5%;
 	display: flex;
 	flex-direction: column;
 	align-self: self-end;

@@ -12,10 +12,14 @@ export const Header = styled.div`
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2vh;
 
 	h2 {
 		font-size: 33pt;
+		margin: 0;
 	}
+
 	@media only screen and (max-width: 768px) {
 		flex-wrap: wrap;
 	}
@@ -41,14 +45,14 @@ export const Blog = () => {
 		<SectionWrapper backgroundURL="">
 			<Details>
 				<Header>
-					<h2> Materíal para digerir</h2>
+					<h2> Material para digerir</h2>
 					<Button as={Link} to={routes.BLOG}>
 						Ir al blog{' '}
 					</Button>
 				</Header>
 				<Body>
 					{posts.map(post => (
-						<CardBlog key={post.slug} post={post} />
+						<CardBlog key={post.slug} post={post} maxWidth="5vw" />
 					))}
 				</Body>
 			</Details>

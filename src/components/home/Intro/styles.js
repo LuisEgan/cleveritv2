@@ -21,8 +21,8 @@ export const IntroWrapper = styled.div`
 `
 
 export const Details = styled.div`
-	flex: 1;
-	padding-top: 5vh;
+	flex: 0.7;
+	padding-top: 12vh;
 
 	@media (max-width: ${desktopMaxWidth}) {
 		width: 100%;
@@ -31,7 +31,7 @@ export const Details = styled.div`
 
 	h2 {
 		margin-bottom: 2rem;
-		font-size: 33pt;
+		font-size: 56px;
 
 		@media (max-width: 680px) {
 			font-size: 30pt;
@@ -46,9 +46,21 @@ export const Details = styled.div`
 	}
 `
 
+export const Clients = styled.div`
+	display: flex;
+	flex-wrap: wrap;
+	/* justify-content: space-between; */
+	margin-top: 7vh;
+
+	svg {
+		max-width: 5vw;
+		margin-right: 20px;
+	}
+`
+
 export const Thumbnail = styled.div`
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	margin-top: 10vh;
 	flex: 1;
 

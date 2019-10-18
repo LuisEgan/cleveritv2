@@ -53,7 +53,7 @@ export const Apply = props => {
 						width: '10vw',
 						marginBottom: '3vh',
 						marginRight: '15px',
-						padding: '5% 5%',
+						padding: '3% 2.5%',
 					}}
 				/>
 			)

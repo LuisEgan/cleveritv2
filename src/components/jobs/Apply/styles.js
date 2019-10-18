@@ -28,11 +28,14 @@ export const ContentContainer = styled.div`
 	overflow-x: hidden;
 	height: 100%;
 	padding: 0 2.5%;
-	justify-content: space-between;
+	justify-content: space-around;
+
+	&::-webkit-scrollbar {
+		width: 0;
+	}
 `
 
 export const Card = styled(FadeOutLeft)`
 	margin-bottom: 3vh;
 	margin-right: 15px;
-	padding: 5% 5%;
 `

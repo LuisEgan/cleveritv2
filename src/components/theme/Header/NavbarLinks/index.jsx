@@ -46,7 +46,7 @@ const NavLink = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 120%;
+	height: 100%;
 
 	&:hover {
 		cursor: pointer;

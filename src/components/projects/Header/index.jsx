@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import { colors } from '../../../utils/constants'
+import SectionWrapper from '../../common/Layout/SectionWrapper'
 
 const Container = styled.div`
-	padding-top: 20vh;
+	padding-top: 10vh;
+	padding-bottom: 0;
 	text-align: center;
-	margin: 0 15vw;
 
 	h1 {
 		color: ${colors.purple};
@@ -14,7 +15,7 @@ const Container = styled.div`
 
 export const Header = props => {
 	return (
-		<Container>
+		<Container as={SectionWrapper}>
 			<h1>Las grandes relaciones producen grandes resultados</h1>
 
 			<p style={{ textAlign: 'center' }}>
