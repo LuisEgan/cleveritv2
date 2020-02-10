@@ -1,0 +1,2383 @@
+{
+  "Home": {
+    "es": {
+      "sectionMain": {
+        "mainTitle": "Impulsamos a nuestros clientes a llegar al máximo nivel",
+        "mainText": "Descubra con nosotros cómo añadir valor a su organización a través de la innovación, explore nuevas ideas y obtenga resultados tangibles.",
+        "button": "¡Cotiza con nosotros!"
+      },
+      "sectionServices": {
+        "servicesTitle": "Nuestros clientes respaldan nuestra capacidad para impulsar su proyecto",
+        "moreQuestion": "¿Tienes alguna pregunta adicional? ¡Te llamaremos!",
+        "servicesButtonReel": "Mira nuestro reel",
+        "servicesButtonRequest": "Cotiza con nosotros",
+        "wantKnowMore": "Quiero saber más"
+      },
+      "sectionPortfolio": {
+        "portfolioTitle": "Creamos sus productos digitales a medida",
+        "loadMore": "Cargar más",
+        "cards": [
+          {
+            "img": "../../images/flexit.jpg",
+            "text": "Flexit Contrataciones",
+            "description": "Esta aplicación fue desarrollada para la contratación rápida e inmediata de usuarios en contextos de medio tiempo o eventos especiales que requieren más personal.",
+            "area": "UX, UI, Branding, Development"
+          },
+          {
+            "img": "../images/propins.png",
+            "text": "Propins",
+            "description": "Esta es una plataforma que permite visitas virtuales a propiedades y proyectos para la venta utilizando la mejor tecnología para este mercado.",
+            "area": "UX, UI, Branding, Development"
+          },
+          {
+            "img": "../images/whyX.png",
+            "text": "WhyX App",
+            "description": "Basado en una economía circular, el concepto principal es 'arrendar en lugar de comprar'. El objetivo es tener experiencias sin obtener productos innecesarios.",
+            "area": "UX, UI, Branding, Development"
+          },
+          {
+            "img": "../images/forus.png",
+            "text": "Forus",
+            "description": "Nuestra solución para el inventario de productos en las tiendas de una cadena minorista, optimiza los procesos y permite una mayor eficiencia del servicio.",
+            "area": "UX, UI, Branding, Development"
+          }
+        ]
+      },
+      "sectionBlog": {
+        "blogTitle": "Explora nuestras últimas ideas sobre temas importantes de la industria.",
+        "blogList": [
+          {
+            "services": "Big data, Branding, Service",
+            "title": "Creando valor a través de la data",
+            "description": "Excelente manera de otorgar valor a los servicios ofrecidos...",
+            "img": "../images/test.svg",
+            "time": "Feb 25, 2020"
+          },
+          {
+            "services": "Design, UI, Branding",
+            "title": "Buenas prácticas de diseño de interfaces y sus beneficios",
+            "description": "Conoce la mejor forma de presentar tus diseños e interfaces...",
+            "img": "../images/test.svg",
+            "time": "Feb 28, 2020"
+          },
+          {
+            "services": "DevOps, Agile, Process",
+            "title": "DevOps como apoyo para tu emprendimiento",
+            "description": "Excelente manera de otorgar valor a los servicios ofrecidos.a..",
+            "img": "../images/test.svg",
+            "time": "Mar 5, 2020"
+          },
+          {
+            "services": "DevOps, Agile, Process",
+            "title": "DevOps como apoyo para tu emprendimiento",
+            "description": "Excelente manera de otorgar valor a los servicios ofrecidos.a..",
+            "img": "../images/test.svg",
+            "time": "Mar 5, 2020"
+          },
+          {
+            "services": "DevOps, Agile, Process",
+            "title": "DevOps como apoyo para tu emprendimiento",
+            "description": "Excelente manera de otorgar valor a los servicios ofrecidos.a..",
+            "img": "../images/test.svg",
+            "time": "Mar 5, 2020"
+          }
+        ]
+      },
+      "footer": {
+        "talk": "¡Hablemos!",
+        "email": "contacto@cleveritgroup.com",
+        "terms": "Terminos y condiciones",
+        "about": "Sobre nosotros",
+        "join": "Únete a nuestro equipo",
+        "blog": "Blog & Artículos",
+        "button": "¡Quiero saber más!",
+        "instagramLink": "https://www.instagram.com/cleveritgroup/",
+        "linkedInLink": "https://www.linkedin.com/company/cleverit-latam/",
+        "behanceLink": "https://www.behance.net/cleverexperience",
+        "dribbbleLink": "",
+        "pageLink": "https://www.cleveritgroup.com/",
+        "rigths": "  Todos los derechos reservados © 2019 Cleverit.",
+        "direction": "Los Militares #6191, Las Condes, Chile"
+      },
+      "navBar": {
+        "expertise": "Experiencia",
+        "projects": "Proyectos",
+        "carrers": "Carreras",
+        "blog": "Blogs",
+        "quote": "Cotiza aqui"
+      },
+      "collapse": {
+        "home": "Inicio",
+        "services": "Servicios",
+        "portfolio": "Portafolio",
+        "plan": "Planes",
+        "team": "Equipo",
+        "contact": "¡Te contactamos!"
+      }
+    },
+    "en": {
+      "sectionMain": {
+        "mainTitle": "Your goal is to grow. Our goal is to help you get there.",
+        "mainText": "Discover with us how to add value to your organization through innovation, explore new ideas and get tangible results.",
+        "button": "Quote with us!"
+      },
+      "sectionServices": {
+        "servicesTitle": "Our customers support our capacity to boost your project",
+        "moreQuestion": "Do you have any additional questions? We'll call you!",
+        "servicesButtonReel": "Look at our reel",
+        "servicesButtonRequest": "Quote with us",
+        "wantKnowMore": "I want to know more"
+      },
+      "sectionPortfolio": {
+        "portfolioTitle": "We build your tailored digital products",
+        "loadMore": "Load more",
+        "cards": [
+          {
+            "img": "../../images/adt_logo.svg",
+            "text": "Flexit Contrataciones",
+            "description": "This app was developed for quick and immediate hiring of users in part-time contexts or special events that require more staff.",
+            "area": "UX, UI, branding, development"
+          },
+          {
+            "img": "../../images/propins.png",
+            "text": "Propins",
+            "description": "This is a platform that allows virtual tours to properties and projects for sales by using the best technology for this market.",
+            "area": "UX, UI, branding, development"
+          },
+          {
+            "img": "../../images/whyX.png",
+            "text": "WHYX App",
+            "description": "Based on a circular economy, the main concept is 'lease instead of buy'. The aim is to have experiences without getting needless products.",
+            "area": "UX, UI, branding, development"
+          },
+          {
+            "img": "../../images/forus.png",
+            "text": "Forus",
+            "description": "Our solution for product inventory in stores of a retail chain, optimize processes and allow greater service efficiency.",
+            "area": "UX, UI, branding, development"
+          }
+        ]
+      },
+      "sectionBlog": {
+        "blogTitle": "Explora nuestras últimas ideas sobre temas importantes de la industria.",
+        "blogList": [
+          {
+            "services": "Big data, Branding, Service",
+            "title": "Creando valor a través de la data",
+            "description": "Excelente manera de otorgar valor a los servicios ofrecidos...",
+            "img": "../images/test.svg",
+            "time": "Feb 25, 2020"
+          },
+          {
+            "services": "Design, UI, Branding",
+            "title": "Buenas prácticas de diseño de interfaces y sus beneficios",
+            "description": "Conoce la mejor forma de presentar tus diseños e interfaces...",
+            "img": "../images/test.svg",
+            "time": "Feb 28, 2020"
+          },
+          {
+            "services": "DevOps, Agile, Process",
+            "title": "DevOps como apoyo para tu emprendimiento",
+            "description": "Excelente manera de otorgar valor a los servicios ofrecidos.a..",
+            "img": "../images/test.svg",
+            "time": "Mar 5, 2020"
+          },
+          {
+            "services": "DevOps, Agile, Process",
+            "title": "DevOps como apoyo para tu emprendimiento",
+            "description": "Excelente manera de otorgar valor a los servicios ofrecidos.a..",
+            "img": "../images/test.svg",
+            "time": "Mar 5, 2020"
+          },
+          {
+            "services": "DevOps, Agile, Process",
+            "title": "DevOps como apoyo para tu emprendimiento",
+            "description": "Excelente manera de otorgar valor a los servicios ofrecidos.a..",
+            "img": "../images/test.svg",
+            "time": "Mar 5, 2020"
+          }
+        ]
+      },
+      "footer": {
+        "talk": "Talk!",
+        "email": "contact@cleveritgroup.com",
+        "terms": "Terms & condition",
+        "about": "About us",
+        "join": "Join us",
+        "blog": "Blog & Articles",
+        "button": "want to know more",
+        "instagramLink": "https://www.instagram.com/cleveritgroup/",
+        "linkedInLink": "https://www.linkedin.com/company/cleverit-latam/",
+        "behanceLink": "https://www.behance.net/cleverexperience",
+        "dribbbleLink": "",
+        "pageLink": "https://www.cleveritgroup.com/",
+        "rigths": "  All rights reserved © 2019 Cleverit.",
+        "direction": "Los Militares #6191, Las Condes, Chile"
+      },
+      "navBar": {
+        "expertise": "Expertise",
+        "projects": "Projects",
+        "carrers": "Career",
+        "blog": "Blogs",
+        "quote": "Request a Quote"
+      },
+      "collapse": {
+        "home": "Home",
+        "services": "Services",
+        "portfolio": "Portfolio",
+        "plan": "Plans",
+        "team": "Team",
+        "contact": "We contact you!"
+      }
+    }
+  },
+  "DevOps": {
+    "en": {
+      "navBar": {
+        "services": "Services",
+        "contact": "We contact you!",
+        "plan": "Plans",
+        "team": "Team",
+        "quote": "Quote with us"
+      },
+      "sectionMain": {
+        "mainTitle": "Think clever today, deliver faster value tomorrow!",
+        "mainText": "Minimize errors, improve productivity, deliver software faster.",
+        "button": "Get a quote"
+      },
+      "sectionServices": {
+        "servicesTitle": "What do we do?:",
+        "servicesAbility": [
+          { "ability": "Agile mindset" },
+          {
+            "ability": "Redefinition, creation or re-enigineering of processes"
+          },
+          { "ability": "Reduce waste" },
+          { "ability": "Improve productivity" },
+          { "ability": "Coaching and Mentoring for teams" },
+          { "ability": "Install and configure toolchain DevOps" },
+          { "ability": "Enable practice and habits" },
+          { "ability": "Improve DevOps maturity" }
+        ],
+        "servicesButtonReel": "Check out our reel",
+        "servicesButtonRequest": "Get a quote"
+      },
+      "sectionPortfolio": {
+        "portfolioTitle": "We are connecting products, process and people for better deliver value to the business",
+        "loadMore": "Load more",
+        "cards": [
+          {
+            "img": "../../images/Delivery_Continuo.png",
+            "text": "WOM - DevOps as a Services",
+            "description": "Azure DevOps implementation (Version control, build, deployment, automated testing, repositories, code analysis, with Agile practices). First integration of Azure Devops with Openshift in LATAM. Stack: Java, Redhat, Oracle, SonarQube, Nexus, GIT, MAVEN, Nexus, Docker, Telerik test Studio, SoapUI Pro,VCenter.",
+            "area": "DevOps, AzDevOps, Redhat, Oracle, Java, OpenShift, Nexus, SonarQube, AzRepos, AzBoards, AzPipeline, AzTestPlan, CI, CD, AT"
+          },
+          {
+            "img": "../images/Arauco_Implementación_VSTS.png",
+            "text": "Arauco - DevOps as a Services",
+            "description": "Azure Devops implementation with full software development process (Version Control, build, deployment). Stack: .NET Framework, Java, Windows. ",
+            "area": "DevOps, AzDevOps, WindowsServer, Java,  SonarQube, AzRepos, AzPipeline, CI, CD"
+          },
+          {
+            "img": "../images/Chilecompra_Implementación_Azure_DevOps – 1.png",
+            "text": "Chilecompra - DevOps as a Services",
+            "description": "Azure Devops implementation with full software development (Version control, build, deployment, autonated testing, repositories, code analysis, with Agile practices). Stack: Java, Redhat, Oracle, SonarQube, Nexus.",
+            "area": "OpenShift, Nexus, SonarQube, AzRepos, AzBoards, AzPipeline, AzTestPlan, CI, CD, AT"
+          },
+          {
+            "img": "../images/DT_devops.png",
+            "text": "Dirección del Trabajo - Continuous delivery project",
+            "description": "Consultancy and implementation of 6 legacy applications with different stack using Azure DevOps. Stack: Visual Basic, .NET, Java, docker, Kubernetes, Openshift",
+            "area": "DevOps, AzDevOps, Redhat, Oracle, Java, OpenShift, Nexus, SonarQube, AzRepos, AzBoards, AzPipeline, AzTestPlan, CI, CD, AT"
+          }
+        ]
+      },
+      "sectionPlan": {
+        "planTitle": "We offer plans that fit your needs",
+        "planSecondTitleCustom": "Exclusive tailor-made service",
+        "planSecondTitleSmart": "Our default plan",
+        "planSecondTitleMedium": "Our default plan",
+        "testimonyTitle": "Testimonial",
+        "help": "Do you have any questions about the service?",
+        "testimonyList": [
+          {
+            "testimony": "“The results have been as expected, communication has been fluid at all times, Cleverit they have adapted to our needs, they have provided knowledge, experience, human resources, and they have always shown continuous support and willingness. In short, the results have been very positive.“",
+            "name": "Mauricio Egas ",
+            "ocupation": "Area leader CCA",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "“Trust and Collaboration“",
+            "name": "Ignacio Valencia Herrera",
+            "ocupation": "IT Architect - WOM",
+            "img": "../images/testimony_1.png"
+          }
+        ],
+        "planSmart": [
+          {
+            "descriptionPlan": "Sr. DevOps Engineer full or partime"
+          },
+          {
+            "descriptionPlan": "Implement DevOps practices"
+          },
+          {
+            "descriptionPlan": "Implement & operate tools"
+          },
+          {
+            "descriptionPlan": "Implementation minimal time: 3 months"
+          }
+        ],
+        "planMedium": [
+          {
+            "descriptionPlan": "Sr. DevOps Engineer full or partime"
+          },
+          {
+            "descriptionPlan": "Implement DevOps practices"
+          },
+          {
+            "descriptionPlan": "Implement & operate tools"
+          },
+          {
+            "descriptionPlan": "Version control, Continuous integration, Continuous Delivery"
+          },
+          {
+            "descriptionPlan": "Integration with DevTestOps practice"
+          },
+          {
+            "descriptionPlan": "Integration with DevSecOps practice"
+          },
+          {
+            "descriptionPlan": "DevOps Governance & Best practices"
+          },
+
+          {
+            "descriptionPlan": "Improve maturity DevOps area and create Center of Expert (CoE)"
+          },
+          {
+            "descriptionPlan": "Implementation minimal time: 3 months"
+          }
+        ],
+        "planCostume": [
+          {
+            "descriptionPlan": "Basic plan features"
+          },
+          {
+            "descriptionPlan": "Medium plan features for DevTestOps"
+          },
+          {
+            "descriptionPlan": "Meium plan features for Clever Agile Services"
+          }
+        ]
+      },
+      "photos": {
+        "photoOne": "../images/team_01.png",
+        "photoTwo": "../images/team_02.png",
+        "photoThree": "../images/team_03.png",
+        "photoFour": "../images/team_04.png",
+        "photoFive": "../images/team_05.png"
+      },
+      "footer": {
+        "talk": "Talk!",
+        "email": "devops@cleveritgroup.com",
+        "terms": "Terms & condition",
+        "about": "About us",
+        "join": "Join us",
+        "blog": "Blog & Articles",
+        "button": "want to know more",
+        "instagramLink": "https://www.instagram.com/cleveritgroup/",
+        "linkedInLink": "https://www.linkedin.com/company/cleverit-latam/",
+        "behanceLink": "https://www.behance.net/cleverexperience",
+        "dribbbleLink": "",
+        "pageLink": "https://www.cleveritgroup.com/",
+        "rigths": "  All rights reserved © 2019 Cleverit.",
+        "direction": "Los Militares #6191, Las Condes, Chile"
+      },
+      "contactModal": {
+        "modalTitle": "Enter your info, to offer you a good service",
+        "fillYourName": "Enter your name",
+        "dontShareYourInformation": "We will never share this information with anyone.",
+        "yourCompanyName": "What's the name of your company?",
+        "industryType": [
+          "retail",
+          "b2b",
+          "saas",
+          "b2c",
+          "telecomunications",
+          "design",
+          "other"
+        ],
+        "howBigIsYourCompany": "How big is the company you work for?",
+        "getQuote": "Ask for a Quote",
+        "closeButton": "Close"
+      }
+    },
+    "es": {
+      "navBar": {
+        "services": "Servicios",
+        "contact": "¡Te contactamos!",
+        "plan": "Planes",
+        "team": "Equipo",
+        "quote": "cotiza con nosotros"
+      },
+      "sectionMain": {
+        "mainTitle": "Piensa con inteligencia hoy, entrega más rápido el valor mañana.",
+        "mainText": "Reduce el error, aumenta la productividad y entrega el software más rápidamente.",
+        "button": "Cotiza con nosotros"
+      },
+      "sectionServices": {
+        "servicesTitle": "¿Qué hacemos?:",
+        "servicesAbility": [
+          { "ability": "Mindset ágil" },
+          { "ability": "Redefinición, creación o reingeniería de procesos" },
+          { "ability": "Eliminar el desperdicio" },
+          { "ability": "Aumentar la productividad" },
+          { "ability": "Coaching y Mentoring para equipos" },
+          { "ability": "Instalar y configurar herramientas DevOps" },
+          { "ability": "Habilitar prácticas y hábitos DevOps" },
+          { "ability": "Aumentar la madurez de los equipos" }
+        ],
+        "servicesButtonReel": "Mira nuestro reel",
+        "servicesButtonRequest": "Cotiza con nosotros"
+      },
+      "sectionPortfolio": {
+        "portfolioTitle": "Productos y soluciones a la medida",
+        "loadMore": "Cargar más",
+        "cards": [
+          {
+            "img": "../../images/Delivery_Continuo.png",
+            "text": "WOM - Continous delivery",
+            "description": "Implementación de Azure DevOps, flujo completo de desarrollo de software (Versionado, compilación, despliegues, pruebas automatizadas, repositorio de librerias, analisis de código statico, con prácticas Agiles). Primera integración de Azure DevOps con Openshift en LATAM. Stack: Java, Redhat, Oracle, SonarQube, Nexus, GIT, MAVEN, Nexus, Docker, Telerik test Studio, SoapUI Pro, VCenter.",
+            "area": "DevOps, AzDevOps, Redhat, Oracle, Java, OpenShift, Nexus, SonarQube, AzRepos, AzBoards, AzPipeline, AzTestPlan, CI, CD, AT"
+          },
+          {
+            "img": "../images/Arauco_Implementación_VSTS.png",
+            "text": "Arauco - Implementación VSTS",
+            "description": "Implementación de Azure Devops, flujo completo de desarrollo de software (Versionado, compilación, implementación). Stack: .NET Framework, Java, Windows. ",
+            "area": "DevOps, AzDevOps, WindowsServer, Java,  SonarQube, AzRepos, AzPipeline, CI, CD"
+          },
+          {
+            "img": "../images/Chilecompra_Implementación_Azure_DevOps – 1.png",
+            "text": "Chilecompra - Implementación Azure DevOps",
+            "description": "Implementación de Azure Devops,f lujo completo de desarrollo de software (Versionado, compilación, despliegue, pruebas automáticas, repositorios, análisis de código, con prácticas ágiles). Primera integración de Azure Devops con Openshift en LATAM. Pila: Java, Redhat, Oracle, SonarQube, Nexus.",
+            "area": "OpenShift, Nexus, SonarQube, AzRepos, AzBoards, AzPipeline, AzTestPlan, CI, CD, AT"
+          },
+          {
+            "img": "../images/DT_devops.png",
+            "text": "DT DevOps",
+            "description": "Consultoría e implementación de 6 aplicaciones legadas de diferentes tecnologías en Azure DevOps",
+            "area": "DevOps, AzDevOps, Redhat, Oracle, Java, OpenShift, Nexus, SonarQube, AzRepos, AzBoards, AzPipeline, AzTestPlan, CI, CD, AT"
+          }
+        ]
+      },
+      "sectionPlan": {
+        "planTitle": "Ofrecemos servicios a la medida de tus necesidades",
+        "planSecondTitleCustom": "Exclusive tailor-made service",
+        "planSecondTitleSmart": "Our default plan",
+        "planSecondTitleMedium": "Our default plan",
+        "testimonyTitle": "Testimonios",
+        "help": "¿Tienes algunas dudas sobre el servicio?",
+        "planQuestion": "¿Tienes algunas dudas sobre el servicio?",
+        "testimonyList": [
+          {
+            "testimony": " Los resultados han sido los esperados, la comunicación en todo momento ha sido fluida, Cleverit se han adaptado a nuestras necesidades, han aportado con conocimientos, experiencia, recursos humanos y siempre han mostrado el apoyo continuo y buena disposición, en resumen, los resultados han sido muy positivos",
+            "name": "Mauricio Egas",
+            "ocupation": "Lídea de área CCA",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "“Confianza y Colaboración“",
+            "name": "Ignacio Valencia",
+            "ocupation": " Arquitecto TI - WOM",
+            "img": "../images/testimony_1.png"
+          }
+        ],
+        "planSmart": [
+          {
+            "descriptionPlan": "Ingeniero DevOps Sr. dedicado tiempo completo o parcial"
+          },
+          {
+            "descriptionPlan": "Implementación de práticas DevOps"
+          },
+          {
+            "descriptionPlan": "Implementar & operar herramientas"
+          },
+          {
+            "descriptionPlan": "Tiempo mínimo de contrato: 3 Meses"
+          }
+        ],
+        "planMedium": [
+          {
+            "descriptionPlan": "Ingeniero DevOps Sr. dedicado tiempo completo o parcial"
+          },
+          {
+            "descriptionPlan": "Implementación de práticas DevOps"
+          },
+          {
+            "descriptionPlan": "Implementar & operar herramientas"
+          },
+          {
+            "descriptionPlan": "Eliminar el desperdicio de los procesos"
+          },
+          {
+            "descriptionPlan": "Implementación de Governance y mejores Prácticas"
+          },
+
+          {
+            "descriptionPlan": "Creación del area DevOps como  Center of Expert (CoE)"
+          },
+          {
+            "descriptionPlan": "Tiempo mínimo de contrato: 3 Meses"
+          }
+        ],
+        "planCostume": [
+          {
+            "descriptionPlan": "Caracteristicas del plan basico"
+          },
+          {
+            "descriptionPlan": "Caracteristicas del plan medio del servicio Clever Agile Services"
+          },
+          {
+            "descriptionPlan": "Caracteristicas del plan medio del servicio DevTestOps"
+          }
+        ]
+      },
+      "photos": {
+        "photoOne": "../images/team_01.png",
+        "photoTwo": "../images/team_02.png",
+        "photoThree": "../images/team_03.png",
+        "photoFour": "../images/team_04.png",
+        "photoFive": "../images/team_05.png"
+      },
+      "footer": {
+        "talk": "¡Hablemos!",
+        "email": "devops@cleveritgroup.com",
+        "terms": "Terminos y condiciones",
+        "about": "Sobre nosotros",
+        "join": "Únete a nuestro equipo",
+        "blog": "Blog & Artículos",
+        "button": "¡Quiero saber más!",
+        "instagramLink": "https://www.instagram.com/cleveritgroup/",
+        "linkedInLink": "https://www.linkedin.com/company/cleverit-latam/",
+        "behanceLink": "https://www.behance.net/cleverexperience",
+        "dribbbleLink": "",
+        "pageLink": "https://www.cleveritgroup.com/",
+        "rigths": "  Todos los derechos reservados © 2019 Cleverit.",
+        "direction": "Los Militares #6191, Las Condes, Chile"
+      },
+      "contactModal": {
+        "modalTitle": "Ingresa tus datos, para ofrecerte un buen servicio",
+        "fillYourName": "Ingresa tu nombre",
+        "dontShareYourInformation": "Nunca compartiremos esta información con nadie.",
+        "yourCompanyName": "¿Cómo se llama tu empresa?",
+        "industryType": [
+          "retail",
+          "b2b",
+          "saas",
+          "b2c",
+          "telecomunications",
+          "design",
+          "other"
+        ],
+        "howBigIsYourCompany": "¿Qué tan grande es la compañía para la que trabajas?",
+        "getQuote": "Haz tu cotización",
+        "closeButton": "Cerrar"
+      }
+    }
+  },
+  "Agile": {
+    "es": {
+      "navBar": {
+        "services": "Servicios",
+        "plan": "Planes",
+        "team": "Equipo",
+        "contact": "¡Te contactamos!",
+        "quote": "cotiza con nosotros",
+        "home": "inicio",
+        "portfolio": "portafolio"
+      },
+      "sectionMain": {
+        "mainTitle": "Habilitadores de mentalidad agilizada",
+        "mainText": "Vivir y disfrutar la agilidad mediante el aprendizaje y mejora continuo",
+        "button": "Cotiza con nosotros"
+      },
+      "sectionServices": {
+        "servicesTitle": "Colaboración plena con el cliente",
+        "servicesAbility": [
+          { "ability": "Prácticas agile" },
+          {
+            "ability": "Prácticas de descubrimiento de producto"
+          },
+          { "ability": "Agile Coaching" },
+          { "ability": "Coaching Ejecutivo" },
+          { "ability": "Certificaciones Agile" },
+          { "ability": "Agile Mentoring" },
+          { "ability": "Implementación de OKR" },
+          { "ability": "Scaled Agile Consulting" }
+        ],
+        "servicesButtonReel": "Mira nuestro reel",
+        "servicesButtonRequest": "Cotiza con nosotros"
+      },
+      "sectionPortfolio": {
+        "portfolioTitle": "Construimos tus productos digitales a medida",
+        "loadMore": "Cargar más",
+        "cards": [
+          {
+            "img": "../../images/flexit.jpg",
+            "text": "Flexit Contrataciones",
+            "description": "This app was developed for quick and immediate hiring of users in part-time contexts or special events that require more staff.",
+            "area": "UX, UI, branding, development"
+          },
+          {
+            "img": "../images/propins.png",
+            "text": "Propins",
+            "description": "This is a platform that allows virtual tours to properties and projects for sales by using the best technology for this market.",
+            "area": "UX, UI, branding, development"
+          },
+          {
+            "img": "../images/whyX.png",
+            "text": "WHYX App",
+            "description": "Based on a circular economy, the main concept is 'lease instead of buy'. The aim is to have experiences without getting needless products.",
+            "area": "UX, UI, branding, development"
+          },
+          {
+            "img": "../images/forus.png",
+            "text": "Forus",
+            "description": "Our solution for product inventory in stores of a retail chain, optimize processes and allow greater service efficiency.",
+            "area": "UX, UI, branding, development"
+          }
+        ]
+      },
+      "sectionPlan": {
+        "planTitle": "Ofrecemos planes que se ajustan a tus necesidades",
+        "planSecondTitleCustom": "Ajustado a los requerimientos del negocio",
+        "planSecondTitleMedium": "Ajustado a los requerimientos del negocio",
+        "planSecondTitleSmart": "(6 meses por habilitador asignado a 4 células)",
+        "help": "¿Tienes algunas dudas sobre el servicio?",
+        "testimonyList": [
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          }
+        ],
+        "planSmart": [
+          {
+            "descriptionPlan": "Generar estructuras ágiles que permitan darle el enfoque a las iniciativas de negocio de mayor valor."
+          },
+          {
+            "descriptionPlan": "Capacitaciones en prácticas y herramientas ágiles."
+          },
+          {
+            "descriptionPlan": "Proceso de acompañamiento de coaches/enabler a equipos para acelerar su proceso de madurez."
+          }
+        ],
+        "planCostume": [
+          {
+            "descriptionPlan": "Implementar marco de OKR (1 año)"
+          },
+          {
+            "descriptionPlan": "Certificaciones (mediante un partner) - Agile Fundamentals, - Liderazgo Ágil, - Certified Scrum Master, - Certified Scrum Product Owner, - Agile Team Facilitator, - Management 3.0, - Lean Change Management"
+          },
+
+          {
+            "descriptionPlan": "Acompañamiento en la expansión de la agilidad (plan de carrera, carga administrativa, etc)"
+          },
+          {
+            "descriptionPlan": "Coaching de equipos"
+          },
+          {
+            "descriptionPlan": "Workshop de Discovery"
+          },
+          {
+            "descriptionPlan": "Workshop de Scrum"
+          },
+          {
+            "descriptionPlan": "Workshop de Agilidad"
+          },
+          {
+            "descriptionPlan": "Workshop de Kanban"
+          },
+          {
+            "descriptionPlan": "Workshop Value Stream Mapping"
+          }
+        ]
+      },
+      "photos": {
+        "photoOne": "../images/team_01.png",
+        "photoTwo": "../images/team_02.png",
+        "photoThree": "../images/team_03.png",
+        "photoFour": "../images/team_04.png",
+        "photoFive": "../images/team_05.png"
+      },
+      "footer": {
+        "talk": "¡Hablemos!",
+        "email": "agile@cleveritgroup.com",
+        "terms": "Terminos y condiciones",
+        "about": "Sobre nosotros",
+        "join": "Únete a nuestro equipo",
+        "blog": "Blog & Artículos",
+        "button": "¡Quiero saber más!",
+        "instagramLink": "https://www.instagram.com/cleveritgroup/",
+        "linkedInLink": "https://www.linkedin.com/company/cleverit-latam/",
+        "behanceLink": "https://www.behance.net/cleverexperience",
+        "dribbbleLink": "",
+        "pageLink": "https://www.cleveritgroup.com/",
+        "rigths": "  Todos los derechos reservados © 2019 Cleverit.",
+        "direction": "Los Militares #6191, Las Condes, Chile"
+      }
+    },
+    "en": {
+      "navBar": {
+        "services": "Services",
+        "plan": "Plans",
+        "team": "Team",
+        "contact": "We contact you!",
+        "quote": "quote with us",
+        "home": "home",
+        "portfolio": "portfolio"
+      },
+      "sectionMain": {
+        "mainTitle": "Enablers of Agile mentality",
+        "mainText": "Live and enjoy Agile through learning and continuous improvement",
+        "button": "Get a quote"
+      },
+      "sectionServices": {
+        "servicesTitle": "Full colaboration with our clients",
+        "servicesAbility": [
+          { "ability": "Training in Agile practices" },
+          {
+            "ability": "Training in product discovery practices"
+          },
+          { "ability": "Agile Coaching" },
+          { "ability": "Executive Coaching" },
+          { "ability": "Agile certifications" },
+          { "ability": "Agile Mentoring" },
+          { "ability": "OKR implementation" },
+          { "ability": "Scaled Agile Consulting" }
+        ],
+        "servicesButtonReel": "Check out our reel",
+        "servicesButtonRequest": "Get a quote"
+      },
+      "sectionPortfolio": {
+        "portfolioTitle": "We build digital products that cater to your needs",
+        "loadMore": "Load more",
+        "cards": [
+          {
+            "img": "../../images/flexit.jpg",
+            "text": "Flexit Contrataciones",
+            "description": "This app was developed for quick and immediate hiring of users in part-time contexts or special events that require more staff.",
+            "area": "UX, UI, branding, development"
+          },
+          {
+            "img": "../images/propins.png",
+            "text": "Propins",
+            "description": "This is a platform that allows virtual tours to properties and projects for sales by using the best technology for this market.",
+            "area": "UX, UI, branding, development"
+          },
+          {
+            "img": "../images/whyX.png",
+            "text": "WHYX App",
+            "description": "Based on a circular economy, the main concept is 'lease instead of buy'. The aim is to have experiences without getting needless products.",
+            "area": "UX, UI, branding, development"
+          },
+          {
+            "img": "../images/forus.png",
+            "text": "Forus",
+            "description": "Our solution for product inventory in stores of a retail chain, optimize processes and allow greater service efficiency.",
+            "area": "UX, UI, branding, development"
+          }
+        ]
+      },
+      "sectionPlan": {
+        "planTitle": "We offer plans that cater to your needs",
+        "planSecondTitleCustom": "Exclusive tailor-made service",
+        "planSecondTitleSmart": "Our default plan",
+        "planSecondTitleMedium": "Our default plan",
+        "help": "Do you have any questions about the service?",
+        "testimonyList": [
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          }
+        ],
+        "planSmart": [
+          {
+            "descriptionPlan": "Generate Agile structures that enable focusing in the best initiatives"
+          },
+          {
+            "descriptionPlan": "Training for Agile tools and practices"
+          },
+          {
+            "descriptionPlan": "Personal coach/enabler to accelerate team maturity."
+          }
+        ],
+        "planCostume": [
+          {
+            "descriptionPlan": "OKR implementation (1 year)"
+          },
+          {
+            "descriptionPlan": "Certificactions (trough a partner) - Agile Fundamentals, - Agile Leadership, - Certified Scrum Master, - Certified Scrum Product Owner, - Agile Team Facilitator, - Management 3.0, - Lean Change Management"
+          },
+
+          {
+            "descriptionPlan": "Personal follow on the expansion of agility (career plans, administration process)"
+          },
+          {
+            "descriptionPlan": "Coaching de equipos"
+          },
+          {
+            "descriptionPlan": "Discovery workshop"
+          },
+          {
+            "descriptionPlan": "Scrum workshop"
+          },
+          {
+            "descriptionPlan": "Agile workshop"
+          },
+          {
+            "descriptionPlan": "Kanban workshop"
+          },
+          {
+            "descriptionPlan": "Value Stream Mapping workshop "
+          }
+        ]
+      },
+      "photos": {
+        "photoOne": "../images/team_01.png",
+        "photoTwo": "../images/team_02.png",
+        "photoThree": "../images/team_03.png",
+        "photoFour": "../images/team_04.png",
+        "photoFive": "../images/team_05.png"
+      },
+      "footer": {
+        "talk": "Talk!",
+        "email": "agile@cleveritgroup.com",
+        "terms": "Terms & condition",
+        "about": "About us",
+        "join": "Join us",
+        "blog": "Blog & Articles",
+        "button": "want to know more",
+        "instagramLink": "https://www.instagram.com/cleveritgroup/",
+        "linkedInLink": "https://www.linkedin.com/company/cleverit-latam/",
+        "behanceLink": "https://www.behance.net/cleverexperience",
+        "dribbbleLink": "",
+        "pageLink": "https://www.cleveritgroup.com/",
+        "rigths": "  All rights reserved © 2019 Cleverit.",
+        "direction": "Los Militares #6191, Las Condes, Chile"
+      }
+    }
+  },
+  "Development": {
+    "en": {
+      "navBar": {
+        "services": "Services",
+        "plan": "Plans",
+        "team": "Team",
+        "contact": "We contact you!",
+        "quote": "quote with us",
+        "home": "home",
+        "portfolio": "portfolio"
+      },
+      "sectionMain": {
+        "mainTitle": "Nothing is complex! Make it simple.",
+        "mainText": "We are a group of Software enineers capable of making the impossible possible. We like to deliver value to your business by doing what we like the most.",
+        "button": "Ask us for a Quote"
+      },
+      "sectionServices": {
+        "servicesTitle": "Our Skills",
+        "servicesAbility": [
+          {
+            "ability": "Web Development"
+          },
+          {
+            "ability": "API Development"
+          },
+          {
+            "ability": "IoT"
+          },
+          {
+            "ability": "ML"
+          },
+          {
+            "ability": "Serverless"
+          },
+          {
+            "ability": "Cloud Architect"
+          },
+          {
+            "ability": "Infrastructure Administration"
+          }
+        ],
+        "servicesButtonReel": "Check our reel",
+        "servicesButtonRequest": "Ask us for a Quote"
+      },
+      "sectionPortfolio": {
+        "portfolioTitle": "We make tailor-made products",
+        "loadMore": "Load more",
+        "cards": [
+          {
+            "img": "../../images/miDT.png",
+            "text": "Modernization of Labor contracts for Chile",
+            "description": "Automation of the process of evaluation and signing of contracts, the goal is to avoid doing such work in a notary’s office. With our system any employer can digitally generate a valid contract which can be signed online, making use of a digital signature from MiDT portal.",
+            "area": "React, NETCore, OpenShift, Azure, Microservicios",
+            "alt": "miDT - Dirección del trabajo, Chile"
+          },
+          {
+            "img": "../images/metro_pmt.png",
+            "text": "Web de Directores & Web de Gestión",
+            "description": "Tailor-made document management system that allows indexing documents from the vaults of Meridian BlueCielo. The main idea of this project is to make available sensitive information of the results of the Metro board of directors meetings; the system should be fast and easy to adopt.",
+            "area": "NETCore, AzureDevOps"
+          },
+          {
+            "img": "../images/Falabella_giftcard.png",
+            "text": "Kardex",
+            "description": "This is a semi-automated system to perform in-store pickup, which is integrated with the current Falabella Click and Collect systems. It consists of two parts; first there is the warehouse where orders are stored and service modules that have two mechanical doors (one facing the warehouse and another towards the customer). In these modules the orders are located for their subsequent withdrawal. Second, there is a raspberry running an application developed in Java FX, that handles the logic of opening and closing doors and helps the customer that comes to withdraw his product.",
+            "area": "JavaSpring, JavaFX, J2EE, Raspberry",
+            "alt": "miDT"
+          },
+          {
+            "img": "../images/turnero_offline.png",
+            "text": "Turnero Offline",
+            "description": "This application is a new version of the Turnero system, which is used in several countries by Falabella. The previous system presented problems when the internet connection was lost. This caused the desynchronization and loss of attention numbers. To solve this problem, an embedded and local database was created, which is used when the system has no internet connection and also at the time of reconnecting the connection and synchronizing the service numbers.",
+            "area": "JavaFX, S3, APIREST, Postgres",
+            "alt": "miDT"
+          }
+        ]
+      },
+      "sectionPlan": {
+        "planTitle": "We have plans that fit your requirements",
+        "planSecondTitleCustom": "Let's build something big together",
+        "planSecondTitleSmart": "Let's work together, make your dreams come true",
+        "help": "Do you have any questions about the service?",
+        "testimonyList": [
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Alvaro ",
+            "ocupation": "CEO de Propins",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Matías Gonzales",
+            "ocupation": "CIO Forus",
+            "img": "../images/testimony_1.png"
+          }
+        ],
+        "planSmart": [
+          {
+            "descriptionPlan": "Android iOS (Hybrid)"
+          },
+          {
+            "descriptionPlan": "Creation of API's for your Business (Microservices or Serverless)"
+          },
+          {
+            "descriptionPlan": "PWA"
+          },
+          {
+            "descriptionPlan": "Relational or Non-Relational DB"
+          },
+          {
+            "descriptionPlan": "Top of React Dev"
+          },
+          {
+            "descriptionPlan": "GraphQL"
+          },
+          {
+            "descriptionPlan": "Free Hosting (on Serverless or K8s)"
+          }
+        ],
+
+        "planCostume": [
+          {
+            "descriptionPlan": "Android & iOS Development (Hybrid or Native)"
+          },
+          {
+            "descriptionPlan": "API + Api Management"
+          },
+          {
+            "descriptionPlan": "PWA, SPA, SSR and Backoffice Site"
+          },
+          {
+            "descriptionPlan": "Message Queue Strategy, gRPC, Pub/Sub Pattern or Signal R"
+          },
+          {
+            "descriptionPlan": "Relational, Non-Relational DB or Data Lake Management"
+          },
+          {
+            "descriptionPlan": "All DevSecOps workflow configured and Ready"
+          },
+          {
+            "descriptionPlan": "Manage more than 100k concurrent users 🤝"
+          }
+        ]
+      },
+      "photos": {
+        "photoOne": "../../images/devteam_01.JPG",
+        "photoTwo": "../../images/devteam_02.JPG",
+        "photoThree": "../../images/devteam_03.JPG",
+        "photoFour": "../../images/devteam_04.JPG",
+        "photoFive": "../../images/devteam_05.JPG"
+      },
+      "footer": {
+        "talk": "Talk!",
+        "email": "development@cleveritgroup.com",
+        "terms": "Terms & condition",
+        "about": "About us",
+        "join": "Join us",
+        "blog": "Blog & Articles",
+        "button": "want to know more",
+        "instagramLink": "https://www.instagram.com/cleveritgroup/",
+        "linkedInLink": "https://www.linkedin.com/company/cleverit-latam/",
+        "behanceLink": "https://www.behance.net/cleverexperience",
+        "dribbbleLink": "",
+        "pageLink": "https://www.cleveritgroup.com/",
+        "rigths": "  All rights reserved © 2019 Cleverit.",
+        "direction": "Los Militares #6191, Las Condes, Chile"
+      }
+    },
+    "es": {
+      "navBar": {
+        "services": "Servicios",
+        "plan": "Planes",
+        "team": "Equipo",
+        "contact": "¡Te contactamos!",
+        "quote": "cotiza con nosotros",
+        "home": "inicio",
+        "portfolio": "portafolio"
+      },
+      "sectionMain": {
+        "mainTitle": "¡Nada es complejo! Hazlo simple.",
+        "mainText": "Somos un grupo de Ingenieros de Software capaces de hacer posible lo imposible nos gusta entregar valor de negocio haciendo lo que más nos gusta.",
+        "button": "Cotiza con nosotros"
+      },
+      "sectionServices": {
+        "servicesTitle": "Nuestra Capacidad",
+        "servicesAbility": [
+          {
+            "ability": "Desarrollo web"
+          },
+          {
+            "ability": "Desarrollo de API"
+          },
+          {
+            "ability": "IoT"
+          },
+          {
+            "ability": "ML"
+          },
+          {
+            "ability": "Serverless"
+          },
+          {
+            "ability": "Arquitectura Cloud"
+          },
+          {
+            "ability": "Administración de estructura TI"
+          }
+        ],
+        "servicesButtonReel": "Mira nuestro reel",
+        "servicesButtonRequest": "Cotiza con nosotros"
+      },
+      "sectionPortfolio": {
+        "portfolioTitle": "Creamos productos a la medida",
+        "loadMore": "Cargar más",
+        "cards": [
+          {
+            "img": "../../images/miDT.png",
+            "text": "Modernización de los contratos Laborales para Chile",
+            "description": "Digitalización y del proceso de evaluación y firma de contratos, la idea principal es evitar realizar dicho trabajo en una notaría, si no que cualquier empleador pueda generar de forma digital un contrato válido y que este pueda ser firmado por un empleado de forma digital haciendo uso de clave única desde el portal MiDT",
+            "area": "React, NETCore, OpenShift, Azure, Microservicios",
+            "alt": "miDT - Dirección del trabajo, Chile"
+          },
+          {
+            "img": "../images/flexit.jpg",
+            "text": "Web de Directores & Web de Gestión",
+            "description": "Sistemas documentales desarrollados a medida que permiten indexar documentos desde las bóvedas de Meridian BlueCielo, la idea principal de este proyecto es disponibilizar información sensible del resultado del directorio de Metro, el sistema debía ser rápido y de fácil adopción.",
+            "area": "NETCore, AzureDevOps"
+          },
+          {
+            "img": "../images/flexit.jpg",
+            "text": "Kardex",
+            "description": "Este es un sistema semi-automatizado para realizar retiro en tienda de productos, que está integrado al los sistemas actuales de Click and Collect de Falabella. Básicamente se compone de dos partes; por un lado está la bodega donde se almacenan los pedidos y, los módulos de atención que cuentan con dos puertas mecánicas, una de cara a la bodega y otra hacia el cliente. En estos módulos se ubican los pedidos para su posterior retiro y, por otro lado, está la raspberry donde está montada una aplicación desarrollada en Java FX que maneja la lógica de apertura y cierre de puertas y la atención del cliente que llega a retirar su producto.",
+            "area": "JavaSpring, JavaFX, J2EE, Raspberry",
+            "alt": "miDT"
+          },
+          {
+            "img": "../images/flexit.jpg",
+            "text": "Turnero Offline",
+            "description": "(CL PE CO AR) Esto sistema viene a ser un ReWork del actual turnero ya que el sistema anterior presentaba problemas cuando se perdía conexión a internet. Esto provocaba la pérdida sincronización de números, lo que terminaba perdiendo números de atención. Es por esto que se crea aplicación con base de datos embebida y local, la cual se utiliza cuando está sin internet y al momento de recuperar la conexión se deben enviar todos los números de atención para volver a sincronizar.",
+            "area": "JavaFX, S3, APIREST, Postgres",
+            "alt": "miDT"
+          }
+        ]
+      },
+      "sectionPlan": {
+        "planTitle": "Disponemos de Planes que se ajustan a tus requerimientos",
+        "planSecondTitleCustom": "Construyamos algo grande juntos",
+        "planSecondTitleSmart": "Trabajemos juntos, hagamos tus sueños realidad",
+        "help": "¿Tienes algunas dudas sobre el servicio?",
+        "testimonyList": [
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          }
+        ],
+        "planSmart": [
+          {
+            "descriptionPlan": "Android iOS (Hybrid)"
+          },
+          {
+            "descriptionPlan": "Creation of API's for your Business (Microservices or Serverless)"
+          },
+          {
+            "descriptionPlan": "PWA"
+          },
+          {
+            "descriptionPlan": "Relational or Non-Relational DB"
+          },
+          {
+            "descriptionPlan": "Top of React Dev"
+          },
+          {
+            "descriptionPlan": "GraphQL"
+          },
+          {
+            "descriptionPlan": "Free Hosting (on Serverless or K8s)"
+          }
+        ],
+        "planMedium": [
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          }
+        ],
+
+        "planCostume": [
+          {
+            "descriptionPlan": "Android & iOS Development (Hybrid or Native)"
+          },
+          {
+            "descriptionPlan": "API + Api Management"
+          },
+          {
+            "descriptionPlan": "PWA, SPA, SSR and Backoffice Site"
+          },
+          {
+            "descriptionPlan": "Message Queue Strategy, gRPC, Pub/Sub Pattern or Signal R"
+          },
+          {
+            "descriptionPlan": "Relational, Non-Relational DB or Data Lake Management"
+          },
+          {
+            "descriptionPlan": "All DevSecOps workflow configured and Ready"
+          },
+          {
+            "descriptionPlan": "Manage more than 100k concurrent users 🤝"
+          }
+        ]
+      },
+      "photos": {
+        "photoOne": "../../images/devteam_01.JPG",
+        "photoTwo": "../../images/devteam_02.JPG",
+        "photoThree": "../../images/devteam_03.JPG",
+        "photoFour": "../../images/devteam_04.JPG",
+        "photoFive": "../../images/devteam_05.JPG"
+      },
+      "footer": {
+        "talk": "Talk!",
+        "email": "development@cleveritgroup.com",
+        "terms": "Terms & condition",
+        "about": "About us",
+        "join": "Join us",
+        "blog": "Blog & Articles",
+        "button": "want to know more",
+        "instagramLink": "https://www.instagram.com/cleveritgroup/",
+        "linkedInLink": "https://www.linkedin.com/company/cleverit-latam/",
+        "behanceLink": "https://www.behance.net/cleverexperience",
+        "dribbbleLink": "",
+        "pageLink": "https://www.cleveritgroup.com/",
+        "rigths": "  All rights reserved © 2019 Cleverit.",
+        "direction": "Los Militares #6191, Las Condes, Chile"
+      }
+    }
+  },
+  "QA": {
+    "es": {
+      "navBar": {
+        "services": "Servicios",
+        "plan": "Planes",
+        "team": "Equipo",
+        "contact": "¡Te contactamos!",
+        "quote": "cotiza con nosotros",
+        "home": "inicio",
+        "portfolio": "portafolio"
+      },
+      "sectionMain": {
+        "mainTitle": "Evaluamos productos priorizando la Calidad",
+        "mainText": "Creamos, inspeccionamos y adaptamos nuestros desarrollos de acuerdo a las necesidades del cliente",
+        "button": "Cotiza con nosotros"
+      },
+      "sectionServices": {
+        "servicesTitle": "¿Qué nos hace ser clevers?",
+        "servicesAbility": [
+          { "ability": "Stress tests" },
+          { "ability": "Automated Testing" },
+          { "ability": "DevTestOps" },
+          { "ability": "CI/CD" },
+          { "ability": "Services Tests" },
+          { "ability": "Visual Tests" },
+          { "ability": "Integration Tests" },
+          { "ability": "Agile testing" },
+          { "ability": "Api Tests" },
+          { "ability": "Mobile Tests" }
+        ],
+        "servicesButtonReel": "Mira nuestro reel",
+        "servicesButtonRequest": "Cotiza con nosotros"
+      },
+      "sectionPortfolio": {
+        "portfolioTitle": "Productos a la medida, con la mejor calidad",
+        "loadMore": "Cargar más",
+        "cards": [
+          {
+            "img": "../../images/wom.png",
+            "text": "WOMVOLUTION",
+            "description": "El proyecto trata de la migración de los servicios de legado y la célula QA cumple la función de partner de WOM, proveyendo un servicio de desarrollo y ejecución de pruebas manuales y automatizadas con distintos focos y alcances, a través de las entregas continuas e incrementales, garantizando la calidad de los desarrollos e integraciones entre distintas áreas.",
+            "area": "Services, SOAP, SOAPUI, git, AzureDevops Pipelines, Automated testing, Scrum",
+            "alt": "WOM, WOMVOLUTION, GIT, AZURE, AZUREDEVOPS,QA,TESTING"
+          },
+          {
+            "img": "../../images/Falabella_postvirtual.png",
+            "text": "Post Virtual",
+            "description": "El proyecto se basó en realizar algunos cambios al postvirtual a nivel de operaciones de falabella y para esto se automatizaron las pruebas funcionales de todo el producto que antes se hacían de manera manual, agilizando con esto los pases a producción",
+            "area": "Java, POSTMAN, REST, Jira, cucumber, git, gitlab, Scrum",
+            "alt": "Falabella, jira, agile, qa, operaciones falabella, pruebas, scrum"
+          },
+          {
+            "img": "../../images/Falabella_giftcard.png",
+            "text": "GiftCard Compensación",
+            "description": "El proyecto se basó en la creación de una API para un nuevo tipo de GiftCard y para esto se automatizaron todas las pruebas de los diferentes servicios, además de la realización de las pruebas de stress para cada uno, evaluando con esto la arquitectura. Todo esto integrado en pipelines, apoyando la integración continua",
+            "area": "Java, POSTMAN, REST, git, Jira, cucumber, gitlab, RestAssured, jmeter, Scrum",
+            "alt": "Falabella, jira, agile, qa, operaciones falabella, pruebas, scrum"
+          },
+          {
+            "img": "../../images/Falabella_sales.png",
+            "text": "Falabella Sales",
+            "description": "El proyecto se basó en la creación de una API para la generación de una Guía Electrónica para todas las ordenes de compra de Falabella bajo Google Cloud Platform y ademas de la realización de pruebas de stress para integrarlo en el pipeline",
+            "area": "Nodejs, POSTMAN, GCP, Jira, gitlab, Zephyr, git, nodejs, k6, Scrum",
+            "alt": "Falabella, jira, agile, qa, operaciones falabella, pruebas, scrum"
+          },
+          {
+            "img": "../../images/flexit.jpg",
+            "text": "Falabella Conect",
+            "description": "El proyecto se basó en la creación de una app interna para la venta de planes y equipos móviles en Falabella y para esto se automatizaron todas las pruebas funcionales de los diferentes servicios.",
+            "area": "Java, POSTMAN, Zephyr, Jira, gitlab, git, cucumber, Scrum"
+          },
+          {
+            "img": "../../images/flexit.jpg",
+            "text": "Automatización de Pruebas",
+            "description": "El proyecto se basó en la automatización de las pruebas de regresión que se realizaban manualmente a los diferentes aplicativos de SAG. También se realizaron una serie de workshops evangelizando las buenas prácticas y la metodología ágil tanto al equipo de desarrollo como al equipo de QA.",
+            "area": "C#, POSTMAN, newman, Jira, Selenium, Specflow, Azure Devops, git, cucumber, nodejs, Scrum, TDD"
+          }
+        ]
+      },
+      "sectionPlan": {
+        "planTitle": "Ofrecemos planes que se ajustan a tus necesidades",
+        "planSecondTitleCustom": "Exclusive tailor-made service",
+        "planSecondTitleSmart": "Our default plan",
+        "help": "¿Tienes algunas dudas sobre el servicio?",
+        "planSecondTitleMedium": "Our default plan",
+        "testimonyList": [
+          {
+            "testimony": "El trabajo realizado por Cleverit cumplió con nuestras expectativas aportando a la agilidad de nuestros procesos de Testing",
+            "name": "Manuel Rivera",
+            "ocupation": "Ingeniero QA CCA",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Muy capacitados en todo lo relacionado a certificación de software e implementación de flujos según procesos requeridos por la organización",
+            "name": "Keudy Moreno",
+            "ocupation": "Subgerencia de Desarrollo Ventas y Tiendas - Falabella Retail S.A",
+            "img": "../images/testimony_1.png"
+          }
+        ],
+        "planSmart": [
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          }
+        ],
+        "planCostume": [
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          }
+        ]
+      },
+      "photos": {
+        "photoOne": "../images/team_01.png",
+        "photoTwo": "../images/team_02.png",
+        "photoThree": "../images/team_03.png",
+        "photoFour": "../images/team_04.png",
+        "photoFive": "../images/team_05.png"
+      },
+      "footer": {
+        "talk": "¡Hablemos!",
+        "email": "contacto@cleveritgroup.com",
+        "terms": "Terminos y condiciones",
+        "about": "Sobre nosotros",
+        "join": "Únete a nuestro equipo",
+        "blog": "Blog & Artículos",
+        "button": "¡Quiero saber más!",
+        "instagramLink": "https://www.instagram.com/cleveritgroup/",
+        "linkedInLink": "https://www.linkedin.com/company/cleverit-latam/",
+        "behanceLink": "https://www.behance.net/cleverexperience",
+        "dribbbleLink": "",
+        "pageLink": "https://www.cleveritgroup.com/",
+        "rigths": "  Todos los derechos reservados © 2019 Cleverit.",
+        "direction": "Los Militares #6191, Las Condes, Chile"
+      }
+    },
+    "en": {
+      "navBar": {
+        "services": "Services",
+        "plan": "Plans",
+        "team": "Team",
+        "contact": "We contact you!",
+        "quote": "quote with us",
+        "home": "home",
+        "portfolio": "portfolio"
+      },
+      "sectionMain": {
+        "mainTitle": "We evaluate products by prioritizing Quality",
+        "mainText": "We create, inspect and adapt our development methodology to the needs of our clients",
+        "button": "Get a quote"
+      },
+      "sectionServices": {
+        "servicesTitle": "What makes us Clevers?",
+        "servicesAbility": [
+          { "ability": "Stress tests" },
+          { "ability": "Automated Testing" },
+          { "ability": "DevTestOps" },
+          { "ability": "CI/CD" },
+          { "ability": "Services Tests" },
+          { "ability": "Visual Tests" },
+          { "ability": "Integration Tests" },
+          { "ability": "Agile testing" },
+          { "ability": "Api Tests" },
+          { "ability": "Mobile Tests" }
+        ],
+        "servicesButtonReel": "Check out our reel",
+        "servicesButtonRequest": "Get a quote"
+      },
+      "sectionPortfolio": {
+        "portfolioTitle": "Tailor made products, with the best quality",
+        "loadMore": "Load more",
+        "cards": [
+          {
+            "img": "../../images/wom.png",
+            "text": "WOMVOLUTION",
+            "description": "This project is about the migration of the legacy services and the QA team that is WOM's partner, providing a development service and execution of manual and automated testing with different focuses and approaches, through continuous and incremental delivery, guaranteeing the quality of the developtment and integration between different areas.",
+            "area": "Services, SOAP, SOAPUI, git, AzureDevops Pipelines, Automated testing, Scrum",
+            "alt": "WOM, WOMVOLUTION, GIT, AZURE, AZUREDEVOPS, QA, TESTING"
+          },
+          {
+            "img": "../../images/Falabella_postvirtual.png",
+            "text": "Post Virtual",
+            "description": "This objective of this project was to change the Virtual Post of Falabella's operations and for this manual testing was completely automated, improving the overall speed to finish a product.",
+            "area": "Java, POSTMAN, REST, Jira, cucumber, git, gitlab, Scrum",
+            "alt": "Falabella, jira, agile, qa, falabella's operations, testing, scrum"
+          },
+          {
+            "img": "../../images/Falabella_giftcard.png",
+            "text": "GiftCard Compensation",
+            "description": "This project is based on the creation of an API for a new kind of GiftCard and for this different tests were automated, also the making of stress tests for each service, to evaluate the overall architecture. All this is integrated in pipelines, supporting continuous integration.",
+            "area": "Java, POSTMAN, REST, git, Jira, cucumber, gitlab, RestAssured, jmeter, Scrum",
+            "alt": "Falabella, jira, agile, qa, falabella's operations, testing, scrum"
+          },
+          {
+            "img": "../../images/Falabella_sales.png",
+            "text": "Falabella Sales",
+            "description": "This project was based on the creation of an API for the generation of electronic guides for all the orders of Falabella under Google Cloud Platform, also the making of stress tests for integration in the pipeline.",
+            "area": "Nodejs, POSTMAN, GCP, Jira, gitlab, Zephyr, git, nodejs, k6, Scrum",
+            "alt": "Falabella, jira, agile, qa, operaciones falabella, pruebas, scrum"
+          },
+          {
+            "img": "../../images/flexit.jpg",
+            "text": "Falabella Conect",
+            "description": "This project was based on an internal app for the selling of cellphones and plans at Falabella and for this the functional tests of different services were automated.",
+            "area": "Java, POSTMAN, Zephyr, Jira, gitlab, git, cucumber, Scrum"
+          },
+          {
+            "img": "../../images/flexit.jpg",
+            "text": "Automatización de Pruebas",
+            "description": "This project was based on the automation of regression tests that were made manually to the different SAG applications. Workshops were made to teach the bests practices and the agile methodology to the development and QA teams.",
+            "area": "C#, POSTMAN, newman, Jira, Selenium, Specflow, Azure Devops, git, cucumber, nodejs, Scrum, TDD"
+          }
+        ]
+      },
+      "sectionPlan": {
+        "planTitle": "We offer plans that fit your needs",
+        "planSecondTitleCustom": "Exclusive tailor-made service",
+        "planSecondTitleSmart": "Our default plan",
+        "planSecondTitleMedium": "Our default plan",
+        "help": "Do you have any questions about the service?",
+        "testimonyList": [
+          {
+            "testimony": "The work that Cleverit did met our expectations improving the speed of our testing processes.",
+            "name": "Manuel Rivera",
+            "ocupation": "QA CCA enineer",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "They were very well qualified with everything related to the certification of software and the implementation of flows required by the organization",
+            "name": "Keudy Moreno",
+            "ocupation": "Deputy manager of sales development and stores - Falabella Retail S.A",
+            "img": "../images/testimony_1.png"
+          }
+        ],
+        "planSmart": [
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          }
+        ],
+        "planCostume": [
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          }
+        ]
+      },
+      "photos": {
+        "photoOne": "../images/team_01.png",
+        "photoTwo": "../images/team_02.png",
+        "photoThree": "../images/team_03.png",
+        "photoFour": "../images/team_04.png",
+        "photoFive": "../images/team_05.png"
+      },
+      "footer": {
+        "talk": "Talk!",
+        "email": "contact@cleveritgroup.com",
+        "terms": "Terms & condition",
+        "about": "About us",
+        "join": "Join us",
+        "blog": "Blog & Articles",
+        "button": "want to know more",
+        "instagramLink": "https://www.instagram.com/cleveritgroup/",
+        "linkedInLink": "https://www.linkedin.com/company/cleverit-latam/",
+        "behanceLink": "https://www.behance.net/cleverexperience",
+        "dribbbleLink": "",
+        "pageLink": "https://www.cleveritgroup.com/",
+        "rigths": "  All rights reserved © 2019 Cleverit.",
+        "direction": "Los Militares #6191, Las Condes, Chile"
+      }
+    }
+  },
+  "UX": {
+    "en": {
+      "navBar": {
+        "services": "Services",
+        "plan": "Plans",
+        "team": "Team",
+        "contact": "We contact you!",
+        "quote": "quote with us",
+        "home": "home",
+        "portfolio": "portfolio"
+      },
+      "sectionMain": {
+        "mainTitle": "We make complex things simple",
+        "mainText": "As a team, our goal is to build great user experiences for our projects",
+        "button": "Get a quote"
+      },
+      "sectionServices": {
+        "servicesTitle": "Our clients aprove our capabilities to develop their projects",
+        "servicesAbility": [
+          { "ability": "UI / UX Audit" },
+          { "ability": "Research" },
+          { "ability": "Brand Identity" },
+          { "ability": "Prototyping" },
+          { "ability": "Software" },
+          { "ability": "Animation" },
+          { "ability": "2D / 3D Motion Graphics" },
+          { "ability": "Web design and mobile apps" }
+        ],
+        "servicesButtonReel": "Check out our reel",
+        "servicesButtonRequest": "Get a quote"
+      },
+      "sectionPortfolio": {
+        "portfolioTitle": "We design tailor made products",
+        "loadMore": "Load more",
+        "cards": [
+          {
+            "img": "../../images/flexit.jpg",
+            "text": "Flexit Hiring",
+            "description": "This application was developed to speed-up the hiring of users for part time activities or special events that require more personnel",
+            "area": "UX, UI, branding, development",
+            "alt": "Flexit Hiring - Falabella, Retail"
+          },
+          {
+            "img": "../images/propins.png",
+            "text": "Propins",
+            "description": "A platform that helps to make virtual visits to real estate properties and projects for selling, using the best technology for this market",
+            "area": "UX, UI, branding, development",
+            "alt": "Propins - virtual tours, augmented reality, buy, sell, real estate"
+          },
+          {
+            "img": "../images/whyX.png",
+            "text": "WHYX App",
+            "description": "Based on the circular economy, the principal concept of the project is to rent instead of purchasing. The objective is to enjoy experiences without unnecessary products",
+            "area": "UX, UI, branding, development",
+            "alt": "WhyX - Unique experiences, circular economy, app, rent"
+          },
+          {
+            "img": "../images/forus.png",
+            "text": "Forus",
+            "description": "Our solution for tracking the inventory of retail stores, optimizes processes and improves efficiency",
+            "area": "UX, UI, branding, development",
+            "alt": "Forus, tracking of inventory for retail"
+          }
+        ]
+      },
+      "sectionPlan": {
+        "planTitle": "We offer plans that cater to the needs of each project",
+        "planSecondTitleCustom": "Exclusive tailor-made service",
+        "planSecondTitleSmart": "Our default plan",
+        "planSecondTitleMedium": "Our default plan",
+        "help": "Do you have any questions about the service?",
+        "testimonyList": [
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          }
+        ],
+        "planSmart": [
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          }
+        ],
+        "planMedium": [
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          }
+        ],
+        "planCostume": [
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          }
+        ]
+      },
+      "photos": {
+        "photoOne": "../images/team_01.png",
+        "photoTwo": "../images/team_02.png",
+        "photoThree": "../images/team_03.png",
+        "photoFour": "../images/team_04.png",
+        "photoFive": "../images/team_05.png"
+      },
+      "footer": {
+        "talk": "Talk!",
+        "terms": "Terms & condition",
+        "about": "About us",
+        "join": "Join us",
+        "blog": "Blog & Articles",
+        "button": "want to know more"
+      }
+    },
+    "es": {
+      "navBar": {
+        "services": "Servicios",
+        "plan": "Planes",
+        "team": "Equipo",
+        "contact": "¡Te contactamos!",
+        "quote": "cotiza con nosotros",
+        "home": "inicio",
+        "portfolio": "portafolio"
+      },
+      "sectionMain": [
+        {
+          "mainTitle": "Hacemos simples las cosas complejas",
+          "mainText": "Como equipo, nuestro objetivo es construir grandes experiencias de usuario para cada proyecto en el que participamos",
+          "button": "Cotiza con nosotros"
+        }
+      ],
+      "sectionServices": {
+        "servicesTitle": "Nuestros clientes avalan nuestra capacidad para impulsar su proyecto",
+        "servicesAbility": [
+          { "ability": "UI / UX Audit" },
+          { "ability": "Research" },
+          { "ability": "Brand Identity" },
+          { "ability": "Prototyping" },
+          { "ability": "Software" },
+          { "ability": "Animation" },
+          { "ability": "2D / 3D Motion Graphics" },
+          { "ability": "Web design and mobile apps" }
+        ],
+        "servicesButtonReel": "Mira nuestro reel",
+        "servicesButtonRequest": "Cotiza con nosotros"
+      },
+      "sectionPortfolio": {
+        "portfolioTitle": "Diseñamos productos digitales a medida",
+        "loadMore": "Cargar más",
+        "cards": [
+          {
+            "img": "../../images/flexit.jpg",
+            "text": "Flexit Contrataciones",
+            "description": "Esta aplicación fue desarrollada para la contratación rápida e inmediata de usuarios en contextos de tiempo parcial o eventos especiales que requieren más personal.",
+            "area": "UX, UI, branding, development",
+            "alt": "Flexit Contrataciones - Falabella, Retail"
+          },
+          {
+            "img": "../images/propins.png",
+            "text": "Propins",
+            "description": "Se trata de una plataforma que permite realizar visitas virtuales a propiedades y proyectos para su venta utilizando la mejor tecnología para este mercado.",
+            "area": "UX, UI, branding, development",
+            "alt": "Propins - Tour virtual, realidad aumentada, compra, venta, inmuebles"
+          },
+          {
+            "img": "../images/whyX.png",
+            "text": "WHYX App",
+            "description": "Basado en una economía circular, el concepto principal es arrendar en lugar de comprar. El objetivo es tener experiencias sin obtener productos innecesarios.",
+            "area": "UX, UI, branding, development",
+            "alt": "WhyX - Experiencias unicas, economia circular, app, arriendo"
+          },
+          {
+            "img": "../images/forus.png",
+            "text": "Forus",
+            "description": "Nuestra solución para el inventario de productos en las tiendas de una cadena de tiendas minoristas, optimiza los procesos y permite una mayor eficiencia en el servicio.",
+            "area": "UX, UI, branding, development",
+            "alt": "Forus, control de inventarios para el retail"
+          }
+        ]
+      },
+      "sectionPlan": {
+        "planTitle": "Ofrecemeos planes que se ajustan a las necesidades de cada proyecto",
+        "planSecondTitleCustom": "Servicio exclusivo a medida",
+        "planSecondTitleSmart": "Nuestro plan por defecto",
+        "planSecondTitleMedium": "Nuestro plan por defecto",
+        "help": "¿Tienes algunas dudas sobre el servicio?",
+        "testimonyList": [
+          {
+            "testimony": "1Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "2Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "3Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "4Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "5Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "6Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "7Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          }
+        ],
+        "planSmart": [
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          }
+        ],
+        "planMedium": [
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          }
+        ],
+        "planCostume": [
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          }
+        ]
+      },
+      "photos": {
+        "photoOne": "../images/team_01.png",
+        "photoTwo": "../images/team_02.png",
+        "photoThree": "../images/team_03.png",
+        "photoFour": "../images/team_04.png",
+        "photoFive": "../images/team_05.png"
+      },
+      "footer": {
+        "talk": "¡Hablemos!",
+        "email": "contacto@cleveritgroup.com",
+        "terms": "Terminos y condiciones",
+        "about": "Sobre nosotros",
+        "join": "Únete a nuestro equipo",
+        "blog": "Blog & Artículos",
+        "button": "¡Quiero saber más!",
+        "instagramLink": "https://www.instagram.com/cleveritgroup/",
+        "linkedInLink": "https://www.linkedin.com/company/cleverit-latam/",
+        "behanceLink": "https://www.behance.net/cleverexperience",
+        "dribbbleLink": "",
+        "pageLink": "https://www.cleveritgroup.com/",
+        "rigths": "  Todos los derechos reservados © 2019 Cleverit.",
+        "direction": "Los Militares #6191, Las Condes, Chile"
+      }
+    }
+  },
+  "VR": {
+    "en": {
+      "navBar": {
+        "services": "Services",
+        "plan": "Plans",
+        "team": "Team",
+        "contact": "We contact you!",
+        "quote": "quote with us",
+        "home": "home",
+        "portfolio": "portfolio"
+      },
+
+      "sectionMain": {
+        "mainTitle": "Let us create you a whole new world",
+        "mainText": "As a team, our goal is to build great user experiences for our projects",
+        "button": "Get a quote"
+      },
+      "sectionServices": {
+        "servicesTitle": "Our clients aprove our capabilities to develop their projects",
+        "servicesAbility": [
+          { "ability": "UI / UX Audit" },
+          { "ability": "Research" },
+          { "ability": "Brand Identity" },
+          { "ability": "Prototyping" },
+          { "ability": "Software" },
+          { "ability": "Animation" },
+          { "ability": "2D / 3D Motion Graphics" },
+          { "ability": "Web design and mobile apps" }
+        ],
+        "servicesButtonReel": "Check out our reel",
+        "servicesButtonRequest": "Get a quote"
+      },
+      "sectionPortfolio": {
+        "portfolioTitle": "We design tailor made products",
+        "cards": [
+          {
+            "img": "../../images/flexit.jpg",
+            "text": "Flexit Hiring",
+            "description": "This application was developed to speed-up the hiring of users for part time activities or special events that require more personnel",
+            "area": "UX, UI, branding, development",
+            "alt": "Flexit Hiring - Falabella, Retail"
+          },
+          {
+            "img": "../images/propins.png",
+            "text": "Propins",
+            "description": "A platform that helps to make virtual visits to real estate properties and projects for selling, using the best technology for this market",
+            "area": "UX, UI, branding, development",
+            "alt": "Propins - virtual tours, augmented reality, buy, sell, real estate"
+          },
+          {
+            "img": "../images/whyX.png",
+            "text": "WHYX App",
+            "description": "Based on the circular economy, the principal concept of the project is to rent instead of purchasing. The objective is to enjoy experiences without unnecessary products",
+            "area": "UX, UI, branding, development",
+            "alt": "WhyX - Unique experiences, circular economy, app, rent"
+          },
+          {
+            "img": "../images/forus.png",
+            "text": "Forus",
+            "description": "Our solution for tracking the inventory of retail stores, optimizes processes and improves efficiency",
+            "area": "UX, UI, branding, development",
+            "alt": "Forus, tracking of inventory for retail"
+          }
+        ]
+      },
+      "sectionPlan": {
+        "planTitle": "We offer plans that cater to the needs of each project",
+        "planSecondTitleCustom": "Exclusive tailor-made service",
+        "planSecondTitleSmart": "Our default plan",
+        "planSecondTitleMedium": "Our default plan",
+        "help": "Do you have any questions about the service?",
+        "testimonyList": [
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          }
+        ],
+        "planSmart": [
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          }
+        ],
+        "planMedium": [
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          }
+        ],
+        "planCostume": [
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          }
+        ]
+      },
+      "photos": {
+        "photoOne": "../images/team_01.png",
+        "photoTwo": "../images/team_02.png",
+        "photoThree": "../images/team_03.png",
+        "photoFour": "../images/team_04.png",
+        "photoFive": "../images/team_05.png"
+      },
+      "footer": {
+        "talk": "Talk!",
+        "email": "contact@cleveritgroup.com",
+        "terms": "Terms & condition",
+        "about": "About us",
+        "join": "Join us",
+        "blog": "Blog & Articles",
+        "button": "want to know more",
+        "instagramLink": "https://www.instagram.com/cleveritgroup/",
+        "linkedInLink": "https://www.linkedin.com/company/cleverit-latam/",
+        "behanceLink": "https://www.behance.net/cleverexperience",
+        "dribbbleLink": "",
+        "pageLink": "https://www.cleveritgroup.com/",
+        "rigths": "  All rights reserved © 2019 Cleverit.",
+        "direction": "Los Militares #6191, Las Condes, Chile"
+      }
+    },
+
+    "es": {
+      "navBar": {
+        "services": "Servicios",
+        "plan": "Planes",
+        "team": "Equipo",
+        "contact": "¡Te contactamos!",
+        "quote": "cotiza con nosotros",
+        "home": "inicio",
+        "portfolio": "portafolio"
+      },
+      "sectionMain": {
+        "mainTitle": "Permítanos crearle un mundo completamente nuevo",
+        "mainText": "Como equipo, nuestro objetivo es construir grandes experiencias de usuario para cada proyecto en el que participamos",
+        "button": "Cotiza con nosotros"
+      },
+      "sectionServices": {
+        "servicesTitle": "Nuestros clientes avalan nuestra capacidad para impulsar su proyecto",
+        "servicesAbility": [
+          { "ability": "UI / UX Audit" },
+          { "ability": "Research" },
+          { "ability": "Brand Identity" },
+          { "ability": "Prototyping" },
+          { "ability": "Software" },
+          { "ability": "Animation" },
+          { "ability": "2D / 3D Motion Graphics" },
+          { "ability": "Web design and mobile apps" }
+        ],
+        "servicesButtonReel": "Mira nuestro reel",
+        "servicesButtonRequest": "Cotiza con nosotros"
+      },
+      "sectionPortfolio": {
+        "portfolioTitle": "Diseñamos productos digitales a medida",
+        "cards": [
+          {
+            "img": "../../images/flexit.jpg",
+            "text": "Flexit Contrataciones",
+            "description": "Esta aplicación fue desarrollada para la contratación rápida e inmediata de usuarios en contextos de tiempo parcial o eventos especiales que requieren más personal.",
+            "area": "UX, UI, branding, development",
+            "alt": "Flexit Contrataciones - Falabella, Retail"
+          },
+          {
+            "img": "../images/propins.png",
+            "text": "Propins",
+            "description": "Se trata de una plataforma que permite realizar visitas virtuales a propiedades y proyectos para su venta utilizando la mejor tecnología para este mercado.",
+            "area": "UX, UI, branding, development",
+            "alt": "Propins - Tour virtual, realidad aumentada, compra, venta, inmuebles"
+          },
+          {
+            "img": "../images/whyX.png",
+            "text": "WHYX App",
+            "description": "Basado en una economía circular, el concepto principal es arrendar en lugar de comprar. El objetivo es tener experiencias sin obtener productos innecesarios.",
+            "area": "UX, UI, branding, development",
+            "alt": "WhyX - Experiencias unicas, economia circular, app, arriendo"
+          },
+          {
+            "img": "../images/forus.png",
+            "text": "Forus",
+            "description": "Nuestra solución para el inventario de productos en las tiendas de una cadena de tiendas minoristas, optimiza los procesos y permite una mayor eficiencia en el servicio.",
+            "area": "UX, UI, branding, development",
+            "alt": "Forus, control de inventarios para el retail"
+          }
+        ]
+      },
+      "sectionPlan": {
+        "planTitle": "Ofrecemeos planes que se ajustan a las necesidades de cada proyecto",
+        "planSecondTitleCustom": "Servicio exclusivo a medida",
+        "planSecondTitleSmart": "Nuestro plan por defecto",
+        "help": "¿Tienes algunas dudas sobre el servicio?",
+        "testimonyList": [
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          },
+          {
+            "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
+            "name": "Franco Abello",
+            "ocupation": "CEO de Why X",
+            "img": "../images/testimony_1.png"
+          }
+        ],
+        "planSmart": [
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          }
+        ],
+        "planMedium": [
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          }
+        ],
+        "planCostume": [
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          },
+          {
+            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+          }
+        ]
+      },
+      "photos": {
+        "photoOne": "../images/team_01.png",
+        "photoTwo": "../images/team_02.png",
+        "photoThree": "../images/team_03.png",
+        "photoFour": "../images/team_04.png",
+        "photoFive": "../images/team_05.png"
+      },
+      "footer": {
+        "talk": "¡Hablemos!",
+        "email": "contacto@cleveritgroup.com",
+        "terms": "Terminos y condiciones",
+        "about": "Sobre nosotros",
+        "join": "Únete a nuestro equipo",
+        "blog": "Blog & Artículos",
+        "button": "¡Quiero saber más!",
+        "instagramLink": "https://www.instagram.com/cleveritgroup/",
+        "linkedInLink": "https://www.linkedin.com/company/cleverit-latam/",
+        "behanceLink": "https://www.behance.net/cleverexperience",
+        "dribbbleLink": "",
+        "pageLink": "https://www.cleveritgroup.com/",
+        "rigths": "  Todos los derechos reservados © 2019 Cleverit.",
+        "direction": "Los Militares #6191, Las Condes, Chile"
+      }
+    }
+  },
+  "Common": {
+    "es": {
+      "modal": {
+        "completeYourInfo": "Ingresa tus datos, para ofrecerte un buen servicio",
+        "name": "Ingresa tu dirección de correo",
+        "emailError": "Dirección de correo inválida",
+        "emailRequired": "El email es requerido",
+        "dontShareInfo": "Nunca compartiremos esta información con nadie",
+        "companyName": "¿Cómo se llama tu empresa?",
+        "howBigCompany": "¿Qué tan grande es la compañía para la que trabajas?",
+        "justMe": "Solo yo",
+        "buttonClose": "Cerrar",
+        "asForQuote": "Haz tu cotización",
+        "success": "¡Tu solicitud ha sido enviada con éxito!",
+        "continue": "Continuar",
+        "emailTo": {
+          "devops": "devops@cleveritgroup.com",
+          "development": "development@cleveritgroup.com",
+          "qa": "qa@cleveritgroup,com",
+          "home": "contacto@cleveritgroup.com",
+          "ux": "cleverex@cleveritgruop.com"
+        }
+      }
+    },
+    "en": {
+      "modal": {
+        "completeYourInfo": "Enter your info, to offer you a good service",
+        "name": "Enter your email address",
+        "emailRequired": "Email address is required",
+        "emailError": "Invalid email address",
+        "dontShareInfo": "We never share this information with anyone",
+        "companyName": "What's the name of your company?",
+        "howBigCompany": "How big is the company you work for?",
+        "justMe": "Only me",
+        "buttonClose": "Close",
+        "asForQuote": "Make your quote",
+        "success": "Your request has been sent successfully!",
+        "continue": "Continue",
+        "emailTo": {
+          "devops": "devops@cleveritgroup.com",
+          "development": "development@cleveritgroup.com",
+          "qa": "qa@cleveritgroup,com",
+          "home": "contacto@cleveritgroup.com",
+          "ux": "cleverex@cleveritgruop.com"
+        }
+      }
+    }
+  }
+}

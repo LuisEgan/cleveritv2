@@ -1,7 +1,12 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
+import React from "react"
+export { default as wrapRootElement } from "./src/reducers/ReduxWrapper"
 
-// You can delete this file if you're not using it
+export function onRenderBody({ setHeadComponents }) {
+  setHeadComponents([
+    <script
+      key="fontawesome"
+      type="text/javascript"
+      src="https://kit.fontawesome.com/8d1dd6dbc3.js"
+    />,
+  ])
+}
