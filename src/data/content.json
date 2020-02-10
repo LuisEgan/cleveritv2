@@ -133,7 +133,7 @@
         "loadMore": "Load more",
         "cards": [
           {
-            "img": "../../images/adt_logo.svg",
+            "img": "../../images/flexit.jpg",
             "text": "Flexit Contrataciones",
             "description": "This app was developed for quick and immediate hiring of users in part-time contexts or special events that require more staff.",
             "area": "UX, UI, branding, development"

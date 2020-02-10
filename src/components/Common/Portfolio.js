@@ -65,7 +65,7 @@ let Portfolio = props => {
             >
               <Card style={{ width: "100%" }}>
                 <Inner>
-                  {/* <Card.Img variant="top" src={card.img} alt={card.alt} /> */}
+                  <Card.Img variant="top" src={card.img} alt={card.alt} />
                 </Inner>
                 <Body style={cardBody}>
                   <Title>{card.text}</Title>
