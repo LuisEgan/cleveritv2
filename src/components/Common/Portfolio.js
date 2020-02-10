@@ -58,6 +58,7 @@ let Portfolio = props => {
         className={`justify-content-center ${props.classAnimationPortfolio} `}
       >
         {content.sectionPortfolio.cards.slice(0, visible).map((card, index) => {
+          const renderIMG = require(`../../images/${card.img}`)
           return (
             <CardPortfolio
               className="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-5 "
@@ -65,7 +66,7 @@ let Portfolio = props => {
             >
               <Card style={{ width: "100%" }}>
                 <Inner>
-                  <Card.Img variant="top" src={card.img} alt={card.alt} />
+                  <Card.Img variant="top" src={renderIMG} alt={card.alt} />
                 </Inner>
                 <Body style={cardBody}>
                   <Title>{card.text}</Title>

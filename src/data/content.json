@@ -133,25 +133,25 @@
         "loadMore": "Load more",
         "cards": [
           {
-            "img": "../../images/flexit.jpg",
+            "img": "flexit.jpg",
             "text": "Flexit Contrataciones",
             "description": "This app was developed for quick and immediate hiring of users in part-time contexts or special events that require more staff.",
             "area": "UX, UI, branding, development"
           },
           {
-            "img": "../../images/propins.png",
+            "img": "propins.png",
             "text": "Propins",
             "description": "This is a platform that allows virtual tours to properties and projects for sales by using the best technology for this market.",
             "area": "UX, UI, branding, development"
           },
           {
-            "img": "../../images/whyX.png",
+            "img": "whyX.png",
             "text": "WHYX App",
             "description": "Based on a circular economy, the main concept is 'lease instead of buy'. The aim is to have experiences without getting needless products.",
             "area": "UX, UI, branding, development"
           },
           {
-            "img": "../../images/forus.png",
+            "img": "forus.png",
             "text": "Forus",
             "description": "Our solution for product inventory in stores of a retail chain, optimize processes and allow greater service efficiency.",
             "area": "UX, UI, branding, development"
