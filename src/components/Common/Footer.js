@@ -184,7 +184,7 @@ let Footer = props => {
                   <i className="fab fa-linkedin-in"></i>
                 </a>
               </span>
-            </Col>
+            </Col
           )}
 
           {data.footer.dribbbleLink && (

@@ -81,6 +81,14 @@ let NavBar = props => {
             {location === "home" ? (
               _.keys(content.navBar).map((text, index) => {
                 if (text === "quote") return
+                if (text === "carrers")
+                  return (
+                    <React.Fragment key={index}>
+                      <a href={`https://careers.cleveritgroup.com`}>
+                        {content.navBar[text]}
+                      </a>
+                    </React.Fragment>
+                  )
                 return (
                   <React.Fragment key={index}>
                     <a href={`#${text}`}>{content.navBar[text]}</a>
