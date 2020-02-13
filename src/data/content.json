@@ -2379,5 +2379,20 @@
         }
       }
     }
+  },
+  "NotFound": {
+    "es": {
+      "text": {
+        "message": "Lo siento, no encontramos la página que estás buscando.",
+        "button": "Regresame a Cleverit Group"
+      }
+    },
+    "en": {
+      "text": {
+        "message": "Sorry, we can’t find the page you were looking for.",
+
+        "button": "Take me back to Cleverit Group"
+      }
+    }
   }
 }
