@@ -6,7 +6,7 @@ import BurgerMenu from "./BurgerMenu"
 import CollapseMenu from "./CollapseMenu"
 import { getData, getSuiteColor } from "../../utils/page"
 import { connect } from "react-redux"
-import { Button } from "react-bootstrap"
+import { Button, Dropdown } from "react-bootstrap"
 import _ from "lodash"
 
 let NavBar = props => {
@@ -34,6 +34,8 @@ let NavBar = props => {
     justify-self: end;
     list-style-type: none;
     margin: auto 0;
+    display: flex;
+    align-items: center;
 
     & a {
       color: #55595c;
@@ -72,6 +74,12 @@ let NavBar = props => {
     }
   `
 
+  const DropdownWrapper = styled.div`
+    @media (max-width: 868px) {
+      display: none;
+    }
+  `;
+
   return (
     <>
       <StyledNavBar style={barAnimation}>
@@ -102,36 +110,24 @@ let NavBar = props => {
             >
               {content.navBar.quote}
             </BtnNavHome>
+            
+            <DropdownWrapper>
+              <Dropdown>
+                <Dropdown.Toggle variant="white" id="dropdown-basic">
+                  <i className="fas fa-globe icon-drop-nav"></i>
+                </Dropdown.Toggle>
 
-            <div className="dropdown drop-lang-nav">
-              <button
-                className="btn btn-light dropdown-toggle change"
-                type="button"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <i className="fas fa-globe icon-drop-nav"></i>
-              </button>
-              <div
-                className="dropdown-menu"
-                aria-labelledby="dropdownMenuButton"
-              >
-                <span
-                  className="dropdown-item"
-                  onClick={onChangeLang.bind(null, "es")}
-                >
-                  <i className="fas fa-globe"></i> Es
-                </span>
-                <span
-                  className="dropdown-item"
-                  onClick={onChangeLang.bind(null, "en")}
-                >
-                  <i className="fas fa-globe"></i> En
-                </span>
-              </div>
-            </div>
+                <Dropdown.Menu>
+                  <Dropdown.Item onClick={onChangeLang.bind(null, "es")}>
+                    <i className="fas fa-globe"></i> Es
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={onChangeLang.bind(null, "en")}>
+                    <i className="fas fa-globe"></i> En
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </DropdownWrapper>
+
           </NavLinks>
           <BurgerWrapper>
             <BurgerMenu
