@@ -18,25 +18,25 @@
         "loadMore": "Cargar más",
         "cards": [
           {
-            "img": "../../images/flexit.jpg",
+            "img": "flexit.jpg",
             "text": "Flexit Contrataciones",
             "description": "Esta aplicación fue desarrollada para la contratación rápida e inmediata de usuarios en contextos de medio tiempo o eventos especiales que requieren más personal.",
             "area": "UX, UI, Branding, Development"
           },
           {
-            "img": "../images/propins.png",
+            "img": "propins.png",
             "text": "Propins",
             "description": "Esta es una plataforma que permite visitas virtuales a propiedades y proyectos para la venta utilizando la mejor tecnología para este mercado.",
             "area": "UX, UI, Branding, Development"
           },
           {
-            "img": "../images/whyX.png",
+            "img": "whyX.png",
             "text": "WhyX App",
             "description": "Basado en una economía circular, el concepto principal es 'arrendar en lugar de comprar'. El objetivo es tener experiencias sin obtener productos innecesarios.",
             "area": "UX, UI, Branding, Development"
           },
           {
-            "img": "../images/forus.png",
+            "img": "forus.png",
             "text": "Forus",
             "description": "Nuestra solución para el inventario de productos en las tiendas de una cadena minorista, optimiza los procesos y permite una mayor eficiencia del servicio.",
             "area": "UX, UI, Branding, Development"
