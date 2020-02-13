@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "axios"
 
 export const sendEmail = async ({
   from,
@@ -7,7 +7,7 @@ export const sendEmail = async ({
   text,
   subject,
   attachments,
-  cb
+  cb,
 }) => {
   try {
     const data = {
@@ -16,33 +16,33 @@ export const sendEmail = async ({
         ...to,
         {
           email: "cgallardo@cleveritgroup.com",
-          name: "Karluiz"
-        }
+          name: "Karluiz",
+        },
       ],
       subject,
       text,
       html,
-      attachments
-    };
+      attachments,
+    }
 
     return await axios({
       method: "POST",
       url: "https://cleveritpage.azurewebsites.net/api/SendEmailPage",
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*"
+        "Access-Control-Allow-Origin": "*",
       },
-      data
-    });
+      data,
+    })
   } catch (error) {
-    console.error("error: ", error);
-    return error;
+    console.error("error: ", error)
+    return error
   } finally {
-    cb && cb();
+    cb && cb()
   }
-};
+}
 
 export const checkEmail = email => {
-  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(String(email).toLowerCase());
-};
+  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  return re.test(String(email).toLowerCase())
+}

@@ -1,56 +1,18 @@
-import React from "react";
-import data from "../../data/content.json";
-import { connect } from "react-redux";
-import { Row, Col, Button } from "react-bootstrap";
-import styled from "styled-components";
-import AnimationHome from "../Animations/AnimationHome";
-import AnimationUx from "../Animations/AnimationUx";
-import AnimationAgile from "../Animations/AnimationAgile";
-import AnimationDev from "../Animations/AnimationDev";
-import AnimationDevOps from "../Animations/AnimationDevOps";
-import AnimationQa from "../Animations/AnimationQa";
+import React from "react"
+import { getData, getAnimation, getSuiteColor } from "../../utils/page"
+import { connect } from "react-redux"
+import styled from "styled-components"
 
 let Main = props => {
   const {
     app: { lang },
-    location
-  } = props;
-  let content;
-  let animation;
-  let color;
+    location,
+  } = props
 
-  switch (location) {
-    case "development":
-      content = data.Development[lang];
-      color = "#10ddc2";
-      animation = <AnimationDev></AnimationDev>;
-      break;
-    case "qa":
-      content = data.QA[lang];
-      color = "#0bc075";
-      animation = <AnimationQa></AnimationQa>;
-      break;
-    case "agile":
-      content = data.Agile[lang];
-      color = "#faa03a";
-      animation = <AnimationAgile></AnimationAgile>;
-      break;
-    case "ux":
-      content = data.UX[lang];
-      animation = <AnimationUx></AnimationUx>;
-      color = "#7e0cf5";
-      break;
-    case "devops":
-      content = data.DevOps[lang];
-      color = "#eb6178";
-      animation = <AnimationDevOps></AnimationDevOps>;
-      break;
-    default:
-      content = data.Home[lang];
-      animation = <AnimationHome></AnimationHome>;
-      color = "#371a9f";
-      break;
-  }
+  const content = getData(location, lang)
+  const animation = getAnimation(location)
+  const color = getSuiteColor(location)
+
   const BtnTalk = styled.button`
     background-color: ${color};
     text-align: center;
@@ -71,7 +33,7 @@ let Main = props => {
       background-color: ${color} !important;
       border-color: ${color} !important;
     }
-  `;
+  `
   return (
     <>
       <RowMain className="row">
@@ -103,22 +65,22 @@ let Main = props => {
         </HomeImg>
       </RowMain>
     </>
-  );
-};
+  )
+}
 
 const mapStateToProps = state => {
-  return state;
-};
+  return state
+}
 
 const mapDispatchToProps = dispatch => {
   return {
     changeLang: lang => dispatch({ type: "SET_LANGUAGE", payload: lang }),
-    showModalFunc: show => dispatch({ type: "SHOW_MODAL", payload: show })
-  };
-};
+    showModalFunc: show => dispatch({ type: "SHOW_MODAL", payload: show }),
+  }
+}
 
-Main = connect(mapStateToProps, mapDispatchToProps)(Main);
-export default Main;
+Main = connect(mapStateToProps, mapDispatchToProps)(Main)
+export default Main
 
 const TextTitle = styled.div`
   padding: 5rem;
@@ -135,7 +97,7 @@ const TextTitle = styled.div`
       font-size: 1rem;
     }
   }
-`;
+`
 const RowMain = styled.div`
   margin-left: auto;
   margin-right: auto;
@@ -174,7 +136,7 @@ const RowMain = styled.div`
       justify-content: left;
     }
   }
-`;
+`
 const HomeImg = styled.div`
   justify-content: center;
   text-align: center;
@@ -182,4 +144,4 @@ const HomeImg = styled.div`
   padding-right: 6%;
   margin-left: auto;
   margin-right: auto;
-`;
+`

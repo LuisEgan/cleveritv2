@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
-import { Modal, ButtonGroup, ButtonToolbar, InputGroup } from "react-bootstrap"
+import { Modal, ButtonGroup, ButtonToolbar } from "react-bootstrap"
 import { sendEmail } from "../../utils/emails"
 import { getCompanySize, getSuiteColor } from "../../utils/page"
 import Image from "react-bootstrap/Image"

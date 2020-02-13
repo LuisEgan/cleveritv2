@@ -122,7 +122,7 @@ class Companies extends React.Component {
               <Image src={forus}></Image>
               <Image
                 src={arauco}
-                className={` ${this.props.showImages} `}
+                className={`${this.props.showImages} `}
               ></Image>
               <Image src={propins}></Image>
               <Image src={falabella}></Image>
