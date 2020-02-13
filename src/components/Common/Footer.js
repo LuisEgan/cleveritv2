@@ -153,7 +153,7 @@ let Footer = props => {
             >
               <span>
                 <a
-                  href=""
+                  href={data.footer.behanceLink}
                   data-toggle="tooltip"
                   data-placement="right"
                   title="Behance"
@@ -164,27 +164,28 @@ let Footer = props => {
               </span>
             </Col>
           )}
-
-          <Col
-            xl={1}
-            lg={1}
-            md={1}
-            sm={1}
-            xs={2}
-            style={{ textAlign: "center" }}
-          >
-            <span>
-              <a
-                href=""
-                data-toggle="tooltip"
-                data-placement="right"
-                title="Linkedlin"
-                role="button"
-              >
-                <i className="fab fa-linkedin-in"></i>
-              </a>
-            </span>
-          </Col>
+          {data.footer.linkedInLink && (
+            <Col
+              xl={1}
+              lg={1}
+              md={1}
+              sm={1}
+              xs={2}
+              style={{ textAlign: "center" }}
+            >
+              <span>
+                <a
+                  href={data.footer.linkedInLink}
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="Linkedlin"
+                  role="button"
+                >
+                  <i className="fab fa-linkedin-in"></i>
+                </a>
+              </span>
+            </Col>
+          )}
 
           {data.footer.dribbbleLink && (
             <Col
@@ -197,7 +198,7 @@ let Footer = props => {
             >
               <span>
                 <a
-                  href={data.footer.dribbbleLink}
+                  href={`${data.footer.dribbbleLink}`}
                   data-toggle="tooltip"
                   data-placement="right"
                   title="Dribble"

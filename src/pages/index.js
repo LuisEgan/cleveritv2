@@ -1,22 +1,81 @@
-import React from "react"
+import React, { useState } from "react"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import CleverHomeTheme from "./home"
+import "../style/Home/bodyHome.css"
+import { Container } from "react-bootstrap"
+import ModalForm from "../components/Common/modalForm"
+import NavBar from "../components/Common/navBar"
+import Main from "../components/Common/main"
+import Footer from "../components/Common/footer"
+import CardsPortfolio from "../components/Common/portfolio"
+import Services from "../components/Home/ServicesHome"
+import Companies from "../components/Home/CompaniesHome"
+import Blog from "../components/Home/BlogHome"
 
-const IndexPage = () => (
-  // <Layout>
-  //   <SEO title="Home" />
-  //   <h1>Hi people</h1>
-  //   <p>Welcome to your new Gatsby site.</p>
-  //   <p>Now go build something great.</p>
-  //   <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-  //     <Image />
-  //   </div>
-  // </Layout>
-  <>
-    <CleverHomeTheme />
-  </>
-)
+const Home = () => {
+  const [navbarOpen, setNavbarOpen] = useState(false)
+  const [classAnimationVideo, setClassAnimationVideo] = useState("hidden")
+  const [classAnimationPortfolio, setClassAnimationPortfolio] = useState(
+    "hidden"
+  )
+  const [classAnimationCompanies, setClassAnimationCompanies] = useState(
+    "hidden"
+  )
+  const [classAnimationPlan, setClassAnimationPlan] = useState("hidden")
+  const [classAnimationFooter, setClassAnimationFooter] = useState("hidden")
 
-export default IndexPage
+  const handleAnimation = () => {
+    if (document.documentElement.scrollTop > 0) {
+      setClassAnimationVideo("visible")
+    }
+    if (document.documentElement.scrollTop > 650) {
+      setClassAnimationCompanies("visible")
+    }
+    if (document.documentElement.scrollTop > 800) {
+      setClassAnimationPortfolio("visible")
+    }
+    if (document.documentElement.scrollTop > 2550) {
+      setClassAnimationPlan("visible")
+    }
+    if (document.documentElement.scrollTop > 3000) {
+      setClassAnimationFooter("visible")
+    }
+  }
+  const handleNavbar = () => {
+    setNavbarOpen(!navbarOpen)
+  }
+
+  window.onscroll = () => handleAnimation()
+
+  return (
+    <>
+      <NavBar
+        navbarState={navbarOpen}
+        handleNavbar={handleNavbar}
+        location="home"
+      />
+      <ModalForm location="home" />
+      <Container fluid>
+        <section className="section-main" id="section-main">
+          <Main />
+        </section>
+        <section className="section-services" id="expertise">
+          <Services classAnimationVideo={classAnimationVideo}></Services>
+        </section>
+        <section className="section-companies-home">
+          <Companies classAnimationCompanies={classAnimationCompanies} />
+        </section>
+        <section className="section-portfolio-home" id="projects">
+          <CardsPortfolio classAnimationPortfolio={classAnimationPortfolio} />
+        </section>
+        <section className="section-blog" id="section-blog">
+          <Blog classAnimationPlan={classAnimationPlan} />
+        </section>
+        <section className="section-footer" id="section-footer">
+          <Footer classAnimationFooter={classAnimationFooter} color="#371a9f" />
+        </section>
+      </Container>
+    </>
+  )
+}
+
+export default Home

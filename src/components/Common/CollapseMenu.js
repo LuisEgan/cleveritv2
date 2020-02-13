@@ -1,30 +1,29 @@
-import React from "react";
-import styled from "styled-components";
-import { Button, NavLink } from "react-bootstrap";
-import { useSpring, animated } from "react-spring";
-import ModalForm from "../Common/ModalForm";
-import { getData } from "../../utils/page";
-import { connect } from "react-redux";
-import data from "../../data/content.json";
-import { getSuiteColor } from "../../utils/page";
-import _ from "lodash";
+import React from "react"
+import styled from "styled-components"
+import { Button, NavLink } from "react-bootstrap"
+import { useSpring, animated } from "react-spring"
+import ModalForm from "./ModalForm"
+import { getData } from "../../utils/page"
+import { connect } from "react-redux"
+import data from "../../data/content.json"
+import { getSuiteColor } from "../../utils/page"
+import _ from "lodash"
 
 let CollapseMenu = props => {
-  const { open } = useSpring({ open: props.navbarState ? 0 : 1 });
+  const { open } = useSpring({ open: props.navbarState ? 0 : 1 })
   const {
     app: { lang },
-    location
-    
-  } = props;
+    location,
+  } = props
 
-  const color = getSuiteColor(location);
+  const color = getSuiteColor(location)
 
   const onChangeLang = language => {
-    const { changeLang } = props;
-    changeLang(language);
-  };
+    const { changeLang } = props
+    changeLang(language)
+  }
 
-  const content = getData(location, lang);
+  const content = getData(location, lang)
 
   const BtnNav = styled(Button)`
     background-color: ${color};
@@ -38,34 +37,34 @@ let CollapseMenu = props => {
       border-color: ${color} !important;
       color: white;
     }
-  `;
-const NavLinks = styled.ul`
-list-style-type: none;
-padding: 2rem 1rem 50rem 2rem;
+  `
+  const NavLinks = styled.ul`
+    list-style-type: none;
+    padding: 2rem 1rem 50rem 2rem;
 
-& li {
-  transition: all 300ms linear 0s;
-  z-index: 1;
-  justify-content: center;
-  text-align: center;
-  padding-top: 1rem;
-}
+    & li {
+      transition: all 300ms linear 0s;
+      z-index: 1;
+      justify-content: center;
+      text-align: center;
+      padding-top: 1rem;
+    }
 
-& a {
-  font-size: 1.4rem;
-  line-height: 2;
-  color: black;
+    & a {
+      font-size: 1.4rem;
+      line-height: 2;
+      color: black;
 
-  text-decoration: none;
-  cursor: pointer;
-  z-index: 1;
+      text-decoration: none;
+      cursor: pointer;
+      z-index: 1;
 
-  &:hover {
-    color: ${color};
-    border-bottom: 1px solid ${color};
-  }
-}
-`;
+      &:hover {
+        color: ${color};
+        border-bottom: 1px solid ${color};
+      }
+    }
+  `
 
   if (props.navbarState === true) {
     return (
@@ -74,15 +73,15 @@ padding: 2rem 1rem 50rem 2rem;
           transform: open
             .interpolate({
               range: [0, 0.2, 0.3, 1],
-              output: [0, -20, 0, -200]
+              output: [0, -20, 0, -200],
             })
-            .interpolate(openValue => `translate3d(0, ${openValue}px, 0`)
+            .interpolate(openValue => `translate3d(0, ${openValue}px, 0`),
         }}
       >
         <NavLinks>
           {location === "home" ? (
             _.keys(content.navBar).map((text, index) => {
-              if (text === "quote") return;
+              if (text === "quote") return
               return (
                 <React.Fragment key={index}>
                   <li>
@@ -91,7 +90,7 @@ padding: 2rem 1rem 50rem 2rem;
                     </a>
                   </li>
                 </React.Fragment>
-              );
+              )
             })
           ) : (
             <>
@@ -154,7 +153,7 @@ padding: 2rem 1rem 50rem 2rem;
           <li>
             <BtnNav
               onClick={() => {
-                props.showModalFunc(true);
+                props.showModalFunc(true)
               }}
             >
               Request a Quote
@@ -162,10 +161,10 @@ padding: 2rem 1rem 50rem 2rem;
           </li>
         </NavLinks>
       </CollapseWrapper>
-    );
+    )
   }
-  return null;
-};
+  return null
+}
 
 const CollapseWrapper = styled(animated.div)`
   background: white;
@@ -174,21 +173,19 @@ const CollapseWrapper = styled(animated.div)`
   left: 0;
   right: 0;
   z-index: 100;
-`;
-
-
+`
 
 const mapStateToProps = state => {
-  return state;
-};
+  return state
+}
 
 const mapDispatchToProps = dispatch => {
   return {
     changeLang: lang => dispatch({ type: "SET_LANGUAGE", payload: lang }),
-    showModalFunc: show => dispatch({ type: "SHOW_MODAL", payload: show })
-  };
-};
+    showModalFunc: show => dispatch({ type: "SHOW_MODAL", payload: show }),
+  }
+}
 
-CollapseMenu = connect(mapStateToProps, mapDispatchToProps)(CollapseMenu);
+CollapseMenu = connect(mapStateToProps, mapDispatchToProps)(CollapseMenu)
 
-export default CollapseMenu;
+export default CollapseMenu

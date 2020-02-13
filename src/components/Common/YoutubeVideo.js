@@ -1,15 +1,15 @@
-import React from "react";
-import YouTube from "react-youtube";
-import "../../style/Common/common.css";
-import styled from "styled-components";
-import { Row, Col } from "react-bootstrap";
+import React from "react"
+import YouTube from "react-youtube"
+import "../../style/Common/common.css"
+import styled from "styled-components"
+import { Row, Col } from "react-bootstrap"
 
 class YoutubeVideo extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      showVideoPlayer: props.show
-    };
+      showVideoPlayer: props.show,
+    }
   }
 
   render() {
@@ -17,9 +17,9 @@ class YoutubeVideo extends React.Component {
       height: "780",
       width: "1280",
       playerVars: {
-        autoplay: 1
-      }
-    };
+        autoplay: 1,
+      },
+    }
     return (
       <>
         {this.props.show && (
@@ -50,14 +50,14 @@ class YoutubeVideo extends React.Component {
           </Row>
         )}
       </>
-    );
+    )
   }
   _onReady(event) {
     // access to player in all event handlers via event.target
-    event.target.playVideo();
+    event.target.playVideo()
   }
 }
-export default YoutubeVideo;
+export default YoutubeVideo
 
 const ContainerYoutube = styled.div`
   position: relative;
@@ -71,7 +71,7 @@ const ContainerYoutube = styled.div`
 
   justify-content: center;
   text-align: center;
-`;
+`
 const LineOne = styled.div`
   top: 11px;
   left: 2px;
@@ -80,7 +80,7 @@ const LineOne = styled.div`
   height: 2px;
   transform: rotate(-45deg);
   background-color: white;
-`;
+`
 const LineTwo = styled.div`
   top: 11px;
   left: 2px;
@@ -89,11 +89,11 @@ const LineTwo = styled.div`
   height: 2px;
   transform: rotate(45deg);
   background-color: white;
-`;
+`
 const RowSectionClose = styled.div`
   margin-bottom: 4rem;
   width: 100%;
-`;
+`
 const SectionClose = styled.div`
   position: absolute;
   top: 19px;
@@ -101,4 +101,4 @@ const SectionClose = styled.div`
   width: 24px;
   height: 24px;
   transition: opacity 0.2;
-`;
+`

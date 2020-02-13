@@ -6,7 +6,7 @@ import testimony1 from "../../images/testimony_1.png"
 import { Row, Col, Button, Card, Carousel } from "react-bootstrap"
 import data from "../../data/content.json"
 import Image from "react-bootstrap/Image"
-import ModalForm from "./ModalForm"
+import ModalForm from "./modalForm"
 import styled from "styled-components"
 import { getSuiteColor, getData } from "../../utils/page"
 
@@ -17,6 +17,7 @@ let Plan = props => {
   } = props
 
   const content = getData(location, lang)
+  console.log("TCL: content", content)
   const color = getSuiteColor(location)
 
   const BtnPlanOutline = styled.button`

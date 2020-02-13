@@ -1,29 +1,28 @@
-import React, { useEffect } from "react";
-import { connect } from "react-redux";
-import { Carousel, Card } from "react-bootstrap";
-import Image from "react-bootstrap/Image";
-import styled from "styled-components";
-import { getData } from "../../utils/page";
+import React from "react"
+import { connect } from "react-redux"
+import { Carousel, Card } from "react-bootstrap"
+import styled from "styled-components"
+import { getData } from "../../utils/page"
 
 let Testimonies = props => {
   const {
     app: { lang },
-    location
-  } = props;
+    location,
+  } = props
 
-  const content = getData(location, lang);
+  const content = getData(location, lang)
 
   const chunk = (arr, size) =>
     Array.from({ length: Math.ceil(arr.length / size) }, (v, i) =>
       arr.slice(i * size, i * size + size)
-    );
+    )
 
-  const widthScreen = window.innerWidth;
+  const widthScreen = window.innerWidth
 
   const testimonyArray = chunk(
     content.sectionPlan.testimonyList,
     widthScreen < 1000 ? 1 : 3
-  );
+  )
 
   return (
     <>
@@ -37,7 +36,7 @@ let Testimonies = props => {
                 <div
                   className="row"
                   style={{
-                    with: "100%"
+                    with: "100%",
                   }}
                 >
                   {plan.map((planDescription, index) => {
@@ -47,20 +46,22 @@ let Testimonies = props => {
                         key={index}
                       >
                         <Card>
-                        <Card.Body>
-
-                        <RowTestimony className="row">
-                          <Card.Title className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">{planDescription.name}</Card.Title>
-                          <Card.Subtitle className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">{planDescription.ocupation}</Card.Subtitle>
-                        </RowTestimony>
-                        <RowTestimony>
-                        <Card.Text>{planDescription.testimony}</Card.Text>
-                        </RowTestimony>
-                        </Card.Body>
+                          <Card.Body>
+                            <RowTestimony className="row">
+                              <Card.Title className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                {planDescription.name}
+                              </Card.Title>
+                              <Card.Subtitle className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                {planDescription.ocupation}
+                              </Card.Subtitle>
+                            </RowTestimony>
+                            <RowTestimony>
+                              <Card.Text>{planDescription.testimony}</Card.Text>
+                            </RowTestimony>
+                          </Card.Body>
                         </Card>
-                        
                       </CountainerText>
-                    );
+                    )
                   })}
                 </div>
               </Carousel.Item>
@@ -69,24 +70,24 @@ let Testimonies = props => {
         </>
       </RowPlan>
     </>
-  );
-};
+  )
+}
 const mapStateToProps = state => {
-  return state;
-};
+  return state
+}
 
 const mapDispatchToProps = dispatch => {
   return {
-    changeLang: lang => dispatch({ type: "SET_LANGUAGE", payload: lang })
-  };
-};
+    changeLang: lang => dispatch({ type: "SET_LANGUAGE", payload: lang }),
+  }
+}
 
-Testimonies = connect(mapStateToProps, mapDispatchToProps)(Testimonies);
-export default Testimonies;
+Testimonies = connect(mapStateToProps, mapDispatchToProps)(Testimonies)
+export default Testimonies
 
 const CarouselTestimony = {
-  textAlign: "center"
-};
+  textAlign: "center",
+}
 
 const RowPlan = styled.div`
   margin-left: auto;
@@ -97,16 +98,14 @@ const RowPlan = styled.div`
     padding-left: 1rem;
     padding-right: 1rem;
   }
-`;
+`
 
 const RowTestimony = styled.div`
   .card-subtitle {
-    margin-bottom:1rem;
+    margin-bottom: 1rem;
   }
-`;
+`
 const CountainerText = styled.div`
-  /*  display: flex;
-  flex-direction: column; */
   max-width: 32%;
   @media screen and (max-width: 1000px) {
     padding-right: 1rem;
@@ -119,4 +118,4 @@ const CountainerText = styled.div`
       font-size: 1.2rem;
     }
   }
-`;
+`

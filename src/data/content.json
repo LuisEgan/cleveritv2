@@ -18,25 +18,25 @@
         "loadMore": "Cargar más",
         "cards": [
           {
-            "img": "../../images/flexit.jpg",
+            "img": "flexit.jpg",
             "text": "Flexit Contrataciones",
             "description": "Esta aplicación fue desarrollada para la contratación rápida e inmediata de usuarios en contextos de medio tiempo o eventos especiales que requieren más personal.",
             "area": "UX, UI, Branding, Development"
           },
           {
-            "img": "../images/propins.png",
+            "img": "propins.png",
             "text": "Propins",
             "description": "Esta es una plataforma que permite visitas virtuales a propiedades y proyectos para la venta utilizando la mejor tecnología para este mercado.",
             "area": "UX, UI, Branding, Development"
           },
           {
-            "img": "../images/whyX.png",
+            "img": "whyX.png",
             "text": "WhyX App",
             "description": "Basado en una economía circular, el concepto principal es 'arrendar en lugar de comprar'. El objetivo es tener experiencias sin obtener productos innecesarios.",
             "area": "UX, UI, Branding, Development"
           },
           {
-            "img": "../images/forus.png",
+            "img": "forus.png",
             "text": "Forus",
             "description": "Nuestra solución para el inventario de productos en las tiendas de una cadena minorista, optimiza los procesos y permite una mayor eficiencia del servicio.",
             "area": "UX, UI, Branding, Development"
@@ -50,35 +50,35 @@
             "services": "Big data, Branding, Service",
             "title": "Creando valor a través de la data",
             "description": "Excelente manera de otorgar valor a los servicios ofrecidos...",
-            "img": "../images/test.svg",
+            "img": "test.svg",
             "time": "Feb 25, 2020"
           },
           {
             "services": "Design, UI, Branding",
             "title": "Buenas prácticas de diseño de interfaces y sus beneficios",
             "description": "Conoce la mejor forma de presentar tus diseños e interfaces...",
-            "img": "../images/test.svg",
+            "img": "test.svg",
             "time": "Feb 28, 2020"
           },
           {
             "services": "DevOps, Agile, Process",
             "title": "DevOps como apoyo para tu emprendimiento",
             "description": "Excelente manera de otorgar valor a los servicios ofrecidos.a..",
-            "img": "../images/test.svg",
+            "img": "test.svg",
             "time": "Mar 5, 2020"
           },
           {
             "services": "DevOps, Agile, Process",
             "title": "DevOps como apoyo para tu emprendimiento",
             "description": "Excelente manera de otorgar valor a los servicios ofrecidos.a..",
-            "img": "../images/test.svg",
+            "img": "test.svg",
             "time": "Mar 5, 2020"
           },
           {
             "services": "DevOps, Agile, Process",
             "title": "DevOps como apoyo para tu emprendimiento",
             "description": "Excelente manera de otorgar valor a los servicios ofrecidos.a..",
-            "img": "../images/test.svg",
+            "img": "test.svg",
             "time": "Mar 5, 2020"
           }
         ]
@@ -165,35 +165,35 @@
             "services": "Big data, Branding, Service",
             "title": "Creando valor a través de la data",
             "description": "Excelente manera de otorgar valor a los servicios ofrecidos...",
-            "img": "../images/test.svg",
+            "img": "test.svg",
             "time": "Feb 25, 2020"
           },
           {
             "services": "Design, UI, Branding",
             "title": "Buenas prácticas de diseño de interfaces y sus beneficios",
             "description": "Conoce la mejor forma de presentar tus diseños e interfaces...",
-            "img": "../images/test.svg",
+            "img": "test.svg",
             "time": "Feb 28, 2020"
           },
           {
             "services": "DevOps, Agile, Process",
             "title": "DevOps como apoyo para tu emprendimiento",
             "description": "Excelente manera de otorgar valor a los servicios ofrecidos.a..",
-            "img": "../images/test.svg",
+            "img": "test.svg",
             "time": "Mar 5, 2020"
           },
           {
             "services": "DevOps, Agile, Process",
             "title": "DevOps como apoyo para tu emprendimiento",
             "description": "Excelente manera de otorgar valor a los servicios ofrecidos.a..",
-            "img": "../images/test.svg",
+            "img": "test.svg",
             "time": "Mar 5, 2020"
           },
           {
             "services": "DevOps, Agile, Process",
             "title": "DevOps como apoyo para tu emprendimiento",
             "description": "Excelente manera de otorgar valor a los servicios ofrecidos.a..",
-            "img": "../images/test.svg",
+            "img": "test.svg",
             "time": "Mar 5, 2020"
           }
         ]
@@ -267,25 +267,25 @@
         "loadMore": "Load more",
         "cards": [
           {
-            "img": "../../images/Delivery_Continuo.png",
+            "img": "Delivery_Continuo.png",
             "text": "WOM - DevOps as a Services",
             "description": "Azure DevOps implementation (Version control, build, deployment, automated testing, repositories, code analysis, with Agile practices). First integration of Azure Devops with Openshift in LATAM. Stack: Java, Redhat, Oracle, SonarQube, Nexus, GIT, MAVEN, Nexus, Docker, Telerik test Studio, SoapUI Pro,VCenter.",
             "area": "DevOps, AzDevOps, Redhat, Oracle, Java, OpenShift, Nexus, SonarQube, AzRepos, AzBoards, AzPipeline, AzTestPlan, CI, CD, AT"
           },
           {
-            "img": "../images/Arauco_Implementación_VSTS.png",
+            "img": "Arauco_Implementación_VSTS.png",
             "text": "Arauco - DevOps as a Services",
             "description": "Azure Devops implementation with full software development process (Version Control, build, deployment). Stack: .NET Framework, Java, Windows. ",
             "area": "DevOps, AzDevOps, WindowsServer, Java,  SonarQube, AzRepos, AzPipeline, CI, CD"
           },
           {
-            "img": "../images/Chilecompra_Implementación_Azure_DevOps – 1.png",
+            "img": "Chilecompra_Implementación_Azure_DevOps – 1.png",
             "text": "Chilecompra - DevOps as a Services",
             "description": "Azure Devops implementation with full software development (Version control, build, deployment, autonated testing, repositories, code analysis, with Agile practices). Stack: Java, Redhat, Oracle, SonarQube, Nexus.",
             "area": "OpenShift, Nexus, SonarQube, AzRepos, AzBoards, AzPipeline, AzTestPlan, CI, CD, AT"
           },
           {
-            "img": "../images/DT_devops.png",
+            "img": "DT_devops.png",
             "text": "Dirección del Trabajo - Continuous delivery project",
             "description": "Consultancy and implementation of 6 legacy applications with different stack using Azure DevOps. Stack: Visual Basic, .NET, Java, docker, Kubernetes, Openshift",
             "area": "DevOps, AzDevOps, Redhat, Oracle, Java, OpenShift, Nexus, SonarQube, AzRepos, AzBoards, AzPipeline, AzTestPlan, CI, CD, AT"
@@ -304,13 +304,13 @@
             "testimony": "“The results have been as expected, communication has been fluid at all times, Cleverit they have adapted to our needs, they have provided knowledge, experience, human resources, and they have always shown continuous support and willingness. In short, the results have been very positive.“",
             "name": "Mauricio Egas ",
             "ocupation": "Area leader CCA",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "“Trust and Collaboration“",
             "name": "Ignacio Valencia Herrera",
             "ocupation": "IT Architect - WOM",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           }
         ],
         "planSmart": [
@@ -370,11 +370,11 @@
         ]
       },
       "photos": {
-        "photoOne": "../images/team_01.png",
-        "photoTwo": "../images/team_02.png",
-        "photoThree": "../images/team_03.png",
-        "photoFour": "../images/team_04.png",
-        "photoFive": "../images/team_05.png"
+        "photoOne": "team_01.png",
+        "photoTwo": "team_02.png",
+        "photoThree": "team_03.png",
+        "photoFour": "team_04.png",
+        "photoFive": "team_05.png"
       },
       "footer": {
         "talk": "Talk!",
@@ -383,7 +383,7 @@
         "about": "About us",
         "join": "Join us",
         "blog": "Blog & Articles",
-        "button": "want to know more",
+        "button": "Want to know more",
         "instagramLink": "https://www.instagram.com/cleveritgroup/",
         "linkedInLink": "https://www.linkedin.com/company/cleverit-latam/",
         "behanceLink": "https://www.behance.net/cleverexperience",
@@ -444,25 +444,25 @@
         "loadMore": "Cargar más",
         "cards": [
           {
-            "img": "../../images/Delivery_Continuo.png",
+            "img": "Delivery_Continuo.png",
             "text": "WOM - Continous delivery",
             "description": "Implementación de Azure DevOps, flujo completo de desarrollo de software (Versionado, compilación, despliegues, pruebas automatizadas, repositorio de librerias, analisis de código statico, con prácticas Agiles). Primera integración de Azure DevOps con Openshift en LATAM. Stack: Java, Redhat, Oracle, SonarQube, Nexus, GIT, MAVEN, Nexus, Docker, Telerik test Studio, SoapUI Pro, VCenter.",
             "area": "DevOps, AzDevOps, Redhat, Oracle, Java, OpenShift, Nexus, SonarQube, AzRepos, AzBoards, AzPipeline, AzTestPlan, CI, CD, AT"
           },
           {
-            "img": "../images/Arauco_Implementación_VSTS.png",
+            "img": "Arauco_Implementación_VSTS.png",
             "text": "Arauco - Implementación VSTS",
             "description": "Implementación de Azure Devops, flujo completo de desarrollo de software (Versionado, compilación, implementación). Stack: .NET Framework, Java, Windows. ",
             "area": "DevOps, AzDevOps, WindowsServer, Java,  SonarQube, AzRepos, AzPipeline, CI, CD"
           },
           {
-            "img": "../images/Chilecompra_Implementación_Azure_DevOps – 1.png",
+            "img": "Chilecompra_Implementación_Azure_DevOps – 1.png",
             "text": "Chilecompra - Implementación Azure DevOps",
             "description": "Implementación de Azure Devops,f lujo completo de desarrollo de software (Versionado, compilación, despliegue, pruebas automáticas, repositorios, análisis de código, con prácticas ágiles). Primera integración de Azure Devops con Openshift en LATAM. Pila: Java, Redhat, Oracle, SonarQube, Nexus.",
             "area": "OpenShift, Nexus, SonarQube, AzRepos, AzBoards, AzPipeline, AzTestPlan, CI, CD, AT"
           },
           {
-            "img": "../images/DT_devops.png",
+            "img": "DT_devops.png",
             "text": "DT DevOps",
             "description": "Consultoría e implementación de 6 aplicaciones legadas de diferentes tecnologías en Azure DevOps",
             "area": "DevOps, AzDevOps, Redhat, Oracle, Java, OpenShift, Nexus, SonarQube, AzRepos, AzBoards, AzPipeline, AzTestPlan, CI, CD, AT"
@@ -482,13 +482,13 @@
             "testimony": " Los resultados han sido los esperados, la comunicación en todo momento ha sido fluida, Cleverit se han adaptado a nuestras necesidades, han aportado con conocimientos, experiencia, recursos humanos y siempre han mostrado el apoyo continuo y buena disposición, en resumen, los resultados han sido muy positivos",
             "name": "Mauricio Egas",
             "ocupation": "Lídea de área CCA",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "“Confianza y Colaboración“",
             "name": "Ignacio Valencia",
             "ocupation": " Arquitecto TI - WOM",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           }
         ],
         "planSmart": [
@@ -542,11 +542,11 @@
         ]
       },
       "photos": {
-        "photoOne": "../images/team_01.png",
-        "photoTwo": "../images/team_02.png",
-        "photoThree": "../images/team_03.png",
-        "photoFour": "../images/team_04.png",
-        "photoFive": "../images/team_05.png"
+        "photoOne": "team_01.png",
+        "photoTwo": "team_02.png",
+        "photoThree": "team_03.png",
+        "photoFour": "team_04.png",
+        "photoFive": "team_05.png"
       },
       "footer": {
         "talk": "¡Hablemos!",
@@ -622,25 +622,25 @@
         "loadMore": "Cargar más",
         "cards": [
           {
-            "img": "../../images/flexit.jpg",
+            "img": "flexit.jpg",
             "text": "Flexit Contrataciones",
             "description": "This app was developed for quick and immediate hiring of users in part-time contexts or special events that require more staff.",
             "area": "UX, UI, branding, development"
           },
           {
-            "img": "../images/propins.png",
+            "img": "propins.png",
             "text": "Propins",
             "description": "This is a platform that allows virtual tours to properties and projects for sales by using the best technology for this market.",
             "area": "UX, UI, branding, development"
           },
           {
-            "img": "../images/whyX.png",
+            "img": "whyX.png",
             "text": "WHYX App",
             "description": "Based on a circular economy, the main concept is 'lease instead of buy'. The aim is to have experiences without getting needless products.",
             "area": "UX, UI, branding, development"
           },
           {
-            "img": "../images/forus.png",
+            "img": "forus.png",
             "text": "Forus",
             "description": "Our solution for product inventory in stores of a retail chain, optimize processes and allow greater service efficiency.",
             "area": "UX, UI, branding, development"
@@ -658,31 +658,31 @@
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           }
         ],
         "planSmart": [
@@ -728,11 +728,11 @@
         ]
       },
       "photos": {
-        "photoOne": "../images/team_01.png",
-        "photoTwo": "../images/team_02.png",
-        "photoThree": "../images/team_03.png",
-        "photoFour": "../images/team_04.png",
-        "photoFive": "../images/team_05.png"
+        "photoOne": "team_01.png",
+        "photoTwo": "team_02.png",
+        "photoThree": "team_03.png",
+        "photoFour": "team_04.png",
+        "photoFive": "team_05.png"
       },
       "footer": {
         "talk": "¡Hablemos!",
@@ -788,25 +788,25 @@
         "loadMore": "Load more",
         "cards": [
           {
-            "img": "../../images/flexit.jpg",
+            "img": "flexit.jpg",
             "text": "Flexit Contrataciones",
             "description": "This app was developed for quick and immediate hiring of users in part-time contexts or special events that require more staff.",
             "area": "UX, UI, branding, development"
           },
           {
-            "img": "../images/propins.png",
+            "img": "propins.png",
             "text": "Propins",
             "description": "This is a platform that allows virtual tours to properties and projects for sales by using the best technology for this market.",
             "area": "UX, UI, branding, development"
           },
           {
-            "img": "../images/whyX.png",
+            "img": "whyX.png",
             "text": "WHYX App",
             "description": "Based on a circular economy, the main concept is 'lease instead of buy'. The aim is to have experiences without getting needless products.",
             "area": "UX, UI, branding, development"
           },
           {
-            "img": "../images/forus.png",
+            "img": "forus.png",
             "text": "Forus",
             "description": "Our solution for product inventory in stores of a retail chain, optimize processes and allow greater service efficiency.",
             "area": "UX, UI, branding, development"
@@ -824,31 +824,31 @@
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           }
         ],
         "planSmart": [
@@ -894,11 +894,11 @@
         ]
       },
       "photos": {
-        "photoOne": "../images/team_01.png",
-        "photoTwo": "../images/team_02.png",
-        "photoThree": "../images/team_03.png",
-        "photoFour": "../images/team_04.png",
-        "photoFive": "../images/team_05.png"
+        "photoOne": "team_01.png",
+        "photoTwo": "team_02.png",
+        "photoThree": "team_03.png",
+        "photoFour": "team_04.png",
+        "photoFive": "team_05.png"
       },
       "footer": {
         "talk": "Talk!",
@@ -967,27 +967,27 @@
         "loadMore": "Load more",
         "cards": [
           {
-            "img": "../../images/miDT.png",
+            "img": "miDT.png",
             "text": "Modernization of Labor contracts for Chile",
             "description": "Automation of the process of evaluation and signing of contracts, the goal is to avoid doing such work in a notary’s office. With our system any employer can digitally generate a valid contract which can be signed online, making use of a digital signature from MiDT portal.",
             "area": "React, NETCore, OpenShift, Azure, Microservicios",
             "alt": "miDT - Dirección del trabajo, Chile"
           },
           {
-            "img": "../images/metro_pmt.png",
+            "img": "metro_pmt.png",
             "text": "Web de Directores & Web de Gestión",
             "description": "Tailor-made document management system that allows indexing documents from the vaults of Meridian BlueCielo. The main idea of this project is to make available sensitive information of the results of the Metro board of directors meetings; the system should be fast and easy to adopt.",
             "area": "NETCore, AzureDevOps"
           },
           {
-            "img": "../images/Falabella_giftcard.png",
+            "img": "Falabella_giftcard.png",
             "text": "Kardex",
             "description": "This is a semi-automated system to perform in-store pickup, which is integrated with the current Falabella Click and Collect systems. It consists of two parts; first there is the warehouse where orders are stored and service modules that have two mechanical doors (one facing the warehouse and another towards the customer). In these modules the orders are located for their subsequent withdrawal. Second, there is a raspberry running an application developed in Java FX, that handles the logic of opening and closing doors and helps the customer that comes to withdraw his product.",
             "area": "JavaSpring, JavaFX, J2EE, Raspberry",
             "alt": "miDT"
           },
           {
-            "img": "../images/turnero_offline.png",
+            "img": "turnero_offline.png",
             "text": "Turnero Offline",
             "description": "This application is a new version of the Turnero system, which is used in several countries by Falabella. The previous system presented problems when the internet connection was lost. This caused the desynchronization and loss of attention numbers. To solve this problem, an embedded and local database was created, which is used when the system has no internet connection and also at the time of reconnecting the connection and synchronizing the service numbers.",
             "area": "JavaFX, S3, APIREST, Postgres",
@@ -1005,19 +1005,19 @@
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Alvaro ",
             "ocupation": "CEO de Propins",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Matías Gonzales",
             "ocupation": "CIO Forus",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           }
         ],
         "planSmart": [
@@ -1069,11 +1069,11 @@
         ]
       },
       "photos": {
-        "photoOne": "../../images/devteam_01.JPG",
-        "photoTwo": "../../images/devteam_02.JPG",
-        "photoThree": "../../images/devteam_03.JPG",
-        "photoFour": "../../images/devteam_04.JPG",
-        "photoFive": "../../images/devteam_05.JPG"
+        "photoOne": "devteam_01.jpg",
+        "photoTwo": "devteam_02.jpg",
+        "photoThree": "devteam_03.jpg",
+        "photoFour": "devteam_04.jpg",
+        "photoFive": "devteam_05.jpg"
       },
       "footer": {
         "talk": "Talk!",
@@ -1140,27 +1140,27 @@
         "loadMore": "Cargar más",
         "cards": [
           {
-            "img": "../../images/miDT.png",
+            "img": "miDT.png",
             "text": "Modernización de los contratos Laborales para Chile",
             "description": "Digitalización y del proceso de evaluación y firma de contratos, la idea principal es evitar realizar dicho trabajo en una notaría, si no que cualquier empleador pueda generar de forma digital un contrato válido y que este pueda ser firmado por un empleado de forma digital haciendo uso de clave única desde el portal MiDT",
             "area": "React, NETCore, OpenShift, Azure, Microservicios",
             "alt": "miDT - Dirección del trabajo, Chile"
           },
           {
-            "img": "../images/flexit.jpg",
+            "img": "metro_pmt.png",
             "text": "Web de Directores & Web de Gestión",
             "description": "Sistemas documentales desarrollados a medida que permiten indexar documentos desde las bóvedas de Meridian BlueCielo, la idea principal de este proyecto es disponibilizar información sensible del resultado del directorio de Metro, el sistema debía ser rápido y de fácil adopción.",
             "area": "NETCore, AzureDevOps"
           },
           {
-            "img": "../images/flexit.jpg",
+            "img": "Falabella_giftcard.png",
             "text": "Kardex",
             "description": "Este es un sistema semi-automatizado para realizar retiro en tienda de productos, que está integrado al los sistemas actuales de Click and Collect de Falabella. Básicamente se compone de dos partes; por un lado está la bodega donde se almacenan los pedidos y, los módulos de atención que cuentan con dos puertas mecánicas, una de cara a la bodega y otra hacia el cliente. En estos módulos se ubican los pedidos para su posterior retiro y, por otro lado, está la raspberry donde está montada una aplicación desarrollada en Java FX que maneja la lógica de apertura y cierre de puertas y la atención del cliente que llega a retirar su producto.",
             "area": "JavaSpring, JavaFX, J2EE, Raspberry",
             "alt": "miDT"
           },
           {
-            "img": "../images/flexit.jpg",
+            "img": "turnero_offline.png",
             "text": "Turnero Offline",
             "description": "(CL PE CO AR) Esto sistema viene a ser un ReWork del actual turnero ya que el sistema anterior presentaba problemas cuando se perdía conexión a internet. Esto provocaba la pérdida sincronización de números, lo que terminaba perdiendo números de atención. Es por esto que se crea aplicación con base de datos embebida y local, la cual se utiliza cuando está sin internet y al momento de recuperar la conexión se deben enviar todos los números de atención para volver a sincronizar.",
             "area": "JavaFX, S3, APIREST, Postgres",
@@ -1178,19 +1178,19 @@
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           }
         ],
         "planSmart": [
@@ -1259,11 +1259,11 @@
         ]
       },
       "photos": {
-        "photoOne": "../../images/devteam_01.JPG",
-        "photoTwo": "../../images/devteam_02.JPG",
-        "photoThree": "../../images/devteam_03.JPG",
-        "photoFour": "../../images/devteam_04.JPG",
-        "photoFive": "../../images/devteam_05.JPG"
+        "photoOne": "devteam_01.jpg",
+        "photoTwo": "devteam_02.jpg",
+        "photoThree": "devteam_03.jpg",
+        "photoFour": "devteam_04.jpg",
+        "photoFive": "devteam_05.jpg"
       },
       "footer": {
         "talk": "Talk!",
@@ -1321,41 +1321,41 @@
         "loadMore": "Cargar más",
         "cards": [
           {
-            "img": "../../images/wom.png",
+            "img": "wom.png",
             "text": "WOMVOLUTION",
             "description": "El proyecto trata de la migración de los servicios de legado y la célula QA cumple la función de partner de WOM, proveyendo un servicio de desarrollo y ejecución de pruebas manuales y automatizadas con distintos focos y alcances, a través de las entregas continuas e incrementales, garantizando la calidad de los desarrollos e integraciones entre distintas áreas.",
             "area": "Services, SOAP, SOAPUI, git, AzureDevops Pipelines, Automated testing, Scrum",
             "alt": "WOM, WOMVOLUTION, GIT, AZURE, AZUREDEVOPS,QA,TESTING"
           },
           {
-            "img": "../../images/Falabella_postvirtual.png",
+            "img": "Falabella_postvirtual.png",
             "text": "Post Virtual",
             "description": "El proyecto se basó en realizar algunos cambios al postvirtual a nivel de operaciones de falabella y para esto se automatizaron las pruebas funcionales de todo el producto que antes se hacían de manera manual, agilizando con esto los pases a producción",
             "area": "Java, POSTMAN, REST, Jira, cucumber, git, gitlab, Scrum",
             "alt": "Falabella, jira, agile, qa, operaciones falabella, pruebas, scrum"
           },
           {
-            "img": "../../images/Falabella_giftcard.png",
+            "img": "Falabella_giftcard.png",
             "text": "GiftCard Compensación",
             "description": "El proyecto se basó en la creación de una API para un nuevo tipo de GiftCard y para esto se automatizaron todas las pruebas de los diferentes servicios, además de la realización de las pruebas de stress para cada uno, evaluando con esto la arquitectura. Todo esto integrado en pipelines, apoyando la integración continua",
             "area": "Java, POSTMAN, REST, git, Jira, cucumber, gitlab, RestAssured, jmeter, Scrum",
             "alt": "Falabella, jira, agile, qa, operaciones falabella, pruebas, scrum"
           },
           {
-            "img": "../../images/Falabella_sales.png",
+            "img": "Falabella_sales.png",
             "text": "Falabella Sales",
             "description": "El proyecto se basó en la creación de una API para la generación de una Guía Electrónica para todas las ordenes de compra de Falabella bajo Google Cloud Platform y ademas de la realización de pruebas de stress para integrarlo en el pipeline",
             "area": "Nodejs, POSTMAN, GCP, Jira, gitlab, Zephyr, git, nodejs, k6, Scrum",
             "alt": "Falabella, jira, agile, qa, operaciones falabella, pruebas, scrum"
           },
           {
-            "img": "../../images/flexit.jpg",
+            "img": "flexit.jpg",
             "text": "Falabella Conect",
             "description": "El proyecto se basó en la creación de una app interna para la venta de planes y equipos móviles en Falabella y para esto se automatizaron todas las pruebas funcionales de los diferentes servicios.",
             "area": "Java, POSTMAN, Zephyr, Jira, gitlab, git, cucumber, Scrum"
           },
           {
-            "img": "../../images/flexit.jpg",
+            "img": "flexit.jpg",
             "text": "Automatización de Pruebas",
             "description": "El proyecto se basó en la automatización de las pruebas de regresión que se realizaban manualmente a los diferentes aplicativos de SAG. También se realizaron una serie de workshops evangelizando las buenas prácticas y la metodología ágil tanto al equipo de desarrollo como al equipo de QA.",
             "area": "C#, POSTMAN, newman, Jira, Selenium, Specflow, Azure Devops, git, cucumber, nodejs, Scrum, TDD"
@@ -1373,53 +1373,68 @@
             "testimony": "El trabajo realizado por Cleverit cumplió con nuestras expectativas aportando a la agilidad de nuestros procesos de Testing",
             "name": "Manuel Rivera",
             "ocupation": "Ingeniero QA CCA",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Muy capacitados en todo lo relacionado a certificación de software e implementación de flujos según procesos requeridos por la organización",
             "name": "Keudy Moreno",
             "ocupation": "Subgerencia de Desarrollo Ventas y Tiendas - Falabella Retail S.A",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           }
         ],
         "planSmart": [
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Functional Testing Automation"
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Automated tests for your products (Services, Web App, Mobile App)"
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Stress and Performance tests for your products (Services, Web App)"
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "pipelines to run tests"
+          },
+          {
+            "descriptionPlan": "Integration with Code Analizer for your repo"
+          },
+          {
+            "descriptionPlan": "Integration with tools for CI/CD (Azure DevOps, gitlab, jenkins...)"
           }
         ],
         "planCostume": [
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Functional Testing Automation and Learning"
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Automated tests for your products (Services, Web App, Mobile App)"
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Stress and Performance tests for your products (Services, Web App)"
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "pipelines to run tests"
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Giving Workshops to Good Practices and Agile Testing to Developer Team"
+          },
+          {
+            "descriptionPlan": "Giving Workshops that provides Qa team new skills to improve its automation tasks"
+          },
+          {
+            "descriptionPlan": "Integration with Code Analizer for your repo"
+          },
+          {
+            "descriptionPlan": "Integration with tools for CI/CD (Azure DevOps, gitlab, jenkins...)"
           }
         ]
       },
       "photos": {
-        "photoOne": "../images/team_01.png",
-        "photoTwo": "../images/team_02.png",
-        "photoThree": "../images/team_03.png",
-        "photoFour": "../images/team_04.png",
-        "photoFive": "../images/team_05.png"
+        "photoOne": "team_01.png",
+        "photoTwo": "team_02.png",
+        "photoThree": "team_03.png",
+        "photoFour": "team_04.png",
+        "photoFive": "team_05.png"
       },
       "footer": {
         "talk": "¡Hablemos!",
@@ -1475,41 +1490,41 @@
         "loadMore": "Load more",
         "cards": [
           {
-            "img": "../../images/wom.png",
+            "img": "WOM.png",
             "text": "WOMVOLUTION",
             "description": "This project is about the migration of the legacy services and the QA team that is WOM's partner, providing a development service and execution of manual and automated testing with different focuses and approaches, through continuous and incremental delivery, guaranteeing the quality of the developtment and integration between different areas.",
             "area": "Services, SOAP, SOAPUI, git, AzureDevops Pipelines, Automated testing, Scrum",
             "alt": "WOM, WOMVOLUTION, GIT, AZURE, AZUREDEVOPS, QA, TESTING"
           },
           {
-            "img": "../../images/Falabella_postvirtual.png",
+            "img": "Falabella_postvirtual.png",
             "text": "Post Virtual",
             "description": "This objective of this project was to change the Virtual Post of Falabella's operations and for this manual testing was completely automated, improving the overall speed to finish a product.",
             "area": "Java, POSTMAN, REST, Jira, cucumber, git, gitlab, Scrum",
             "alt": "Falabella, jira, agile, qa, falabella's operations, testing, scrum"
           },
           {
-            "img": "../../images/Falabella_giftcard.png",
+            "img": "Falabella_giftcard.png",
             "text": "GiftCard Compensation",
             "description": "This project is based on the creation of an API for a new kind of GiftCard and for this different tests were automated, also the making of stress tests for each service, to evaluate the overall architecture. All this is integrated in pipelines, supporting continuous integration.",
             "area": "Java, POSTMAN, REST, git, Jira, cucumber, gitlab, RestAssured, jmeter, Scrum",
             "alt": "Falabella, jira, agile, qa, falabella's operations, testing, scrum"
           },
           {
-            "img": "../../images/Falabella_sales.png",
+            "img": "Falabella_sales.png",
             "text": "Falabella Sales",
             "description": "This project was based on the creation of an API for the generation of electronic guides for all the orders of Falabella under Google Cloud Platform, also the making of stress tests for integration in the pipeline.",
             "area": "Nodejs, POSTMAN, GCP, Jira, gitlab, Zephyr, git, nodejs, k6, Scrum",
             "alt": "Falabella, jira, agile, qa, operaciones falabella, pruebas, scrum"
           },
           {
-            "img": "../../images/flexit.jpg",
+            "img": "flexit.jpg",
             "text": "Falabella Conect",
             "description": "This project was based on an internal app for the selling of cellphones and plans at Falabella and for this the functional tests of different services were automated.",
             "area": "Java, POSTMAN, Zephyr, Jira, gitlab, git, cucumber, Scrum"
           },
           {
-            "img": "../../images/flexit.jpg",
+            "img": "flexit.jpg",
             "text": "Automatización de Pruebas",
             "description": "This project was based on the automation of regression tests that were made manually to the different SAG applications. Workshops were made to teach the bests practices and the agile methodology to the development and QA teams.",
             "area": "C#, POSTMAN, newman, Jira, Selenium, Specflow, Azure Devops, git, cucumber, nodejs, Scrum, TDD"
@@ -1527,53 +1542,68 @@
             "testimony": "The work that Cleverit did met our expectations improving the speed of our testing processes.",
             "name": "Manuel Rivera",
             "ocupation": "QA CCA enineer",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "They were very well qualified with everything related to the certification of software and the implementation of flows required by the organization",
             "name": "Keudy Moreno",
             "ocupation": "Deputy manager of sales development and stores - Falabella Retail S.A",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           }
         ],
         "planSmart": [
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Functional Testing Automation"
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Automated tests for your products (Services, Web App, Mobile App)"
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Stress and Performance tests for your products (Services, Web App)"
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "pipelines to run tests"
+          },
+          {
+            "descriptionPlan": "Integration with Code Analizer for your repo"
+          },
+          {
+            "descriptionPlan": "Integration with tools for CI/CD"
           }
         ],
         "planCostume": [
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Functional Testing Automation and Learning"
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Automated tests for your products (Services, Web App, Mobile App)"
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Stress and Performance tests for your products (Services, Web App)"
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Configuring Pipelines to run tests"
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Enforcing best practices and Agile Testing to Developer Team (Workshops)"
+          },
+          {
+            "descriptionPlan": "Provides QA team new skills to improve its automation tasks (Workshops)"
+          },
+          {
+            "descriptionPlan": "Integration with Static Code Analizer for your repo"
+          },
+          {
+            "descriptionPlan": "Integration with tools for CI/CD"
           }
         ]
       },
       "photos": {
-        "photoOne": "../images/team_01.png",
-        "photoTwo": "../images/team_02.png",
-        "photoThree": "../images/team_03.png",
-        "photoFour": "../images/team_04.png",
-        "photoFive": "../images/team_05.png"
+        "photoOne": "team_01.png",
+        "photoTwo": "team_02.png",
+        "photoThree": "team_03.png",
+        "photoFour": "team_04.png",
+        "photoFive": "team_05.png"
       },
       "footer": {
         "talk": "Talk!",
@@ -1629,28 +1659,28 @@
         "loadMore": "Load more",
         "cards": [
           {
-            "img": "../../images/flexit.jpg",
+            "img": "flexit.jpg",
             "text": "Flexit Hiring",
             "description": "This application was developed to speed-up the hiring of users for part time activities or special events that require more personnel",
             "area": "UX, UI, branding, development",
             "alt": "Flexit Hiring - Falabella, Retail"
           },
           {
-            "img": "../images/propins.png",
+            "img": "propins.png",
             "text": "Propins",
             "description": "A platform that helps to make virtual visits to real estate properties and projects for selling, using the best technology for this market",
             "area": "UX, UI, branding, development",
             "alt": "Propins - virtual tours, augmented reality, buy, sell, real estate"
           },
           {
-            "img": "../images/whyX.png",
+            "img": "whyX.png",
             "text": "WHYX App",
             "description": "Based on the circular economy, the principal concept of the project is to rent instead of purchasing. The objective is to enjoy experiences without unnecessary products",
             "area": "UX, UI, branding, development",
             "alt": "WhyX - Unique experiences, circular economy, app, rent"
           },
           {
-            "img": "../images/forus.png",
+            "img": "forus.png",
             "text": "Forus",
             "description": "Our solution for tracking the inventory of retail stores, optimizes processes and improves efficiency",
             "area": "UX, UI, branding, development",
@@ -1669,37 +1699,37 @@
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           }
         ],
         "planSmart": [
@@ -1752,11 +1782,11 @@
         ]
       },
       "photos": {
-        "photoOne": "../images/team_01.png",
-        "photoTwo": "../images/team_02.png",
-        "photoThree": "../images/team_03.png",
-        "photoFour": "../images/team_04.png",
-        "photoFive": "../images/team_05.png"
+        "photoOne": "team_01.png",
+        "photoTwo": "team_02.png",
+        "photoThree": "team_03.png",
+        "photoFour": "team_04.png",
+        "photoFive": "team_05.png"
       },
       "footer": {
         "talk": "Talk!",
@@ -1764,7 +1794,14 @@
         "about": "About us",
         "join": "Join us",
         "blog": "Blog & Articles",
-        "button": "want to know more"
+        "button": "want to know more",
+        "instagramLink": "https://www.instagram.com/cleveritgroup/",
+        "linkedInLink": "https://www.linkedin.com/company/cleverit-latam/",
+        "behanceLink": "https://www.behance.net/cleverexperience",
+        "dribbbleLink": "",
+        "pageLink": "https://www.cleveritgroup.com/",
+        "rigths": "  Todos los derechos reservados © 2019 Cleverit.",
+        "direction": "Los Militares #6191, Las Condes, Chile"
       }
     },
     "es": {
@@ -1804,28 +1841,28 @@
         "loadMore": "Cargar más",
         "cards": [
           {
-            "img": "../../images/flexit.jpg",
+            "img": "flexit.jpg",
             "text": "Flexit Contrataciones",
             "description": "Esta aplicación fue desarrollada para la contratación rápida e inmediata de usuarios en contextos de tiempo parcial o eventos especiales que requieren más personal.",
             "area": "UX, UI, branding, development",
             "alt": "Flexit Contrataciones - Falabella, Retail"
           },
           {
-            "img": "../images/propins.png",
+            "img": "propins.png",
             "text": "Propins",
             "description": "Se trata de una plataforma que permite realizar visitas virtuales a propiedades y proyectos para su venta utilizando la mejor tecnología para este mercado.",
             "area": "UX, UI, branding, development",
             "alt": "Propins - Tour virtual, realidad aumentada, compra, venta, inmuebles"
           },
           {
-            "img": "../images/whyX.png",
+            "img": "whyX.png",
             "text": "WHYX App",
             "description": "Basado en una economía circular, el concepto principal es arrendar en lugar de comprar. El objetivo es tener experiencias sin obtener productos innecesarios.",
             "area": "UX, UI, branding, development",
             "alt": "WhyX - Experiencias unicas, economia circular, app, arriendo"
           },
           {
-            "img": "../images/forus.png",
+            "img": "forus.png",
             "text": "Forus",
             "description": "Nuestra solución para el inventario de productos en las tiendas de una cadena de tiendas minoristas, optimiza los procesos y permite una mayor eficiencia en el servicio.",
             "area": "UX, UI, branding, development",
@@ -1844,73 +1881,73 @@
             "testimony": "1Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "2Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "3Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "4Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "5Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "6Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "7Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           }
         ],
         "planSmart": [
@@ -1963,11 +2000,11 @@
         ]
       },
       "photos": {
-        "photoOne": "../images/team_01.png",
-        "photoTwo": "../images/team_02.png",
-        "photoThree": "../images/team_03.png",
-        "photoFour": "../images/team_04.png",
-        "photoFive": "../images/team_05.png"
+        "photoOne": "team_01.png",
+        "photoTwo": "team_02.png",
+        "photoThree": "team_03.png",
+        "photoFour": "team_04.png",
+        "photoFive": "team_05.png"
       },
       "footer": {
         "talk": "¡Hablemos!",
@@ -2023,28 +2060,28 @@
         "portfolioTitle": "We design tailor made products",
         "cards": [
           {
-            "img": "../../images/flexit.jpg",
+            "img": "flexit.jpg",
             "text": "Flexit Hiring",
             "description": "This application was developed to speed-up the hiring of users for part time activities or special events that require more personnel",
             "area": "UX, UI, branding, development",
             "alt": "Flexit Hiring - Falabella, Retail"
           },
           {
-            "img": "../images/propins.png",
+            "img": "propins.png",
             "text": "Propins",
             "description": "A platform that helps to make virtual visits to real estate properties and projects for selling, using the best technology for this market",
             "area": "UX, UI, branding, development",
             "alt": "Propins - virtual tours, augmented reality, buy, sell, real estate"
           },
           {
-            "img": "../images/whyX.png",
+            "img": "whyX.png",
             "text": "WHYX App",
             "description": "Based on the circular economy, the principal concept of the project is to rent instead of purchasing. The objective is to enjoy experiences without unnecessary products",
             "area": "UX, UI, branding, development",
             "alt": "WhyX - Unique experiences, circular economy, app, rent"
           },
           {
-            "img": "../images/forus.png",
+            "img": "forus.png",
             "text": "Forus",
             "description": "Our solution for tracking the inventory of retail stores, optimizes processes and improves efficiency",
             "area": "UX, UI, branding, development",
@@ -2063,37 +2100,37 @@
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           }
         ],
         "planSmart": [
@@ -2146,11 +2183,11 @@
         ]
       },
       "photos": {
-        "photoOne": "../images/team_01.png",
-        "photoTwo": "../images/team_02.png",
-        "photoThree": "../images/team_03.png",
-        "photoFour": "../images/team_04.png",
-        "photoFive": "../images/team_05.png"
+        "photoOne": "team_01.png",
+        "photoTwo": "team_02.png",
+        "photoThree": "team_03.png",
+        "photoFour": "team_04.png",
+        "photoFive": "team_05.png"
       },
       "footer": {
         "talk": "Talk!",
@@ -2204,28 +2241,28 @@
         "portfolioTitle": "Diseñamos productos digitales a medida",
         "cards": [
           {
-            "img": "../../images/flexit.jpg",
+            "img": "flexit.jpg",
             "text": "Flexit Contrataciones",
             "description": "Esta aplicación fue desarrollada para la contratación rápida e inmediata de usuarios en contextos de tiempo parcial o eventos especiales que requieren más personal.",
             "area": "UX, UI, branding, development",
             "alt": "Flexit Contrataciones - Falabella, Retail"
           },
           {
-            "img": "../images/propins.png",
+            "img": "propins.png",
             "text": "Propins",
             "description": "Se trata de una plataforma que permite realizar visitas virtuales a propiedades y proyectos para su venta utilizando la mejor tecnología para este mercado.",
             "area": "UX, UI, branding, development",
             "alt": "Propins - Tour virtual, realidad aumentada, compra, venta, inmuebles"
           },
           {
-            "img": "../images/whyX.png",
+            "img": "whyX.png",
             "text": "WHYX App",
             "description": "Basado en una economía circular, el concepto principal es arrendar en lugar de comprar. El objetivo es tener experiencias sin obtener productos innecesarios.",
             "area": "UX, UI, branding, development",
             "alt": "WhyX - Experiencias unicas, economia circular, app, arriendo"
           },
           {
-            "img": "../images/forus.png",
+            "img": "forus.png",
             "text": "Forus",
             "description": "Nuestra solución para el inventario de productos en las tiendas de una cadena de tiendas minoristas, optimiza los procesos y permite una mayor eficiencia en el servicio.",
             "area": "UX, UI, branding, development",
@@ -2243,19 +2280,19 @@
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           },
           {
             "testimony": "Excellent team, the whole process was clear, fast and efficient. I would certainly work with them again",
             "name": "Franco Abello",
             "ocupation": "CEO de Why X",
-            "img": "../images/testimony_1.png"
+            "img": "testimony_1.png"
           }
         ],
         "planSmart": [
@@ -2308,11 +2345,11 @@
         ]
       },
       "photos": {
-        "photoOne": "../images/team_01.png",
-        "photoTwo": "../images/team_02.png",
-        "photoThree": "../images/team_03.png",
-        "photoFour": "../images/team_04.png",
-        "photoFive": "../images/team_05.png"
+        "photoOne": "team_01.png",
+        "photoTwo": "team_02.png",
+        "photoThree": "team_03.png",
+        "photoFour": "team_04.png",
+        "photoFive": "team_05.png"
       },
       "footer": {
         "talk": "¡Hablemos!",

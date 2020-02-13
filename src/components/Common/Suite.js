@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from "react"
-import "../style/Common/common.css"
-import NavBar from "../components/Common/NavBar"
+import "../../style/Common/common.css"
+import NavBar from "./navBar"
 
 import { Container } from "react-bootstrap"
-import Main from "../components/Common/Main"
-import Services from "../components/Common/Services"
-import CardsPortfolio from "../components/Common/Portfolio"
-import Companies from "../components/Common/Companies"
-import Plan from "../components/Common/Plan"
-import Photos from "../components/Common/Photos"
-import Footer from "../components/Common/Footer"
-import ModalForm from "../components/Common/ModalForm"
-import Testimonies from "../components/Common/Testimonies"
-import { getSuiteColor } from "../utils/page"
+import Main from "./main"
+import Services from "./services"
+import CardsPortfolio from "./portfolio"
+import Companies from "./companies"
+import Plan from "./plan"
+import Photos from "./photos"
+import Footer from "./footer"
+import ModalForm from "./modalForm"
+import Testimonies from "./Testimonies"
+import { getSuiteColor } from "../../utils/page"
 
-const CleverSuiteTheme = props => {
+const Suite = props => {
   const color = getSuiteColor(props.call)
   const [navbarOpen, setNavbarOpen] = useState(false)
   const [classAnimationVideo, setClassAnimationVideo] = useState("hidden")
@@ -29,6 +29,10 @@ const CleverSuiteTheme = props => {
   const [classAnimationFooter, setClassAnimationFooter] = useState("hidden")
 
   const handleAnimation = () => {
+    console.log(
+      "TCL: handleAnimation -> document.documentElement.scrollTop",
+      document.documentElement.scrollTop
+    )
     if (document.documentElement.scrollTop > 0) {
       setClassAnimationVideo("visible")
     }
@@ -38,7 +42,7 @@ const CleverSuiteTheme = props => {
     if (document.documentElement.scrollTop > 800) {
       setClassAnimationPortfolio("visible")
     }
-    if (document.documentElement.scrollTop > 2550) {
+    if (document.documentElement.scrollTop > 2500) {
       setClassAnimationPlan("visible")
     }
     if (document.documentElement.scrollTop > 3500) {
@@ -118,4 +122,4 @@ const CleverSuiteTheme = props => {
   )
 }
 
-export default CleverSuiteTheme
+export default Suite

@@ -1,55 +1,29 @@
 import React from "react"
-/* import "../../style/UX/bodyUx.css"; */
-import photo1 from "../../images/team_01.png"
-import photo2 from "../../images/team_02.png"
-import photo3 from "../../images/team_03.png"
-import photo4 from "../../images/team_04.png"
-import photo5 from "../../images/team_05.png"
+
 import { Row, Col, Carousel } from "react-bootstrap"
-import data from "../../data/content.json"
 import { connect } from "react-redux"
 import Image from "react-bootstrap/Image"
 import styled from "styled-components"
+import { getData } from "../../utils/page"
 
 let Photos = props => {
   const {
     app: { lang },
     location,
   } = props
-  let content
 
-  switch (location) {
-    case "development":
-      content = data.Development[lang]
-
-      break
-    case "qa":
-      content = data.QA[lang]
-
-      break
-    case "agile":
-      content = data.Agile[lang]
-
-      break
-    case "ux":
-      content = data.UX[lang]
-
-      break
-    case "devops":
-      content = data.DevOps[lang]
-
-      break
-    default:
-      content = data.Home[lang]
-
-      break
-  }
+  const content = getData(location, lang)
+  const firstImage = require(`../../images/${content.photos.photoOne}`)
+  const secondImage = require(`../../images/${content.photos.photoTwo}`)
+  const thirdImage = require(`../../images/${content.photos.photoThree}`)
+  const fourImage = require(`../../images/${content.photos.photoFour}`)
+  const fiveImage = require(`../../images/${content.photos.photoFive}`)
 
   return (
     <>
       <Row style={{ paddingBottom: "5rem" }}>
         <RowPhotos
-          className={` row justify-content-center ${props.classAnimationPhoto} `}
+          className={`row justify-content-center ${props.classAnimationPhoto} `}
         >
           <Parent
             xl={3}
@@ -59,7 +33,7 @@ let Photos = props => {
             className="col-xl-3 col-lg-3 col-md-3 col-sm-8"
           >
             <Child className="child1 ">
-              <Image src={content.photos.photoOne}></Image>
+              <Image src={firstImage}></Image>
             </Child>
           </Parent>
           <Parent
@@ -70,7 +44,7 @@ let Photos = props => {
             className="col-xl-3 col-lg-3 col-md-3 col-sm-8"
           >
             <Child className="child1 ">
-              <Image src={content.photos.photoTwo}></Image>
+              <Image src={secondImage}></Image>
             </Child>
           </Parent>
           <Parent
@@ -81,12 +55,12 @@ let Photos = props => {
             className="col-xl-3 col-lg-3 col-md-3 col-sm-8"
           >
             <Child className="child1 ">
-              <Image src={content.photos.photoThree}></Image>
+              <Image src={thirdImage}></Image>
             </Child>
           </Parent>
         </RowPhotos>
         <RowPhotos
-          className={` row justify-content-center ${props.classAnimationPhoto} `}
+          className={`row justify-content-center ${props.classAnimationPhoto} `}
         >
           <Parent
             xl={3}
@@ -96,7 +70,7 @@ let Photos = props => {
             className="col-xl-3 col-lg-3 col-md-3 col-sm-8"
           >
             <Child className="child1 ">
-              <Image src={content.photos.photoFour}></Image>
+              <Image src={fourImage}></Image>
             </Child>
           </Parent>
           <Parent
@@ -107,46 +81,46 @@ let Photos = props => {
             className="col-xl-6 col-lg-6 col-md-6 col-sm-8"
           >
             <Child className="child1 ">
-              <Image src={content.photos.photoFive}></Image>
+              <Image src={fiveImage}></Image>
             </Child>
           </Parent>
         </RowPhotos>
         {/* IN MOBILE SHOW CAROUSEL */}
-        <ShowCarousel className={` row ${props.classAnimationPhoto}`}>
+        <ShowCarousel className={`row ${props.classAnimationPhoto}`}>
           <Col sm={12} xs={12}>
             <Carousel>
               <Carousel.Item>
                 <ImgCarousel
                   className=""
-                  src={content.photos.photoOne}
+                  src={firstImage}
                   alt="team"
                 ></ImgCarousel>
               </Carousel.Item>
               <Carousel.Item>
                 <ImgCarousel
                   className=""
-                  src={content.photos.photoTwo}
+                  src={secondImage}
                   alt="team"
                 ></ImgCarousel>
               </Carousel.Item>
               <Carousel.Item>
                 <ImgCarousel
                   className=""
-                  src={content.photos.photoThree}
+                  src={thirdImage}
                   alt="team"
                 ></ImgCarousel>
               </Carousel.Item>
               <Carousel.Item>
                 <ImgCarousel
                   className=""
-                  src={content.photos.photoFour}
+                  src={fourImage}
                   alt="team"
                 ></ImgCarousel>
               </Carousel.Item>
               <Carousel.Item>
                 <ImgCarousel
                   className=""
-                  src={content.photos.photoFive}
+                  src={fiveImage}
                   alt="team"
                 ></ImgCarousel>
               </Carousel.Item>

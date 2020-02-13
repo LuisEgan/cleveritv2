@@ -16,6 +16,7 @@ let Services = props => {
   } = props
 
   const content = getData(location, lang)
+  console.log("TCL: content", content)
   const color = getSuiteColor(location)
 
   const Circle = styled.svg`
