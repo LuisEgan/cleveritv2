@@ -27,6 +27,46 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    // **** mdx renderer
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        defaultLayouts: {
+          default: require.resolve("./src/components/Common/Layout.js"),
+        },
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+              backgroundColor: `transparent`,
+            },
+          },
+        ],
+      },
+    },
+    // **** posts
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "posts",
+        path: "./posts",
+      },
+    },
+    // **** drift
+    {
+      resolve: "gatsby-plugin-drift",
+      options: {
+        appId: "bm52u458p3r2",
+      },
+    },
+    // **** fullstory
+    {
+      resolve: `gatsby-plugin-fullstory`,
+      options: {
+        fs_org: "Q6ZT3",
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

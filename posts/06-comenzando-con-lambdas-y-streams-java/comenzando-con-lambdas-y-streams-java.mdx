@@ -1,0 +1,571 @@
+---
+title: Comenzando con Lambdas y Streams en Java
+slug: stream-lambdas-java
+author: Luis Benavides
+image: ./images/development.png
+creationDate: Noviembre 2, 2019
+tag: Development
+---
+
+# Comenzando con Lambdas y Streams en Java
+
+![Luis Benavides](./images/luisb.png)
+
+Si has visto un código parecido a este
+
+```java
+  names.forEach(System.out::println);
+```
+
+y no tienes idea de qué se trata, o viéndolo de reojo piensas “tal vez hace esto”, pero no estás totalmente seguro, sigue leyendo este post que de seguro te aclarará algunas dudas.
+El código anterior es un ejemplo de programación funcional en Java, que se encuentra disponible desde su octava versión. Dicho tipo de programación consiste, más que nada, en ahorrar tiempo y líneas de código, además de facilitar el entendimiento de un código.
+Para programar de esta forma usamos dos tipos de funciones, por una parte, las Lambdas y, por otra, las Method reference operator o también conocidas como Double colon (::). A continuación, te mostramos sus estructuras:
+
+## Lambdas
+
+Consisten en tres partes: los parámetros, arrow operator (->) (en este caso el guion y el signo mayor, que deben estar seguidos, no pueden tener espacios entre sí), y el cuerpo de la función.
+
+```java
+  () -> System.out.println("Hello Functional World")
+```
+
+En este caso, los parámetros son nulos, por lo tanto, es necesario usar los paréntesis vacíos, agregar el arrow operator (->) y, finalmente, el cuerpo de la función que, en este caso, imprimirá el mensaje en la consola.
+En el caso de que tenga un solo parámetro se pueden obviar los paréntesis, a menos que se indique el tipo de la variable.
+
+```java
+  a -> System.out.println(a)
+  (String a) -> System.out.println(a)
+```
+
+Si existe más de un parámetro los paréntesis son necesarios.
+En todos los casos indicados, el cuerpo solo cumple una sentencia, por esto no es necesario que termine en punto y coma (;). Pero, si tuviera más de una, sería necesaria la siguiente estructura:
+
+```java
+  a->{
+    System.out.println(a);
+    System.out.println(a.length());
+  }
+
+```
+
+Si fuese necesario retornar algo y es una función de una sola sentencia, no es necesario especificar el return.
+
+```java
+  a -> a+1
+  a -> { return a+1; }
+```
+
+En ambos casos, las líneas de código hacen lo mismo, retornando el valor a + 1, por lo que cumplen la misma función.
+
+## Double Colon (::)
+
+Esta funciona de manera muy parecida a las Lambdas, sin embargo, el Double colon se utilizará en lugar de Lambdas en el caso de que la función tenga solo una sentencia y que dicha sentencia sea un método estático, un constructor o un método de una instancia.
+En este caso, los parámetros se obvian y solo se llama a la función
+
+```java
+  a -> System.out.println(a)
+  System.out::println
+```
+
+Estas dos cumplen el mismo fin.
+
+### Ejemplo
+
+Digamos que tenemos un array de Strings y quisiéramos mostrar en consola cada uno de los valores, con la programación funcional nos ahorraríamos algunas líneas:
+
+```java
+  ArrayList<String> names =
+    Lists.newArrayList(
+        "John", "John", "Mariam", "Alex", "Mohammado", "Mohammado", "Vincent", "Alex", "Alex");
+```
+
+Antes de la programación funcional se hubiese tenido que hacer de la siguiente manera:
+
+```java
+  for (String name : names) {
+    System.out.println(name);
+  }
+```
+
+Ahora sería algo así:
+
+```java
+  names.forEach(name->System.out.println(name));
+```
+
+Incluso podría acortarse aún más, así:
+
+```java
+  names.forEach(System.out::println);
+```
+
+El resultado de lo anterior sería algo como esto:
+
+```
+  John
+  John
+  Mariam
+  Alex
+  Mohammado
+  Mohammado
+  Vincent
+  Alex
+  Alex
+```
+
+## API Stream
+
+Stream es una librería que facilita mucho el trabajo con collections, como List y Sets, y consiste en solo llamar un método.
+
+```java
+  names.stream()
+```
+
+Luego de esto se llama al resto de las funciones. Ahora hablaré de aquellas que considero más útiles.
+
+### Filter
+
+Esta funcion es muy útil para filtrar acorde a una condición, la cual tiene que ser de tipo boolean.
+Siguiendo con el ejemplo de los nombres, digamos que necesitamos solo los nombres que contengan la letra “o”:
+
+```java
+  names.stream().filter(name-> name.contains("o")).forEach(System.out::println);
+```
+
+dando como resultado:
+
+```
+  John
+  John
+  Mohammado
+  Mohammado
+```
+
+### Map
+
+Este método es útil para cuando se quiere cambiar el tipo de respuesta, como convertir algún tipo instancia de una clase a otra.
+Digamos que se tiene la clase _person_ y la clase _persona_
+
+```java
+  public class Person {
+    Integer id;
+    String firstName;
+    String lastName;
+    String email;
+    String gender;
+    Integer age;
+
+    // Getter y Setter o use Lombok :)
+
+  };
+
+  public class Persona {
+    Integer id;
+    String nombre;
+    String apellido;
+    String correo;
+    String genero;
+    Integer edad;
+
+
+    // Getter y Setter o use Lombok :)
+  };
+```
+
+En sí son la misma clase, solo que una tiene los atributos en ingles y otra en español. En el caso de que tengas una lista de person (para el ejemplo se llamara people) y necesitas una lista de persona sería algo como esto:
+
+```java
+  List<Persona> personas =
+    people.stream()
+        .map(
+            person -> {
+              Persona persona = new Persona();
+
+              persona.setId(person.getId());
+              persona.setNombre(person.getFirstName());
+              /*
+                resto de los setters
+               */
+              return persona;
+            })
+        .collect(Collectors.toList());
+```
+
+O digamos que, de la lista de nombres del ejemplo anterior, quisieras tener un arreglo (array) del largo (length) de cada nombre:
+
+```java
+    names.stream()
+      .map(name -> name.length())
+      .collect(Collectors.toList());
+```
+
+Aquí sin afectar al array de names utilizado en el ejemplo anterior, se puede obtener otro arreglo (array) con el respectivo largo (lenght) de cada nombre.
+
+### Sorted
+
+Esta función, cumple el rol de ordenar el arreglo (array) acorde a una regla de comparación.
+
+```java
+  names.stream()
+    .sorted(Comparator.naturalOrder())
+    .forEach(System.out::println);
+```
+
+En este caso usamos Comparator, que tiene varios métodos que nos ayudan a comparar dos objetos, por ejemplo, naturalOrder, que en este caso ordenaría los nombres en orden alfabético. También podemos usar reverseOrder que ordenará los nombres en sentido contrario. El output final sería:
+
+```
+  Alex
+  Alex
+  Alex
+  John
+  John
+  Mariam
+  Mohammado
+  Mohammado
+  Vincent
+```
+
+Pero digamos que también quisiéramos hacer otro tipo de comparación, por ejemplo, con el largo del nombre. En este caso podríamos llamar a la función comparing que toma como parámetro una lambda.
+
+```java
+  names.stream()
+    .sorted(Comparator.comparing(String::length))
+    .forEach(System.out::println);
+```
+
+Lo anterior daría una respuesta como esta:
+
+```
+  John
+  John
+  Alex
+  Alex
+  Alex
+  Mariam
+  Vincent
+  Mohammado
+  Mohammado
+```
+
+Por último, en caso de que deseara agregar n filtros más, por ejemplo, quisiera ordenar los nombres por su largo y luego ordenarlos por orden alfabético, entonces, primero compararía el largo del String y luego, en el caso de que los String fuesen de igual largo, compararía en orden alfabético. Para hacer esto, se tendría que hacer un llamado a thenComparing:
+
+```java
+  names.stream()
+    .sorted( Comparator
+            .comparing(String::length)
+            .thenComparing(Comparator.naturalOrder()) )
+    .forEach(System.out::println);
+
+```
+
+El resultado sería así:
+
+```
+  Alex
+  Alex
+  Alex
+  John
+  John
+  Mariam
+  Vincent
+  Mohammado
+  Mohammado
+```
+
+thenComparing funciona para agregar mas filtros y se puede usar n cantidad de veces(comparing().thenComparing().thenComparing()…thenComparing()), dejando prioridad a los filtros anteriores, como en el caso anterior se le dio prioridad al largo del String, y luego se compararon según el orden natural, es importante que se la primera comparación sea solo comparing y luego llamar a thenComparing, sino no compilaría.
+
+### Distinct
+
+Distinct ayuda a evitar datos duplicados y su uso es muy sencillo. Digamos que en el ejemplo anterior queremos ver los nombres sin que estos se repitan:
+
+```java
+names.stream()
+  .distinct()
+  .forEach(System.out::println);
+```
+
+El resultado se mostraría así:
+
+```
+  John
+  Mariam
+  Alex
+  Mohammado
+  Vincent
+```
+
+### Limit
+
+La función Limit ayuda a reducir el tamaño del arreglo (array) al número de registros que necesites:
+
+```java
+  names.stream()
+    .limit(5)
+    .forEach(System.out::println);
+```
+
+El resultado se mostraría así:
+
+```
+  John
+  John
+  Mariam
+  Alex
+  Mohammado
+```
+
+## Funciones Terminales
+
+Stream funciona con algo llamado lazy evaluation, que consiste en que Java revisa si la función que estás haciendo luego será utilizada para algo o simplemente será ignorada. En el caso de que sea ignorada el código de stream no se ejecutará.
+Por ejemplo, en los casos anteriores, de no haber agregado forEach(), no se habría ejecutado el sorted, el limit ni el resto de los ejemplos, porque forEach trabaja como función terminal.
+Para este artículo, hablaré solo de cuatro funciones terminales:
+
+### forEach
+
+Esta función ejecuta una sentencia por cada uno de los valores de los arreglos (arrays), pero es necesario comentar que esta función no tiene ningún valor de retorno porque en los ejemplos anteriores siempre se utilizó System.out.println().
+
+### count
+
+Esta función es similar al size() de un arrayList, entrega la cantidad de valores que hay en la lista:
+
+```java
+  int cantidad = names.stream().limit(5).count();
+```
+
+### reduce
+
+Esta función permite tomar todos los valores y almacenarlos en una sola variable, digamos que en el ejemplo de los nombres quisiera dejar un solo String con todos los nombres concatenados; con reduce haría algo así:
+
+```java
+  String reduce = names.stream().reduce("", String::concat);
+```
+
+El resultado sería:
+
+```
+  JohnJohnMariamAlexMohammadoMohammadoVincentAlexAlex
+```
+
+Es importante destacar que el primer parámetro del reduce cuenta como el inicio del nuevo String y luego concatenará todos los nombres.
+También es bastante útil para datos numéricos, como para saber la suma de todos estos.
+
+```java
+  Integer[] integers = {1, 2, 3, 4, 5};
+  Integer reduce = Arrays.stream(integers).reduce(0, Integer::sum);
+```
+
+Lo que daría como resultado la cantidad de 15.
+
+### collect
+
+Por último, esta función permite guardar el stream como un collection o map.
+
+```java
+  List<String> collect = names.stream()
+    .filter(s -> s.contains("o"))
+    .collect(Collectors.toList());
+
+  System.out.println("sin filtro");
+  System.out.println(names);
+  System.out.println("con filtro");
+  System.out.println(collect);
+```
+
+Resultando así:
+
+```
+ * sin filtro
+[John, John, Mariam, Alex, Mohammado, Mohammado, Vincent, Alex, Alex]
+ * con filtro
+[John, John, Mohammado, Mohammado]
+```
+
+En el caso de que quisiéramos contar cuántas veces se repite un nombre, se podría hacer un map de la siguiente manera:
+
+```java
+  Map<String, Long> counting =
+    names.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+  System.out.println(counting);
+```
+
+Retornando así:
+
+```
+  {Alex=3, Vincent=1, Mariam=1, Mohammado=2, John=2}
+```
+
+## Comparación Funcional contra Imperativa
+
+Aunque la programación funcional es bastante nueva en Java, eso no quiere decir que es siempre lo mejor, puesto que hay casos en que la programación imperativa (old school java) funciona mejor que la programación funcional, más que nada es un rendimiento contra mantenibilidad, dado que la programación imperativa tiende a tener mejores tiempos de respuesta con respecto al rendimiento, mientras que la funcional es mucho mas mantenible y dejar el código más limpio, veamos las siguiente comparaciones, donde se comparan los tiempos de respuestas en milisegundos:
+Se desea calcular el máximo en un arreglo de Integers el cual cuenta con 2.000.000 agregados aleatoriamente:
+
+```java
+  int size = 2_000_000;
+  List<Integer> integers = null;
+
+  @Setup
+  public void setup() {
+    integers = new ArrayList<>(size);
+    populate(integers);
+  }
+
+  public void populate(List<Integer> list) {
+    Random random = new Random();
+    for (int i = 0; i < size; i++) {
+      list.add(random.nextInt(1000000));
+    }
+  }
+```
+
+Los cuales se implementan de las siguientes maneras:
+
+- iterator
+
+```java
+  public int iteratorMaxInteger() {
+    int max = Integer.MIN_VALUE;
+    for (Iterator<Integer> it = integers.iterator(); it.hasNext(); ) {
+      max = Integer.max(max, it.next());
+    }
+    return max;
+  }
+```
+
+- forEach
+
+```java
+  public int forEachLoopMaxInteger() {
+    int max = Integer.MIN_VALUE;
+    for (Integer n : integers) {
+      max = Integer.max(max, n);
+    }
+    return max;
+  }
+```
+
+- fori
+
+```java
+  public int forMaxInteger() {
+    int max = Integer.MIN_VALUE;
+    for (int i = 0; i < size; i++) {
+      max = Integer.max(max, integers.get(i));
+    }
+    return max;
+  }
+```
+
+- stream
+
+```java
+  public int streamMaxInteger() {
+    Optional<Integer> max = integers.stream().reduce(Integer::max);
+    return max.get();
+  }
+```
+
+Como vemos es un caso bastante sencillo, al cual se le generan los siquientes tiempos:
+
+| Función  | Tiempo (ms) |
+| :------: | :---------: |
+| iterator |    3,150    |
+| forEach  |    3,163    |
+|   fori   |    4,936    |
+|  stream  |   12,491    |
+
+Evidentemente el iterator es el mas rapido y el stream el más lento.
+
+Ahora se generarán filtros para el mismo arreglo de la siguiente manera:
+
+- iterator
+
+```java
+  public List<Integer> filtroIterator() {
+    List<Integer> filtrados = new ArrayList<>();
+    for (Iterator<Integer> it = integers.iterator(); it.hasNext(); ) {
+      Integer integer = it.next();
+      if (integer < 10000) {
+        if (integer % 2 == 0) {
+          if (integer % 3 == 0) {
+            if (integer % 5 == 0) {
+              filtrados.add(integer);
+            }
+          }
+        }
+      }
+    }
+    return filtrados;
+  }
+```
+
+- forEach
+
+```java
+  public List<Integer> filtroForEach() {
+    List<Integer> filtrados = new ArrayList<>();
+    for (Integer integer : integers) {
+        if (integer < 10000) {
+          if (integer % 2 == 0) {
+              if (integer % 3 == 0) {
+                if (integer % 5 == 0) {
+                    filtrados.add(integer);
+                }
+              }
+          }
+        }
+    }
+    return filtrados;
+  }
+```
+
+- fori
+
+```java
+  public List<Integer> filtroFori() {
+    List<Integer> filtrados = new ArrayList<>();
+    for (int i = 0; i < integers.size(); i++) {
+        Integer integer = integers.get(i);
+        if (integer < 10000) {
+          if (integer % 2 == 0) {
+              if (integer % 3 == 0) {
+                if (integer % 5 == 0) {
+                    filtrados.add(integer);
+                }
+              }
+          }
+        }
+    }
+    return filtrados;
+  }
+```
+
+- stream
+
+```java
+  public List<Integer> filtroStream() {
+    return integers.stream()
+        .filter(integer -> integer < 10000)
+        .filter(integer -> integer % 2 == 0)
+        .filter(integer -> integer % 3 == 0)
+        .filter(integer -> integer % 5 == 0)
+        .collect(Collectors.toList());
+  }
+```
+
+Generando lis siguientes tiempos:
+
+| Función  | Tiempo (ms) |
+| :------: | :---------: |
+| iterator |    5,784    |
+| forEach  |    6,259    |
+|   fori   |    6,684    |
+|  stream  |    5,164    |
+
+Aquí por otro lado el más rápido es el stream.
+
+Estos dos benachmarks nos dan a entender que la "lazy evaluation" que se comentó en las funciones terminales ayuda bastante al rendimiento de stream, en especial cuando de mas filtros se trata, por eso se recomienda que al usar streams la primera operación sea filter().
+El código base de este benchmark se tomó de:
+https://github.com/takipi/loops-jmh-playground
+
+En síntesis, es como comparar 2\*2\*2\*2 contra 2^4, en ambos casos el resultado es 16, sin embargo, puede que la multiplicación tome más tiempo de escritura, versus al exponente que significa una expresión más corta, pero que quizá implica más tiempo de cálculo.
+Es decir, evidentemente, no vale la pena escribir 2^2, puesto que 2\*2 es más óptimo, pero sí vale la pena usar 2^64 para ahorrar tiempo.
