@@ -29,6 +29,9 @@ export const getData = (location, lang) => {
     case "common":
       content = data.Common[lang]
       break
+    case "notFound":
+      content = data.NotFound[lang]
+      break
     default:
       content = data.Home[lang]
       break

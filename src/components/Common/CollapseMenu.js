@@ -1,8 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import { Button, NavLink } from "react-bootstrap"
+import { Button, Dropdown } from "react-bootstrap"
 import { useSpring, animated } from "react-spring"
-import ModalForm from "./ModalForm"
 import { getData } from "../../utils/page"
 import { connect } from "react-redux"
 import data from "../../data/content.json"
@@ -120,35 +119,20 @@ let CollapseMenu = props => {
             </>
           )}
           <li>
-            <div className="dropdown  drop-watch ">
-              <button
-                className="btn btn-light dropdown-toggle "
-                type="button"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
+            <Dropdown>
+              <Dropdown.Toggle variant="white" id="dropdown-basic">
                 <i className="fas fa-globe icon-drop-nav"></i>
-              </button>
-              <div
-                className="dropdown-menu"
-                aria-labelledby="dropdownMenuButton"
-              >
-                <span
-                  className="dropdown-item"
-                  onClick={onChangeLang.bind(null, "es")}
-                >
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <Dropdown.Item onClick={onChangeLang.bind(null, "es")}>
                   <i className="fas fa-globe"></i> Es
-                </span>
-                <span
-                  className="dropdown-item"
-                  onClick={onChangeLang.bind(null, "en")}
-                >
+                </Dropdown.Item>
+                <Dropdown.Item onClick={onChangeLang.bind(null, "en")}>
                   <i className="fas fa-globe"></i> En
-                </span>
-              </div>
-            </div>
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
           </li>
           <li>
             <BtnNav
@@ -156,7 +140,7 @@ let CollapseMenu = props => {
                 props.showModalFunc(true)
               }}
             >
-              Request a Quote
+              {content.navBar.quote}
             </BtnNav>
           </li>
         </NavLinks>

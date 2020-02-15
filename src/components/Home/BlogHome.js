@@ -50,27 +50,25 @@ let BlogHome = props => {
           xl={8}
           className="align-self-center col-blog-cards"
         >
-          {content.sectionBlog.blogList
-            .slice(0, this.state.visible)
-            .map((card, index) => {
-              return (
-                <div
-                  className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 item-carousel"
-                  key={index}
-                >
-                  <Card style={{ width: "100%" }}>
-                    <div className="inner">
-                      <Card.Img variant="top" src={card.img} />
-                    </div>
-                    <Body className="card-body-portfolio">
-                      <Title>{card.text}</Title>
-                      <Text>{card.description}</Text>
-                      <Text className="area-text-home">{card.area}</Text>
-                    </Body>
-                  </Card>
-                </div>
-              )
-            })}
+          {content.sectionBlog.blogList.slice(0, visible).map((card, index) => {
+            return (
+              <div
+                className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 item-carousel"
+                key={index}
+              >
+                <Card style={{ width: "100%" }}>
+                  <div className="inner">
+                    <Card.Img variant="top" src={card.img} />
+                  </div>
+                  <Body className="card-body-portfolio">
+                    <Title>{card.text}</Title>
+                    <Text>{card.description}</Text>
+                    <Text className="area-text-home">{card.area}</Text>
+                  </Body>
+                </Card>
+              </div>
+            )
+          })}
         </Col>
       </Row>
       <Row
