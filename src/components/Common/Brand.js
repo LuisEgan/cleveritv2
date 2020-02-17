@@ -1,4 +1,5 @@
 import React from "react"
+import Helmet from 'react-helmet'
 
 import logo from "../../images/logo_cleverit_color.svg"
 import logoDevOps from "../../images/logoCleverDevOps.svg"
@@ -15,70 +16,69 @@ import faviconHome from "../../images/favicon/home/favicon.ico"
 import { Image } from "react-bootstrap"
 import { changeFaviconAndTitle } from "../../utils/page"
 
+
+
 const Brand = props => {
-  const dom = document
   switch (props.location) {
     case "devops":
-      changeFaviconAndTitle(
-        faviconDevops,
-        "Clever DevOps | DevOps Consulting",
-        dom
-      )
       return (
-        <Image src={logoDevOps} alt="DevOps Consulting" className="img-nav" />
+        <div>
+          {changeFaviconAndTitle("Clever DevOps | DevOps Consulting", faviconDevops)}
+          <Image src={logoDevOps} alt="DevOps Consulting" className="img-nav" />
+        </div>
       )
     case "development":
-      changeFaviconAndTitle(
-        faviconDev,
-        "Clever Development | Software Development",
-        dom
-      )
       return (
-        <Image
-          src={logoDevelopment}
-          alt="Software Development"
-          className="img-nav"
-        />
+        <div>
+          {changeFaviconAndTitle("Clever Development | Software Development" , faviconDev)}
+          <Image
+            src={logoDevelopment}
+            alt="Software Development"
+            className="img-nav"
+          />
+        </div>
       )
     case "qa":
-      changeFaviconAndTitle(
-        faviconQa,
-        "Clever QA | Quality Assurance Consulting",
-        dom
-      )
-      return <Image src={logoQa} alt="Quality Assurance" className="img-nav" />
-    case "agile":
-      changeFaviconAndTitle(faviconAgile, "Clever Agile | Agile Mindset", dom)
-      return <Image src={logoAgile} alt="Agile Mindset" className="img-nav" />
-    case "ux":
-      changeFaviconAndTitle(
-        faviconExperience,
-        "Clever Experience | UI/UX Design Agency, Consulting & Branding",
-        dom
-      )
       return (
-        <Image
-          src={logoEx}
-          alt="UX Consulting & Branding"
-          className="img-nav"
-        />
+        <div>
+          {changeFaviconAndTitle("Clever QA | Quality Assurance Consulting" , faviconQa)}
+          <Image src={logoQa} alt="Quality Assurance" className="img-nav" />
+        </div>
+      )
+      
+    case "agile":
+      return (
+        <div>
+          {changeFaviconAndTitle("Clever Agile | Agile Mindset" , faviconAgile)}
+          <Image src={logoAgile} alt="Agile Mindset" className="img-nav" />
+        </div>
+      )
+      
+    case "ux":
+      return (
+        <div>
+          {changeFaviconAndTitle("Clever Experience | UI/UX Design Agency, Consulting & Branding" , faviconExperience)}
+          <Image
+            src={logoEx}
+            alt="UX Consulting & Branding"
+            className="img-nav"
+          />
+        </div>
       )
     default:
-      changeFaviconAndTitle(
-        faviconHome,
-        "Cleverit | Software, DevOps, Consulting & Cognitive",
-        dom
-      )
       return (
-        <Image
-          src={logo}
-          alt="Company Logo"
-          className="img-nav"
-          style={{ cursor: "pointer" }}
-          onClick={() => {
-            window.location.href = "/"
-          }}
-        />
+        <div>
+          {changeFaviconAndTitle("Cleverit | Software, DevOps, Consulting & Cognitive" , faviconHome)}
+          <Image
+            src={logo}
+            alt="Company Logo"
+            className="img-nav"
+            style={{ cursor: "pointer" }}
+            onClick={() => {
+              window.location.href = "/"
+            }}
+          />
+        </div>
       )
   }
 }

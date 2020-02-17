@@ -1,4 +1,6 @@
 import React from "react"
+import Helmet from 'react-helmet'
+
 import data from "../data/content.json"
 import AnimationHome from "../components/Animations/AnimationHome"
 import AnimationUx from "../components/Animations/AnimationUx"
@@ -137,15 +139,13 @@ export const blogTopics = {
 
 export const desktopMaxWidth = "960px"
 export const mobileMaxWidth = "480px"
-export const changeFaviconAndTitle = (link, title, document) => {
-  let $favicon = document.querySelector('link[rel="icon"]')
-  if ($favicon !== null) {
-    $favicon.href = link
-  } else {
-    $favicon = document.createElement("link")
-    $favicon.rel = "icon"
-    $favicon.href = link
-    document.head.appendChild($favicon)
-  }
-  document.title = title
+
+export const changeFaviconAndTitle = (text, icon) => {
+  return(
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>{text}</title>
+        <link rel="icon" type="image/png" href={icon} sizes="16x16" />
+    </Helmet>
+  )
 }
