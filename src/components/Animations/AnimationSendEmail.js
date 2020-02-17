@@ -1,29 +1,29 @@
-import React, { Component } from "react";
-import Lottie from "react-lottie";
-import Data from "../../data/AnimationSendEmail.json";
+import React, { Component } from "react"
+import Lottie from "react-lottie"
+import Data from "../../data/AnimationSendEmail.json"
 
-const back = window.matchMedia("(max-width: 1080px)");
 class AnimationSendEmail extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      animationChange: 500
-    };
+      animationChange: 500,
+    }
   }
   componentDidMount() {
-    this.handleAnimation();
+    this.handleAnimation()
   }
   handleAnimation = () => {
+    const back = window.matchMedia("(max-width: 1080px)")
     if (back.matches) {
       this.setState({
-        animationChange: 200
-      });
+        animationChange: 200,
+      })
     } else {
       this.setState({
-        animationChange: 500
-      });
+        animationChange: 500,
+      })
     }
-  };
+  }
   render() {
     const defaultOptions = {
       loop: true,
@@ -33,9 +33,9 @@ class AnimationSendEmail extends Component {
 
       animationData: Data,
       rendererSettings: {
-        preserveAspectRatio: "xMidYMid slice"
-      }
-    };
+        preserveAspectRatio: "xMidYMid slice",
+      },
+    }
 
     return (
       <Lottie
@@ -43,8 +43,8 @@ class AnimationSendEmail extends Component {
         width={`${this.state.animationChange}`}
         className="size-animation"
       />
-    );
+    )
   }
 }
 
-export default AnimationSendEmail;
+export default AnimationSendEmail

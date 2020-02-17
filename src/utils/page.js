@@ -137,7 +137,7 @@ export const blogTopics = {
 
 export const desktopMaxWidth = "960px"
 export const mobileMaxWidth = "480px"
-export const changeFaviconAndTitle = (link, title) => {
+export const changeFaviconAndTitle = (link, title, document) => {
   let $favicon = document.querySelector('link[rel="icon"]')
   if ($favicon !== null) {
     $favicon.href = link

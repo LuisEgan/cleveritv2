@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import Lottie from "react-lottie"
 import Data from "../../data/home_animation.json"
 
-const back = window.matchMedia("(max-width: 1080px)")
 class AnimationHome extends Component {
   constructor(props) {
     super(props)
@@ -14,6 +13,7 @@ class AnimationHome extends Component {
     this.handleAnimation()
   }
   handleAnimation = () => {
+    const back = window.matchMedia("(max-width: 1080px)")
     if (back.matches) {
       this.setState({
         animationChange: 200,

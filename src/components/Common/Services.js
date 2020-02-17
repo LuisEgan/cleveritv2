@@ -7,8 +7,6 @@ import styled from "styled-components"
 import imgBackground from "../../images/bg_mobile.png"
 import { getSuiteColor, getData } from "../../utils/page"
 
-const back = window.matchMedia("(max-width: 1080px)")
-
 let Services = props => {
   const {
     app: { lang },
@@ -86,6 +84,7 @@ let Services = props => {
   const [imageBackground, setImageBackground] = useState("hidden")
   const [hideVideo, setHideVideo] = useState("")
   const [showVideo, setShowVideo] = useState(false)
+  const back = window.matchMedia("(max-width: 1080px)")
 
   useEffect(() => {
     back.addListener(handleBackground)

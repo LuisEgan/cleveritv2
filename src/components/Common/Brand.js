@@ -16,16 +16,22 @@ import { Image } from "react-bootstrap"
 import { changeFaviconAndTitle } from "../../utils/page"
 
 const Brand = props => {
+  const dom = document
   switch (props.location) {
     case "devops":
-      changeFaviconAndTitle(faviconDevops, "Clever DevOps | DevOps Consulting")
+      changeFaviconAndTitle(
+        faviconDevops,
+        "Clever DevOps | DevOps Consulting",
+        dom
+      )
       return (
         <Image src={logoDevOps} alt="DevOps Consulting" className="img-nav" />
       )
     case "development":
       changeFaviconAndTitle(
         faviconDev,
-        "Clever Development | Software Development"
+        "Clever Development | Software Development",
+        dom
       )
       return (
         <Image
@@ -37,16 +43,18 @@ const Brand = props => {
     case "qa":
       changeFaviconAndTitle(
         faviconQa,
-        "Clever QA | Quality Assurance Consulting"
+        "Clever QA | Quality Assurance Consulting",
+        dom
       )
       return <Image src={logoQa} alt="Quality Assurance" className="img-nav" />
     case "agile":
-      changeFaviconAndTitle(faviconAgile, "Clever Agile | Agile Mindset")
+      changeFaviconAndTitle(faviconAgile, "Clever Agile | Agile Mindset", dom)
       return <Image src={logoAgile} alt="Agile Mindset" className="img-nav" />
     case "ux":
       changeFaviconAndTitle(
         faviconExperience,
-        "Clever Experience | UI/UX Design Agency, Consulting & Branding"
+        "Clever Experience | UI/UX Design Agency, Consulting & Branding",
+        dom
       )
       return (
         <Image
@@ -58,7 +66,8 @@ const Brand = props => {
     default:
       changeFaviconAndTitle(
         faviconHome,
-        "Cleverit | Software, DevOps, Consulting & Cognitive"
+        "Cleverit | Software, DevOps, Consulting & Cognitive",
+        dom
       )
       return (
         <Image
