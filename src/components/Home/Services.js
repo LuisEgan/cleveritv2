@@ -12,7 +12,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { COLORS } from "../../utils/page"
 
-let ServicesHome = props => {
+let Services = props => {
   return (
     <>
       <Row className={`${props.classAnimationVideo} row-services`}>
@@ -225,5 +225,5 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-ServicesHome = connect(mapStateToProps, mapDispatchToProps)(ServicesHome)
-export default ServicesHome
+Services = connect(mapStateToProps, mapDispatchToProps)(Services)
+export default Services

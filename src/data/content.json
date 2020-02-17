@@ -107,7 +107,6 @@
         "quote": "Cotiza aqui"
       },
       "collapse": {
-        "home": "Inicio",
         "services": "Servicios",
         "portfolio": "Portafolio",
         "plan": "Planes",
@@ -222,7 +221,6 @@
         "quote": "Request a Quote"
       },
       "collapse": {
-        "home": "Home",
         "services": "Services",
         "portfolio": "Portfolio",
         "plan": "Plans",
@@ -1321,7 +1319,7 @@
         "loadMore": "Cargar más",
         "cards": [
           {
-            "img": "wom.png",
+            "img": "WOM.png",
             "text": "WOMVOLUTION",
             "description": "El proyecto trata de la migración de los servicios de legado y la célula QA cumple la función de partner de WOM, proveyendo un servicio de desarrollo y ejecución de pruebas manuales y automatizadas con distintos focos y alcances, a través de las entregas continuas e incrementales, garantizando la calidad de los desarrollos e integraciones entre distintas áreas.",
             "area": "Services, SOAP, SOAPUI, git, AzureDevops Pipelines, Automated testing, Scrum",
@@ -2414,6 +2412,55 @@
           "home": "contacto@cleveritgroup.com",
           "ux": "cleverex@cleveritgruop.com"
         }
+      }
+    }
+  },
+  "Blog": {
+    "en": {
+      "navBar": {
+        "": "Home",
+        "blog": "Blog",
+        "carrers": "Careers",
+        "quote": "quote with us"
+      },
+      "footer": {
+        "talk": "Talk!",
+        "terms": "Terms & condition",
+        "about": "About us",
+        "join": "Join us",
+        "blog": "Blog & Articles",
+        "button": "want to know more",
+        "instagramLink": "https://www.instagram.com/cleveritgroup/",
+        "linkedInLink": "https://www.linkedin.com/company/cleverit-latam/",
+        "behanceLink": "https://www.behance.net/cleverexperience",
+        "dribbbleLink": "",
+        "pageLink": "https://www.cleveritgroup.com/",
+        "rigths": "  Todos los derechos reservados © 2019 Cleverit.",
+        "direction": "Los Militares #6191, Las Condes, Chile"
+      }
+    },
+    "es": {
+      "navBar": {
+        "": "Inicio",
+        "blog": "Blog",
+        "carrers": "Carreras",
+        "quote": "cotiza con nosotros"
+      },
+      "footer": {
+        "talk": "¡Hablemos!",
+        "email": "contacto@cleveritgroup.com",
+        "terms": "Terminos y condiciones",
+        "about": "Sobre nosotros",
+        "join": "Únete a nuestro equipo",
+        "blog": "Blog & Artículos",
+        "button": "¡Quiero saber más!",
+        "instagramLink": "https://www.instagram.com/cleveritgroup/",
+        "linkedInLink": "https://www.linkedin.com/company/cleverit-latam/",
+        "behanceLink": "https://www.behance.net/cleverexperience",
+        "dribbbleLink": "",
+        "pageLink": "https://www.cleveritgroup.com/",
+        "rigths": "  Todos los derechos reservados © 2019 Cleverit.",
+        "direction": "Los Militares #6191, Las Condes, Chile"
       }
     }
   },

@@ -6,6 +6,7 @@ import AnimationAgile from "../components/Animations/AnimationAgile"
 import AnimationDev from "../components/Animations/AnimationDev"
 import AnimationDevOps from "../components/Animations/AnimationDevOps"
 import AnimationQa from "../components/Animations/AnimationQa"
+import Animation from "../components/Animations/Animation404"
 
 export const getData = (location, lang) => {
   let content
@@ -32,13 +33,15 @@ export const getData = (location, lang) => {
     case "notFound":
       content = data.NotFound[lang]
       break
+    case "blog":
+      content = data.Blog[lang]
+      break
     default:
       content = data.Home[lang]
       break
   }
   return content
 }
-
 export const getCompanySize = companySize => {
   let parsed = ""
   switch (companySize) {
@@ -59,7 +62,6 @@ export const getCompanySize = companySize => {
   }
   return parsed
 }
-
 export const getSuiteColor = location => {
   let color
   switch (location) {
@@ -85,7 +87,6 @@ export const getSuiteColor = location => {
 
   return color
 }
-
 export const getAnimation = location => {
   let animation
   switch (location) {
@@ -104,6 +105,9 @@ export const getAnimation = location => {
     case "devops":
       animation = <AnimationDevOps />
       break
+    case "notFound":
+      animation = <Animation />
+      break
     default:
       animation = <AnimationHome />
       break
@@ -111,7 +115,6 @@ export const getAnimation = location => {
 
   return animation
 }
-
 export const COLORS = {
   qa: "#0bc075",
   development: "#10ddc2",
@@ -120,4 +123,29 @@ export const COLORS = {
   xr: "#1b2a49",
   ux: "#7e0cf5",
   default: "#371a9f",
+}
+
+export const blogTopics = {
+  qa: "QA",
+  devops: "DevOps",
+  development: "Development",
+  bi: "BI",
+  alm: "ALM",
+  azure: "Azure",
+  serverless: "Serverless",
+}
+
+export const desktopMaxWidth = "960px"
+export const mobileMaxWidth = "480px"
+export const changeFaviconAndTitle = (link, title) => {
+  let $favicon = document.querySelector('link[rel="icon"]')
+  if ($favicon !== null) {
+    $favicon.href = link
+  } else {
+    $favicon = document.createElement("link")
+    $favicon.rel = "icon"
+    $favicon.href = link
+    document.head.appendChild($favicon)
+  }
+  document.title = title
 }

@@ -9,7 +9,7 @@ import falabella from "../../images/falabella_logo_white.svg"
 import { Row, Col, Image } from "react-bootstrap"
 import { connect } from "react-redux"
 
-class CompaniesHome extends React.Component {
+class Companies extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -145,5 +145,5 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-CompaniesHome = connect(mapStateToProps, mapDispatchToProps)(CompaniesHome)
-export default CompaniesHome
+Companies = connect(mapStateToProps, mapDispatchToProps)(Companies)
+export default Companies

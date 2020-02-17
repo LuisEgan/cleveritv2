@@ -16,59 +16,59 @@ let Plan = props => {
   const color = getSuiteColor(location)
 
   const BtnPlanOutline = styled.button`
-    padding-left: 20%;
-    padding-right: 20%;
-    color: ${color};
-    border-color: ${color};
+    padding-left: 20% !important;
+    padding-right: 20% !important;
+    color: ${color} !important;
+    border-color: ${color} !important;
     :hover,
     :visited,
     :focus,
     :active {
-      background-color: ${color} !important;
-      border-color: ${color}!important;
-      color: white;
+      background-color: ${color} !important !important;
+      border-color: ${color}!important !important;
+      color: white !important;
       @media screen and (max-width: 400px) {
-        padding-left: 15%;
-        padding-right: 15%;
+        padding-left: 15% !important;
+        padding-right: 15% !important;
       }
     }
   `
   const BtnPlan = styled.button`
-    padding-left: 20%;
-    padding-right: 20%;
-    background-color: ${color};
-    border-color: ${color};
-    color: white;
+    padding-left: 20% !important;
+    padding-right: 20% !important;
+    background-color: ${color} !important;
+    border-color: ${color} !important;
+    color: white !important;
     :hover,
     :visited,
     :focus,
     :active {
-      background-color: ${color} !important;
-      border-color: ${color} !important;
-      color: white;
+      background-color: ${color} !important !important;
+      border-color: ${color} !important !important;
+      color: white !important;
       @media screen and (max-width: 400px) {
-        padding-left: 15%;
-        padding-right: 15%;
+        padding-left: 15% !important;
+        padding-right: 15% !important;
       }
     }
   `
   const TitlePlan = styled.h1`
-    display: block;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 3rem;
-    font-weight: bold;
-    color: ${color};
+    display: block !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin-bottom: 3rem !important;
+    font-weight: bold !important;
+    color: ${color} !important;
     @media screen and (max-width: 400px) {
-      font-size: 1.5rem;
+      font-size: 1.5rem !important;
     }
   `
   const CardPlanCustom = styled.div`
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-color: ${color};
-    height: 50rem;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    border-color: ${color} !important;
+    height: 50rem !important;
   `
   return (
     <>

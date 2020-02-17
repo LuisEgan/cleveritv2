@@ -16,73 +16,71 @@ let Services = props => {
   } = props
 
   const content = getData(location, lang)
-  console.log("TCL: content", content)
   const color = getSuiteColor(location)
 
   const Circle = styled.svg`
-    width: 10px;
-
-    fill: ${color};
+    width: 10px !important;
+    fill: ${color} !important;
   `
   const BtnWatchVideo = styled.button`
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    color: white;
-    border-color: white;
-    background-color: transparent;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    color: white !important;
+    border-color: white !important;
+    background-color: transparent !important;
 
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
     :hover,
     :active,
     :focus,
     :visited {
       background-color: ${color} !important;
       border-color: ${color} !important;
-      color: white;
+      color: white !important;
     }
     @media screen and (max-width: 1080px) {
-      padding-left: 30%;
-      padding-right: 30%;
-      padding-bottom: 1rem;
-      padding-top: 1rem;
+      padding-left: 30% !important;
+      padding-right: 30% !important;
+      padding-bottom: 1rem !important;
+      padding-top: 1rem !important;
     }
     @media screen and (max-width: 400px) {
-      padding-left: 20%;
-      padding-right: 20%;
-      padding-bottom: 1rem;
-      padding-top: 1rem;
+      padding-left: 20% !important;
+      padding-right: 20% !important;
+      padding-bottom: 1rem !important;
+      padding-top: 1rem !important;
     }
   `
   const BtnColor = styled.button`
-    background-color: ${color};
-    border-width: 0px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    color: white;
+    background-color: ${color} !important;
+    border-width: 0px !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    color: white !important;
     :hover,
     :active,
     :focus,
     :visited {
       background-color: ${color} !important;
       border-color: ${color} !important;
-      color: white;
+      color: white !important;
     }
     @media screen and (max-width: 1080px) {
-      padding-left: 30%;
-      padding-right: 30%;
-      padding-bottom: 1rem;
-      padding-top: 1rem;
+      padding-left: 30% !important;
+      padding-right: 30% !important;
+      padding-bottom: 1rem !important;
+      padding-top: 1rem !important;
     }
     @media screen and (max-width: 400px) {
-      padding-left: 20%;
-      padding-right: 20%;
-      padding-bottom: 1rem;
-      padding-top: 1rem;
+      padding-left: 20% !important;
+      padding-right: 20% !important;
+      padding-bottom: 1rem !important;
+      padding-top: 1rem !important;
     }
   `
   const [imageBackground, setImageBackground] = useState("hidden")

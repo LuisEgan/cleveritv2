@@ -375,6 +375,7 @@ html {
   border-radius: 4px;
   background-color: #371a9f;
   border-color: #371a9f;
+  color: white !important;
 }
 .btn-loadMore-home:hover,
 .btn-loadMore-home:focus,
@@ -506,8 +507,9 @@ h5 {
   background-color: #371a9f !important;
   border-color: #371a9f !important;
 }
-.btn.disabled, .btn:disabled {
-    opacity: .5;
+.btn.disabled,
+.btn:disabled {
+  opacity: 0.5;
 }
 .toggle-btn {
   justify-content: center;

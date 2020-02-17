@@ -29,10 +29,6 @@ const Suite = props => {
   const [classAnimationFooter, setClassAnimationFooter] = useState("hidden")
 
   const handleAnimation = () => {
-    console.log(
-      "TCL: handleAnimation -> document.documentElement.scrollTop",
-      document.documentElement.scrollTop
-    )
     if (document.documentElement.scrollTop > 0) {
       setClassAnimationVideo("visible")
     }
@@ -71,7 +67,7 @@ const Suite = props => {
   window.onscroll = () => handleAnimation()
 
   return (
-    <div>
+    <>
       <ModalForm location={props.call} />
       <NavBar
         navbarState={navbarOpen}
@@ -118,7 +114,7 @@ const Suite = props => {
           />
         </section>
       </Container>
-    </div>
+    </>
   )
 }
 

@@ -152,37 +152,37 @@ const RowPhotos = styled.div`
 
   width: 100%;
   @media screen and (max-width: 450px) {
-    display: none;
+    display: none !important;
   }
 `
 const Child = styled.div`
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  width: 100% !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  -webkit-transition: all 0.5s !important;
+  -moz-transition: all 0.5s !important;
+  -o-transition: all 0.5s !important;
+  transition: all 0.5s !important;
   & img {
-    width: 100%;
+    width: 100% !important;
   }
   :before {
-    content: "";
-    display: none;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    content: "" !important;
+    display: none !important;
+    height: 100% !important;
+    width: 100% !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
   }
 `
 
 const Parent = styled.div`
-  width: 100%;
-  margin: 0.5rem;
-  padding: 0;
+  width: 100% !important;
+  margin: 0.5rem !important;
+  padding: 0 !important;
 
-  overflow: hidden;
+  overflow: hidden !important;
 
   cursor: pointer;
   :hover .child1,
@@ -195,26 +195,26 @@ const Parent = styled.div`
   }
   :hover .child1:before,
   :focus .child1:before {
-    display: block;
+    display: block !important;
   }
 `
 const ShowCarousel = styled.div`
-  display: none;
+  display: none !important;
 
   @media screen and (max-width: 450px) {
-    display: inline;
-    justify-content: center;
-    text-align: center;
-    align-self: center;
-    padding-bottom: 4rem;
+    display: inline !important;
+    justify-content: center !important;
+    text-align: center !important;
+    align-self: center !important;
+    padding-bottom: 4rem !important;
     &.col-sm-12 .col-12 {
-      padding-right: 0;
-      padding-left: 0;
-      padding-bottom: 4rem;
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+      padding-bottom: 4rem !important;
     }
   }
 `
 const ImgCarousel = styled.img`
-  width: 400px;
-  height: 250px;
+  width: 400px !important;
+  height: 250px !important;
 `

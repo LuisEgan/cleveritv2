@@ -41,7 +41,7 @@ let ModalForm = props => {
     let html = `<h2> Contacto Suite: ${location} </h2> <br/>`
     html += `<b>Correo: </b> ${email} <br/>`
     html += `<b>Empresa: </b> ${company} <br/>`
-    html += `<b>Tamaño de Empresa: </b> ${sizeOfCompany} <br/>`
+    // html += `<b>Tamaño de Empresa: </b> ${sizeOfCompany} <br/>`
 
     setSubmitted(true)
     const res = await sendEmail({
@@ -313,16 +313,18 @@ let ModalForm = props => {
                       </RowCompany>
                       <RowCompany className="row">
                         <div id="recaptcha" className="recaptcha">
-                          <ReCAPTCHA
-                            sitekey="6LfQhsYUAAAAALZxJmKDQEE8J1oTpTh3ELnLNrG9"
-                            onChange={e => setCaptcha(!!e)}
-                          />
+                          {!captcha && (
+                            <ReCAPTCHA
+                              sitekey="6LfQhsYUAAAAALZxJmKDQEE8J1oTpTh3ELnLNrG9"
+                              onChange={e => setCaptcha(!!e)}
+                            />
+                          )}
                         </div>
                       </RowCompany>
-                      <RowOption className="row">
+                      {/* <RowOption className="row">
                         <p>{data.modal.howBigCompany}</p>
-                      </RowOption>
-                      <RowCheck className="row justify-content-center">
+                      </RowOption> */}
+                      {/* <RowCheck className="row justify-content-center">
                         <ButtonToolbar
                           aria-label="Toolbar with button groups"
                           className="mt-2 justify-content-center toggle-btn"
@@ -369,7 +371,7 @@ let ModalForm = props => {
                             </BtnCheck>
                           </ButtonGroup>
                         </ButtonToolbar>
-                      </RowCheck>
+                      </RowCheck> */}
                       <RowBtnSubmit className="row">
                         <div className="col-xl-6  col-lg-6 col-md-6 col-sm-6 col-xs-12 col-12 align-items-center">
                           <BtnNavMobile

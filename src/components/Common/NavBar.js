@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import styled from "styled-components"
-import { useSpring, animated, config } from "react-spring"
+import { useSpring, animated } from "react-spring"
 import Brand from "./brand"
 import BurgerMenu from "./burgerMenu"
 import CollapseMenu from "./collapseMenu"
@@ -31,54 +31,110 @@ let NavBar = props => {
   }
 
   const NavLinks = styled(animated.ul)`
-    justify-self: end;
-    list-style-type: none;
-    margin: auto 0;
-    display: flex;
-    align-items: center;
+    justify-self: end !important;
+    list-style-type: none !important;
+    margin: auto 0 !important;
+    display: flex !important;
+    align-items: center !important;
 
     & a {
-      color: #55595c;
-
-      border-bottom: 1px solid transparent;
-      margin-right: 1.2rem;
-      transition: all 300ms linear 0s;
-      text-decoration: none;
-      cursor: pointer;
+      color: #55595c !important;
+      border-bottom: 1px solid transparent !important;
+      margin-right: 1.2rem !important;
+      transition: all 300ms linear 0s !important;
+      text-decoration: none !important;
+      cursor: pointer !important;
 
       &:hover {
-        color: ${color};
+        color: ${color} !important;
       }
 
       @media (max-width: 868px) {
-        display: none;
+        display: none !important;
       }
     }
   `
 
   const BtnNavHome = styled(Button)`
-    background-color: ${color};
-    border-color: ${color};
-    color: white;
+    background-color: ${color} !important;
+    border-color: ${color} !important;
+    color: white !important;
     :hover,
     :visited,
     :focus,
     :active {
       background-color: ${color} !important;
       border-color: ${color} !important;
-      color: white;
+      color: white !important;
     }
 
     @media (max-width: 868px) {
-      display: none;
+      display: none !important;
     }
   `
 
   const DropdownWrapper = styled.div`
     @media (max-width: 868px) {
-      display: none;
+      display: none !important;
     }
-  `;
+  `
+
+  let navLinksComponent = null
+  switch (location) {
+    case "home":
+      navLinksComponent = _.keys(content.navBar).map((text, index) => {
+        if (text === "quote") return
+        if (text === "blog")
+          return (
+            <React.Fragment key={index}>
+              <li>
+                <a href={`/${text}`}>{content.navBar[text]}</a>
+              </li>
+            </React.Fragment>
+          )
+        if (text === "carrers")
+          return (
+            <React.Fragment key={index}>
+              <a href={`https://careers.cleveritgroup.com`}>
+                {content.navBar[text]}
+              </a>
+            </React.Fragment>
+          )
+        return (
+          <React.Fragment key={index}>
+            <a href={`#${text}`}>{content.navBar[text]}</a>
+          </React.Fragment>
+        )
+      })
+      break
+    case "blog":
+      navLinksComponent = _.keys(content.navBar).map((text, index) => {
+        if (text === "quote") return
+        if (text === "carrers")
+          return (
+            <React.Fragment key={index}>
+              <a href={`https://careers.cleveritgroup.com`}>
+                {content.navBar[text]}
+              </a>
+            </React.Fragment>
+          )
+        return (
+          <React.Fragment key={index}>
+            <a href={`/${text}`}>{content.navBar[text]}</a>
+          </React.Fragment>
+        )
+      })
+      break
+    default:
+      navLinksComponent = (
+        <React.Fragment>
+          <a href="#section-video">{content.navBar.services}</a>
+          <a href="#section-plan"> {content.navBar.plan}</a>
+          <a href="#section-photos"> {content.navBar.team}</a>
+          <a href="#section-footer"> {content.navBar.contact}</a>
+        </React.Fragment>
+      )
+  }
 
   return (
     <>
@@ -86,45 +142,18 @@ let NavBar = props => {
         <FlexContainer>
           <Brand location={location} />
           <NavLinks>
-            {location === "home" ? (
-              _.keys(content.navBar).map((text, index) => {
-                if (text === "quote") return
-                if (text === "carrers")
-                  return (
-                    <React.Fragment key={index}>
-                      <a href={`https://careers.cleveritgroup.com`}>
-                        {content.navBar[text]}
-                      </a>
-                    </React.Fragment>
-                  )
-                return (
-                  <React.Fragment key={index}>
-                    <a href={`#${text}`}>{content.navBar[text]}</a>
-                  </React.Fragment>
-                )
-              })
-            ) : (
-              <>
-                <a href="#section-video">{content.navBar.services}</a>
-                <a href="#section-plan"> {content.navBar.plan}</a>
-                <a href="#section-photos"> {content.navBar.team}</a>
-                <a href="#section-footer"> {content.navBar.contact}</a>
-              </>
-            )}
-
+            {navLinksComponent}
             <BtnNavHome
               className="btn-nav-home"
               onClick={() => props.showModalFunc(true)}
             >
               {content.navBar.quote}
             </BtnNavHome>
-            
             <DropdownWrapper>
               <Dropdown>
                 <Dropdown.Toggle variant="white" id="dropdown-basic">
                   <i className="fas fa-globe icon-drop-nav"></i>
                 </Dropdown.Toggle>
-
                 <Dropdown.Menu>
                   <Dropdown.Item onClick={onChangeLang.bind(null, "es")}>
                     <i className="fas fa-globe"></i> Es
@@ -135,7 +164,6 @@ let NavBar = props => {
                 </Dropdown.Menu>
               </Dropdown>
             </DropdownWrapper>
-
           </NavLinks>
           <BurgerWrapper>
             <BurgerMenu
@@ -155,36 +183,36 @@ let NavBar = props => {
 }
 
 const StyledNavBar = styled(animated.nav)`
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: #ffffff;
-  z-index: 100;
-  font-size: 1.2rem;
+  position: fixed !important;
+  width: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  background: #ffffff !important;
+  z-index: 100 !important;
+  font-size: 1.2rem !important;
 
   .btn-light:hover {
-    background-color: transparent;
-    border-color: transparent;
+    background-color: transparent !important;
+    border-color: transparent !important;
   }
   .show > .btn-light.dropdown-toggle:focus {
-    box-shadow: none;
+    box-shadow: none !important;
   }
   .btn-light:not(:disabled):not(.disabled):active
     .show
     > .btn-light.dropdown-toggle {
-    color: #212529;
-    background-color: transparent;
-    border-color: transparent;
+    color: #212529 !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
   }
   .btn-light.focus,
   .btn-light:focus {
-    background-color: transparent;
-    border-color: transparent;
-    box-shadow: none;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
   }
   .dropdown-item {
-    cursor: pointer;
+    cursor: pointer !important;
   }
 `
 
@@ -201,10 +229,10 @@ const FlexContainer = styled.div`
 `
 
 const BurgerWrapper = styled.div`
-  margin: auto 0;
+  margin: auto 0 !important;
 
   @media (min-width: 869px) {
-    display: none;
+    display: none !important;
   }
 `
 

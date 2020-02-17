@@ -1,17 +1,21 @@
 import React, { useState } from "react"
 
 import { Row, Col, Button, Card } from "react-bootstrap"
-import data from "../../data/content.json"
-import { usePost } from "../../hooks/usePost"
+import usePost from "../../hooks/usePost"
 
 import { connect } from "react-redux"
 import { getData } from "../../utils/page.js"
+import Image from "gatsby-image"
+import styled from "styled-components"
+import mobileMaxWidth from "../../utils/page"
+import { ReadLink } from "../../components/Blog/ReadLink"
 
 const { Body, Title, Text } = Card
 
-let BlogHome = props => {
+let Blog = props => {
   const [visible, setVisible] = useState(3)
-
+  const posts = usePost()
+  console.log("TCL: posts", posts)
   const {
     app: { lang },
     location,
@@ -19,8 +23,20 @@ let BlogHome = props => {
 
   const content = getData(location, lang)
 
+  const BlogImage = styled(Image)`
+    margin-top: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+
+    @media (min-width: ${mobileMaxWidth}) {
+      height: 400px;
+    }
+  `
+
   const loadMore = () => {
-    setVisible(visible + 2)
+    setVisible(visible + 3)
   }
 
   return (
@@ -50,7 +66,7 @@ let BlogHome = props => {
           xl={8}
           className="align-self-center col-blog-cards"
         >
-          {content.sectionBlog.blogList.slice(0, visible).map((card, index) => {
+          {posts.slice(0, visible).map((post, index) => {
             return (
               <div
                 className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 item-carousel"
@@ -58,12 +74,18 @@ let BlogHome = props => {
               >
                 <Card style={{ width: "100%" }}>
                   <div className="inner">
-                    <Card.Img variant="top" src={card.img} />
+                    <BlogImage
+                      fluid={post.image.sharp.fluid}
+                      alt={post.title}
+                    />
                   </div>
                   <Body className="card-body-portfolio">
-                    <Title>{card.text}</Title>
-                    <Text>{card.description}</Text>
-                    <Text className="area-text-home">{card.area}</Text>
+                    <Title>{post.title}</Title>
+                    <Text>{post.excerpt}</Text>
+                    <Text className="area-text-home">{post.tag}</Text>
+                    <ReadLink to={`/blog/${post.slug}`}>
+                      Ver más &rarr;{" "}
+                    </ReadLink>
                   </Body>
                 </Card>
               </div>
@@ -74,8 +96,8 @@ let BlogHome = props => {
       <Row
         className={`justify-content-center ${props.classAnimationPortfolio} `}
       >
-        {visible < content.sectionBlog.blogList.length && (
-          <Button onClick={() => this.loadMore()} className="btn-loadMore-home">
+        {visible < posts.length && (
+          <Button onClick={() => loadMore()} className="btn-loadMore-home">
             {" "}
             Cargar más
           </Button>
@@ -95,5 +117,5 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-BlogHome = connect(mapStateToProps, mapDispatchToProps)(BlogHome)
-export default BlogHome
+Blog = connect(mapStateToProps, mapDispatchToProps)(Blog)
+export default Blog

@@ -90,32 +90,32 @@ const CarouselTestimony = {
 }
 
 const RowPlan = styled.div`
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  margin-left: 0rem;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  margin-left: 0rem !important;
   @media screen and (max-width: 1000px) {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
   }
 `
 
 const RowTestimony = styled.div`
   .card-subtitle {
-    margin-bottom: 1rem;
+    margin-bottom: 1rem !important;
   }
 `
 const CountainerText = styled.div`
-  max-width: 32%;
+  max-width: 32% !important;
   @media screen and (max-width: 1000px) {
-    padding-right: 1rem;
-    padding-left: 1rem;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 100%;
-    width: 100%;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    max-width: 100% !important;
+    width: 100% !important;
     & h4 {
-      font-size: 1.2rem;
+      font-size: 1.2rem !important;
     }
   }
 `

@@ -12,23 +12,10 @@ import faviconAgile from "../../images/favicon/agile/favicon.ico"
 import faviconExperience from "../../images/favicon/experience/favicon.ico"
 import faviconQa from "../../images/favicon/qa/favicon.ico"
 import faviconHome from "../../images/favicon/home/favicon.ico"
-
 import { Image } from "react-bootstrap"
+import { changeFaviconAndTitle } from "../../utils/page"
 
 const Brand = props => {
-  const changeFaviconAndTitle = (link, title) => {
-    let $favicon = document.querySelector('link[rel="icon"]')
-    if ($favicon !== null) {
-      $favicon.href = link
-    } else {
-      $favicon = document.createElement("link")
-      $favicon.rel = "icon"
-      $favicon.href = link
-      document.head.appendChild($favicon)
-    }
-    document.title = title
-  }
-
   switch (props.location) {
     case "devops":
       changeFaviconAndTitle(faviconDevops, "Clever DevOps | DevOps Consulting")
@@ -73,7 +60,17 @@ const Brand = props => {
         faviconHome,
         "Cleverit | Software, DevOps, Consulting & Cognitive"
       )
-      return <Image src={logo} alt="Company Logo" className="img-nav" />
+      return (
+        <Image
+          src={logo}
+          alt="Company Logo"
+          className="img-nav"
+          style={{ cursor: "pointer" }}
+          onClick={() => {
+            window.location.href = "/"
+          }}
+        />
+      )
   }
 }
 

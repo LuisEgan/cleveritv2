@@ -20,13 +20,13 @@ let Portfolio = props => {
   const color = getSuiteColor(location)
 
   const BtnLoad = styled.div`
-    margin-top: 2rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    border-radius: 4px;
-    background-color: ${color};
-    border-color: ${color};
-    color: white;
+    margin-top: 2rem !important;
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+    border-radius: 4px !important;
+    background-color: ${color} !important;
+    border-color: ${color} !important;
+    color: white !important;
     :hover,
     :focus,
     :visited:active {
@@ -105,33 +105,33 @@ Portfolio = connect(mapStateToProps, mapDispatchToProps)(Portfolio)
 export default Portfolio
 
 const PortfolioTitle = styled.h1`
-  padding-left: 8%;
-  padding-right: 45%;
-  font-weight: bold;
+  padding-left: 8% !important;
+  padding-right: 45% !important;
+  font-weight: bold !important;
   @media screen and (max-width: 1080px) {
-    padding-left: 10%;
-    padding-right: 10%;
-    font-weight: bold;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+    font-weight: bold !important;
   }
   @media screen and (max-width: 400px) {
-    padding-left: 8%;
-    padding-right: 10%;
-    font-size: 1.5rem;
-    font-weight: bold;
+    padding-left: 8% !important;
+    padding-right: 10% !important;
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
   }
 `
 const CardPortfolio = styled.div`
-  margin-right: 1rem;
-  margin-left: 1rem;
-  margin-top: 3rem;
-  width: 100%;
+  margin-right: 1rem !important;
+  margin-left: 1rem !important;
+  margin-top: 3rem !important;
+  width: 100% !important;
 `
 const Inner = styled.div`
-  overflow: hidden;
+  overflow: hidden !important;
   & img {
-    transition: all 1.5s ease;
+    transition: all 1.5s ease !important;
     :hover {
-      transform: scale(1.5);
+      transform: scale(1.5) !important;
     }
   }
 `

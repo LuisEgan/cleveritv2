@@ -10,7 +10,7 @@ import { getData } from "../../utils/page"
 
 let Footer = props => {
   const data = getData(props.location, props.app.lang)
-  console.log("TCL: data", data)
+
   return (
     <>
       <ContainerFooter
@@ -38,9 +38,6 @@ let Footer = props => {
               <li>
                 <Link to="/development">Clever Development</Link>
               </li>
-              <li>
-                <a href="https://www.xr.cleveritgroup.com/">Clever XR</a>
-              </li>
             </ul>
           </Col>
           <Col
@@ -58,8 +55,11 @@ let Footer = props => {
                 <Link to="/qa">Clever QA</Link>
               </li>
               <li>
-                <Link to="/cloud">Clever Cloud</Link>
+                <a href="https://www.xr.cleveritgroup.com/">Clever XR</a>
               </li>
+              {/* <li>
+                <Link to="/cloud">Clever Cloud</Link>
+              </li> */}
             </ul>
           </Col>
           <Col
@@ -90,10 +90,13 @@ let Footer = props => {
           >
             <ul>
               <li>
-                <Link to="">{data.footer.join}</Link>
+                <a href={`https://careers.cleveritgroup.com`}>
+                  {data.footer.join}
+                </a>
+                {/* <Link to="">{data.footer.join}</Link> */}
               </li>
               <li>
-                <Link to="">{data.footer.blog}</Link>
+                <Link to="/blog">{data.footer.blog}</Link>
               </li>
               <li>
                 <Link to="">Webinar</Link>
@@ -227,7 +230,7 @@ let Footer = props => {
 }
 
 const ContainerFooter = styled.div`
-  background-color: ${props => props.color || "black"};
+  background-color: ${props => props.color || "#371a9f"};
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -276,23 +279,18 @@ const CleverSuitFooter = styled.div`
     list-style-type: none;
 
     @media screen and (max-width: 1080px) {
-      margin-bottom: 2rem;
-      padding-left: 0;
-    }
-  }
-  & li {
-    margin-bottom: 1rem;
+      margin-botto
   }
 `
 const BtnFooterHome = styled.button`
-  font-size: 1.2rem;
-  color: white;
-  border-color: white;
-  background-color: transparent;
-  padding: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 4px;
+  font-size: 1.2rem !important;
+  color: white !important;
+  border-color: white !important;
+  background-color: transparent !important;
+  padding: 1rem !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border-radius: 4px !important;
 
   :hover,
   :focus,
@@ -310,13 +308,6 @@ const BtnFooterHome = styled.button`
   }
   @media screen and (max-width: 400px) {
     font-size: 1rem;
-  }
-`
-
-const Icons = styled.div`
-  & i {
-    font-size: 2.2rem;
-    color: white;
   }
 `
 

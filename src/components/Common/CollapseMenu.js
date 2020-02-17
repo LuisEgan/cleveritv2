@@ -16,51 +16,134 @@ let CollapseMenu = props => {
   } = props
 
   const color = getSuiteColor(location)
+  const content = getData(location, lang)
+
+  let navLinksComponent = null
+  switch (location) {
+    case "home":
+      navLinksComponent = _.keys(content.navBar).map((text, index) => {
+        if (text === "quote") return
+        if (text === "blog")
+          return (
+            <React.Fragment key={index}>
+              <li>
+                <a href={`/${text}`}>{content.navBar[text]}</a>
+              </li>
+            </React.Fragment>
+          )
+        if (text === "carrers")
+          return (
+            <React.Fragment key={index}>
+              <li>
+                <a href={`https://careers.cleveritgroup.com`}>
+                  {content.navBar[text]}
+                </a>
+              </li>
+            </React.Fragment>
+          )
+        return (
+          <React.Fragment key={index}>
+            <li>
+              <a href={`#${text}`}>{content.navBar[text]}</a>
+            </li>
+          </React.Fragment>
+        )
+      })
+      break
+    case "blog":
+      navLinksComponent = _.keys(content.navBar).map((text, index) => {
+        if (text === "quote") return
+        if (text === "carrers")
+          return (
+            <React.Fragment key={index}>
+              <li>
+                <a href={`https://careers.cleveritgroup.com`}>
+                  {content.navBar[text]}
+                </a>
+              </li>
+            </React.Fragment>
+          )
+        return (
+          <React.Fragment key={index}>
+            <li>
+              <a href={`/${text}`}>{content.navBar[text]}</a>
+            </li>
+          </React.Fragment>
+        )
+      })
+      break
+    default:
+      navLinksComponent = (
+        <React.Fragment>
+          <li>
+            <a href="#section-video" onClick={props.handleNavbar}>
+              {content.navBar.services}
+            </a>
+          </li>
+          <li>
+            <a href="#section-plan" onClick={props.handleNavbar}>
+              {" "}
+              {content.navBar.plan}
+            </a>
+          </li>
+          <li>
+            <a href="#section-photos" onClick={props.handleNavbar}>
+              {" "}
+              {content.navBar.team}
+            </a>
+          </li>
+          <li>
+            <a href="#section-footer" onClick={props.handleNavbar}>
+              {" "}
+              {content.navBar.contact}
+            </a>
+          </li>
+        </React.Fragment>
+      )
+  }
 
   const onChangeLang = language => {
     const { changeLang } = props
     changeLang(language)
   }
 
-  const content = getData(location, lang)
-
   const BtnNav = styled(Button)`
-    background-color: ${color};
-    border-color: ${color};
-    color: white;
+    background-color: ${color} !important;
+    border-color: ${color} !important;
+    color: white !important;
     :hover,
     :visited,
     :focus,
     :active {
       background-color: ${color} !important;
       border-color: ${color} !important;
-      color: white;
+      color: white !important;
     }
   `
   const NavLinks = styled.ul`
-    list-style-type: none;
-    padding: 2rem 1rem 50rem 2rem;
+    list-style-type: none !important;
+    padding: 2rem 1rem 50rem 2rem !important;
 
     & li {
-      transition: all 300ms linear 0s;
-      z-index: 1;
-      justify-content: center;
-      text-align: center;
-      padding-top: 1rem;
+      transition: all 300ms linear 0s !important;
+      z-index: 1 !important;
+      justify-content: center !important;
+      text-align: center !important;
+      padding-top: 1rem !important;
     }
 
     & a {
-      font-size: 1.4rem;
-      line-height: 2;
-      color: black;
+      font-size: 1.4rem !important;
+      line-height: 2 !important;
+      color: black !important;
 
-      text-decoration: none;
-      cursor: pointer;
-      z-index: 1;
+      text-decoration: none !important;
+      cursor: pointer !important;
+      z-index: 1 !important;
 
       &:hover {
-        color: ${color};
-        border-bottom: 1px solid ${color};
+        color: ${color} !important;
+        border-bottom: 1px solid ${color} !important;
       }
     }
   `
@@ -78,46 +161,7 @@ let CollapseMenu = props => {
         }}
       >
         <NavLinks>
-          {location === "home" ? (
-            _.keys(content.navBar).map((text, index) => {
-              if (text === "quote") return
-              return (
-                <React.Fragment key={index}>
-                  <li>
-                    <a href={`#${text}`} onClick={props.handleNavbar}>
-                      {content.navBar[text]}
-                    </a>
-                  </li>
-                </React.Fragment>
-              )
-            })
-          ) : (
-            <>
-              <li>
-                <a href="#section-video" onClick={props.handleNavbar}>
-                  {data.Development[props.app.lang].navBar.services}
-                </a>
-              </li>
-              <li>
-                <a href="#section-plan" onClick={props.handleNavbar}>
-                  {" "}
-                  {data.Development[props.app.lang].navBar.plan}
-                </a>
-              </li>
-              <li>
-                <a href="#section-photos" onClick={props.handleNavbar}>
-                  {" "}
-                  {data.Development[props.app.lang].navBar.team}
-                </a>
-              </li>
-              <li>
-                <a href="#section-footer" onClick={props.handleNavbar}>
-                  {" "}
-                  {data.Development[props.app.lang].navBar.contact}
-                </a>
-              </li>
-            </>
-          )}
+          {navLinksComponent}
           <li>
             <Dropdown>
               <Dropdown.Toggle variant="white" id="dropdown-basic">

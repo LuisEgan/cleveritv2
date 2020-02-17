@@ -7,9 +7,9 @@ import NavBar from "../components/Common/navBar"
 import Main from "../components/Common/main"
 import Footer from "../components/Common/footer"
 import CardsPortfolio from "../components/Common/portfolio"
-import Services from "../components/Home/ServicesHome"
-import Companies from "../components/Home/CompaniesHome"
-import Blog from "../components/Home/BlogHome"
+import Services from "../components/Home/Services"
+import Companies from "../components/Home/Companies"
+import Blog from "../components/Home/Blog"
 
 const Home = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
