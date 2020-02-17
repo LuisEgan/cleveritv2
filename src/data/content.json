@@ -44,6 +44,10 @@
         ]
       },
       "sectionBlog": {
+        "common": {
+          "seeMore": "Ver más",
+          "loadMore": "Cargar más"
+        },
         "blogTitle": "Explora nuestras últimas ideas sobre temas importantes de la industria.",
         "blogList": [
           {
@@ -159,6 +163,10 @@
       },
       "sectionBlog": {
         "blogTitle": "Explora nuestras últimas ideas sobre temas importantes de la industria.",
+        "common": {
+          "seeMore": "See more",
+          "loadMore": "Load More"
+        },
         "blogList": [
           {
             "services": "Big data, Branding, Service",

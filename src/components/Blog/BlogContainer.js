@@ -22,7 +22,7 @@ export const BlogContainer = styled.div`
   padding-top: 14vh;
 
   @media only screen and (max-width: 768px) {
-    width: 80% !important;
+    width: 70% !important;
   }
 `
 

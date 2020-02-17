@@ -84,7 +84,7 @@ let Blog = props => {
                     <Text>{post.excerpt}</Text>
                     <Text className="area-text-home">{post.tag}</Text>
                     <ReadLink to={`/blog/${post.slug}`}>
-                      Ver más &rarr;{" "}
+                      {content.sectionBlog.common.seeMore} &rarr;{" "}
                     </ReadLink>
                   </Body>
                 </Card>
@@ -99,7 +99,7 @@ let Blog = props => {
         {visible < posts.length && (
           <Button onClick={() => loadMore()} className="btn-loadMore-home">
             {" "}
-            Cargar más
+            {content.sectionBlog.common.loadMore}
           </Button>
         )}
       </Row>
