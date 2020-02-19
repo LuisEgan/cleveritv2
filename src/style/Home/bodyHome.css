@@ -441,6 +441,7 @@ html {
 h5 {
   color: white;
   font-weight: bold;
+  text-align: center;
 }
 
 .clerverSuit-footer {
@@ -691,6 +692,10 @@ h5 {
   .home-text {
     padding-left: 2rem;
     padding-top: 0rem;
+  }
+
+  .responsiveIcons{
+    max-width: 30%;
   }
 
   .home-text p {

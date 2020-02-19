@@ -12,31 +12,11 @@ let Main = props => {
   const content = getData(location, lang)
   const animation = getAnimation(location)
   const color = getSuiteColor(location)
+  console.log("TCL: color", color)
 
-  const BtnTalk = styled.button`
-    background-color: ${color};
-    text-align: center;
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border-width: 0px;
-    margin-top: 2rem;
-    border: 1px solid transparent;
-    border-radius: 0.25rem;
-    color: white;
-    :hover,
-    :focus,
-    :visited:active {
-      background-color: ${color} !important;
-      border-color: ${color} !important;
-    }
-  `
   return (
     <>
-      <RowMain className="row mobileImageIcon">
+      <RowMain className="row mobileImageIcon testingPls">
         <TextTitle
           xs={12}
           sm={12}
@@ -48,7 +28,7 @@ let Main = props => {
           <h1>{content.sectionMain.mainTitle}</h1>
           <br></br>
           <p>{content.sectionMain.mainText}</p>
-          <BtnTalk id="btnTalk" onClick={() => props.showModalFunc(true)}>
+          <BtnTalk style={{ backgroundColor: `${color} !important` }} id="btnTalk" onClick={() => props.showModalFunc(true)} inputColor={color}>
             {content.sectionMain.button}
           </BtnTalk>
         </TextTitle>
@@ -68,57 +48,27 @@ let Main = props => {
   )
 }
 
-const mapStateToProps = state => {
-  return state
-}
-
-const mapDispatchToProps = dispatch => {
-  return {
-    changeLang: lang => dispatch({ type: "SET_LANGUAGE", payload: lang }),
-    showModalFunc: show => dispatch({ type: "SHOW_MODAL", payload: show }),
-  }
-}
-
-Main = connect(mapStateToProps, mapDispatchToProps)(Main)
-export default Main
-
-const TextTitle = styled.div`
-  padding: 5rem;
-  @media screen and (max-width: 1080px) {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 3rem;
-  }
-
-  @media screen and (max-width: 400px) {
-    padding-left: 2rem;
-    padding-top: 0rem;
-    & p {
-      font-size: 1rem;
-    }
-  }
-`
 const RowMain = styled.div`
   margin-left: auto;
   margin-right: auto;
-  & h1 {
+  && h1 {
     font-size: 4rem;
     text-align: left;
     justify-content: left;
     font-weight: bold;
   }
-  & p {
+  && p {
     font-size: 1.5rem;
     text-align: left;
     justify-content: left;
   }
   @media screen and (max-width: 1080px) {
-    & h1 {
+    && h1 {
       font-size: 2rem;
       text-align: left;
       justify-content: left;
     }
-    & p {
+    && p {
       font-size: 1.2rem;
       text-align: left;
       justify-content: left;
@@ -145,3 +95,57 @@ const HomeImg = styled.div`
   margin-left: auto;
   margin-right: auto;
 `
+
+const BtnTalk = styled.button`
+  background-color: ${props => props.inputColor} !important;
+  text-align: center;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-width: 0px;
+  margin-top: 2rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  color: white;
+  :hover,
+  :focus,
+  :visited:active {
+    background-color: ${props => props.inputColor} !important;
+    border-color: ${props => props.inputColor} !important;
+  }
+`
+
+const TextTitle = styled.div`
+  padding: 5rem;
+  @media screen and (max-width: 1080px) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    padding-left: 2rem;
+    padding-top: 0rem;
+    & p {
+      font-size: 1rem;
+    }
+  }
+`
+
+const mapStateToProps = state => {
+  return state
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    changeLang: lang => dispatch({ type: "SET_LANGUAGE", payload: lang }),
+    showModalFunc: show => dispatch({ type: "SHOW_MODAL", payload: show }),
+  }
+}
+
+Main = connect(mapStateToProps, mapDispatchToProps)(Main)
+
+export default Main

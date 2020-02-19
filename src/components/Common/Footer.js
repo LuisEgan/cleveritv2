@@ -7,6 +7,7 @@ import Image from "react-bootstrap/Image"
 import { connect } from "react-redux"
 import styled from "styled-components"
 import { getData } from "../../utils/page"
+import '../../style/Home/bodyHome.css'
 
 let Footer = props => {
   const data = getData(props.location, props.app.lang)
@@ -17,13 +18,13 @@ let Footer = props => {
         color={props.color}
         className={` ${props.classAnimationFooter} row`}
       >
-        <TitleFooter>
+        <TitleFooter className="title-footer">
           <h1>{data.footer.talk}</h1>
         </TitleFooter>
-        <TitleFooter>
+        <TitleFooter className="title-footer">
           <h5>{data.footer.email}</h5>
         </TitleFooter>
-        <CleverSuitFooter className="row ">
+        <CleverSuitFooter className="row clerverSuit-footer">
           <Col
             xl={2}
             lg={2}
@@ -33,7 +34,7 @@ let Footer = props => {
           >
             <ul>
               <li>
-                <Link to="/ex"> Clever Experience</Link>
+                <Link to="/ux"> Clever Experience</Link>
               </li>
               <li>
                 <Link to="/development">Clever Development</Link>
@@ -112,7 +113,7 @@ let Footer = props => {
             className=""
           >
             <BtnFooterHome
-              className="btn"
+              className="btn btn-footer-home"
               onClick={() => {
                 props.showModalFunc(true)
               }}
@@ -121,7 +122,7 @@ let Footer = props => {
             </BtnFooterHome>
           </Col>
         </CleverSuitFooter>
-        <RowSocial className="row justify-content-center">
+        <RowSocial className="row justify-content-center row-social">
           {data.footer.instagramLink && (
             <Col
               xl={1}
@@ -129,7 +130,7 @@ let Footer = props => {
               md={1}
               sm={1}
               xs={2}
-              className="align-self-center"
+              className="align-self-center responsiveIcons"
               style={{ textAlign: "center" }}
             >
               <span>
@@ -152,6 +153,7 @@ let Footer = props => {
               md={1}
               sm={1}
               xs={2}
+              className="align-self-center responsiveIcons"
               style={{ textAlign: "center" }}
             >
               <span>
@@ -174,6 +176,7 @@ let Footer = props => {
               md={1}
               sm={1}
               xs={2}
+              className="align-self-center responsiveIcons"
               style={{ textAlign: "center" }}
             >
               <span>
@@ -213,12 +216,12 @@ let Footer = props => {
             </Col>
           )}
         </RowSocial>
-        <RowLogo className="row justify-content-center">
+        <RowLogo className="row justify-content-center row-logo">
           <a href={data.footer.pageLink}>
             <Image src={logoCleverit}></Image>
           </a>
         </RowLogo>
-        <RowDirection className="row  justify-content-center">
+        <RowDirection className="row  justify-content-center row-direction">
           <p>
             {data.footer.rigths} <br />
             <span> {data.footer.direction} </span>
@@ -277,9 +280,10 @@ const CleverSuitFooter = styled.div`
   }
   & ul {
     list-style-type: none;
+  }
 
     @media screen and (max-width: 1080px) {
-      margin-botto
+      margin-bottom: 100px;
   }
 `
 const BtnFooterHome = styled.button`

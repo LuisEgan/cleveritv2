@@ -1738,50 +1738,86 @@
         ],
         "planSmart": [
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Naming creation."
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Branding or Rebranding."
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Look & Feel."
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "One Page Startup Websites (UI/UX)."
+          },
+          {
+            "descriptionPlan": "Optimize your Website for SEO (monthly maintenance)."
+          },
+          {
+            "descriptionPlan": "Social Media for SEO (monthly maintenance)."
+          },
+          {
+            "descriptionPlan": "Customize Presentations Templates (PPT)."
+          },
+          {
+            "descriptionPlan": "Video/Animation."
           }
         ],
         "planMedium": [
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "User Research."
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Customer Journey."
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Solution proposal."
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "User Experience Design."
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Interaction Design."
+          },
+          {
+            "descriptionPlan": "Content Strategy."
+          },
+          {
+            "descriptionPlan": "Usability Studies."
+          },
+          {
+            "descriptionPlan": "Documentation."
           }
         ],
         "planCostume": [
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "User Experience Design."
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Interface Design."
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "UX Motion."
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Rapid Prototyping."
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Project Management."
+          },
+          {
+            "descriptionPlan": "PWA"
+          },
+          {
+            "descriptionPlan": "iOS/Android native apps."
+          },
+          {
+            "descriptionPlan": "Backend/API integrations."
+          },
+          {
+            "descriptionPlan": "React/Angular."
+          },
+          {
+            "descriptionPlan": "HTML/CSS/JS."
           }
         ]
       },
@@ -1956,50 +1992,87 @@
         ],
         "planSmart": [
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Creación de nombre para tu proyecto o startup."
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Marca o cambio de imagen."
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Look & Feel."
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Sitios web estilo one page (UI/UX)."
+          },
+          {
+            "descriptionPlan": "Optimizar su sitio web para SEO (mantenimiento mensual)."
+          },
+          {
+            "descriptionPlan": "Social Media para SEO (mantenimiento mensual)."
+          },
+          {
+            "descriptionPlan": "Personalizar las plantillas de presentaciones (PPT)."
+          },
+          {
+            "descriptionPlan": "Video/Animación."
           }
+          
         ],
         "planMedium": [
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Investigación de usuarios."
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Customer Journey."
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Propuesta de solución."
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Diseño de experiencia del usuario."
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Diseño de interacción."
+          },
+          {
+            "descriptionPlan": "Estrategia de contenido."
+          },
+          {
+            "descriptionPlan": "Estudios de Usabilidad."
+          },
+          {
+            "descriptionPlan": "Documentación."
           }
         ],
         "planCostume": [
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Diseño de experiencia del usuario."
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Diseño de interfaz."
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "UX Motion."
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Prototipos rápidos."
           },
           {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            "descriptionPlan": "Gestión de proyectos."
+          },
+          {
+            "descriptionPlan": "PWA"
+          },
+          {
+            "descriptionPlan": "iOS/Android native apps"
+          },
+          {
+            "descriptionPlan": "Integraciones Backend/API"
+          },
+          {
+            "descriptionPlan": "React/Angular"
+          },
+          {
+            "descriptionPlan": "HTML/CSS/JS"
           }
         ]
       },

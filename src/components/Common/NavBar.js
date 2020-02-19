@@ -10,10 +10,10 @@ import { Button, Dropdown } from "react-bootstrap"
 import _ from "lodash"
 
 let NavBar = props => {
-  const barAnimation = useSpring({
+  let barAnimation = useSpring({
     from: { transform: "translate3d(0, -10rem, 0)" },
     transform: "translate3d(0, 0, 0)",
-  })
+  });
 
   const {
     app: { lang },
@@ -29,55 +29,6 @@ let NavBar = props => {
     const { changeLang } = props
     changeLang(language)
   }
-
-  const NavLinks = styled(animated.ul)`
-    justify-self: end !important;
-    list-style-type: none !important;
-    margin: auto 0 !important;
-    display: flex !important;
-    align-items: center !important;
-
-    & a {
-      color: #55595c !important;
-      border-bottom: 1px solid transparent !important;
-      margin-right: 1.2rem !important;
-      transition: all 300ms linear 0s !important;
-      text-decoration: none !important;
-      cursor: pointer !important;
-
-      &:hover {
-        color: ${color} !important;
-      }
-
-      @media (max-width: 868px) {
-        display: none !important;
-      }
-    }
-  `
-
-  const BtnNavHome = styled(Button)`
-    background-color: ${color} !important;
-    border-color: ${color} !important;
-    color: white !important;
-    :hover,
-    :visited,
-    :focus,
-    :active {
-      background-color: ${color} !important;
-      border-color: ${color} !important;
-      color: white !important;
-    }
-
-    @media (max-width: 868px) {
-      display: none !important;
-    }
-  `
-
-  const DropdownWrapper = styled.div`
-    @media (max-width: 868px) {
-      display: none !important;
-    }
-  `
 
   let navLinksComponent = null
   switch (location) {
@@ -141,9 +92,10 @@ let NavBar = props => {
       <StyledNavBar style={barAnimation}>
         <FlexContainer>
           <Brand location={location} />
-          <NavLinks>
+          <NavLinks inputColor={color}>
             {navLinksComponent}
             <BtnNavHome
+              inputColor={color}
               className="btn-nav-home"
               onClick={() => props.showModalFunc(true)}
             >
@@ -237,6 +189,55 @@ const BurgerWrapper = styled.div`
     display: none !important;
   }
 `
+
+const NavLinks = styled(animated.ul)`
+    justify-self: end !important;
+    list-style-type: none !important;
+    margin: auto 0 !important;
+    display: flex !important;
+    align-items: center !important;
+
+    & a {
+      color: #55595c !important;
+      border-bottom: 1px solid transparent !important;
+      margin-right: 1.2rem !important;
+      transition: all 300ms linear 0s !important;
+      text-decoration: none !important;
+      cursor: pointer !important;
+
+      &:hover {
+        color: ${props => props.inputColor} !important;
+      }
+
+      @media (max-width: 868px) {
+        display: none !important;
+      }
+    }
+  `
+
+  const BtnNavHome = styled(Button)`
+    background-color: ${props => props.inputColor} !important;
+    border-color: ${props => props.inputColor} !important;
+    color: white !important;
+    :hover,
+    :visited,
+    :focus,
+    :active {
+      background-color: ${props => props.inputColor} !important;
+      border-color: ${props => props.inputColor} !important;
+      color: white !important;
+    }
+
+    @media (max-width: 868px) {
+      display: none !important;
+    }
+  `
+
+  const DropdownWrapper = styled.div`
+    @media (max-width: 868px) {
+      display: none !important;
+    }
+  `
 
 const mapStateToProps = state => {
   return state

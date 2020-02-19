@@ -3,6 +3,7 @@ import { connect } from "react-redux"
 import { getData, getSuiteColor } from "../../utils/page"
 import { Row, Col, Card } from "react-bootstrap"
 import styled from "styled-components"
+import '../../style/Common/common.css'
 
 const { Body, Title, Text } = Card
 
@@ -19,22 +20,6 @@ let Portfolio = props => {
   const content = getData(location, lang)
   const color = getSuiteColor(location)
 
-  const BtnLoad = styled.div`
-    margin-top: 2rem !important;
-    padding-left: 5rem !important;
-    padding-right: 5rem !important;
-    border-radius: 4px !important;
-    background-color: ${color} !important;
-    border-color: ${color} !important;
-    color: white !important;
-    :hover,
-    :focus,
-    :visited:active {
-      background-color: ${color} !important;
-      border-color: ${color} !important;
-      color: white;
-    }
-  `
   return (
     <>
       <Row
@@ -48,7 +33,7 @@ let Portfolio = props => {
           xl={12}
           className={`${props.classAnimationPortfolio} `}
         >
-          <PortfolioTitle>
+          <PortfolioTitle className="portfolioFix">
             {content.sectionPortfolio.portfolioTitle}
           </PortfolioTitle>
         </Col>
@@ -61,7 +46,7 @@ let Portfolio = props => {
           const renderIMG = require(`../../images/${card.img}`)
           return (
             <CardPortfolio
-              className="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-5 "
+              className="portfolioFixCard col-12 col-sm-10 col-md-8 col-lg-8 col-xl-5 "
               key={index}
             >
               <Card style={{ width: "100%" }}>
@@ -82,7 +67,7 @@ let Portfolio = props => {
         className={`justify-content-center ${props.classAnimationPortfolio} `}
       >
         {visible < content.sectionPortfolio.cards.length && (
-          <BtnLoad onClick={() => loadMore()} className="btn">
+          <BtnLoad onClick={() => loadMore()}  inputColor={color} className="btn">
             {" " + content.sectionPortfolio.loadMore}
           </BtnLoad>
         )}
@@ -90,19 +75,6 @@ let Portfolio = props => {
     </>
   )
 }
-
-const mapStateToProps = state => {
-  return state
-}
-
-const mapDispatchToProps = dispatch => {
-  return {
-    changeLang: lang => dispatch({ type: "SET_LANGUAGE", payload: lang }),
-  }
-}
-
-Portfolio = connect(mapStateToProps, mapDispatchToProps)(Portfolio)
-export default Portfolio
 
 const PortfolioTitle = styled.h1`
   padding-left: 8% !important;
@@ -136,8 +108,39 @@ const Inner = styled.div`
   }
 `
 
+const BtnLoad = styled.div`
+    margin-top: 2rem !important;
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+    border-radius: 4px !important;
+    background-color: ${props => props.inputColor} !important;
+    border-color: ${props => props.inputColor} !important;
+    color: white !important;
+    :hover,
+    :focus,
+    :visited:active {
+      background-color: ${props => props.inputColor} !important;
+      border-color: ${props => props.inputColor} !important;
+      color: white;
+    }
+  `
+
 const cardBody = {
   paddingLeft: "2rem !important",
   paddingRight: "2rem !important",
   height: "30%",
 }
+
+
+const mapStateToProps = state => {
+  return state
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    changeLang: lang => dispatch({ type: "SET_LANGUAGE", payload: lang }),
+  }
+}
+
+Portfolio = connect(mapStateToProps, mapDispatchToProps)(Portfolio)
+export default Portfolio

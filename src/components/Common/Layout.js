@@ -3,13 +3,6 @@ import NavBar from "./NavBar"
 import Footer from "./Footer"
 import styled from "styled-components"
 
-export const Overlay = styled.div`
-  min-height: 100vh;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-`
-
 const Layout = ({ children, noHeader, location }) => {
   console.log("TCL: Layout -> children", children)
   const [navbarOpen, setNavbarOpen] = useState(false)
@@ -32,5 +25,12 @@ const Layout = ({ children, noHeader, location }) => {
     </>
   )
 }
+
+export const Overlay = styled.div`
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+`
 
 export default Layout
