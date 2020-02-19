@@ -137,7 +137,7 @@ const Inner = styled.div`
 `
 
 const cardBody = {
-  paddingLeft: "3rem !important",
-  paddingRight: "3rem !important",
+  paddingLeft: "2rem !important",
+  paddingRight: "2rem !important",
   height: "30%",
 }

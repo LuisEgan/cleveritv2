@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react"
 import "../../style/Common/common.css"
-import NavBar from "./navBar"
+import NavBar from "./NavBar"
 
 import { Container } from "react-bootstrap"
-import Main from "./main"
-import Services from "./services"
-import CardsPortfolio from "./portfolio"
-import Companies from "./companies"
-import Plan from "./plan"
-import Photos from "./photos"
-import Footer from "./footer"
-import ModalForm from "./modalForm"
+import Main from "./Main"
+import Services from "./Services"
+import CardsPortfolio from "./Portfolio"
+import Companies from "./Companies"
+import Plan from "./Plan"
+import Photos from "./Photos"
+import Footer from "./Footer"
+import ModalForm from "./ModalForm"
 import Testimonies from "./Testimonies"
 import { getSuiteColor } from "../../utils/page"
 
@@ -62,9 +62,9 @@ const Suite = props => {
     } catch (error) {
       window.scrollTo(0, 0)
     }
+    window.onscroll = () => handleAnimation()
   }, [])
 
-  window.onscroll = () => handleAnimation()
 
   return (
     <>
@@ -74,7 +74,7 @@ const Suite = props => {
         handleNavbar={handleNavbar}
         location={props.call}
       />
-      <Container fluid>
+      <Container fluid className="mobileImageIcon">
         <section className="section-main" id="section-main">
           <Main location={props.call} />
         </section>
@@ -84,7 +84,7 @@ const Suite = props => {
             location={props.call}
           />
         </section>
-        <section className="section-companies">
+        <section className="section-companies companies-full">
           <Companies classAnimationCompanies={classAnimationCompanies} />
         </section>
         <section className="section-portfolio" id="section-portfolio">
@@ -95,10 +95,10 @@ const Suite = props => {
         </section>
         <section className="section-plan" id="section-plan">
           <Plan classAnimationPlan={classAnimationPlan} location={props.call} />
-          <Testimonies
+          {/* <Testimonies
             classAnimationPlan={classAnimationPlan}
             location={props.call}
-          />
+          /> */}
         </section>
         <section className="section-photos" id="section-photos">
           <Photos

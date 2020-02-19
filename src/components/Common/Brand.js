@@ -1,5 +1,5 @@
 import React from "react"
-import Helmet from 'react-helmet'
+import styled from "styled-components"
 
 import logo from "../../images/logo_cleverit_color.svg"
 import logoDevOps from "../../images/logoCleverDevOps.svg"
@@ -22,52 +22,52 @@ const Brand = props => {
   switch (props.location) {
     case "devops":
       return (
-        <div>
-          {changeFaviconAndTitle("Clever DevOps | DevOps Consulting", faviconDevops)}
+        <IconContainer>
           <Image src={logoDevOps} alt="DevOps Consulting" className="img-nav" />
-        </div>
+          {changeFaviconAndTitle("Clever DevOps | DevOps Consulting", faviconDevops)}
+        </IconContainer>
       )
     case "development":
       return (
-        <div>
+        <IconContainer>
           {changeFaviconAndTitle("Clever Development | Software Development" , faviconDev)}
           <Image
             src={logoDevelopment}
             alt="Software Development"
             className="img-nav"
           />
-        </div>
+        </IconContainer>
       )
     case "qa":
       return (
-        <div>
+        <IconContainer>
           {changeFaviconAndTitle("Clever QA | Quality Assurance Consulting" , faviconQa)}
           <Image src={logoQa} alt="Quality Assurance" className="img-nav" />
-        </div>
+        </IconContainer>
       )
       
     case "agile":
       return (
-        <div>
+        <IconContainer>
           {changeFaviconAndTitle("Clever Agile | Agile Mindset" , faviconAgile)}
           <Image src={logoAgile} alt="Agile Mindset" className="img-nav" />
-        </div>
+        </IconContainer>
       )
       
     case "ux":
       return (
-        <div>
+        <IconContainer>
           {changeFaviconAndTitle("Clever Experience | UI/UX Design Agency, Consulting & Branding" , faviconExperience)}
           <Image
             src={logoEx}
             alt="UX Consulting & Branding"
             className="img-nav"
           />
-        </div>
+        </IconContainer>
       )
     default:
       return (
-        <div>
+        <IconContainer>
           {changeFaviconAndTitle("Cleverit | Software, DevOps, Consulting & Cognitive" , faviconHome)}
           <Image
             src={logo}
@@ -78,9 +78,19 @@ const Brand = props => {
               window.location.href = "/"
             }}
           />
-        </div>
+        </IconContainer>
       )
   }
 }
+
+const IconContainer = styled.div`
+  height: 80%;
+  margin: auto 0px 2px;
+
+  @media (max-width: 1100px) {
+    margin-top: 10px;
+    display: flex;
+  }
+`;
 
 export default Brand

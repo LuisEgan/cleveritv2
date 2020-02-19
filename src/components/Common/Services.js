@@ -84,12 +84,14 @@ let Services = props => {
   const [imageBackground, setImageBackground] = useState("hidden")
   const [hideVideo, setHideVideo] = useState("")
   const [showVideo, setShowVideo] = useState(false)
-  const back = window.matchMedia("(max-width: 1080px)")
-
+  let back = "max-width: 1080px"
+  
   useEffect(() => {
+    back = window.matchMedia("(max-width: 1080px)")
     back.addListener(handleBackground)
     handleBackground()
   })
+
 
   const showVideoFunc = () => {
     setShowVideo(!showVideo)

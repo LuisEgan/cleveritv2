@@ -113,6 +113,14 @@ video.fillWidth {
   .img-nav {
     height: 60%;
   }
+  .card-overflow{
+overflow: auto;
+  }
+
+  .companies-full{
+    padding: 0px !important;
+    padding-bottom: 60px !important;
+  }
 }
 .drop-lang {
   z-index: 3;
@@ -138,19 +146,18 @@ video.fillWidth {
   padding-bottom: 0.3rem;
 }
 .section-main {
-  width: 100%;
-  margin-top: 5rem;
-  background-color: white;
+  width: 85% !important;
+  margin: 6% auto !important;
+  background-color: #f7f9fb !important;
 }
 .section-companies {
-  width: 100%;
-  margin-top: 0rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding: 0;
+  padding-bottom: 60px;
 }
 .section-portfolio {
-  margin-top: 15%;
-  padding-bottom: 6rem;
+  width: 85% !important;
+  margin: 6% auto !important;
+  background-color: #f7f9fb !important;
 }
 .section-photos {
   margin-top: 4rem;
@@ -167,6 +174,33 @@ video.fillWidth {
   }
   .section-portfolio {
     margin-top: 25%;
+  }
+
+  .mobileImageIcon{
+    padding-top: 20% !important;
+  }
+
+  .section-plan{
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .section-video{
+    max-height: 100vh;
+  }
+
+  .section-companies {
+    /* width: 100%;
+    margin-top: 0rem;
+    padding-left: 3rem;
+    padding-right: 3rem; */
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: white;
+    padding-bottom: 10rem;
+    margin: 6% auto !important;
+    
   }
 }
 @media screen and (max-width: 400px) {
@@ -199,4 +233,8 @@ video.fillWidth {
 
 .modal-header {
   border-bottom: 0px !important;
+}
+
+.imageSpacing{
+  padding: 25px !important;
 }

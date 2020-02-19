@@ -8,6 +8,7 @@ import forus from "../../images/forus_logo_white.svg"
 import falabella from "../../images/falabella_logo_white.svg"
 import { Row, Col, Image } from "react-bootstrap"
 import { connect } from "react-redux"
+import '../../style/Common/common.css'
 
 class Companies extends React.Component {
   constructor(props) {
@@ -24,7 +25,7 @@ class Companies extends React.Component {
     return (
       <>
         <Row
-          className={`justify-content-center company ${this.props.classAnimationCompanies} `}
+          className={`justify-content-center company ${this.props.classAnimationCompanies} imageSpacing`}
         >
           <Col
             xs={6}
@@ -92,7 +93,7 @@ class Companies extends React.Component {
           </Col>
         </Row>
         <Row
-          className={`justify-content-center company ${this.props.classAnimationCompanies} companies-file-two `}
+          className={`justify-content-center company ${this.props.classAnimationCompanies} companies-file-two imageSpacing `}
         >
           <Col
             xs={6}

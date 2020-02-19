@@ -1,12 +1,12 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 
 import "../style/Home/bodyHome.css"
 import { Container } from "react-bootstrap"
-import ModalForm from "../components/Common/modalForm"
-import NavBar from "../components/Common/navBar"
-import Main from "../components/Common/main"
-import Footer from "../components/Common/footer"
-import CardsPortfolio from "../components/Common/portfolio"
+import ModalForm from "../components/Common/ModalForm"
+import NavBar from "../components/Common/NavBar"
+import Main from "../components/Common/Main"
+import Footer from "../components/Common/Footer"
+import CardsPortfolio from "../components/Common/Portfolio"
 import Services from "../components/Home/Services"
 import Companies from "../components/Home/Companies"
 import Blog from "../components/Home/Blog"
@@ -43,8 +43,12 @@ const Home = () => {
   const handleNavbar = () => {
     setNavbarOpen(!navbarOpen)
   }
+  
+  useEffect(() => {
+    window.onscroll = () => handleAnimation()
 
-  window.onscroll = () => handleAnimation()
+  }, [])
+
 
   return (
     <>

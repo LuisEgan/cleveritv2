@@ -36,7 +36,7 @@ let Main = props => {
   `
   return (
     <>
-      <RowMain className="row">
+      <RowMain className="row mobileImageIcon">
         <TextTitle
           xs={12}
           sm={12}

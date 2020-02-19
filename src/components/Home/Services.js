@@ -29,14 +29,14 @@ let Services = props => {
                       <p>{data.DevOps[props.app.lang].sectionMain.mainTitle}</p>
                     </Row>
                     <Row className="justify-content-center">
-                      <Button size="lg" block className="btn-devOps">
-                        <NoLink to="/devops" color={COLORS.devops}>
+                      <NoLink to="/devops" color={COLORS.devops} style={{ width: '100%' }}>
+                        <Button size="lg" block className="btn-devOps">
                           {
                             data.Home[props.app.lang].sectionServices
                               .wantKnowMore
                           }
-                        </NoLink>
-                      </Button>
+                        </Button>
+                      </NoLink>
                     </Row>
                   </Card.Body>
                 </Card>
@@ -53,14 +53,14 @@ let Services = props => {
                       </p>
                     </Row>
                     <Row className="justify-content-center">
-                      <Button size="lg" block className="btn-dev">
-                        <NoLink to="/development" color={COLORS.development}>
-                          {
-                            data.Home[props.app.lang].sectionServices
-                              .wantKnowMore
-                          }
-                        </NoLink>
-                      </Button>
+                      <NoLink to="/development" color={COLORS.development} style={{ width: '100%' }}>
+                        <Button size="lg" block className="btn-dev">
+                            {
+                              data.Home[props.app.lang].sectionServices
+                                .wantKnowMore
+                            }
+                        </Button>
+                      </NoLink>
                     </Row>
                   </Card.Body>
                 </Card>
@@ -75,14 +75,14 @@ let Services = props => {
                       <p>{data.UX[props.app.lang].sectionMain.mainTitle}</p>
                     </Row>
                     <Row className="justify-content-center">
-                      <Button size="lg" block className="btn-ux">
-                        <NoLink to="/ex" color={COLORS.ux}>
+                      <NoLink to="/ux" color={COLORS.ux} style={{ width: '100%' }}>
+                        <Button size="lg" block className="btn-ux">
                           {
                             data.Home[props.app.lang].sectionServices
                               .wantKnowMore
                           }
-                        </NoLink>
-                      </Button>
+                        </Button>
+                      </NoLink>
                     </Row>
                   </Card.Body>
                 </Card>
@@ -97,14 +97,14 @@ let Services = props => {
                       <p>{data.Agile[props.app.lang].sectionMain.mainTitle}</p>
                     </Row>
                     <Row className="justify-content-center">
-                      <Button size="lg" block className="btn-agile">
-                        <NoLink to="/agile" color={COLORS.agile}>
+                      <NoLink to="/agile" color={COLORS.agile} style={{ width: '100%' }}>
+                        <Button size="lg" block className="btn-agile">
                           {
                             data.Home[props.app.lang].sectionServices
                               .wantKnowMore
                           }
-                        </NoLink>
-                      </Button>
+                        </Button>
+                      </NoLink>
                     </Row>
                   </Card.Body>
                 </Card>
@@ -119,14 +119,14 @@ let Services = props => {
                       <p>{data.QA[props.app.lang].sectionMain.mainTitle}</p>
                     </Row>
                     <Row className="justify-content-center">
-                      <Button size="lg" block className="btn-qa">
-                        <NoLink to="/qa" color={COLORS.qa}>
+                      <NoLink to="/qa" color={COLORS.qa} style={{ width: '100%' }}>
+                        <Button size="lg" block className="btn-qa">
                           {
                             data.Home[props.app.lang].sectionServices
                               .wantKnowMore
                           }
-                        </NoLink>
-                      </Button>
+                        </Button>
+                      </NoLink>
                     </Row>
                   </Card.Body>
                 </Card>
@@ -141,17 +141,18 @@ let Services = props => {
                       <p>{data.VR[props.app.lang].sectionMain.mainTitle}</p>
                     </Row>
                     <Row className="justify-content-center">
-                      <Button size="lg" block className="btn-xr">
-                        <NoLinkA
-                          href="https://www.xr.cleveritgroup.com"
-                          color={COLORS.xr}
-                        >
+                      <NoLinkA
+                        href="https://www.xr.cleveritgroup.com"
+                        color={COLORS.xr}
+                        style={{ width: '100%' }}
+                      >
+                        <Button size="lg" block className="btn-xr">
                           {
                             data.Home[props.app.lang].sectionServices
                               .wantKnowMore
                           }
-                        </NoLinkA>
-                      </Button>
+                        </Button>
+                      </NoLinkA>
                     </Row>
                   </Card.Body>
                 </Card>
@@ -162,7 +163,7 @@ let Services = props => {
         <Row className="row-help">
           <p>
             {data.UX[props.app.lang].sectionPlan.help}
-            <span style={{ color: `${COLORS.default}`, fontWeight: "bold" }}>
+            <span style={{ color: `${COLORS.default}`, fontWeight: "bold", cursor: 'pointer' }} onClick={() => props.showModalFunc(true)}>
               {" "}
               {data.UX[props.app.lang].navBar.contact}
             </span>{" "}
@@ -222,6 +223,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     changeLang: lang => dispatch({ type: "SET_LANGUAGE", payload: lang }),
+    showModalFunc: show => dispatch({ type: "SHOW_MODAL", payload: show }),
   }
 }
 

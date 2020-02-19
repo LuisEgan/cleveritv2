@@ -252,24 +252,22 @@
         "button": "Get a quote"
       },
       "sectionServices": {
-        "servicesTitle": "What do we do?:",
+        "servicesTitle": "What do we do?",
         "servicesAbility": [
-          { "ability": "Agile mindset" },
-          {
-            "ability": "Redefinition, creation or re-enigineering of processes"
-          },
-          { "ability": "Reduce waste" },
-          { "ability": "Improve productivity" },
-          { "ability": "Coaching and Mentoring for teams" },
+          { "ability": "Improve DevOps maturity" },
           { "ability": "Install and configure toolchain DevOps" },
+          { "ability": "Coaching and Mentoring for teams" },
           { "ability": "Enable practice and habits" },
-          { "ability": "Improve DevOps maturity" }
+          { "ability": "Improve productivity" },
+          { "ability": "Agile mindset" },
+          { "ability": "Reduce waste" },
+          {"ability": "Creation or re-engineering of process"}
         ],
         "servicesButtonReel": "Check out our reel",
         "servicesButtonRequest": "Get a quote"
       },
       "sectionPortfolio": {
-        "portfolioTitle": "We are connecting products, process and people for better deliver value to the business",
+        "portfolioTitle": "We are connected to deliver the best value for your business",
         "loadMore": "Load more",
         "cards": [
           {
@@ -431,16 +429,16 @@
         "button": "Cotiza con nosotros"
       },
       "sectionServices": {
-        "servicesTitle": "¿Qué hacemos?:",
+        "servicesTitle": "¿Qué hacemos?",
         "servicesAbility": [
-          { "ability": "Mindset ágil" },
-          { "ability": "Redefinición, creación o reingeniería de procesos" },
           { "ability": "Eliminar el desperdicio" },
-          { "ability": "Aumentar la productividad" },
           { "ability": "Coaching y Mentoring para equipos" },
+          { "ability": "Aumentar la productividad" },
           { "ability": "Instalar y configurar herramientas DevOps" },
           { "ability": "Habilitar prácticas y hábitos DevOps" },
-          { "ability": "Aumentar la madurez de los equipos" }
+          { "ability": "Aumentar la madurez de los equipos" },
+          { "ability": "Mindset ágil" },
+          { "ability": "Redefinición, creación o reingeniería de procesos" }
         ],
         "servicesButtonReel": "Mira nuestro reel",
         "servicesButtonRequest": "Cotiza con nosotros"

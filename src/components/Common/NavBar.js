@@ -1,9 +1,9 @@
 import React, { useEffect } from "react"
 import styled from "styled-components"
 import { useSpring, animated } from "react-spring"
-import Brand from "./brand"
-import BurgerMenu from "./burgerMenu"
-import CollapseMenu from "./collapseMenu"
+import Brand from "./Brand"
+import BurgerMenu from "./BurgerMenu"
+import CollapseMenu from "./CollapseMenu"
 import { getData, getSuiteColor } from "../../utils/page"
 import { connect } from "react-redux"
 import { Button, Dropdown } from "react-bootstrap"
@@ -225,6 +225,8 @@ const FlexContainer = styled.div`
   height: 5rem;
   @media (max-width: 1100px) {
     padding: 0 1rem;
+    display: flex;
+    align-items: center;
   }
 `
 

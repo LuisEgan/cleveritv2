@@ -5,6 +5,7 @@ import { Row, Col, Button, Card, Carousel } from "react-bootstrap"
 import Image from "react-bootstrap/Image"
 import styled from "styled-components"
 import { getSuiteColor, getData } from "../../utils/page"
+import '../../style/Common/common.css'
 
 let Plan = props => {
   const {
@@ -89,7 +90,7 @@ let Plan = props => {
             className="col-xl-3 col-lg-7 col-md-8 col-sm-12 col-xs-12"
           >
             <CardPlan style={{ width: "100%" }} className="card">
-              <CardBobyPlan className="card-body">
+              <CardBobyPlan className="card-body card-overflow">
                 <CardPlanTitle className="card-title">
                   Standard Plan
                 </CardPlanTitle>
@@ -132,11 +133,11 @@ let Plan = props => {
             className="col-xl-3 col-lg-7 col-md-8 col-sm-12 col-xs-12"
           >
             <CardPlanCustom style={{ width: "100%" }} className="card">
-              <CardBobyPlan className="card-body">
+              <CardBobyPlan className="card-body card-overflow">
                 <CardPlanTitle className="card-title">
                   Medium Plan
                 </CardPlanTitle>
-                <p>{content.sectionPlan.planSecondTitleSmart}</p>
+                <p>{content.sectionPlan.planSecondTitleMedium}</p>
                 <UlPlan>
                   {content.sectionPlan.planMedium.map((plan, index) => (
                     <li className="row" key={index}>
@@ -173,7 +174,7 @@ let Plan = props => {
             className="col-xl-3 col-lg-7 col-md-8 col-sm-12 col-xs-12"
           >
             <CardPlan style={{ width: "100%" }} className="card">
-              <CardBobyPlan className="card-body">
+              <CardBobyPlan className="card-body card-overflow">
                 <CardPlanTitle className="card-title">
                   Custom-made Plan
                 </CardPlanTitle>
