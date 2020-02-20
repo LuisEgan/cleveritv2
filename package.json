@@ -61,7 +61,8 @@
     "start": "rimraf .cache && npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "live": "gatsby serve -H 0.0.0.0"
   },
   "repository": {
     "type": "git",

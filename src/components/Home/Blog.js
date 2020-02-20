@@ -51,6 +51,7 @@ let Blog = props => {
           lg={12}
           xl={12}
           className={`${props.classAnimationPortfolio} `}
+          style={{ textAlign: 'center' }}
         >
           <h1 className="portfolio-title">{content.sectionBlog.blogTitle}</h1>
         </Col>
@@ -81,7 +82,7 @@ let Blog = props => {
                   </div>
                   <Body className="card-body-portfolio">
                     <Title>{post.title}</Title>
-                    <Text>{post.excerpt}</Text>
+                    <Text>{post.excerpt.slice(0, 60)+'...'}</Text>
                     <Text className="area-text-home">{post.tag}</Text>
                     <ReadLink to={`/blog/${post.slug}`}>
                       {content.sectionBlog.common.seeMore} &rarr;{" "}

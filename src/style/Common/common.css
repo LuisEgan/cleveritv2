@@ -223,8 +223,8 @@ overflow: auto;
 }
 @media screen and (max-width: 400px) {
   .section-main {
-    width: 100%;
-    margin-top: 5rem;
+    width: 100% !important;
+    margin: 0 auto;
   }
   .section-companies {
     width: 100%;
@@ -247,6 +247,11 @@ overflow: auto;
     font-size: 1.5rem !important;
     font-weight: bold !important;
   }
+
+  .testingPls{
+    padding-top: 0 !important;
+  }
+
   .testingPls h1{
     font-size: 2rem !important;
     text-align: left !important;
@@ -257,6 +262,10 @@ overflow: auto;
     font-size: 1.2rem !important;
     text-align: left !important;
     justify-content: left !important;
+  }
+
+  .portfolioFix{
+    padding: 0 !important;
   }
 }
 .card-footer {

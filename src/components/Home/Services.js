@@ -30,7 +30,7 @@ let Services = props => {
                     </Row>
                     <Row className="justify-content-center">
                       <NoLink to="/devops" color={COLORS.devops} style={{ width: '100%' }}>
-                        <Button size="lg" block className="btn-devOps">
+                        <Button size="lg" block className="btn-devOps cardResponsiveBTN">
                           {
                             data.Home[props.app.lang].sectionServices
                               .wantKnowMore
@@ -42,7 +42,7 @@ let Services = props => {
                 </Card>
               </Col>
               <Col xl={4}>
-                <Card style={{ width: "100%" }} className="card-development">
+                <Card style={{ width: "100%" }} className="card-development cardResponsiveBTN">
                   <Card.Body>
                     <Row className=" justify-content-center">
                       <Image src={dev} className="hover-arrow"></Image>
@@ -54,7 +54,7 @@ let Services = props => {
                     </Row>
                     <Row className="justify-content-center">
                       <NoLink to="/development" color={COLORS.development} style={{ width: '100%' }}>
-                        <Button size="lg" block className="btn-dev">
+                        <Button size="lg" block className="btn-dev cardResponsiveBTN">
                             {
                               data.Home[props.app.lang].sectionServices
                                 .wantKnowMore
@@ -76,7 +76,7 @@ let Services = props => {
                     </Row>
                     <Row className="justify-content-center">
                       <NoLink to="/ux" color={COLORS.ux} style={{ width: '100%' }}>
-                        <Button size="lg" block className="btn-ux">
+                        <Button size="lg" block className="btn-ux cardResponsiveBTN">
                           {
                             data.Home[props.app.lang].sectionServices
                               .wantKnowMore
@@ -98,7 +98,7 @@ let Services = props => {
                     </Row>
                     <Row className="justify-content-center">
                       <NoLink to="/agile" color={COLORS.agile} style={{ width: '100%' }}>
-                        <Button size="lg" block className="btn-agile">
+                        <Button size="lg" block className="btn-agile cardResponsiveBTN">
                           {
                             data.Home[props.app.lang].sectionServices
                               .wantKnowMore
@@ -120,7 +120,7 @@ let Services = props => {
                     </Row>
                     <Row className="justify-content-center">
                       <NoLink to="/qa" color={COLORS.qa} style={{ width: '100%' }}>
-                        <Button size="lg" block className="btn-qa">
+                        <Button size="lg" block className="btn-qa cardResponsiveBTN">
                           {
                             data.Home[props.app.lang].sectionServices
                               .wantKnowMore
@@ -146,7 +146,7 @@ let Services = props => {
                         color={COLORS.xr}
                         style={{ width: '100%' }}
                       >
-                        <Button size="lg" block className="btn-xr">
+                        <Button size="lg" block className="btn-xr cardResponsiveBTN">
                           {
                             data.Home[props.app.lang].sectionServices
                               .wantKnowMore

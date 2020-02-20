@@ -353,14 +353,12 @@ html {
 }
 
 .portfolio-title {
-  padding-left: 8%;
-  padding-right: 45%;
   font-weight: bold;
   margin-bottom: 4rem;
 }
 .card-body-portfolio {
-  padding-left: 3rem !important;
-  padding-right: 3rem !important;
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
   height: 30%;
 }
 .card {
@@ -409,7 +407,6 @@ html {
   margin-top: 1rem;
 }
 .section-blog {
-  padding-top: 5rem;
   padding-bottom: 3rem;
 
   width: 85% !important;
@@ -776,11 +773,10 @@ h5 {
 
   /*   SECTION PORTFOLIO-------------------------- */
   .portfolio-title {
-    padding-left: 0%;
-    padding-right: 0%;
+    padding: 0 !important;
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 0 !important;
   }
   .card-body-portfolio {
     padding-left: 1rem !important;
@@ -873,6 +869,28 @@ h5 {
     font-size: 1.5rem;
     font-weight: bold;
   }
+
+  .section-services .card{
+    min-height: 290px;
+  }
+
+  .row-description-card{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .cardResponsiveBTN{
+    font-size: 0.8rem;
+  }
+
+  .row-help p {
+    font-size: 1rem;
+  }
+
+  .item-carousel{
+    margin-top: 3rem;
+  }
+
 }
 
 /* ONLY FOR PHOTOS IN COROUSEL */

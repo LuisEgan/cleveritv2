@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useLayoutEffect, useState } from "react"
 
 import logoCleverit from "../../images/logo_cleverit.svg"
 import { Col } from "react-bootstrap"
@@ -9,8 +9,26 @@ import styled from "styled-components"
 import { getData } from "../../utils/page"
 import '../../style/Home/bodyHome.css'
 
+
 let Footer = props => {
   const data = getData(props.location, props.app.lang)
+  
+  function useWindowSize() {
+      const [size, setSize] = useState([0, 0]);
+      useLayoutEffect(() => {
+        function updateSize() {
+          setSize([window.innerWidth, window.innerHeight]);
+        }
+        window.addEventListener('resize', updateSize);
+        updateSize();
+        return () => window.removeEventListener('resize', updateSize);
+      }, []);
+      return size;
+    }
+
+    let [width, height] = useWindowSize();
+    let colSize = width < 400 ? 12 : 6;
+
 
   return (
     <>
@@ -28,11 +46,11 @@ let Footer = props => {
           <Col
             xl={2}
             lg={2}
-            md={{ span: 6, order: 2 }}
-            sm={{ span: 6, order: 2 }}
-            xs={{ span: 6, order: 2 }}
+            md={{ span: colSize, order: 2 }}
+            sm={{ span: colSize, order: 2 }}
+            xs={{ span: colSize, order: 2 }}
           >
-            <ul>
+            <ul style={{ margin: colSize === 12 ? 0 : null }}>
               <li>
                 <Link to="/ux"> Clever Experience</Link>
               </li>
@@ -44,9 +62,9 @@ let Footer = props => {
           <Col
             xl={2}
             lg={2}
-            md={{ span: 6, order: 2 }}
-            sm={{ span: 6, order: 3 }}
-            xs={{ span: 6, order: 3 }}
+            md={{ span: colSize, order: 2 }}
+            sm={{ span: colSize, order: 3 }}
+            xs={{ span: colSize, order: 3 }}
           >
             <ul>
               <li>
@@ -66,9 +84,9 @@ let Footer = props => {
           <Col
             xl={2}
             lg={2}
-            md={{ span: 6, order: 2 }}
-            sm={{ span: 6, order: 4 }}
-            xs={{ span: 6, order: 4 }}
+            md={{ span: colSize, order: 2 }}
+            sm={{ span: colSize, order: 4 }}
+            xs={{ span: colSize, order: 4 }}
           >
             <ul>
               <li>
@@ -85,9 +103,9 @@ let Footer = props => {
           <Col
             xl={2}
             lg={2}
-            md={{ span: 6, order: 2 }}
-            sm={{ span: 6, order: 5 }}
-            xs={{ span: 6, order: 5 }}
+            md={{ span: colSize, order: 2 }}
+            sm={{ span: colSize, order: 5 }}
+            xs={{ span: colSize, order: 5 }}
           >
             <ul>
               <li>
@@ -285,6 +303,10 @@ const CleverSuitFooter = styled.div`
     @media screen and (max-width: 1080px) {
       margin-bottom: 100px;
   }
+
+  @media screen and (max-width: 400px) {
+    margin-bottom: 0;
+  }
 `
 const BtnFooterHome = styled.button`
   font-size: 1.2rem !important;
@@ -318,6 +340,10 @@ const BtnFooterHome = styled.button`
 const RowSocial = styled.div`
   width: 100%;
   margin-top: 6rem;
+
+  @media screen and (max-width: 400px) {
+    margin-top: 15%;
+  }
 `
 const RowLogo = styled.div`
   width: 100%;
