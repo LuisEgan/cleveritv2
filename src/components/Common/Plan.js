@@ -16,65 +16,10 @@ let Plan = props => {
   const content = getData(location, lang)
   const color = getSuiteColor(location)
 
-  const BtnPlanOutline = styled.button`
-    padding-left: 20% !important;
-    padding-right: 20% !important;
-    color: ${color} !important;
-    border-color: ${color} !important;
-    :hover,
-    :visited,
-    :focus,
-    :active {
-      background-color: ${color} !important !important;
-      border-color: ${color}!important !important;
-      color: white !important;
-      @media screen and (max-width: 400px) {
-        padding-left: 15% !important;
-        padding-right: 15% !important;
-      }
-    }
-  `
-  const BtnPlan = styled.button`
-    padding-left: 20% !important;
-    padding-right: 20% !important;
-    background-color: ${color} !important;
-    border-color: ${color} !important;
-    color: white !important;
-    :hover,
-    :visited,
-    :focus,
-    :active {
-      background-color: ${color} !important !important;
-      border-color: ${color} !important !important;
-      color: white !important;
-      @media screen and (max-width: 400px) {
-        padding-left: 15% !important;
-        padding-right: 15% !important;
-      }
-    }
-  `
-  const TitlePlan = styled.h1`
-    display: block !important;
-    justify-content: center !important;
-    text-align: center !important;
-    margin-bottom: 3rem !important;
-    font-weight: bold !important;
-    color: ${color} !important;
-    @media screen and (max-width: 400px) {
-      font-size: 1.5rem !important;
-    }
-  `
-  const CardPlanCustom = styled.div`
-    justify-content: center !important;
-    align-items: center !important;
-    text-align: center !important;
-    border-color: ${color} !important;
-    height: 50rem !important;
-  `
   return (
     <>
       <Row className=" justify-content-center">
-        <TitlePlan>{content.sectionPlan.planTitle}</TitlePlan>
+        <TitlePlan inputColor={color}>{content.sectionPlan.planTitle}</TitlePlan>
       </Row>
       <RowPlan
         className={` justify-content-center row ${props.classAnimationPlan}`}
@@ -112,6 +57,7 @@ let Plan = props => {
               </CardBobyPlan>
               <Card.Footer>
                 <BtnPlanOutline
+                inputColor={color}
                   variant="outline-primary"
                   className="btn outline-primary"
                   onClick={() => props.showModalFunc(true)}
@@ -132,7 +78,7 @@ let Plan = props => {
             xs={{ span: 12 }}
             className="col-xl-3 col-lg-7 col-md-8 col-sm-12 col-xs-12"
           >
-            <CardPlanCustom style={{ width: "100%" }} className="card">
+            <CardPlanCustom style={{ width: "100%" }} className="card" inputColor={color}>
               <CardBobyPlan className="card-body card-overflow">
                 <CardPlanTitle className="card-title">
                   Medium Plan
@@ -153,6 +99,7 @@ let Plan = props => {
               </CardBobyPlan>
               <Card.Footer>
                 <BtnPlan
+                inputColor={color}
                   variant="outline-primary"
                   className="btn outline-primary"
                   onClick={() => props.showModalFunc(true)}
@@ -196,6 +143,7 @@ let Plan = props => {
               </CardBobyPlan>
               <Card.Footer>
                 <BtnPlanOutline
+                inputColor={color}
                   variant="outline-primary"
                   className="btn outline-primary"
                   onClick={() => props.showModalFunc(true)}
@@ -284,3 +232,59 @@ const ColTicket = styled.div`
   padding-left: 0 !important;
   font-size: 1.02rem;
 `
+
+const BtnPlanOutline = styled.button`
+    padding-left: 20% !important;
+    padding-right: 20% !important;
+    color: ${props => props.inputColor} !important;
+    border-color: ${props => props.inputColor} !important;
+    :hover,
+    :visited,
+    :focus,
+    :active {
+      background-color: ${props => props.inputColor} !important !important;
+      border-color: ${props => props.inputColor}!important !important;
+      color: white !important;
+      @media screen and (max-width: 400px) {
+        padding-left: 15% !important;
+        padding-right: 15% !important;
+      }
+    }
+  `
+  const BtnPlan = styled.button`
+    padding-left: 20% !important;
+    padding-right: 20% !important;
+    background-color: ${props => props.inputColor} !important;
+    border-color: ${props => props.inputColor} !important;
+    color: white !important;
+    :hover,
+    :visited,
+    :focus,
+    :active {
+      background-color: ${props => props.inputColor} !important !important;
+      border-color: ${props => props.inputColor} !important !important;
+      color: white !important;
+      @media screen and (max-width: 400px) {
+        padding-left: 15% !important;
+        padding-right: 15% !important;
+      }
+    }
+  `
+  const TitlePlan = styled.h1`
+    display: block !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin-bottom: 3rem !important;
+    font-weight: bold !important;
+    color: ${props => props.inputColor} !important;
+    @media screen and (max-width: 400px) {
+      font-size: 1.5rem !important;
+    }
+  `
+  const CardPlanCustom = styled.div`
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    border-color: ${props => props.inputColor} !important;
+    height: 50rem !important;
+  `
