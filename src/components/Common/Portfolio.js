@@ -86,10 +86,10 @@ const PortfolioTitle = styled.h1`
     font-weight: bold !important;
   }
   @media screen and (max-width: 400px) {
-    padding-left: 8% !important;
-    padding-right: 10% !important;
+    padding: 0 !important;
     font-size: 1.5rem !important;
     font-weight: bold !important;
+    margin-bottom: 0;
   }
 `
 const CardPortfolio = styled.div`

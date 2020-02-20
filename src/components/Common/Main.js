@@ -24,6 +24,7 @@ let Main = props => {
           lg={6}
           xl={6}
           className={`visible col-xl-6 col-lg-6 col-sm-12 col-md-12 col-xs-12`}
+          style={{ padding: '3rem' }}
         >
           <h1>{content.sectionMain.mainTitle}</h1>
           <br></br>
@@ -90,8 +91,8 @@ const RowMain = styled.div`
 const HomeImg = styled.div`
   justify-content: center;
   text-align: center;
-  padding-left: 6%;
-  padding-right: 6%;
+  padding-left: 4%;
+  padding-right: 4%;
   margin-left: auto;
   margin-right: auto;
 `
@@ -127,10 +128,13 @@ const TextTitle = styled.div`
   }
 
   @media screen and (max-width: 400px) {
-    padding-left: 2rem;
-    padding-top: 0rem;
+    padding: 0 2rem 2rem !important;
+    & h1{
+      font-size: 1.5rem !important;
+      margin-bottom: 0 !important;
+    }
     & p {
-      font-size: 1rem;
+      font-size: 1rem !important;
     }
   }
 `
