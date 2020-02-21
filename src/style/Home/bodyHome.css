@@ -114,9 +114,11 @@ html {
   margin: 0 auto !important;
   background-color: #f7f9fb !important;
 }
-.section-services .card {
+
+/* .section-services .card {
   min-height: 360px;
-}
+} */
+
 .row-services {
   width: 100%;
   padding-bottom: 3rem;
@@ -169,8 +171,8 @@ html {
 }
 
 .row-description-card {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 .card-devOps:hover {
   transform: translateY(20px);
@@ -660,7 +662,7 @@ h5 {
 }
 
 /* """"""SMALL SIZE"""""""------------------------------------------------- */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   .row {
     width: 100%;
     margin-left: 0;

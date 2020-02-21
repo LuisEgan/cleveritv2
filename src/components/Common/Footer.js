@@ -271,7 +271,7 @@ const TitleFooter = styled.div`
   width: 100%;
   justify-content: center;
   text-align: center;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 480px) {
     width: 100%;
     justify-content: center;
     text-align: center;
@@ -304,7 +304,7 @@ const CleverSuitFooter = styled.div`
       margin-bottom: 100px;
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 480px) {
     margin-bottom: 0;
   }
 `
@@ -332,7 +332,7 @@ const BtnFooterHome = styled.button`
 
     margin-bottom: 4rem;
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 480px) {
     font-size: 1rem;
   }
 `
@@ -341,7 +341,7 @@ const RowSocial = styled.div`
   width: 100%;
   margin-top: 6rem;
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 480px) {
     margin-top: 15%;
   }
 `
