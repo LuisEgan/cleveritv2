@@ -718,6 +718,11 @@ h5 {
     margin-right: auto;
   }
 
+  .hover-arrow{
+    max-width: 80% !important;
+    max-height: 50px !important;
+  }
+
   /*  --------------SECTION SERVICES-------------------------- */
   .row-services h2 {
     font-size: 1.5rem;
