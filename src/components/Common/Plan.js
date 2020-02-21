@@ -25,7 +25,7 @@ let Plan = props => {
         className={` justify-content-center row ${props.classAnimationPlan}`}
       >
         {/* CARD STANDARD */}
-        {content.sectionPlan.planSmart && (
+        {!!content.sectionPlan.planSmart.description && content.sectionPlan.planSmart.description && (
           <ColCardPlan
             xl={{ span: 3 }}
             lg={{ span: 7 }}
@@ -37,13 +37,13 @@ let Plan = props => {
             <CardPlan style={{ width: "100%" }} className="card">
               <CardBobyPlan className="card-body card-overflow">
                 <CardPlanTitle className="card-title">
-                  Standard Plan
+                  {content.sectionPlan.planSmart.title}
                 </CardPlanTitle>
 
-                <p>{content.sectionPlan.planSecondTitleSmart}</p>
+                <p>{content.sectionPlan.planSmart.subtitle}</p>
 
                 <UlPlan>
-                  {content.sectionPlan.planSmart.map((plan, index) => (
+                  {content.sectionPlan.planSmart.description.map((plan, index) => (
                     <li className="row" key={index}>
                       <ColTicket className="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
                         <Image src={ticket} style={{ width: "17px" }}></Image>
@@ -69,7 +69,7 @@ let Plan = props => {
           </ColCardPlan>
         )}
         {/* CARD MEDIUM */}
-        {content.sectionPlan.planMedium && (
+        {!!content.sectionPlan.planMedium  && content.sectionPlan.planMedium.description && (
           <ColCardPlan
             xl={{ span: 3 }}
             lg={{ span: 7 }}
@@ -81,11 +81,11 @@ let Plan = props => {
             <CardPlanCustom style={{ width: "100%" }} className="card" inputColor={color}>
               <CardBobyPlan className="card-body card-overflow">
                 <CardPlanTitle className="card-title">
-                  Medium Plan
+                  {content.sectionPlan.planMedium.title}
                 </CardPlanTitle>
-                <p>{content.sectionPlan.planSecondTitleMedium}</p>
+                <p>{content.sectionPlan.planMedium.subtitle}</p>
                 <UlPlan>
-                  {content.sectionPlan.planMedium.map((plan, index) => (
+                  {content.sectionPlan.planMedium.description.map((plan, index) => (
                     <li className="row" key={index}>
                       <ColTicket className="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
                         <Image src={ticket} style={{ width: "17px" }}></Image>
@@ -111,7 +111,7 @@ let Plan = props => {
           </ColCardPlan>
         )}
         {/* CARD CUSTOM */}
-        {content.sectionPlan.planCostume && (
+        {!!content.sectionPlan.planCostume.description && content.sectionPlan.planCostume.description && (
           <ColCardPlan
             xl={{ span: 3 }}
             lg={{ span: 7 }}
@@ -123,13 +123,13 @@ let Plan = props => {
             <CardPlan style={{ width: "100%" }} className="card">
               <CardBobyPlan className="card-body card-overflow">
                 <CardPlanTitle className="card-title">
-                  Custom-made Plan
+                  {content.sectionPlan.planCostume.title}
                 </CardPlanTitle>
 
-                <p>{content.sectionPlan.planSecondTitleCustom}</p>
+                <p>{content.sectionPlan.planCostume.subtitle}</p>
 
                 <UlPlan>
-                  {content.sectionPlan.planCostume.map((plan, index) => (
+                  {content.sectionPlan.planCostume.description.map((plan, index) => (
                     <li className="row" key={index}>
                       <ColTicket className="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
                         <Image src={ticket} style={{ width: "17px" }}></Image>

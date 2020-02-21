@@ -317,61 +317,73 @@
             "img": "testimony_1.png"
           }
         ],
-        "planSmart": [
-          {
-            "descriptionPlan": "Sr. DevOps Engineer full or partime"
-          },
-          {
-            "descriptionPlan": "Implement DevOps practices"
-          },
-          {
-            "descriptionPlan": "Implement & operate tools"
-          },
-          {
-            "descriptionPlan": "Implementation minimal time: 3 months"
-          }
-        ],
-        "planMedium": [
-          {
-            "descriptionPlan": "Sr. DevOps Engineer full or partime"
-          },
-          {
-            "descriptionPlan": "Implement DevOps practices"
-          },
-          {
-            "descriptionPlan": "Implement & operate tools"
-          },
-          {
-            "descriptionPlan": "Version control, Continuous integration, Continuous Delivery"
-          },
-          {
-            "descriptionPlan": "Integration with DevTestOps practice"
-          },
-          {
-            "descriptionPlan": "Integration with DevSecOps practice"
-          },
-          {
-            "descriptionPlan": "DevOps Governance & Best practices"
-          },
-
-          {
-            "descriptionPlan": "Improve maturity DevOps area and create Center of Expert (CoE)"
-          },
-          {
-            "descriptionPlan": "Implementation minimal time: 3 months"
-          }
-        ],
-        "planCostume": [
-          {
-            "descriptionPlan": "Basic plan features"
-          },
-          {
-            "descriptionPlan": "Medium plan features for DevTestOps"
-          },
-          {
-            "descriptionPlan": "Meium plan features for Clever Agile Services"
-          }
-        ]
+        "planSmart": {
+          "title": "Smart plan",
+          "subtitle": "Our default plan",
+          "description": [
+            {
+              "descriptionPlan": "Sr. DevOps Engineer full or partime"
+            },
+            {
+              "descriptionPlan": "Implement DevOps practices"
+            },
+            {
+              "descriptionPlan": "Implement & operate tools"
+            },
+            {
+              "descriptionPlan": "Implementation minimal time: 3 months"
+            }
+          ]
+        },
+        "planMedium": {
+          "title": "Medium Plan",
+          "subtitle":"Our default plan",
+          "description": [
+            {
+              "descriptionPlan": "Sr. DevOps Engineer full or partime"
+            },
+            {
+              "descriptionPlan": "Implement DevOps practices"
+            },
+            {
+              "descriptionPlan": "Implement & operate tools"
+            },
+            {
+              "descriptionPlan": "Version control, Continuous integration, Continuous Delivery"
+            },
+            {
+              "descriptionPlan": "Integration with DevTestOps practice"
+            },
+            {
+              "descriptionPlan": "Integration with DevSecOps practice"
+            },
+            {
+              "descriptionPlan": "DevOps Governance & Best practices"
+            },
+  
+            {
+              "descriptionPlan": "Improve maturity DevOps area and create Center of Expert (CoE)"
+            },
+            {
+              "descriptionPlan": "Implementation minimal time: 3 months"
+            }
+          ]
+        },
+        "planCostume": {
+          "title": "Costume plan",
+          "subtitle": "Exclusive tailor-made service",
+          "description": [
+            {
+              "descriptionPlan": "Basic plan features"
+            },
+            {
+              "descriptionPlan": "Medium plan features for DevTestOps"
+            },
+            {
+              "descriptionPlan": "Meium plan features for Clever Agile Services"
+            }
+          ]
+        }
       },
       "photos": {
         "photoOne": "team_01.png",
@@ -495,55 +507,67 @@
             "img": "testimony_1.png"
           }
         ],
-        "planSmart": [
-          {
-            "descriptionPlan": "Ingeniero DevOps Sr. dedicado tiempo completo o parcial"
-          },
-          {
-            "descriptionPlan": "Implementación de práticas DevOps"
-          },
-          {
-            "descriptionPlan": "Implementar & operar herramientas"
-          },
-          {
-            "descriptionPlan": "Tiempo mínimo de contrato: 3 Meses"
-          }
-        ],
-        "planMedium": [
-          {
-            "descriptionPlan": "Ingeniero DevOps Sr. dedicado tiempo completo o parcial"
-          },
-          {
-            "descriptionPlan": "Implementación de práticas DevOps"
-          },
-          {
-            "descriptionPlan": "Implementar & operar herramientas"
-          },
-          {
-            "descriptionPlan": "Eliminar el desperdicio de los procesos"
-          },
-          {
-            "descriptionPlan": "Implementación de Governance y mejores Prácticas"
-          },
-
-          {
-            "descriptionPlan": "Creación del area DevOps como  Center of Expert (CoE)"
-          },
-          {
-            "descriptionPlan": "Tiempo mínimo de contrato: 3 Meses"
-          }
-        ],
-        "planCostume": [
-          {
-            "descriptionPlan": "Caracteristicas del plan basico"
-          },
-          {
-            "descriptionPlan": "Caracteristicas del plan medio del servicio Clever Agile Services"
-          },
-          {
-            "descriptionPlan": "Caracteristicas del plan medio del servicio DevTestOps"
-          }
-        ]
+        "planSmart": {
+          "title":"Smart plan",
+          "subtitle": "Our default plan",
+          "description": [
+            {
+              "descriptionPlan": "Ingeniero DevOps Sr. dedicado tiempo completo o parcial"
+            },
+            {
+              "descriptionPlan": "Implementación de práticas DevOps"
+            },
+            {
+              "descriptionPlan": "Implementar & operar herramientas"
+            },
+            {
+              "descriptionPlan": "Tiempo mínimo de contrato: 3 Meses"
+            }
+          ]
+        },
+        "planMedium": {
+          "title": "Medium Plan",
+          "subtitle":"Our default plan",
+          "description": [
+            {
+              "descriptionPlan": "Ingeniero DevOps Sr. dedicado tiempo completo o parcial"
+            },
+            {
+              "descriptionPlan": "Implementación de práticas DevOps"
+            },
+            {
+              "descriptionPlan": "Implementar & operar herramientas"
+            },
+            {
+              "descriptionPlan": "Eliminar el desperdicio de los procesos"
+            },
+            {
+              "descriptionPlan": "Implementación de Governance y mejores Prácticas"
+            },
+  
+            {
+              "descriptionPlan": "Creación del area DevOps como  Center of Expert (CoE)"
+            },
+            {
+              "descriptionPlan": "Tiempo mínimo de contrato: 3 Meses"
+            }
+          ]
+        },
+        "planCostume": {
+          "title":"Costume plan",
+          "subtitle":"Exclusive tailor-made service",
+          "description": [
+            {
+              "descriptionPlan": "Caracteristicas del plan basico"
+            },
+            {
+              "descriptionPlan": "Caracteristicas del plan medio del servicio Clever Agile Services"
+            },
+            {
+              "descriptionPlan": "Caracteristicas del plan medio del servicio DevTestOps"
+            }
+          ]
+        }
       },
       "photos": {
         "photoOne": "team_01.png",
@@ -689,47 +713,55 @@
             "img": "testimony_1.png"
           }
         ],
-        "planSmart": [
-          {
-            "descriptionPlan": "Generar estructuras ágiles que permitan darle el enfoque a las iniciativas de negocio de mayor valor."
-          },
-          {
-            "descriptionPlan": "Capacitaciones en prácticas y herramientas ágiles."
-          },
-          {
-            "descriptionPlan": "Proceso de acompañamiento de coaches/enabler a equipos para acelerar su proceso de madurez."
-          }
-        ],
-        "planCostume": [
-          {
-            "descriptionPlan": "Implementar marco de OKR (1 año)"
-          },
-          {
-            "descriptionPlan": "Certificaciones (mediante un partner) - Agile Fundamentals, - Liderazgo Ágil, - Certified Scrum Master, - Certified Scrum Product Owner, - Agile Team Facilitator, - Management 3.0, - Lean Change Management"
-          },
-
-          {
-            "descriptionPlan": "Acompañamiento en la expansión de la agilidad (plan de carrera, carga administrativa, etc)"
-          },
-          {
-            "descriptionPlan": "Coaching de equipos"
-          },
-          {
-            "descriptionPlan": "Workshop de Discovery"
-          },
-          {
-            "descriptionPlan": "Workshop de Scrum"
-          },
-          {
-            "descriptionPlan": "Workshop de Agilidad"
-          },
-          {
-            "descriptionPlan": "Workshop de Kanban"
-          },
-          {
-            "descriptionPlan": "Workshop Value Stream Mapping"
-          }
-        ]
+        "planSmart": {
+          "title":"Smart plan",
+          "subtitle":"Our default plan",
+          "description": [
+            {
+              "descriptionPlan": "Generar estructuras ágiles que permitan darle el enfoque a las iniciativas de negocio de mayor valor."
+            },
+            {
+              "descriptionPlan": "Capacitaciones en prácticas y herramientas ágiles."
+            },
+            {
+              "descriptionPlan": "Proceso de acompañamiento de coaches/enabler a equipos para acelerar su proceso de madurez."
+            }
+          ]
+        },
+        "planCostume": {
+          "title":"Costume plan",
+          "subtitle":"Exclusive tailor-made service",
+          "description": [
+            {
+              "descriptionPlan": "Implementar marco de OKR (1 año)"
+            },
+            {
+              "descriptionPlan": "Certificaciones (mediante un partner) - Agile Fundamentals, - Liderazgo Ágil, - Certified Scrum Master, - Certified Scrum Product Owner, - Agile Team Facilitator, - Management 3.0, - Lean Change Management"
+            },
+  
+            {
+              "descriptionPlan": "Acompañamiento en la expansión de la agilidad (plan de carrera, carga administrativa, etc)"
+            },
+            {
+              "descriptionPlan": "Coaching de equipos"
+            },
+            {
+              "descriptionPlan": "Workshop de Discovery"
+            },
+            {
+              "descriptionPlan": "Workshop de Scrum"
+            },
+            {
+              "descriptionPlan": "Workshop de Agilidad"
+            },
+            {
+              "descriptionPlan": "Workshop de Kanban"
+            },
+            {
+              "descriptionPlan": "Workshop Value Stream Mapping"
+            }
+          ]
+        }
       },
       "photos": {
         "photoOne": "team_01.png",
@@ -855,47 +887,55 @@
             "img": "testimony_1.png"
           }
         ],
-        "planSmart": [
-          {
-            "descriptionPlan": "Generate Agile structures that enable focusing in the best initiatives"
-          },
-          {
-            "descriptionPlan": "Training for Agile tools and practices"
-          },
-          {
-            "descriptionPlan": "Personal coach/enabler to accelerate team maturity."
-          }
-        ],
-        "planCostume": [
-          {
-            "descriptionPlan": "OKR implementation (1 year)"
-          },
-          {
-            "descriptionPlan": "Certificactions (trough a partner) - Agile Fundamentals, - Agile Leadership, - Certified Scrum Master, - Certified Scrum Product Owner, - Agile Team Facilitator, - Management 3.0, - Lean Change Management"
-          },
-
-          {
-            "descriptionPlan": "Personal follow on the expansion of agility (career plans, administration process)"
-          },
-          {
-            "descriptionPlan": "Coaching de equipos"
-          },
-          {
-            "descriptionPlan": "Discovery workshop"
-          },
-          {
-            "descriptionPlan": "Scrum workshop"
-          },
-          {
-            "descriptionPlan": "Agile workshop"
-          },
-          {
-            "descriptionPlan": "Kanban workshop"
-          },
-          {
-            "descriptionPlan": "Value Stream Mapping workshop "
-          }
-        ]
+        "planSmart": {
+          "title":"Smart plan",
+          "subtitle":"Our default plan",
+          "description": [
+            {
+              "descriptionPlan": "Generate Agile structures that enable focusing in the best initiatives"
+            },
+            {
+              "descriptionPlan": "Training for Agile tools and practices"
+            },
+            {
+              "descriptionPlan": "Personal coach/enabler to accelerate team maturity."
+            }
+          ]
+        },
+        "planCostume": {
+          "title":"Costume plan",
+          "subtitle":"Exclusive tailor-made service",
+          "description": [
+            {
+              "descriptionPlan": "OKR implementation (1 year)"
+            },
+            {
+              "descriptionPlan": "Certificactions (trough a partner) - Agile Fundamentals, - Agile Leadership, - Certified Scrum Master, - Certified Scrum Product Owner, - Agile Team Facilitator, - Management 3.0, - Lean Change Management"
+            },
+  
+            {
+              "descriptionPlan": "Personal follow on the expansion of agility (career plans, administration process)"
+            },
+            {
+              "descriptionPlan": "Coaching de equipos"
+            },
+            {
+              "descriptionPlan": "Discovery workshop"
+            },
+            {
+              "descriptionPlan": "Scrum workshop"
+            },
+            {
+              "descriptionPlan": "Agile workshop"
+            },
+            {
+              "descriptionPlan": "Kanban workshop"
+            },
+            {
+              "descriptionPlan": "Value Stream Mapping workshop "
+            }
+          ]
+        }
       },
       "photos": {
         "photoOne": "team_01.png",
@@ -1024,53 +1064,60 @@
             "img": "testimony_1.png"
           }
         ],
-        "planSmart": [
-          {
-            "descriptionPlan": "Android iOS (Hybrid)"
-          },
-          {
-            "descriptionPlan": "Creation of API's for your Business (Microservices or Serverless)"
-          },
-          {
-            "descriptionPlan": "PWA"
-          },
-          {
-            "descriptionPlan": "Relational or Non-Relational DB"
-          },
-          {
-            "descriptionPlan": "Top of React Dev"
-          },
-          {
-            "descriptionPlan": "GraphQL"
-          },
-          {
-            "descriptionPlan": "Free Hosting (on Serverless or K8s)"
-          }
-        ],
-
-        "planCostume": [
-          {
-            "descriptionPlan": "Android & iOS Development (Hybrid or Native)"
-          },
-          {
-            "descriptionPlan": "API + Api Management"
-          },
-          {
-            "descriptionPlan": "PWA, SPA, SSR and Backoffice Site"
-          },
-          {
-            "descriptionPlan": "Message Queue Strategy, gRPC, Pub/Sub Pattern or Signal R"
-          },
-          {
-            "descriptionPlan": "Relational, Non-Relational DB or Data Lake Management"
-          },
-          {
-            "descriptionPlan": "All DevSecOps workflow configured and Ready"
-          },
-          {
-            "descriptionPlan": "Manage more than 100k concurrent users 🤝"
-          }
-        ]
+        "planSmart": {
+          "title": "Plan Startup",
+          "subtitle": "Trabajemos juntos, hagamos tus sueños realidad",
+          "description": [
+            {
+              "descriptionPlan": "Android iOS (Hybrid)"
+            },
+            {
+              "descriptionPlan": "Creation of API's for your Business (Microservices or Serverless)"
+            },
+            {
+              "descriptionPlan": "PWA"
+            },
+            {
+              "descriptionPlan": "Relational or Non-Relational DB"
+            },
+            {
+              "descriptionPlan": "Top of React Dev"
+            },
+            {
+              "descriptionPlan": "GraphQL"
+            },
+            {
+              "descriptionPlan": "Free Hosting (on Serverless or K8s)"
+            }
+          ]
+        },
+        "planCostume": {
+          "title": "Consultoría UX",
+          "subtitle": "Construyamos algo grande juntos",
+          "description": [
+            {
+              "descriptionPlan": "Android & iOS Development (Hybrid or Native)"
+            },
+            {
+              "descriptionPlan": "API + Api Management"
+            },
+            {
+              "descriptionPlan": "PWA, SPA, SSR and Backoffice Site"
+            },
+            {
+              "descriptionPlan": "Message Queue Strategy, gRPC, Pub/Sub Pattern or Signal R"
+            },
+            {
+              "descriptionPlan": "Relational, Non-Relational DB or Data Lake Management"
+            },
+            {
+              "descriptionPlan": "All DevSecOps workflow configured and Ready"
+            },
+            {
+              "descriptionPlan": "Manage more than 100k concurrent users 🤝"
+            }
+          ]
+        }
       },
       "photos": {
         "photoOne": "devteam_01.jpg",
@@ -1197,70 +1244,60 @@
             "img": "testimony_1.png"
           }
         ],
-        "planSmart": [
-          {
-            "descriptionPlan": "Android iOS (Hybrid)"
-          },
-          {
-            "descriptionPlan": "Creation of API's for your Business (Microservices or Serverless)"
-          },
-          {
-            "descriptionPlan": "PWA"
-          },
-          {
-            "descriptionPlan": "Relational or Non-Relational DB"
-          },
-          {
-            "descriptionPlan": "Top of React Dev"
-          },
-          {
-            "descriptionPlan": "GraphQL"
-          },
-          {
-            "descriptionPlan": "Free Hosting (on Serverless or K8s)"
-          }
-        ],
-        "planMedium": [
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          }
-        ],
-
-        "planCostume": [
-          {
-            "descriptionPlan": "Android & iOS Development (Hybrid or Native)"
-          },
-          {
-            "descriptionPlan": "API + Api Management"
-          },
-          {
-            "descriptionPlan": "PWA, SPA, SSR and Backoffice Site"
-          },
-          {
-            "descriptionPlan": "Message Queue Strategy, gRPC, Pub/Sub Pattern or Signal R"
-          },
-          {
-            "descriptionPlan": "Relational, Non-Relational DB or Data Lake Management"
-          },
-          {
-            "descriptionPlan": "All DevSecOps workflow configured and Ready"
-          },
-          {
-            "descriptionPlan": "Manage more than 100k concurrent users 🤝"
-          }
-        ]
+        "planSmart": {
+          "title": "Plan Startup",
+          "subtitle": "Trabajemos juntos, hagamos tus sueños realidad",
+          "description": [
+            {
+              "descriptionPlan": "Android iOS (Hybrid)"
+            },
+            {
+              "descriptionPlan": "Creation of API's for your Business (Microservices or Serverless)"
+            },
+            {
+              "descriptionPlan": "PWA"
+            },
+            {
+              "descriptionPlan": "Relational or Non-Relational DB"
+            },
+            {
+              "descriptionPlan": "Top of React Dev"
+            },
+            {
+              "descriptionPlan": "GraphQL"
+            },
+            {
+              "descriptionPlan": "Free Hosting (on Serverless or K8s)"
+            }
+          ]
+        },
+        "planCostume": {
+          "title": "Consultoría UX",
+          "subtitle": "Construyamos algo grande juntos",
+          "description": [
+            {
+              "descriptionPlan": "Android & iOS Development (Hybrid or Native)"
+            },
+            {
+              "descriptionPlan": "API + Api Management"
+            },
+            {
+              "descriptionPlan": "PWA, SPA, SSR and Backoffice Site"
+            },
+            {
+              "descriptionPlan": "Message Queue Strategy, gRPC, Pub/Sub Pattern or Signal R"
+            },
+            {
+              "descriptionPlan": "Relational, Non-Relational DB or Data Lake Management"
+            },
+            {
+              "descriptionPlan": "All DevSecOps workflow configured and Ready"
+            },
+            {
+              "descriptionPlan": "Manage more than 100k concurrent users 🤝"
+            }
+          ]
+        }
       },
       "photos": {
         "photoOne": "devteam_01.jpg",
@@ -1386,52 +1423,61 @@
             "img": "testimony_1.png"
           }
         ],
-        "planSmart": [
-          {
-            "descriptionPlan": "Functional Testing Automation"
-          },
-          {
-            "descriptionPlan": "Automated tests for your products (Services, Web App, Mobile App)"
-          },
-          {
-            "descriptionPlan": "Stress and Performance tests for your products (Services, Web App)"
-          },
-          {
-            "descriptionPlan": "pipelines to run tests"
-          },
-          {
-            "descriptionPlan": "Integration with Code Analizer for your repo"
-          },
-          {
-            "descriptionPlan": "Integration with tools for CI/CD (Azure DevOps, gitlab, jenkins...)"
-          }
-        ],
-        "planCostume": [
-          {
-            "descriptionPlan": "Functional Testing Automation and Learning"
-          },
-          {
-            "descriptionPlan": "Automated tests for your products (Services, Web App, Mobile App)"
-          },
-          {
-            "descriptionPlan": "Stress and Performance tests for your products (Services, Web App)"
-          },
-          {
-            "descriptionPlan": "pipelines to run tests"
-          },
-          {
-            "descriptionPlan": "Giving Workshops to Good Practices and Agile Testing to Developer Team"
-          },
-          {
-            "descriptionPlan": "Giving Workshops that provides Qa team new skills to improve its automation tasks"
-          },
-          {
-            "descriptionPlan": "Integration with Code Analizer for your repo"
-          },
-          {
-            "descriptionPlan": "Integration with tools for CI/CD (Azure DevOps, gitlab, jenkins...)"
-          }
-        ]
+        "planSmart": {
+          "title": "Smart Plan",
+          "subtitle": "Our default plan",
+          "description": [
+            {
+              "descriptionPlan": "Functional Testing Automation"
+            },
+            {
+              "descriptionPlan": "Automated tests for your products (Services, Web App, Mobile App)"
+            },
+            {
+              "descriptionPlan": "Stress and Performance tests for your products (Services, Web App)"
+            },
+            {
+              "descriptionPlan": "pipelines to run tests"
+            },
+            {
+              "descriptionPlan": "Integration with Code Analizer for your repo"
+            },
+            {
+              "descriptionPlan": "Integration with tools for CI/CD (Azure DevOps, gitlab, jenkins...)"
+            }
+          ]
+        }
+        ,
+        "planCostume": {
+          "title": "Custom Plan",
+          "subtitle": "Exclusive tailor-made service",
+          "description": [
+            {
+              "descriptionPlan": "Functional Testing Automation and Learning"
+            },
+            {
+              "descriptionPlan": "Automated tests for your products (Services, Web App, Mobile App)"
+            },
+            {
+              "descriptionPlan": "Stress and Performance tests for your products (Services, Web App)"
+            },
+            {
+              "descriptionPlan": "pipelines to run tests"
+            },
+            {
+              "descriptionPlan": "Giving Workshops to Good Practices and Agile Testing to Developer Team"
+            },
+            {
+              "descriptionPlan": "Giving Workshops that provides Qa team new skills to improve its automation tasks"
+            },
+            {
+              "descriptionPlan": "Integration with Code Analizer for your repo"
+            },
+            {
+              "descriptionPlan": "Integration with tools for CI/CD (Azure DevOps, gitlab, jenkins...)"
+            }
+          ]
+        }
       },
       "photos": {
         "photoOne": "team_01.png",
@@ -1539,7 +1585,6 @@
         "planTitle": "We offer plans that fit your needs",
         "planSecondTitleCustom": "Exclusive tailor-made service",
         "planSecondTitleSmart": "Our default plan",
-        "planSecondTitleMedium": "Our default plan",
         "help": "Do you have any questions about the service?",
         "testimonyList": [
           {
@@ -1555,52 +1600,61 @@
             "img": "testimony_1.png"
           }
         ],
-        "planSmart": [
-          {
-            "descriptionPlan": "Functional Testing Automation"
-          },
-          {
-            "descriptionPlan": "Automated tests for your products (Services, Web App, Mobile App)"
-          },
-          {
-            "descriptionPlan": "Stress and Performance tests for your products (Services, Web App)"
-          },
-          {
-            "descriptionPlan": "pipelines to run tests"
-          },
-          {
-            "descriptionPlan": "Integration with Code Analizer for your repo"
-          },
-          {
-            "descriptionPlan": "Integration with tools for CI/CD"
-          }
-        ],
-        "planCostume": [
-          {
-            "descriptionPlan": "Functional Testing Automation and Learning"
-          },
-          {
-            "descriptionPlan": "Automated tests for your products (Services, Web App, Mobile App)"
-          },
-          {
-            "descriptionPlan": "Stress and Performance tests for your products (Services, Web App)"
-          },
-          {
-            "descriptionPlan": "Configuring Pipelines to run tests"
-          },
-          {
-            "descriptionPlan": "Enforcing best practices and Agile Testing to Developer Team (Workshops)"
-          },
-          {
-            "descriptionPlan": "Provides QA team new skills to improve its automation tasks (Workshops)"
-          },
-          {
-            "descriptionPlan": "Integration with Static Code Analizer for your repo"
-          },
-          {
-            "descriptionPlan": "Integration with tools for CI/CD"
-          }
-        ]
+        "planSmart": {
+          "title": "Smart Plan",
+          "subtitle": "Our default plan",
+          "description": [
+            {
+              "descriptionPlan": "Functional Testing Automation"
+            },
+            {
+              "descriptionPlan": "Automated tests for your products (Services, Web App, Mobile App)"
+            },
+            {
+              "descriptionPlan": "Stress and Performance tests for your products (Services, Web App)"
+            },
+            {
+              "descriptionPlan": "pipelines to run tests"
+            },
+            {
+              "descriptionPlan": "Integration with Code Analizer for your repo"
+            },
+            {
+              "descriptionPlan": "Integration with tools for CI/CD"
+            }
+          ]
+        }
+        ,
+        "planCostume": {
+          "title": "Custom Plan",
+          "subtitle": "Exclusive tailor-made service",
+          "description": [
+            {
+              "descriptionPlan": "Functional Testing Automation and Learning"
+            },
+            {
+              "descriptionPlan": "Automated tests for your products (Services, Web App, Mobile App)"
+            },
+            {
+              "descriptionPlan": "Stress and Performance tests for your products (Services, Web App)"
+            },
+            {
+              "descriptionPlan": "Configuring Pipelines to run tests"
+            },
+            {
+              "descriptionPlan": "Enforcing best practices and Agile Testing to Developer Team (Workshops)"
+            },
+            {
+              "descriptionPlan": "Provides QA team new skills to improve its automation tasks (Workshops)"
+            },
+            {
+              "descriptionPlan": "Integration with Static Code Analizer for your repo"
+            },
+            {
+              "descriptionPlan": "Integration with tools for CI/CD"
+            }
+          ]
+        }
       },
       "photos": {
         "photoOne": "team_01.png",
@@ -1736,90 +1790,103 @@
             "img": "testimony_1.png"
           }
         ],
-        "planSmart": [
-          {
-            "descriptionPlan": "Naming creation."
-          },
-          {
-            "descriptionPlan": "Branding or Rebranding."
-          },
-          {
-            "descriptionPlan": "Look & Feel."
-          },
-          {
-            "descriptionPlan": "One Page Startup Websites (UI/UX)."
-          },
-          {
-            "descriptionPlan": "Optimize your Website for SEO (monthly maintenance)."
-          },
-          {
-            "descriptionPlan": "Social Media for SEO (monthly maintenance)."
-          },
-          {
-            "descriptionPlan": "Customize Presentations Templates (PPT)."
-          },
-          {
-            "descriptionPlan": "Video/Animation."
-          }
-        ],
-        "planMedium": [
-          {
-            "descriptionPlan": "User Research."
-          },
-          {
-            "descriptionPlan": "Customer Journey."
-          },
-          {
-            "descriptionPlan": "Solution proposal."
-          },
-          {
-            "descriptionPlan": "User Experience Design."
-          },
-          {
-            "descriptionPlan": "Interaction Design."
-          },
-          {
-            "descriptionPlan": "Content Strategy."
-          },
-          {
-            "descriptionPlan": "Usability Studies."
-          },
-          {
-            "descriptionPlan": "Documentation."
-          }
-        ],
-        "planCostume": [
-          {
-            "descriptionPlan": "User Experience Design."
-          },
-          {
-            "descriptionPlan": "Interface Design."
-          },
-          {
-            "descriptionPlan": "UX Motion."
-          },
-          {
-            "descriptionPlan": "Rapid Prototyping."
-          },
-          {
-            "descriptionPlan": "Project Management."
-          },
-          {
-            "descriptionPlan": "PWA"
-          },
-          {
-            "descriptionPlan": "iOS/Android native apps."
-          },
-          {
-            "descriptionPlan": "Backend/API integrations."
-          },
-          {
-            "descriptionPlan": "React/Angular."
-          },
-          {
-            "descriptionPlan": "HTML/CSS/JS."
-          }
-        ]
+        "planSmart": {
+          "title": "Startup Plan",
+          "subtitle": "Our default plan",
+          "description": [
+            {
+              "descriptionPlan": "Naming creation."
+            },
+            {
+              "descriptionPlan": "Branding or Rebranding."
+            },
+            {
+              "descriptionPlan": "Look & Feel."
+            },
+            {
+              "descriptionPlan": "One Page Startup Websites (UI/UX)."
+            },
+            {
+              "descriptionPlan": "Optimize your Website for SEO (monthly maintenance)."
+            },
+            {
+              "descriptionPlan": "Social Media for SEO (monthly maintenance)."
+            },
+            {
+              "descriptionPlan": "Customize Presentations Templates (PPT)."
+            },
+            {
+              "descriptionPlan": "Video/Animation."
+            }
+          ]
+        }
+        ,
+        "planMedium": {
+          "title": "UX Consulting",
+          "subtitle": "Our default plan",
+          "description": [
+            {
+              "descriptionPlan": "User Research."
+            },
+            {
+              "descriptionPlan": "Customer Journey."
+            },
+            {
+              "descriptionPlan": "Solution proposal."
+            },
+            {
+              "descriptionPlan": "User Experience Design."
+            },
+            {
+              "descriptionPlan": "Interaction Design."
+            },
+            {
+              "descriptionPlan": "Content Strategy."
+            },
+            {
+              "descriptionPlan": "Usability Studies."
+            },
+            {
+              "descriptionPlan": "Documentation."
+            }
+          ]
+        },
+        "planCostume": {
+          "title": "Digital Products and Services",
+          "subtitle": "Exclusive tailor-made service",
+          "description": [
+            {
+              "descriptionPlan": "User Experience Design."
+            },
+            {
+              "descriptionPlan": "Interface Design."
+            },
+            {
+              "descriptionPlan": "UX Motion."
+            },
+            {
+              "descriptionPlan": "Rapid Prototyping."
+            },
+            {
+              "descriptionPlan": "Project Management."
+            },
+            {
+              "descriptionPlan": "PWA"
+            },
+            {
+              "descriptionPlan": "iOS/Android native apps."
+            },
+            {
+              "descriptionPlan": "Backend/API integrations."
+            },
+            {
+              "descriptionPlan": "React/Angular."
+            },
+            {
+              "descriptionPlan": "HTML/CSS/JS."
+            }
+          ]
+        }
       },
       "photos": {
         "photoOne": "team_01.png",
@@ -1990,91 +2057,102 @@
             "img": "testimony_1.png"
           }
         ],
-        "planSmart": [
-          {
-            "descriptionPlan": "Creación de nombre para tu proyecto o startup."
-          },
-          {
-            "descriptionPlan": "Marca o cambio de imagen."
-          },
-          {
-            "descriptionPlan": "Look & Feel."
-          },
-          {
-            "descriptionPlan": "Sitios web estilo one page (UI/UX)."
-          },
-          {
-            "descriptionPlan": "Optimizar su sitio web para SEO (mantenimiento mensual)."
-          },
-          {
-            "descriptionPlan": "Social Media para SEO (mantenimiento mensual)."
-          },
-          {
-            "descriptionPlan": "Personalizar las plantillas de presentaciones (PPT)."
-          },
-          {
-            "descriptionPlan": "Video/Animación."
-          }
-          
-        ],
-        "planMedium": [
-          {
-            "descriptionPlan": "Investigación de usuarios."
-          },
-          {
-            "descriptionPlan": "Customer Journey."
-          },
-          {
-            "descriptionPlan": "Propuesta de solución."
-          },
-          {
-            "descriptionPlan": "Diseño de experiencia del usuario."
-          },
-          {
-            "descriptionPlan": "Diseño de interacción."
-          },
-          {
-            "descriptionPlan": "Estrategia de contenido."
-          },
-          {
-            "descriptionPlan": "Estudios de Usabilidad."
-          },
-          {
-            "descriptionPlan": "Documentación."
-          }
-        ],
-        "planCostume": [
-          {
-            "descriptionPlan": "Diseño de experiencia del usuario."
-          },
-          {
-            "descriptionPlan": "Diseño de interfaz."
-          },
-          {
-            "descriptionPlan": "UX Motion."
-          },
-          {
-            "descriptionPlan": "Prototipos rápidos."
-          },
-          {
-            "descriptionPlan": "Gestión de proyectos."
-          },
-          {
-            "descriptionPlan": "PWA"
-          },
-          {
-            "descriptionPlan": "iOS/Android native apps"
-          },
-          {
-            "descriptionPlan": "Integraciones Backend/API"
-          },
-          {
-            "descriptionPlan": "React/Angular"
-          },
-          {
-            "descriptionPlan": "HTML/CSS/JS"
-          }
-        ]
+        "planSmart": {
+          "title": "Plan Startup",
+          "subtitle":"Construyamos algo grande juntos",
+          "description": [
+            {
+              "descriptionPlan": "Creación de nombre para tu proyecto o startup."
+            },
+            {
+              "descriptionPlan": "Marca o cambio de imagen."
+            },
+            {
+              "descriptionPlan": "Look & Feel."
+            },
+            {
+              "descriptionPlan": "Sitios web estilo one page (UI/UX)."
+            },
+            {
+              "descriptionPlan": "Optimizar su sitio web para SEO (mantenimiento mensual)."
+            },
+            {
+              "descriptionPlan": "Social Media para SEO (mantenimiento mensual)."
+            },
+            {
+              "descriptionPlan": "Personalizar las plantillas de presentaciones (PPT)."
+            },
+            {
+              "descriptionPlan": "Video/Animación."
+            }
+          ]
+        },
+        "planMedium": {
+          "title": "Consultoría UX",
+          "subtitle":"Our default plan",
+          "description": [
+            {
+              "descriptionPlan": "Investigación de usuarios."
+            },
+            {
+              "descriptionPlan": "Customer Journey."
+            },
+            {
+              "descriptionPlan": "Propuesta de solución."
+            },
+            {
+              "descriptionPlan": "Diseño de experiencia del usuario."
+            },
+            {
+              "descriptionPlan": "Diseño de interacción."
+            },
+            {
+              "descriptionPlan": "Estrategia de contenido."
+            },
+            {
+              "descriptionPlan": "Estudios de Usabilidad."
+            },
+            {
+              "descriptionPlan": "Documentación."
+            }
+          ]
+        },
+        "planCostume": {
+          "title": "Productos y servicios digitales",
+          "subtitle": "Construyamos algo grande juntos",
+          "description": [
+            {
+              "descriptionPlan": "Diseño de experiencia del usuario."
+            },
+            {
+              "descriptionPlan": "Diseño de interfaz."
+            },
+            {
+              "descriptionPlan": "UX Motion."
+            },
+            {
+              "descriptionPlan": "Prototipos rápidos."
+            },
+            {
+              "descriptionPlan": "Gestión de proyectos."
+            },
+            {
+              "descriptionPlan": "PWA"
+            },
+            {
+              "descriptionPlan": "iOS/Android native apps"
+            },
+            {
+              "descriptionPlan": "Integraciones Backend/API"
+            },
+            {
+              "descriptionPlan": "React/Angular"
+            },
+            {
+              "descriptionPlan": "HTML/CSS/JS"
+            }
+          ]
+        }
       },
       "photos": {
         "photoOne": "team_01.png",
@@ -2210,54 +2288,66 @@
             "img": "testimony_1.png"
           }
         ],
-        "planSmart": [
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          }
-        ],
-        "planMedium": [
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          }
-        ],
-        "planCostume": [
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          }
-        ]
+        "planSmart": {
+          "title": "Smart Plan",
+          "subtitle": "Our default plan",
+          "description": [
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            },
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            },
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            },
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            }
+          ]
+        },
+        "planMedium": {
+          "title": "Medium plan",
+          "subtitle": "Exclusive tailor-made service",
+          "description": [
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            },
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            },
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            },
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            },
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            }
+          ]
+        },
+        "planCostume": {
+          "title": "Custom Plan",
+          "subtitle":"Exclusive tailor-made service",
+          "description": [
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            },
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            },
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            },
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            },
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            }
+          ]
+        }
       },
       "photos": {
         "photoOne": "team_01.png",
@@ -2372,54 +2462,67 @@
             "img": "testimony_1.png"
           }
         ],
-        "planSmart": [
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          }
-        ],
-        "planMedium": [
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          }
-        ],
-        "planCostume": [
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          },
-          {
-            "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
-          }
-        ]
+        "planSmart": {
+          "title":"Plan Startup",
+          "subtitle": "Trabajemos juntos, hagamos tus sueños realidad",
+          "description": [
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            },
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            },
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            },
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            }
+          ]
+        },
+        "planMedium": {
+          "title": "Medium plan",
+          "subtitle":"Exclusive tailor-made service",
+          "description": [
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            },
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            },
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            },
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            },
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            }
+          ]
+        }
+        ,
+        "planCostume": {
+          "title": "Custom Plan",
+          "subtitle":"Construyamos algo grande juntos",
+          "description": [
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            },
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            },
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            },
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            },
+            {
+              "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
+            }
+          ]
+        }
       },
       "photos": {
         "photoOne": "team_01.png",
