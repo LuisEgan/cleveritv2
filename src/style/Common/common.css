@@ -185,10 +185,6 @@ overflow: auto;
     margin: 0 auto;
   }
 
-  .section-video{
-    max-height: 100vh;
-  }
-
   .section-companies {
     /* width: 100%;
     margin-top: 0rem;
@@ -237,10 +233,9 @@ overflow: auto;
     margin-top: 25%;
   }
   .image-background-show {
-    width: 200%;
-    height: 40%;
-    display: relative;
     background-image: url(../../images/bg_mobile.png);
+    object-fit: cover;
+    object-position: center;
   }
   .portfolioFix{
     padding: 0 !important;

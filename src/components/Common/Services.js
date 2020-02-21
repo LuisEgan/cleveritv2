@@ -109,7 +109,7 @@ let Services = props => {
 
   return (
     <>
-      <Row>
+      <Row style={{ height: "calc(100vh + 50px)" }}>
         <YoutubeVideo
           show={showVideo}
           handleVideo={showVideoFunc}
@@ -221,10 +221,10 @@ const VideoContainer = styled.div`
 
     text-align: center;
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 480px) {
     top: 0%;
     left: 0%;
-    height: 2000px;
+    height: 100%;
     width: 300%;
     overflow: hidden;
     z-index: -100;
@@ -269,10 +269,10 @@ const PositionText = styled.div`
       font-size: 1.5rem;
     }
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 480px) {
     justify-content: left;
     z-index: 2;
-    margin-top: 8rem;
+    margin-top: calc(4rem + 10px);
     width: fit-content;
     align-items: center;
     text-align: center;

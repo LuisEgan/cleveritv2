@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import styled from "styled-components"
 import { Button, Dropdown } from "react-bootstrap"
 import { useSpring, animated } from "react-spring"
@@ -44,7 +44,7 @@ let CollapseMenu = props => {
         return (
           <React.Fragment key={index}>
             <li>
-              <a href={`#${text}`}>{content.navBar[text]}</a>
+              <a href={`#${text}`} onClick={props.handleNavbar}>{content.navBar[text]}</a>
             </li>
           </React.Fragment>
         )

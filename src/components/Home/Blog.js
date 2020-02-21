@@ -15,7 +15,6 @@ const { Body, Title, Text } = Card
 let Blog = props => {
   const [visible, setVisible] = useState(3)
   const posts = usePost()
-  console.log("TCL: posts", posts)
   const {
     app: { lang },
     location,
