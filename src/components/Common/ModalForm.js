@@ -315,7 +315,7 @@ let ModalForm = props => {
                         <div id="recaptcha" className="recaptcha">
                           {!captcha && (
                             <ReCAPTCHA
-                              sitekey="6LfQhsYUAAAAALZxJmKDQEE8J1oTpTh3ELnLNrG9"
+                              sitekey="6Ldu9p4UAAAAANobJCf3Weyt5ptMNMsk9OlYaZoh"
                               onChange={e => setCaptcha(!!e)}
                             />
                           )}
