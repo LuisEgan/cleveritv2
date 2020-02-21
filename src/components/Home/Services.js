@@ -19,7 +19,7 @@ let Services = props => {
         <Row className="row-cards-services  justify-content-center">
           <Col xl={10} lg={10} xs={12} className="align-self-center">
             <Row className=" justify-content-center">
-              <Col xl={4} xs={12}>
+              <Col xl={4}>
                 <Card style={{ width: "100%" }} className="card-devOps">
                   <Card.Body>
                     <Row className=" justify-content-center">
@@ -42,7 +42,7 @@ let Services = props => {
                 </Card>
               </Col>
               <Col xl={4}>
-                <Card style={{ width: "100%" }} className="card-development cardResponsiveBTN">
+                <Card style={{ width: "100%" }} className="card-development">
                   <Card.Body>
                     <Row className=" justify-content-center">
                       <Image src={dev} className="hover-arrow"></Image>

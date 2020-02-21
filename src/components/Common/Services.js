@@ -45,7 +45,7 @@ let Services = props => {
       padding-bottom: 1rem !important;
       padding-top: 1rem !important;
     }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 480px) {
       padding-left: 20% !important;
       padding-right: 20% !important;
       padding-bottom: 1rem !important;
@@ -74,7 +74,7 @@ let Services = props => {
       padding-bottom: 1rem !important;
       padding-top: 1rem !important;
     }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 480px) {
       padding-left: 20% !important;
       padding-right: 20% !important;
       padding-bottom: 1rem !important;
