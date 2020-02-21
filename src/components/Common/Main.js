@@ -12,7 +12,6 @@ let Main = props => {
   const content = getData(location, lang)
   const animation = getAnimation(location)
   const color = getSuiteColor(location)
-  console.log("TCL: color", color)
 
   return (
     <>

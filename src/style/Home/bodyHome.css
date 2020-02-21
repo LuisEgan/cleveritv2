@@ -180,6 +180,8 @@ html {
 .hover-arrow {
   transition: all 0.25s;
   width: 80%;
+  max-width: 80% !important;
+    max-height: 60px !important;
 }
 
 .card-devOps p,

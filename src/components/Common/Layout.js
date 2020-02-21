@@ -4,7 +4,6 @@ import Footer from "./Footer"
 import styled from "styled-components"
 
 const Layout = ({ children, noHeader, location }) => {
-  console.log("TCL: Layout -> children", children)
   const [navbarOpen, setNavbarOpen] = useState(false)
   const handleNavbar = () => {
     setNavbarOpen(!navbarOpen)

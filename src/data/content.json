@@ -1921,13 +1921,12 @@
         "home": "inicio",
         "portfolio": "portafolio"
       },
-      "sectionMain": [
+      "sectionMain":
         {
           "mainTitle": "Hacemos simples las cosas complejas",
           "mainText": "Como equipo, nuestro objetivo es construir grandes experiencias de usuario para cada proyecto en el que participamos",
           "button": "Cotiza con nosotros"
-        }
-      ],
+        },
       "sectionServices": {
         "servicesTitle": "Nuestros clientes avalan nuestra capacidad para impulsar su proyecto",
         "servicesAbility": [
