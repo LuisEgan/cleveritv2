@@ -108,7 +108,7 @@ Y por último se debe configurar el acceso del K8s al ACR ([Azure container regi
 `az aks show --resource-group newgranaks --name clevergranaks --query "servicePrincipalProfile.clientId" --output tsv`
 
 ```
-az role assignment create --assignee $IDACR --scope /subscriptions/f28af936-9710-4a28-8875-22c753c7df71
+az role assignment create --assignee $IDACR --scope /subscriptions/<<ID DE LA SUSCRIPCIÓN>>
 /resourceGroups/ACR/providers/Microsoft.ContainerRegistry/registries/Cleveritacr --role acrpull
 ```
 
