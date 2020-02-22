@@ -7,28 +7,26 @@ import Image from "react-bootstrap/Image"
 import { connect } from "react-redux"
 import styled from "styled-components"
 import { getData } from "../../utils/page"
-import '../../style/Home/bodyHome.css'
-
+import "../../style/Home/bodyHome.css"
 
 let Footer = props => {
   const data = getData(props.location, props.app.lang)
-  
+
   function useWindowSize() {
-      const [size, setSize] = useState([0, 0]);
-      useLayoutEffect(() => {
-        function updateSize() {
-          setSize([window.innerWidth, window.innerHeight]);
-        }
-        window.addEventListener('resize', updateSize);
-        updateSize();
-        return () => window.removeEventListener('resize', updateSize);
-      }, []);
-      return size;
-    }
+    const [size, setSize] = useState([0, 0])
+    useLayoutEffect(() => {
+      function updateSize() {
+        setSize([window.innerWidth, window.innerHeight])
+      }
+      window.addEventListener("resize", updateSize)
+      updateSize()
+      return () => window.removeEventListener("resize", updateSize)
+    }, [])
+    return size
+  }
 
-    let [width, height] = useWindowSize();
-    let colSize = width < 400 ? 12 : 6;
-
+  let [width, height] = useWindowSize()
+  let colSize = width < 400 ? 12 : 6
 
   return (
     <>
@@ -40,7 +38,11 @@ let Footer = props => {
           <h1>{data.footer.talk}</h1>
         </TitleFooter>
         <TitleFooter className="title-footer">
-          <h5>{data.footer.email}</h5>
+          <h5>
+            <NoLinkA href={`mailto:${data.footer.email}`}>
+              {data.footer.email}
+            </NoLinkA>
+          </h5>
         </TitleFooter>
         <CleverSuitFooter className="row clerverSuit-footer">
           <Col
@@ -51,6 +53,9 @@ let Footer = props => {
             xs={{ span: colSize, order: 2 }}
           >
             <ul style={{ margin: colSize === 12 ? 0 : null }}>
+              <li>
+                <Link to="/devops"> Clever DevOps</Link>
+              </li>
               <li>
                 <Link to="/ux"> Clever Experience</Link>
               </li>
@@ -112,7 +117,6 @@ let Footer = props => {
                 <a href={`https://careers.cleveritgroup.com`}>
                   {data.footer.join}
                 </a>
-                {/* <Link to="">{data.footer.join}</Link> */}
               </li>
               <li>
                 <Link to="/blog">{data.footer.blog}</Link>
@@ -300,8 +304,8 @@ const CleverSuitFooter = styled.div`
     list-style-type: none;
   }
 
-    @media screen and (max-width: 1080px) {
-      margin-bottom: 100px;
+  @media screen and (max-width: 1080px) {
+    margin-bottom: 100px;
   }
 
   @media screen and (max-width: 480px) {
@@ -362,6 +366,27 @@ const RowDirection = styled.div`
   & p {
     color: white;
     margin-top: 2rem;
+  }
+`
+
+const NoLinkA = styled.a`
+  color: white;
+  :visited {
+    text-decoration: none;
+    color: white;
+  }
+  :hover {
+    text-decoration: none;
+    color: white;
+  }
+  :focus {
+    text-decoration: none;
+    color: white;
+  }
+  :hover,
+  :active {
+    text-decoration: none;
+    color: white;
   }
 `
 
