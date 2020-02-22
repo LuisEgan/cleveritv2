@@ -52,7 +52,7 @@ video.fillWidth {
 }
 
 .image-background-show {
-  width: 200%;
+  /* width: 200%; */
   height: 100%;
   display: relative;
   background-image: url(../../images/bg_mobile.png);
