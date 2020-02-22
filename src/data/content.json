@@ -261,7 +261,7 @@
           { "ability": "Improve productivity" },
           { "ability": "Agile mindset" },
           { "ability": "Reduce waste" },
-          {"ability": "Creation or re-engineering of process"}
+          { "ability": "Creation or re-engineering of process" }
         ],
         "servicesButtonReel": "Check out our reel",
         "servicesButtonRequest": "Get a quote"
@@ -337,7 +337,7 @@
         },
         "planMedium": {
           "title": "Medium Plan",
-          "subtitle":"Our default plan",
+          "subtitle": "Our default plan",
           "description": [
             {
               "descriptionPlan": "Sr. DevOps Engineer full or partime"
@@ -360,7 +360,7 @@
             {
               "descriptionPlan": "DevOps Governance & Best practices"
             },
-  
+
             {
               "descriptionPlan": "Improve maturity DevOps area and create Center of Expert (CoE)"
             },
@@ -508,7 +508,7 @@
           }
         ],
         "planSmart": {
-          "title":"Smart plan",
+          "title": "Smart plan",
           "subtitle": "Our default plan",
           "description": [
             {
@@ -527,7 +527,7 @@
         },
         "planMedium": {
           "title": "Medium Plan",
-          "subtitle":"Our default plan",
+          "subtitle": "Our default plan",
           "description": [
             {
               "descriptionPlan": "Ingeniero DevOps Sr. dedicado tiempo completo o parcial"
@@ -544,7 +544,7 @@
             {
               "descriptionPlan": "Implementación de Governance y mejores Prácticas"
             },
-  
+
             {
               "descriptionPlan": "Creación del area DevOps como  Center of Expert (CoE)"
             },
@@ -554,8 +554,8 @@
           ]
         },
         "planCostume": {
-          "title":"Costume plan",
-          "subtitle":"Exclusive tailor-made service",
+          "title": "Costume plan",
+          "subtitle": "Exclusive tailor-made service",
           "description": [
             {
               "descriptionPlan": "Caracteristicas del plan basico"
@@ -714,8 +714,8 @@
           }
         ],
         "planSmart": {
-          "title":"Smart plan",
-          "subtitle":"Our default plan",
+          "title": "Smart plan",
+          "subtitle": "Our default plan",
           "description": [
             {
               "descriptionPlan": "Generar estructuras ágiles que permitan darle el enfoque a las iniciativas de negocio de mayor valor."
@@ -729,8 +729,8 @@
           ]
         },
         "planCostume": {
-          "title":"Costume plan",
-          "subtitle":"Exclusive tailor-made service",
+          "title": "Costume plan",
+          "subtitle": "Exclusive tailor-made service",
           "description": [
             {
               "descriptionPlan": "Implementar marco de OKR (1 año)"
@@ -738,7 +738,7 @@
             {
               "descriptionPlan": "Certificaciones (mediante un partner) - Agile Fundamentals, - Liderazgo Ágil, - Certified Scrum Master, - Certified Scrum Product Owner, - Agile Team Facilitator, - Management 3.0, - Lean Change Management"
             },
-  
+
             {
               "descriptionPlan": "Acompañamiento en la expansión de la agilidad (plan de carrera, carga administrativa, etc)"
             },
@@ -888,8 +888,8 @@
           }
         ],
         "planSmart": {
-          "title":"Smart plan",
-          "subtitle":"Our default plan",
+          "title": "Smart plan",
+          "subtitle": "Our default plan",
           "description": [
             {
               "descriptionPlan": "Generate Agile structures that enable focusing in the best initiatives"
@@ -903,8 +903,8 @@
           ]
         },
         "planCostume": {
-          "title":"Costume plan",
-          "subtitle":"Exclusive tailor-made service",
+          "title": "Costume plan",
+          "subtitle": "Exclusive tailor-made service",
           "description": [
             {
               "descriptionPlan": "OKR implementation (1 year)"
@@ -912,7 +912,7 @@
             {
               "descriptionPlan": "Certificactions (trough a partner) - Agile Fundamentals, - Agile Leadership, - Certified Scrum Master, - Certified Scrum Product Owner, - Agile Team Facilitator, - Management 3.0, - Lean Change Management"
             },
-  
+
             {
               "descriptionPlan": "Personal follow on the expansion of agility (career plans, administration process)"
             },
@@ -1065,8 +1065,8 @@
           }
         ],
         "planSmart": {
-          "title": "Plan Startup",
-          "subtitle": "Trabajemos juntos, hagamos tus sueños realidad",
+          "title": "Startup Plan",
+          "subtitle": "Let's work together, make your dreams come true",
           "description": [
             {
               "descriptionPlan": "Android iOS (Hybrid)"
@@ -1092,8 +1092,8 @@
           ]
         },
         "planCostume": {
-          "title": "Consultoría UX",
-          "subtitle": "Construyamos algo grande juntos",
+          "title": "Enterprise Plan",
+          "subtitle": "Let's build something big together",
           "description": [
             {
               "descriptionPlan": "Android & iOS Development (Hybrid or Native)"
@@ -1272,7 +1272,7 @@
           ]
         },
         "planCostume": {
-          "title": "Consultoría UX",
+          "title": "Plan Empresa",
           "subtitle": "Construyamos algo grande juntos",
           "description": [
             {
@@ -1446,8 +1446,7 @@
               "descriptionPlan": "Integration with tools for CI/CD (Azure DevOps, gitlab, jenkins...)"
             }
           ]
-        }
-        ,
+        },
         "planCostume": {
           "title": "Custom Plan",
           "subtitle": "Exclusive tailor-made service",
@@ -1623,8 +1622,7 @@
               "descriptionPlan": "Integration with tools for CI/CD"
             }
           ]
-        }
-        ,
+        },
         "planCostume": {
           "title": "Custom Plan",
           "subtitle": "Exclusive tailor-made service",
@@ -1819,8 +1817,7 @@
               "descriptionPlan": "Video/Animation."
             }
           ]
-        }
-        ,
+        },
         "planMedium": {
           "title": "UX Consulting",
           "subtitle": "Our default plan",
@@ -1921,12 +1918,11 @@
         "home": "inicio",
         "portfolio": "portafolio"
       },
-      "sectionMain":
-        {
-          "mainTitle": "Hacemos simples las cosas complejas",
-          "mainText": "Como equipo, nuestro objetivo es construir grandes experiencias de usuario para cada proyecto en el que participamos",
-          "button": "Cotiza con nosotros"
-        },
+      "sectionMain": {
+        "mainTitle": "Hacemos simples las cosas complejas",
+        "mainText": "Como equipo, nuestro objetivo es construir grandes experiencias de usuario para cada proyecto en el que participamos",
+        "button": "Cotiza con nosotros"
+      },
       "sectionServices": {
         "servicesTitle": "Nuestros clientes avalan nuestra capacidad para impulsar su proyecto",
         "servicesAbility": [
@@ -2058,7 +2054,7 @@
         ],
         "planSmart": {
           "title": "Plan Startup",
-          "subtitle":"Construyamos algo grande juntos",
+          "subtitle": "Construyamos algo grande juntos",
           "description": [
             {
               "descriptionPlan": "Creación de nombre para tu proyecto o startup."
@@ -2088,7 +2084,7 @@
         },
         "planMedium": {
           "title": "Consultoría UX",
-          "subtitle":"Our default plan",
+          "subtitle": "Our default plan",
           "description": [
             {
               "descriptionPlan": "Investigación de usuarios."
@@ -2328,7 +2324,7 @@
         },
         "planCostume": {
           "title": "Custom Plan",
-          "subtitle":"Exclusive tailor-made service",
+          "subtitle": "Exclusive tailor-made service",
           "description": [
             {
               "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
@@ -2462,7 +2458,7 @@
           }
         ],
         "planSmart": {
-          "title":"Plan Startup",
+          "title": "Plan Startup",
           "subtitle": "Trabajemos juntos, hagamos tus sueños realidad",
           "description": [
             {
@@ -2481,7 +2477,7 @@
         },
         "planMedium": {
           "title": "Medium plan",
-          "subtitle":"Exclusive tailor-made service",
+          "subtitle": "Exclusive tailor-made service",
           "description": [
             {
               "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
@@ -2499,11 +2495,10 @@
               "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
             }
           ]
-        }
-        ,
+        },
         "planCostume": {
           "title": "Custom Plan",
-          "subtitle":"Construyamos algo grande juntos",
+          "subtitle": "Construyamos algo grande juntos",
           "description": [
             {
               "descriptionPlan": "Donec id elit non mi porta gravida at eget metus."
